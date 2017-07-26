@@ -62,7 +62,7 @@
     }
   ],
   "need_generate_pdf_url_template": false,
-   "dependent_packages": [
+  "dependent_packages": [
     {
       "id": "Microsoft.DocAsCode.ECMA2Yaml",
       "nuget_feed": "https://www.myget.org/F/op/api/v2",

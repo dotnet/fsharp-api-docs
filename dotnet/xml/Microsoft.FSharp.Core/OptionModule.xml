@@ -1,0 +1,977 @@
+<Type Name="OptionModule" FullName="Microsoft.FSharp.Core.OptionModule">
+  <TypeSignature Language="C#" Value="public static class OptionModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed OptionModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.OptionModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Basic operations on options.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bind&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Bind&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; binder, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Bind&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; binder, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Bind``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("bind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="binder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="binder">A function that takes the value of type T from an option and transforms it into
+ an option containing a value of type U.</param>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>bind f inp</c> evaluates to <c>match inp with None -&gt; None | Some x -&gt; f x</c></summary>
+        <returns>An option of the output type of the binder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Contains&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Contains&lt;T&gt; (T value, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool Contains&lt;T&gt;(!!T value, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Contains``1(``0,Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("contains")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">The value to test for equality.</param>
+        <param name="option">The input option.</param>
+        <summary>Evaluates to true if <paramref name="option" /> is <c>Some</c> and its value is equal to <paramref name="value" />.</summary>
+        <returns>True if the option is <c>Some</c> and contains a value equal to <paramref name="value" />, otherwise false.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Count&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Count&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Count``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("count")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>count inp</c> evaluates to <c>match inp with None -&gt; 0 | Some _ -&gt; 1</c>.</summary>
+        <returns>A zero if the option is None, a one otherwise.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T DefaultValue&lt;T&gt; (T value, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T DefaultValue&lt;T&gt;(!!T value, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.DefaultValue``1(``0,Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("defaultValue")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">The specified default value.</param>
+        <param name="option">The input option.</param>
+        <summary>Gets the value of the option if the option is <c>Some</c>, otherwise returns the specified default value.</summary>
+        <returns>The option if the option is Some, else the default value.</returns>
+        <remarks>Identical to the built-in <see cref="defaultArg" /> operator, except with the arguments swapped.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DefaultWith&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T DefaultWith&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,T&gt; defThunk, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T DefaultWith&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, !!T&gt; defThunk, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.DefaultWith``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("defaultWith")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="defThunk" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,T&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="defThunk">A thunk that provides a default value when evaluated.</param>
+        <param name="option">The input option.</param>
+        <summary>Gets the value of the option if the option is <c>Some</c>, otherwise evaluates <paramref name="defThunk" /> and returns the result.</summary>
+        <returns>The option if the option is Some, else the result of evaluating <paramref name="defThunk" />.</returns>
+        <remarks>
+          <paramref name="defThunk" /> is not evaluated unless <paramref name="option" /> is <c>None</c>.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Exists&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool Exists&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool Exists&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Exists``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("exists")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">A function that evaluates to a boolean when given a value from the option type.</param>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>exists p inp</c> evaluates to <c>match inp with None -&gt; false | Some x -&gt; p x</c>.</summary>
+        <returns>False if the option is None, otherwise it returns the result of applying the predicate
+ to the option value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Filter&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; Filter&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; Filter&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Filter``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("filter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">A function that evaluates whether the value contained in the option should remain, or be filtered out.</param>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>filter f inp</c> evaluates to <c>match inp with None -&gt; None | Some x -&gt; if f x then Some x else None</c>.</summary>
+        <returns>The input if the predicate evaluates to true; otherwise, None.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Flatten&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; Flatten&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; Flatten&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt;&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Flatten``1(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpOption{``0}})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("flatten")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>flatten inp</c> evaluates to <c>match inp with None -&gt; None | Some x -&gt; x</c></summary>
+        <returns>An option of the output type of the binder.</returns>
+        <remarks>
+          <c>flatten</c> is equivalent to <c>bind id</c>.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Fold&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState Fold&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt; folder, TState state, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TState Fold&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TState&gt;&gt; folder, !!TState state, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Fold``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``1,Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("fold")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="folder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt;" />
+        <Parameter Name="state" Type="TState" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TState">To be added.</typeparam>
+        <param name="folder">A function to update the state data when given a value from an option.</param>
+        <param name="state">The initial state.</param>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>fold f s inp</c> evaluates to <c>match inp with None -&gt; s | Some x -&gt; f s x</c>.</summary>
+        <returns>The original state if the option is None, otherwise it returns the updated state with the folder
+ and the option value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FoldBack&lt;T,TState&gt;">
+      <MemberSignature Language="C#" Value="public static TState FoldBack&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt; folder, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option, TState state);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TState FoldBack&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt; folder, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option, !!TState state) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.FoldBack``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``1}},Microsoft.FSharp.Core.FSharpOption{``0},``1)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("foldBack")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TState</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TState" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="folder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+        <Parameter Name="state" Type="TState" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TState">To be added.</typeparam>
+        <param name="folder">A function to update the state data when given a value from an option.</param>
+        <param name="option">The input option.</param>
+        <param name="state">The initial state.</param>
+        <summary>
+          <c>fold f inp s</c> evaluates to <c>match inp with None -&gt; s | Some x -&gt; f x s</c>.</summary>
+        <returns>The original state if the option is None, otherwise it returns the updated state with the folder
+ and the option value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForAll&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool ForAll&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool ForAll&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ForAll``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("forall")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="predicate" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,System.Boolean&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="predicate">A function that evaluates to a boolean when given a value from the option type.</param>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>forall p inp</c> evaluates to <c>match inp with None -&gt; true | Some x -&gt; p x</c>.</summary>
+        <returns>True if the option is None, otherwise it returns the result of applying the predicate
+ to the option value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetValue&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetValue&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T GetValue&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.GetValue``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("get")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>Gets the value associated with the option.</summary>
+        <returns>The value within the option.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsNone&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsNone&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsNone&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.IsNone``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isNone")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>Returns true if the option is None.</summary>
+        <returns>True if the option is None.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsSome&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool IsSome&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static bool IsSome&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.IsSome``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("isSome")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>Returns true if the option is not None.</summary>
+        <returns>True if the option is not None.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Iterate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Iterate&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; action, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; action, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Iterate``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("iter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">A function to apply to the option value.</param>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>iter f inp</c> executes <c>match inp with None -&gt; () | Some x -&gt; f x</c>.</summary>
+        <returns>Unit if the option is None, otherwise it returns the result of applying the predicate
+ to the option value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Map&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Map&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">A function to apply to the option value.</param>
+        <param name="option">The input option.</param>
+        <summary>
+          <c>map f inp</c> evaluates to <c>match inp with None -&gt; None | Some x -&gt; Some (f x)</c>.</summary>
+        <returns>An option of the input value after applying the mapping function, or None if the input is None.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map2&lt;T1,T2,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Map2&lt;T1,T2,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt; mapping, Microsoft.FSharp.Core.FSharpOption&lt;T1&gt; option1, Microsoft.FSharp.Core.FSharpOption&lt;T2&gt; option2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Map2&lt;T1, T2, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt; mapping, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T1&gt; option1, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T2&gt; option2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Map2``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{``1})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt;" />
+        <Parameter Name="option1" Type="Microsoft.FSharp.Core.FSharpOption&lt;T1&gt;" />
+        <Parameter Name="option2" Type="Microsoft.FSharp.Core.FSharpOption&lt;T2&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">A function to apply to the option values.</param>
+        <param name="option1">The first option.</param>
+        <param name="option2">The second option.</param>
+        <summary>
+          <c>map f option1 option2</c> evaluates to <c>match option1, option2 with Some x, Some y -&gt; Some (f x y) | _ -&gt; None</c>.</summary>
+        <returns>An option of the input values after applying the mapping function, or None if either input is None.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map3&lt;T1,T2,T3,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Map3&lt;T1,T2,T3,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt; mapping, Microsoft.FSharp.Core.FSharpOption&lt;T1&gt; option1, Microsoft.FSharp.Core.FSharpOption&lt;T2&gt; option2, Microsoft.FSharp.Core.FSharpOption&lt;T3&gt; option3);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Map3&lt;T1, T2, T3, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, !!TResult&gt;&gt;&gt; mapping, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T1&gt; option1, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T2&gt; option2, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T3&gt; option3) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Map3``4(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``3}}},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{``1},Microsoft.FSharp.Core.FSharpOption{``2})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map3")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T1" />
+        <TypeParameter Name="T2" />
+        <TypeParameter Name="T3" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt;" />
+        <Parameter Name="option1" Type="Microsoft.FSharp.Core.FSharpOption&lt;T1&gt;" />
+        <Parameter Name="option2" Type="Microsoft.FSharp.Core.FSharpOption&lt;T2&gt;" />
+        <Parameter Name="option3" Type="Microsoft.FSharp.Core.FSharpOption&lt;T3&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T1">To be added.</typeparam>
+        <typeparam name="T2">To be added.</typeparam>
+        <typeparam name="T3">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">A function to apply to the option values.</param>
+        <param name="option1">The first option.</param>
+        <param name="option2">The second option.</param>
+        <param name="option3">The third option.</param>
+        <summary>
+          <c>map f option1 option2 option3</c> evaluates to <c>match option1, option2, option3 with Some x, Some y, Some z -&gt; Some (f x y z) | _ -&gt; None</c>.</summary>
+        <returns>An option of the input values after applying the mapping function, or None if any input is None.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfNullable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OfNullable&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OfNullable&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OfNullable``1(System.Nullable{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofNullable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="System.Nullable&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">The input nullable value.</param>
+        <summary>Convert a Nullable value to an option.</summary>
+        <returns>The result option.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfObj&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OfObj&lt;T&gt; (T value) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OfObj&lt;class T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OfObj``1(``0)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofObj")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">The input value.</param>
+        <summary>Convert a potentially null value to an option.</summary>
+        <returns>The result option.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrElse&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OrElse&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; ifNone, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OrElse&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; ifNone, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OrElse``1(Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("orElse")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ifNone" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="ifNone">The value to use if <paramref name="option" /> is <c>None</c>.</param>
+        <param name="option">The input option.</param>
+        <summary>Returns <paramref name="option" /> if it is <c>Some</c>, otherwise returns <paramref name="ifNone" />.</summary>
+        <returns>The option if the option is Some, else the alternate option.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OrElseWith&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OrElseWith&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt; ifNoneThunk, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OrElseWith&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt;&gt; ifNoneThunk, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OrElseWith``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.FSharpOption{``0}},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("orElseWith")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpOption&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ifNoneThunk" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt;" />
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="ifNoneThunk">A thunk that provides an alternate option when evaluated.</param>
+        <param name="option">The input option.</param>
+        <summary>Returns <paramref name="option" /> if it is <c>Some</c>, otherwise evaluates <paramref name="ifNoneThunk" /> and returns the result.</summary>
+        <returns>The option if the option is Some, else the result of evaluating <paramref name="ifNoneThunk" />.</returns>
+        <remarks>
+          <paramref name="ifNoneThunk" /> is not evaluated unless <paramref name="option" /> is <c>None</c>.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToArray&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[] ToArray&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[] ToArray&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToArray``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toArray")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>Convert the option to an array of length 0 or 1.</summary>
+        <returns>The result array.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToList&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;T&gt; ToList&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; ToList&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToList``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toList")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Collections.FSharpList&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>Convert the option to a list of length 0 or 1.</summary>
+        <returns>The result list.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNullable&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Nullable&lt;T&gt; ToNullable&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option) where T : struct;" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;!!T&gt; ToNullable&lt;struct .ctor (class System.ValueType) T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToNullable``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toNullable")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Nullable&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>DefaultConstructorConstraint</ParameterAttribute>
+            <ParameterAttribute>NotNullableValueTypeConstraint</ParameterAttribute>
+            <BaseTypeName>System.ValueType</BaseTypeName>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="option" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="option">The input option.</param>
+        <summary>Convert the option to a Nullable value.</summary>
+        <returns>The result value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToObj&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ToObj&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; value) where T : class;" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T ToObj&lt;class T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToObj``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toObj")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <ParameterAttribute>ReferenceTypeConstraint</ParameterAttribute>
+          </Constraints>
+        </TypeParameter>
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="Microsoft.FSharp.Core.FSharpOption&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">The input value.</param>
+        <summary>Convert an option to a potentially null value.</summary>
+        <returns>The result value, which is null if the input was None.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

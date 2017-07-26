@@ -1,0 +1,79 @@
+<Type Name="ExprShapeModule" FullName="Microsoft.FSharp.Quotations.ExprShapeModule">
+  <TypeSignature Language="C#" Value="public static class ExprShapeModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ExprShapeModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Quotations.ExprShapeModule" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.4.1.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Active patterns for traversing, visiting, rebuilding and transforming expressions in a generic way</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="RebuildShapeCombination">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr RebuildShapeCombination (object shape, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr RebuildShapeCombination(object shape, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.ExprShapeModule.RebuildShapeCombination(System.Object,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="shape" Type="System.Object" />
+        <Parameter Name="arguments" Type="Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="shape">The input shape.</param>
+        <param name="arguments">The list of arguments.</param>
+        <summary>Re-build combination expressions. The first parameter should be an object
+ returned by the <c>ShapeCombination</c> case of the active pattern in this module.</summary>
+        <returns>The rebuilt expression.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShapePattern">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpChoice&lt;Microsoft.FSharp.Quotations.FSharpVar,Tuple&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr&gt;,Tuple&lt;object,Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt; ShapePattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpChoice`3&lt;class Microsoft.FSharp.Quotations.FSharpVar, class System.Tuple`2&lt;class Microsoft.FSharp.Quotations.FSharpVar, class Microsoft.FSharp.Quotations.FSharpExpr&gt;, class System.Tuple`2&lt;object, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt; ShapePattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.ExprShapeModule.ShapePattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.4.1.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("|ShapeVar|ShapeLambda|ShapeCombination|")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpChoice&lt;Microsoft.FSharp.Quotations.FSharpVar,System.Tuple&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr&gt;,System.Tuple&lt;System.Object,Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="input" Type="Microsoft.FSharp.Quotations.FSharpExpr" />
+      </Parameters>
+      <Docs>
+        <param name="input">The input expression.</param>
+        <summary>An active pattern that performs a complete decomposition viewing the expression tree as a binding structure</summary>
+        <returns>The decomposed Var, Lambda, or ConstApp.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

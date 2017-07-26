@@ -1,0 +1,299 @@
+<Overview>
+  <Assemblies>
+    <Assembly Name="FSharp.Core" Version="4.4.1.0">
+      <AssemblyPublicKey>[00 24 00 00 04 80 00 00 94 00 00 00 06 02 00 00 00 24 00 00 52 53 41 31 00 04 00 00 01 00 01 00 07 d1 fa 57 c4 ae d9 f0 a3 2e 84 aa 0f ae fd 0d e9 e8 fd 6a ec 8f 87 fb 03 76 6c 83 4c 99 92 1e b2 3b e7 9a d9 d5 dc c1 dd 9a d2 36 13 21 02 90 0b 72 3c f9 80 95 7f c4 e1 77 10 8f c6 07 77 4f 29 e8 32 0e 92 ea 05 ec e4 e8 21 c0 a5 ef e8 f1 64 5c 4c 0c 93 c1 ab 99 28 5d 62 2c aa 65 2c 1d fa d6 3d 74 5d 6f 2d e5 f1 7e 5e af 0f c4 96 3d 26 1c 8a 12 43 65 18 20 6d c0 93 34 4d 5a d2 93 ]</AssemblyPublicKey>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.AutoOpen("Microsoft.FSharp")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.AutoOpen("Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.AutoOpen("Microsoft.FSharp.Core")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.AutoOpen("Microsoft.FSharp.Collections")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.AutoOpen("Microsoft.FSharp.Control")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.AutoOpen("Microsoft.FSharp.Linq.QueryRunExtensions.LowPriority")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.AutoOpen("Microsoft.FSharp.Linq.QueryRunExtensions.HighPriority")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.FSharpInterfaceDataVersion(2, 0, 0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.CLSCompliant(true)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Diagnostics.Debuggable(System.Diagnostics.DebuggableAttribute+DebuggingModes.None)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCompany("Microsoft Corporation")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyCopyright("© Microsoft Corporation.  Apache 2.0 License.")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyDescription("FSharp.Core.dll")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyFileVersion("2017.06.08.3")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyInformationalVersion("4.4.1.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyProduct("Microsoft® F#")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyTitle("FSharp.Core.dll")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Reflection.AssemblyVersion("4.4.1.0")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.Versioning.TargetFramework(".NETPortable,Version=v5.0", FrameworkDisplayName=".NET Portable Subset")</AttributeName>
+        </Attribute>
+      </Attributes>
+    </Assembly>
+  </Assemblies>
+  <Remarks>To be added.</Remarks>
+  <Copyright>To be added.</Copyright>
+  <Types>
+    <Namespace Name="Microsoft.FSharp.Collections">
+      <Type Name="Array2DModule" Kind="Class" />
+      <Type Name="Array3DModule" Kind="Class" />
+      <Type Name="Array4DModule" Kind="Class" />
+      <Type Name="ArrayModule" Kind="Class" />
+      <Type Name="ArrayModule+Parallel" Kind="Class" />
+      <Type Name="ComparisonIdentity" Kind="Class" />
+      <Type Name="FSharpList`1" DisplayName="FSharpList&lt;T&gt;" Kind="Class" />
+      <Type Name="FSharpList`1+Tags" DisplayName="FSharpList&lt;T&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpMap`2" DisplayName="FSharpMap&lt;TKey,TValue&gt;" Kind="Class" />
+      <Type Name="FSharpSet`1" DisplayName="FSharpSet&lt;T&gt;" Kind="Class" />
+      <Type Name="HashIdentity" Kind="Class" />
+      <Type Name="ListModule" Kind="Class" />
+      <Type Name="MapModule" Kind="Class" />
+      <Type Name="SeqModule" Kind="Class" />
+      <Type Name="SetModule" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Control">
+      <Type Name="CommonExtensions" Kind="Class" />
+      <Type Name="EventModule" Kind="Class" />
+      <Type Name="FSharpAsync" Kind="Class" />
+      <Type Name="FSharpAsync`1" DisplayName="FSharpAsync&lt;T&gt;" Kind="Class" />
+      <Type Name="FSharpAsyncBuilder" Kind="Class" />
+      <Type Name="FSharpAsyncReplyChannel`1" DisplayName="FSharpAsyncReplyChannel&lt;TReply&gt;" Kind="Class" />
+      <Type Name="FSharpDelegateEvent`1" DisplayName="FSharpDelegateEvent&lt;TDelegate&gt;" Kind="Class" />
+      <Type Name="FSharpEvent`1" DisplayName="FSharpEvent&lt;T&gt;" Kind="Class" />
+      <Type Name="FSharpEvent`2" DisplayName="FSharpEvent&lt;TDelegate,TArgs&gt;" Kind="Class" />
+      <Type Name="FSharpHandler`1" DisplayName="FSharpHandler&lt;T&gt;" Kind="Delegate" />
+      <Type Name="FSharpMailboxProcessor`1" DisplayName="FSharpMailboxProcessor&lt;TMsg&gt;" Kind="Class" />
+      <Type Name="IDelegateEvent`1" DisplayName="IDelegateEvent&lt;TDelegate&gt;" Kind="Interface" />
+      <Type Name="IEvent`2" DisplayName="IEvent&lt;TDelegate,TArgs&gt;" Kind="Interface" />
+      <Type Name="LazyExtensions" Kind="Class" />
+      <Type Name="ObservableModule" Kind="Class" />
+      <Type Name="WebExtensions" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Core">
+      <Type Name="AbstractClassAttribute" Kind="Class" />
+      <Type Name="AllowNullLiteralAttribute" Kind="Class" />
+      <Type Name="AutoOpenAttribute" Kind="Class" />
+      <Type Name="AutoSerializableAttribute" Kind="Class" />
+      <Type Name="ClassAttribute" Kind="Class" />
+      <Type Name="CLIEventAttribute" Kind="Class" />
+      <Type Name="CLIMutableAttribute" Kind="Class" />
+      <Type Name="ComparisonConditionalOnAttribute" Kind="Class" />
+      <Type Name="CompilationArgumentCountsAttribute" Kind="Class" />
+      <Type Name="CompilationMappingAttribute" Kind="Class" />
+      <Type Name="CompilationRepresentationAttribute" Kind="Class" />
+      <Type Name="CompilationRepresentationFlags" Kind="Enumeration" />
+      <Type Name="CompilationSourceNameAttribute" Kind="Class" />
+      <Type Name="CompiledNameAttribute" Kind="Class" />
+      <Type Name="CompilerMessageAttribute" Kind="Class" />
+      <Type Name="CustomComparisonAttribute" Kind="Class" />
+      <Type Name="CustomEqualityAttribute" Kind="Class" />
+      <Type Name="CustomOperationAttribute" Kind="Class" />
+      <Type Name="DefaultAugmentationAttribute" Kind="Class" />
+      <Type Name="DefaultValueAttribute" Kind="Class" />
+      <Type Name="EntryPointAttribute" Kind="Class" />
+      <Type Name="EqualityConditionalOnAttribute" Kind="Class" />
+      <Type Name="ExperimentalAttribute" Kind="Class" />
+      <Type Name="ExtraTopLevelOperators" Kind="Class" />
+      <Type Name="ExtraTopLevelOperators+Checked" Kind="Class" />
+      <Type Name="FSharpChoice`2" DisplayName="FSharpChoice&lt;T1,T2&gt;" Kind="Class" />
+      <Type Name="FSharpChoice`2+Choice1Of2" DisplayName="FSharpChoice&lt;T1,T2&gt;+Choice1Of2" Kind="Class" />
+      <Type Name="FSharpChoice`2+Choice2Of2" DisplayName="FSharpChoice&lt;T1,T2&gt;+Choice2Of2" Kind="Class" />
+      <Type Name="FSharpChoice`2+Tags" DisplayName="FSharpChoice&lt;T1,T2&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpChoice`3" DisplayName="FSharpChoice&lt;T1,T2,T3&gt;" Kind="Class" />
+      <Type Name="FSharpChoice`3+Choice1Of3" DisplayName="FSharpChoice&lt;T1,T2,T3&gt;+Choice1Of3" Kind="Class" />
+      <Type Name="FSharpChoice`3+Choice2Of3" DisplayName="FSharpChoice&lt;T1,T2,T3&gt;+Choice2Of3" Kind="Class" />
+      <Type Name="FSharpChoice`3+Choice3Of3" DisplayName="FSharpChoice&lt;T1,T2,T3&gt;+Choice3Of3" Kind="Class" />
+      <Type Name="FSharpChoice`3+Tags" DisplayName="FSharpChoice&lt;T1,T2,T3&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpChoice`4" DisplayName="FSharpChoice&lt;T1,T2,T3,T4&gt;" Kind="Class" />
+      <Type Name="FSharpChoice`4+Choice1Of4" DisplayName="FSharpChoice&lt;T1,T2,T3,T4&gt;+Choice1Of4" Kind="Class" />
+      <Type Name="FSharpChoice`4+Choice2Of4" DisplayName="FSharpChoice&lt;T1,T2,T3,T4&gt;+Choice2Of4" Kind="Class" />
+      <Type Name="FSharpChoice`4+Choice3Of4" DisplayName="FSharpChoice&lt;T1,T2,T3,T4&gt;+Choice3Of4" Kind="Class" />
+      <Type Name="FSharpChoice`4+Choice4Of4" DisplayName="FSharpChoice&lt;T1,T2,T3,T4&gt;+Choice4Of4" Kind="Class" />
+      <Type Name="FSharpChoice`4+Tags" DisplayName="FSharpChoice&lt;T1,T2,T3,T4&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpChoice`5" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;" Kind="Class" />
+      <Type Name="FSharpChoice`5+Choice1Of5" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Choice1Of5" Kind="Class" />
+      <Type Name="FSharpChoice`5+Choice2Of5" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Choice2Of5" Kind="Class" />
+      <Type Name="FSharpChoice`5+Choice3Of5" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Choice3Of5" Kind="Class" />
+      <Type Name="FSharpChoice`5+Choice4Of5" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Choice4Of5" Kind="Class" />
+      <Type Name="FSharpChoice`5+Choice5Of5" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Choice5Of5" Kind="Class" />
+      <Type Name="FSharpChoice`5+Tags" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpChoice`6" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;" Kind="Class" />
+      <Type Name="FSharpChoice`6+Choice1Of6" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Choice1Of6" Kind="Class" />
+      <Type Name="FSharpChoice`6+Choice2Of6" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Choice2Of6" Kind="Class" />
+      <Type Name="FSharpChoice`6+Choice3Of6" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Choice3Of6" Kind="Class" />
+      <Type Name="FSharpChoice`6+Choice4Of6" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Choice4Of6" Kind="Class" />
+      <Type Name="FSharpChoice`6+Choice5Of6" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Choice5Of6" Kind="Class" />
+      <Type Name="FSharpChoice`6+Choice6Of6" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Choice6Of6" Kind="Class" />
+      <Type Name="FSharpChoice`6+Tags" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpChoice`7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;" Kind="Class" />
+      <Type Name="FSharpChoice`7+Choice1Of7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice1Of7" Kind="Class" />
+      <Type Name="FSharpChoice`7+Choice2Of7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice2Of7" Kind="Class" />
+      <Type Name="FSharpChoice`7+Choice3Of7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice3Of7" Kind="Class" />
+      <Type Name="FSharpChoice`7+Choice4Of7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice4Of7" Kind="Class" />
+      <Type Name="FSharpChoice`7+Choice5Of7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice5Of7" Kind="Class" />
+      <Type Name="FSharpChoice`7+Choice6Of7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice6Of7" Kind="Class" />
+      <Type Name="FSharpChoice`7+Choice7Of7" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice7Of7" Kind="Class" />
+      <Type Name="FSharpChoice`7+Tags" DisplayName="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpFunc`2" DisplayName="FSharpFunc&lt;T,TResult&gt;" Kind="Class" />
+      <Type Name="FSharpInterfaceDataVersionAttribute" Kind="Class" />
+      <Type Name="FSharpOption`1" DisplayName="FSharpOption&lt;T&gt;" Kind="Class" />
+      <Type Name="FSharpOption`1+Tags" DisplayName="FSharpOption&lt;T&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpRef`1" DisplayName="FSharpRef&lt;T&gt;" Kind="Class" />
+      <Type Name="FSharpResult`2" DisplayName="FSharpResult&lt;T,TError&gt;" Kind="Structure" />
+      <Type Name="FSharpResult`2+Tags" DisplayName="FSharpResult&lt;T,TError&gt;+Tags" Kind="Class" />
+      <Type Name="FSharpTypeFunc" Kind="Class" />
+      <Type Name="FuncConvert" Kind="Class" />
+      <Type Name="GeneralizableValueAttribute" Kind="Class" />
+      <Type Name="InterfaceAttribute" Kind="Class" />
+      <Type Name="LanguagePrimitives" Kind="Class" />
+      <Type Name="LanguagePrimitives+ErrorStrings" Kind="Class" />
+      <Type Name="LanguagePrimitives+HashCompare" Kind="Class" />
+      <Type Name="LanguagePrimitives+IntrinsicFunctions" Kind="Class" />
+      <Type Name="LanguagePrimitives+IntrinsicOperators" Kind="Class" />
+      <Type Name="LiteralAttribute" Kind="Class" />
+      <Type Name="MatchFailureException" Kind="Class" />
+      <Type Name="MeasureAnnotatedAbbreviationAttribute" Kind="Class" />
+      <Type Name="MeasureAttribute" Kind="Class" />
+      <Type Name="NoComparisonAttribute" Kind="Class" />
+      <Type Name="NoDynamicInvocationAttribute" Kind="Class" />
+      <Type Name="NoEqualityAttribute" Kind="Class" />
+      <Type Name="NumericLiterals" Kind="Class" />
+      <Type Name="NumericLiterals+NumericLiteralI" Kind="Class" />
+      <Type Name="Operators" Kind="Class" />
+      <Type Name="Operators+Checked" Kind="Class" />
+      <Type Name="Operators+NonStructuralComparison" Kind="Class" />
+      <Type Name="Operators+OperatorIntrinsics" Kind="Class" />
+      <Type Name="Operators+Unchecked" Kind="Class" />
+      <Type Name="OptimizedClosures" Kind="Class" />
+      <Type Name="OptimizedClosures+FSharpFunc`3" DisplayName="OptimizedClosures+FSharpFunc&lt;T1,T2,TResult&gt;" Kind="Class" />
+      <Type Name="OptimizedClosures+FSharpFunc`4" DisplayName="OptimizedClosures+FSharpFunc&lt;T1,T2,T3,TResult&gt;" Kind="Class" />
+      <Type Name="OptimizedClosures+FSharpFunc`5" DisplayName="OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,TResult&gt;" Kind="Class" />
+      <Type Name="OptimizedClosures+FSharpFunc`6" DisplayName="OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,T5,TResult&gt;" Kind="Class" />
+      <Type Name="OptionalArgumentAttribute" Kind="Class" />
+      <Type Name="OptionModule" Kind="Class" />
+      <Type Name="PrintfFormat`4" DisplayName="PrintfFormat&lt;TPrinter,TState,TResidue,TResult&gt;" Kind="Class" />
+      <Type Name="PrintfFormat`5" DisplayName="PrintfFormat&lt;TPrinter,TState,TResidue,TResult,TTuple&gt;" Kind="Class" />
+      <Type Name="PrintfModule" Kind="Class" />
+      <Type Name="ProjectionParameterAttribute" Kind="Class" />
+      <Type Name="ReferenceEqualityAttribute" Kind="Class" />
+      <Type Name="ReflectedDefinitionAttribute" Kind="Class" />
+      <Type Name="RequireQualifiedAccessAttribute" Kind="Class" />
+      <Type Name="RequiresExplicitTypeArgumentsAttribute" Kind="Class" />
+      <Type Name="ResultModule" Kind="Class" />
+      <Type Name="SealedAttribute" Kind="Class" />
+      <Type Name="SourceConstructFlags" Kind="Enumeration" />
+      <Type Name="StringModule" Kind="Class" />
+      <Type Name="StructAttribute" Kind="Class" />
+      <Type Name="StructuralComparisonAttribute" Kind="Class" />
+      <Type Name="StructuralEqualityAttribute" Kind="Class" />
+      <Type Name="StructuredFormatDisplayAttribute" Kind="Class" />
+      <Type Name="Unit" Kind="Class" />
+      <Type Name="UnverifiableAttribute" Kind="Class" />
+      <Type Name="VolatileFieldAttribute" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Core.CompilerServices">
+      <Type Name="GeneratedSequenceBase`1" DisplayName="GeneratedSequenceBase&lt;T&gt;" Kind="Class" />
+      <Type Name="IProvidedNamespace" Kind="Interface" />
+      <Type Name="ITypeProvider" Kind="Interface" />
+      <Type Name="ITypeProvider2" Kind="Interface" />
+      <Type Name="MeasureInverse`1" DisplayName="MeasureInverse&lt;TMeasure&gt;" Kind="Class" />
+      <Type Name="MeasureOne" Kind="Class" />
+      <Type Name="MeasureProduct`2" DisplayName="MeasureProduct&lt;TMeasure1,TMeasure2&gt;" Kind="Class" />
+      <Type Name="RuntimeHelpers" Kind="Class" />
+      <Type Name="TypeProviderAssemblyAttribute" Kind="Class" />
+      <Type Name="TypeProviderAttribute" Kind="Class" />
+      <Type Name="TypeProviderConfig" Kind="Class" />
+      <Type Name="TypeProviderDefinitionLocationAttribute" Kind="Class" />
+      <Type Name="TypeProviderEditorHideMethodsAttribute" Kind="Class" />
+      <Type Name="TypeProviderTypeAttributes" Kind="Enumeration" />
+      <Type Name="TypeProviderXmlDocAttribute" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames">
+      <Type Name="ampere" Kind="Class" />
+      <Type Name="candela" Kind="Class" />
+      <Type Name="kelvin" Kind="Class" />
+      <Type Name="kilogram" Kind="Class" />
+      <Type Name="metre" Kind="Class" />
+      <Type Name="mole" Kind="Class" />
+      <Type Name="second" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Linq">
+      <Type Name="NullableModule" Kind="Class" />
+      <Type Name="NullableOperators" Kind="Class" />
+      <Type Name="QueryBuilder" Kind="Class" />
+      <Type Name="QuerySource`2" DisplayName="QuerySource&lt;T,Q&gt;" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Linq.QueryRunExtensions">
+      <Type Name="HighPriority" Kind="Class" />
+      <Type Name="LowPriority" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Linq.RuntimeHelpers">
+      <Type Name="AnonymousObject`1" DisplayName="AnonymousObject&lt;T1&gt;" Kind="Class" />
+      <Type Name="AnonymousObject`2" DisplayName="AnonymousObject&lt;T1,T2&gt;" Kind="Class" />
+      <Type Name="AnonymousObject`3" DisplayName="AnonymousObject&lt;T1,T2,T3&gt;" Kind="Class" />
+      <Type Name="AnonymousObject`4" DisplayName="AnonymousObject&lt;T1,T2,T3,T4&gt;" Kind="Class" />
+      <Type Name="AnonymousObject`5" DisplayName="AnonymousObject&lt;T1,T2,T3,T4,T5&gt;" Kind="Class" />
+      <Type Name="AnonymousObject`6" DisplayName="AnonymousObject&lt;T1,T2,T3,T4,T5,T6&gt;" Kind="Class" />
+      <Type Name="AnonymousObject`7" DisplayName="AnonymousObject&lt;T1,T2,T3,T4,T5,T6,T7&gt;" Kind="Class" />
+      <Type Name="AnonymousObject`8" DisplayName="AnonymousObject&lt;T1,T2,T3,T4,T5,T6,T7,T8&gt;" Kind="Class" />
+      <Type Name="Grouping`2" DisplayName="Grouping&lt;K,T&gt;" Kind="Class" />
+      <Type Name="LeafExpressionConverter" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.NativeInterop">
+      <Type Name="NativePtrModule" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Quotations">
+      <Type Name="DerivedPatternsModule" Kind="Class" />
+      <Type Name="ExprShapeModule" Kind="Class" />
+      <Type Name="FSharpExpr" Kind="Class" />
+      <Type Name="FSharpExpr`1" DisplayName="FSharpExpr&lt;T&gt;" Kind="Class" />
+      <Type Name="FSharpVar" Kind="Class" />
+      <Type Name="PatternsModule" Kind="Class" />
+    </Namespace>
+    <Namespace Name="Microsoft.FSharp.Reflection">
+      <Type Name="FSharpReflectionExtensions" Kind="Class" />
+      <Type Name="FSharpType" Kind="Class" />
+      <Type Name="FSharpValue" Kind="Class" />
+      <Type Name="UnionCaseInfo" Kind="Class" />
+    </Namespace>
+  </Types>
+  <Title>FSharp.Core</Title>
+</Overview>

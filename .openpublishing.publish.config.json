@@ -23,9 +23,12 @@
       "build_source_folder": "dotnet",
       "build_output_subfolder": "fsharp-dotnet-api",
       "locale": "en-us",
+
       "monikers": [
         "fsharpcore-4.2.1"
       ],
+      "monikers": [],
+      "moniker_groups": [],
       "open_to_public_contributors": true,
       "type_mapping": {
         "Conceptual": "Content",

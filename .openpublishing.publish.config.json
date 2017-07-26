@@ -18,6 +18,23 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "version": 0
+    },
+    {
+      "docset_name": "fsharp-dotnet-api",
+      "build_source_folder": "dotnet",
+      "build_output_subfolder": "fsharp-dotnet-api",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_groups": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content",
+        "ManagedReference": "Content",
+        "RestApi": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes",
+      "version": 0
     }
   ],
   "notification_subscribers": [],

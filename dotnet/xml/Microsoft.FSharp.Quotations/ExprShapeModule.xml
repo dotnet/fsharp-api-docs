@@ -1,7 +1,9 @@
-<Type Name="ExprShapeModule" FullName="Microsoft.FSharp.Quotations.ExprShapeModule">
+﻿<Type Name="ExprShapeModule" FullName="Microsoft.FSharp.Quotations.ExprShapeModule">
   <TypeSignature Language="C#" Value="public static class ExprShapeModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ExprShapeModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Quotations.ExprShapeModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExprShapeModule" />
+  <TypeSignature Language="F#" Value="module ExprShape" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr RebuildShapeCombination (object shape, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr RebuildShapeCombination(object shape, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.ExprShapeModule.RebuildShapeCombination(System.Object,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RebuildShapeCombination (shape As Object, arguments As FSharpList(Of FSharpExpr)) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Quotations.ExprShape.RebuildShapeCombination : obj * List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.ExprShapeModule.RebuildShapeCombination (shape, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpChoice&lt;Microsoft.FSharp.Quotations.FSharpVar,Tuple&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr&gt;,Tuple&lt;object,Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt; ShapePattern (Microsoft.FSharp.Quotations.FSharpExpr input);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpChoice`3&lt;class Microsoft.FSharp.Quotations.FSharpVar, class System.Tuple`2&lt;class Microsoft.FSharp.Quotations.FSharpVar, class Microsoft.FSharp.Quotations.FSharpExpr&gt;, class System.Tuple`2&lt;object, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt;&gt; ShapePattern(class Microsoft.FSharp.Quotations.FSharpExpr input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.ExprShapeModule.ShapePattern(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ShapePattern (input As FSharpExpr) As FSharpChoice(Of FSharpVar, Tuple(Of FSharpVar, FSharpExpr), Tuple(Of Object, FSharpList(Of FSharpExpr)))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Quotations.ExprShape.|ShapeVar|ShapeLambda|ShapeCombination| : Expr -&gt; Choice&lt;Var, Var * Expr, obj * List&lt;Expr&gt;&gt;" Usage="Microsoft.FSharp.Quotations.ExprShapeModule.ShapePattern input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

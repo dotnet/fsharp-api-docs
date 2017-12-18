@@ -1,7 +1,9 @@
-<Type Name="TypeProviderConfig" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig">
+﻿<Type Name="TypeProviderConfig" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig">
   <TypeSignature Language="C#" Value="public class TypeProviderConfig" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TypeProviderConfig extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeProviderConfig" />
+  <TypeSignature Language="F#" Value="type TypeProviderConfig = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public TypeProviderConfig (Microsoft.FSharp.Core.FSharpFunc&lt;string,bool&gt; systemRuntimeContainsType);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class Microsoft.FSharp.Core.FSharpFunc`2&lt;string, bool&gt; systemRuntimeContainsType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.#ctor(Microsoft.FSharp.Core.FSharpFunc{System.String,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (systemRuntimeContainsType As FSharpFunc(Of String, Boolean))" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig : (string -&gt; bool) -&gt; Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig" Usage="new Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig systemRuntimeContainsType" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -45,6 +49,8 @@
       <MemberSignature Language="C#" Value="public bool IsHostedExecution { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsHostedExecution" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsHostedExecution" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsHostedExecution As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsHostedExecution : bool with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsHostedExecution" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public bool IsInvalidationSupported { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalidationSupported" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsInvalidationSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInvalidationSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInvalidationSupported : bool with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsInvalidationSupported" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public string[] ReferencedAssemblies { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string[] ReferencedAssemblies" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ReferencedAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferencedAssemblies As String()" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : string[] with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ReferencedAssemblies" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -105,6 +115,8 @@
       <MemberSignature Language="C#" Value="public string ResolutionFolder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResolutionFolder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ResolutionFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResolutionFolder As String" />
+      <MemberSignature Language="F#" Value="member this.ResolutionFolder : string with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ResolutionFolder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -125,6 +137,8 @@
       <MemberSignature Language="C#" Value="public string RuntimeAssembly { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string RuntimeAssembly" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.RuntimeAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuntimeAssembly As String" />
+      <MemberSignature Language="F#" Value="member this.RuntimeAssembly : string with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.RuntimeAssembly" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -145,6 +159,8 @@
       <MemberSignature Language="C#" Value="public Version SystemRuntimeAssemblyVersion { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Version SystemRuntimeAssemblyVersion" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.SystemRuntimeAssemblyVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property SystemRuntimeAssemblyVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.SystemRuntimeAssemblyVersion : Version with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.SystemRuntimeAssemblyVersion" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -165,6 +181,8 @@
       <MemberSignature Language="C#" Value="public bool SystemRuntimeContainsType (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SystemRuntimeContainsType(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.SystemRuntimeContainsType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SystemRuntimeContainsType (typeName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SystemRuntimeContainsType : string -&gt; bool" Usage="typeProviderConfig.SystemRuntimeContainsType typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -189,6 +207,8 @@
       <MemberSignature Language="C#" Value="public string TemporaryFolder { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string TemporaryFolder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.TemporaryFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property TemporaryFolder As String" />
+      <MemberSignature Language="F#" Value="member this.TemporaryFolder : string with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.TemporaryFolder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

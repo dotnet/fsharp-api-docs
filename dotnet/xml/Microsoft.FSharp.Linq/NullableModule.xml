@@ -1,7 +1,9 @@
-<Type Name="NullableModule" FullName="Microsoft.FSharp.Linq.NullableModule">
+﻿<Type Name="NullableModule" FullName="Microsoft.FSharp.Linq.NullableModule">
   <TypeSignature Language="C#" Value="public static class NullableModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed NullableModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Linq.NullableModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class NullableModule" />
+  <TypeSignature Language="F#" Value="module Nullable" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -32,6 +34,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;byte&gt; ToByte&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;unsigned int8&gt; ToByte&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToByte``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Byte)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.byte : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;byte&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;char&gt; ToChar&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;char&gt; ToChar&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToChar``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Char)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.char : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;char&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToChar value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -109,6 +115,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;decimal&gt; ToDecimal&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;valuetype System.Decimal&gt; ToDecimal&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToDecimal``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Decimal)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.decimal : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;decimal&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToDecimal value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -148,6 +156,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; ToDouble&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;float64&gt; ToDouble&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToDouble``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.double : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;double&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -187,6 +197,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;TResult&gt; ToEnum&lt;TResult&gt; (Nullable&lt;int&gt; value) where TResult : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;!!TResult&gt; ToEnum&lt;struct .ctor (class System.ValueType) TResult&gt;(valuetype System.Nullable`1&lt;int32&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToEnum``1(System.Nullable{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToEnum(Of TResult As Structure) (value As Nullable(Of Integer)) As Nullable(Of TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.enum : Nullable&lt;int&gt; -&gt; Nullable&lt;'Result (requires 'Result : struct)&gt; (requires 'Result : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToEnum value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -224,6 +236,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;double&gt; ToFloat&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;float64&gt; ToFloat&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToFloat``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToFloat(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Double)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.float : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;double&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToFloat value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -263,6 +277,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;float&gt; ToFloat32&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;float32&gt; ToFloat32&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToFloat32``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToFloat32(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.float32 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;single&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToFloat32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -302,6 +318,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; ToInt&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;int32&gt; ToInt&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToInt``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.int : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;int&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToInt value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -341,6 +359,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;short&gt; ToInt16&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;int16&gt; ToInt16&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToInt16``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Short)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.int16 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;int16&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -380,6 +400,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;int&gt; ToInt32&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;int32&gt; ToInt32&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToInt32``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Integer)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.int32 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;int&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -419,6 +441,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;long&gt; ToInt64&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;int64&gt; ToInt64&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToInt64``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Long)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.int64 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;int64&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -458,6 +482,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;sbyte&gt; ToInt8&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;int8&gt; ToInt8&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToInt8``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt8(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of SByte)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.int8 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;sbyte&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToInt8 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -497,6 +523,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;IntPtr&gt; ToIntPtr&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;native int&gt; ToIntPtr&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToIntPtr``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIntPtr(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of IntPtr)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.nativeint : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;nativeint&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToIntPtr value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -536,6 +564,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;sbyte&gt; ToSByte&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;int8&gt; ToSByte&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToSByte``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of SByte)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.sbyte : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;sbyte&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToSByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -575,6 +605,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;float&gt; ToSingle&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;float32&gt; ToSingle&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToSingle``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Single)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.single : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;single&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToSingle value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -614,6 +646,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;ushort&gt; ToUInt16&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;unsigned int16&gt; ToUInt16&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToUInt16``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of UShort)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.uint16 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;uint16&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToUInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -653,6 +687,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;uint&gt; ToUInt32&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;unsigned int32&gt; ToUInt32&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToUInt32``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of UInteger)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.uint32 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;uint32&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToUInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -692,6 +728,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;ulong&gt; ToUInt64&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;unsigned int64&gt; ToUInt64&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToUInt64``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of ULong)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.uint64 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;uint64&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToUInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -731,6 +769,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;byte&gt; ToUInt8&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;unsigned int8&gt; ToUInt8&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToUInt8``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt8(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of Byte)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.uint8 : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;byte&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToUInt8 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -770,6 +810,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;UIntPtr&gt; ToUIntPtr&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;native unsigned int&gt; ToUIntPtr&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.NullableModule.ToUIntPtr``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUIntPtr(Of T As Structure) (value As Nullable(Of T)) As Nullable(Of UIntPtr)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.Nullable.unativeint : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;unativeint&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Linq.NullableModule.ToUIntPtr value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

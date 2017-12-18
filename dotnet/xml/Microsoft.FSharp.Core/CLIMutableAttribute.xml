@@ -1,7 +1,9 @@
-<Type Name="CLIMutableAttribute" FullName="Microsoft.FSharp.Core.CLIMutableAttribute">
+﻿<Type Name="CLIMutableAttribute" FullName="Microsoft.FSharp.Core.CLIMutableAttribute">
   <TypeSignature Language="C#" Value="public sealed class CLIMutableAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CLIMutableAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CLIMutableAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CLIMutableAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type CLIMutableAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public CLIMutableAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CLIMutableAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

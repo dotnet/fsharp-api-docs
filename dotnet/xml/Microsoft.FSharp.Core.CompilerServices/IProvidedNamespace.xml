@@ -1,7 +1,9 @@
-<Type Name="IProvidedNamespace" FullName="Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace">
+﻿<Type Name="IProvidedNamespace" FullName="Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace">
   <TypeSignature Language="C#" Value="public interface IProvidedNamespace" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IProvidedNamespace" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IProvidedNamespace" />
+  <TypeSignature Language="F#" Value="type IProvidedNamespace = interface" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[] GetNestedNamespaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[] GetNestedNamespaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace.GetNestedNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNestedNamespaces () As IProvidedNamespace()" />
+      <MemberSignature Language="F#" Value="abstract member GetNestedNamespaces : unit -&gt; Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[]" Usage="iProvidedNamespace.GetNestedNamespaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -44,6 +48,8 @@
       <MemberSignature Language="C#" Value="public Type[] GetTypes ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type[] GetTypes() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace.GetTypes" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetTypes () As Type()" />
+      <MemberSignature Language="F#" Value="abstract member GetTypes : unit -&gt; Type[]" Usage="iProvidedNamespace.GetTypes " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -65,6 +71,8 @@
       <MemberSignature Language="C#" Value="public string NamespaceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string NamespaceName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace.NamespaceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceName As String" />
+      <MemberSignature Language="F#" Value="member this.NamespaceName : string" Usage="Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace.NamespaceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -85,6 +93,8 @@
       <MemberSignature Language="C#" Value="public Type ResolveTypeName (string typeName);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type ResolveTypeName(string typeName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace.ResolveTypeName(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ResolveTypeName (typeName As String) As Type" />
+      <MemberSignature Language="F#" Value="abstract member ResolveTypeName : string -&gt; Type" Usage="iProvidedNamespace.ResolveTypeName typeName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

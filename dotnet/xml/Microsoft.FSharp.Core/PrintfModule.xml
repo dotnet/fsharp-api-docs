@@ -1,7 +1,9 @@
-<Type Name="PrintfModule" FullName="Microsoft.FSharp.Core.PrintfModule">
+﻿<Type Name="PrintfModule" FullName="Microsoft.FSharp.Core.PrintfModule">
   <TypeSignature Language="C#" Value="public static class PrintfModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed PrintfModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.PrintfModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class PrintfModule" />
+  <TypeSignature Language="F#" Value="module Printf" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -105,6 +107,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormat&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormat&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormat``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormat(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.printf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormat format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -136,6 +140,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatLine&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLine&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatLine``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatLine(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.printfn : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatLine format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -167,6 +173,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatLineToError&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLineToError&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatLineToError``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatLineToError(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.eprintfn : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatLineToError format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -198,6 +206,7 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatLineToTextWriter&lt;T&gt; (System.IO.TextWriter textWriter, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLineToTextWriter&lt;T&gt;(class System.IO.TextWriter textWriter, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatLineToTextWriter``1(System.IO.TextWriter,Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.fprintfn : System.IO.TextWriter -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatLineToTextWriter textWriter format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -234,6 +243,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatThen&lt;TResult,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;string,TResult&gt; continuation, Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,TResult&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatThen&lt;TResult, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;string, !!TResult&gt; continuation, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, !!TResult&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatThen``2(Microsoft.FSharp.Core.FSharpFunc{System.String,``0},Microsoft.FSharp.Core.PrintfFormat{``1,Microsoft.FSharp.Core.Unit,System.String,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatThen(Of TResult, T) (continuation As FSharpFunc(Of String, TResult), format As PrintfFormat(Of T, Unit, String, TResult)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.kprintf : (string -&gt; 'Result) -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, unit, string, 'Result&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatThen continuation format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -274,6 +285,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToError&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToError&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToError``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToError(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.eprintf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToError format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -305,6 +318,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToStringBuilder&lt;T&gt; (System.Text.StringBuilder builder, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.Text.StringBuilder,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToStringBuilder&lt;T&gt;(class System.Text.StringBuilder builder, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.Text.StringBuilder, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringBuilder``1(System.Text.StringBuilder,Microsoft.FSharp.Core.PrintfFormat{``0,System.Text.StringBuilder,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToStringBuilder(Of T) (builder As StringBuilder, format As PrintfFormat(Of T, StringBuilder, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.bprintf : System.Text.StringBuilder -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.Text.StringBuilder, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringBuilder builder format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -341,6 +356,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToStringBuilderThen&lt;TResult,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,TResult&gt; continuation, System.Text.StringBuilder builder, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.Text.StringBuilder,Microsoft.FSharp.Core.Unit,TResult&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToStringBuilderThen&lt;TResult, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, !!TResult&gt; continuation, class System.Text.StringBuilder builder, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.Text.StringBuilder, class Microsoft.FSharp.Core.Unit, !!TResult&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringBuilderThen``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0},System.Text.StringBuilder,Microsoft.FSharp.Core.PrintfFormat{``1,System.Text.StringBuilder,Microsoft.FSharp.Core.Unit,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToStringBuilderThen(Of TResult, T) (continuation As FSharpFunc(Of Unit, TResult), builder As StringBuilder, format As PrintfFormat(Of T, StringBuilder, Unit, TResult)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.kbprintf : (unit -&gt; 'Result) -&gt; System.Text.StringBuilder -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.Text.StringBuilder, unit, 'Result&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringBuilderThen continuation builder format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -382,6 +399,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToStringThen&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,string&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToStringThen&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, string&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThen``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToStringThen(Of T) (format As PrintfFormat(Of T, Unit, String, String)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.sprintf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, unit, string, string&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThen format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -414,6 +433,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToStringThen&lt;TResult,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;string,TResult&gt; continuation, Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,TResult&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToStringThen&lt;TResult, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;string, !!TResult&gt; continuation, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, !!TResult&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThen``2(Microsoft.FSharp.Core.FSharpFunc{System.String,``0},Microsoft.FSharp.Core.PrintfFormat{``1,Microsoft.FSharp.Core.Unit,System.String,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToStringThen(Of TResult, T) (continuation As FSharpFunc(Of String, TResult), format As PrintfFormat(Of T, Unit, String, TResult)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.ksprintf : (string -&gt; 'Result) -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, unit, string, 'Result&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThen continuation format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -453,6 +474,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToStringThenFail&lt;T,TResult&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,TResult&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToStringThenFail&lt;T, TResult&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, !!TResult&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThenFail``2(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToStringThenFail(Of T, TResult) (format As PrintfFormat(Of T, Unit, String, TResult)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.failwithf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, unit, string, 'Result&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToStringThenFail format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -487,6 +510,7 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToTextWriter&lt;T&gt; (System.IO.TextWriter textWriter, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToTextWriter&lt;T&gt;(class System.IO.TextWriter textWriter, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToTextWriter``1(System.IO.TextWriter,Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.fprintf : System.IO.TextWriter -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToTextWriter textWriter format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -523,6 +547,7 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToTextWriterThen&lt;TResult,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,TResult&gt; continuation, System.IO.TextWriter textWriter, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,TResult&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToTextWriterThen&lt;TResult, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, !!TResult&gt; continuation, class System.IO.TextWriter textWriter, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, !!TResult&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.PrintfModule.PrintFormatToTextWriterThen``2(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0},System.IO.TextWriter,Microsoft.FSharp.Core.PrintfFormat{``1,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,``0})" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Printf.kfprintf : (unit -&gt; 'Result) -&gt; System.IO.TextWriter -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, 'Result&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.PrintfModule.PrintFormatToTextWriterThen continuation textWriter format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="TypeProviderAssemblyAttribute" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute">
+﻿<Type Name="TypeProviderAssemblyAttribute" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute">
   <TypeSignature Language="C#" Value="public class TypeProviderAssemblyAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TypeProviderAssemblyAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeProviderAssemblyAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type TypeProviderAssemblyAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="public TypeProviderAssemblyAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public TypeProviderAssemblyAttribute (string assemblyName);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string assemblyName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (assemblyName As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute : string -&gt; Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute" Usage="new Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute assemblyName" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -63,6 +68,8 @@
       <MemberSignature Language="C#" Value="public string AssemblyName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string AssemblyName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute.AssemblyName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AssemblyName As String" />
+      <MemberSignature Language="F#" Value="member this.AssemblyName : string" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderAssemblyAttribute.AssemblyName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

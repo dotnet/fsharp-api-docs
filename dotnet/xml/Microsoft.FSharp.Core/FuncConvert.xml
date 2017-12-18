@@ -1,7 +1,9 @@
-<Type Name="FuncConvert" FullName="Microsoft.FSharp.Core.FuncConvert">
+﻿<Type Name="FuncConvert" FullName="Microsoft.FSharp.Core.FuncConvert">
   <TypeSignature Language="C#" Value="public static class FuncConvert" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FuncConvert extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FuncConvert" />
+  <TypeSignature Language="VB.NET" Value="Public Class FuncConvert" />
+  <TypeSignature Language="F#" Value="type FuncConvert = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt; FuncFromTupled&lt;T1,T2,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2&gt;,TResult&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt; FuncFromTupled&lt;T1, T2, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`2&lt;!!T1, !!T2&gt;, !!TResult&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``3(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1},``2})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FuncFromTupled(Of T1, T2, TResult) (func As FSharpFunc(Of Tuple(Of T1, T2), TResult)) As FSharpFunc(Of T1, FSharpFunc(Of T2, TResult))" />
+      <MemberSignature Language="F#" Value="static member FuncFromTupled : ('T1 * 'T2 -&gt; 'Result) -&gt; ('T1 -&gt; 'T2 -&gt; 'Result)" Usage="Microsoft.FSharp.Core.FuncConvert.FuncFromTupled func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt; FuncFromTupled&lt;T1,T2,T3,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2,T3&gt;,TResult&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, !!TResult&gt;&gt;&gt; FuncFromTupled&lt;T1, T2, T3, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt;, !!TResult&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``4(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,``2},``3})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FuncFromTupled(Of T1, T2, T3, TResult) (func As FSharpFunc(Of Tuple(Of T1, T2, T3), TResult)) As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, TResult)))" />
+      <MemberSignature Language="F#" Value="static member FuncFromTupled : ('T1 * 'T2 * 'T3 -&gt; 'Result) -&gt; ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'Result)" Usage="Microsoft.FSharp.Core.FuncConvert.FuncFromTupled func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -93,6 +99,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,TResult&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1,T2,T3,T4,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2,T3,T4&gt;,TResult&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T4, !!TResult&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1, T2, T3, T4, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`4&lt;!!T1, !!T2, !!T3, !!T4&gt;, !!TResult&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``5(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,``2,``3},``4})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FuncFromTupled(Of T1, T2, T3, T4, TResult) (func As FSharpFunc(Of Tuple(Of T1, T2, T3, T4), TResult)) As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, FSharpFunc(Of T4, TResult))))" />
+      <MemberSignature Language="F#" Value="static member FuncFromTupled : ('T1 * 'T2 * 'T3 * 'T4 -&gt; 'Result) -&gt; ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'T4 -&gt; 'Result)" Usage="Microsoft.FSharp.Core.FuncConvert.FuncFromTupled func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -127,6 +135,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,Microsoft.FSharp.Core.FSharpFunc&lt;T5,TResult&gt;&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1,T2,T3,T4,T5,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Tuple&lt;T1,T2,T3,T4,T5&gt;,TResult&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T4, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T5, !!TResult&gt;&gt;&gt;&gt;&gt; FuncFromTupled&lt;T1, T2, T3, T4, T5, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Tuple`5&lt;!!T1, !!T2, !!T3, !!T4, !!T5&gt;, !!TResult&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.FuncFromTupled``6(Microsoft.FSharp.Core.FSharpFunc{System.Tuple{``0,``1,``2,``3,``4},``5})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FuncFromTupled(Of T1, T2, T3, T4, T5, TResult) (func As FSharpFunc(Of Tuple(Of T1, T2, T3, T4, T5), TResult)) As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, FSharpFunc(Of T4, FSharpFunc(Of T5, TResult)))))" />
+      <MemberSignature Language="F#" Value="static member FuncFromTupled : ('T1 * 'T2 * 'T3 * 'T4 * 'T5 -&gt; 'Result) -&gt; ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'T4 -&gt; 'T5 -&gt; 'Result)" Usage="Microsoft.FSharp.Core.FuncConvert.FuncFromTupled func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -163,6 +173,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; ToFSharpFunc&lt;T&gt; (Action&lt;T&gt; action);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; ToFSharpFunc&lt;T&gt;(class System.Action`1&lt;!!T&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FuncConvert.ToFSharpFunc``1(System.Action{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToFSharpFunc(Of T) (action As Action(Of T)) As FSharpFunc(Of T, Unit)" />
+      <MemberSignature Language="F#" Value="static member ToFSharpFunc : Action&lt;'T&gt; -&gt; ('T -&gt; unit)" Usage="Microsoft.FSharp.Core.FuncConvert.ToFSharpFunc action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

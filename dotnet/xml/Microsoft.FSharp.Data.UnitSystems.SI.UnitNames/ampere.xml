@@ -1,7 +1,9 @@
-<Type Name="ampere" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.ampere">
+﻿<Type Name="ampere" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.ampere">
   <TypeSignature Language="C#" Value="public class ampere" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi ampere extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.ampere" />
+  <TypeSignature Language="VB.NET" Value="Public Class ampere" />
+  <TypeSignature Language="F#" Value="type ampere = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>

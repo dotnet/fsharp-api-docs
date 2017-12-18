@@ -1,7 +1,9 @@
-<Type Name="TypeProviderDefinitionLocationAttribute" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute">
+﻿<Type Name="TypeProviderDefinitionLocationAttribute" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute">
   <TypeSignature Language="C#" Value="public class TypeProviderDefinitionLocationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TypeProviderDefinitionLocationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeProviderDefinitionLocationAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type TypeProviderDefinitionLocationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,7 @@
       <MemberSignature Language="C#" Value="public TypeProviderDefinitionLocationAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -42,6 +45,8 @@
       <MemberSignature Language="C#" Value="public int Column { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Column" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute.Column" />
+      <MemberSignature Language="VB.NET" Value="Public Property Column As Integer" />
+      <MemberSignature Language="F#" Value="member this.Column : int with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute.Column" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="public string FilePath { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string FilePath" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute.FilePath" />
+      <MemberSignature Language="VB.NET" Value="Public Property FilePath As String" />
+      <MemberSignature Language="F#" Value="member this.FilePath : string with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute.FilePath" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -78,6 +85,8 @@
       <MemberSignature Language="C#" Value="public int Line { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Line" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute.Line" />
+      <MemberSignature Language="VB.NET" Value="Public Property Line As Integer" />
+      <MemberSignature Language="F#" Value="member this.Line : int with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderDefinitionLocationAttribute.Line" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

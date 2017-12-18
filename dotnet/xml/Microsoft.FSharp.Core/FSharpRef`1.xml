@@ -1,7 +1,9 @@
-<Type Name="FSharpRef&lt;T&gt;" FullName="Microsoft.FSharp.Core.FSharpRef&lt;T&gt;">
+﻿<Type Name="FSharpRef&lt;T&gt;" FullName="Microsoft.FSharp.Core.FSharpRef&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class FSharpRef&lt;T&gt; : IComparable, IComparable&lt;Microsoft.FSharp.Core.FSharpRef&lt;T&gt;&gt;, IEquatable&lt;Microsoft.FSharp.Core.FSharpRef&lt;T&gt;&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed beforefieldinit FSharpRef`1&lt;T&gt; extends System.Object implements class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;class Microsoft.FSharp.Core.FSharpRef`1&lt;!T&gt;&gt;, class System.IEquatable`1&lt;class Microsoft.FSharp.Core.FSharpRef`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpRef`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FSharpRef(Of T)&#xA;Implements IComparable, IComparable(Of FSharpRef(Of T)), IEquatable(Of FSharpRef(Of T)), IStructuralComparable, IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type ref&lt;'T&gt; = {}" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -57,6 +59,8 @@
       <MemberSignature Language="C#" Value="public FSharpRef (T contents);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(!T contents) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (contents As T)" />
+      <MemberSignature Language="F#" Value="new ref&lt;'T&gt; : 'T -&gt; ref&lt;'T&gt;" Usage="new Microsoft.FSharp.Core.ref&lt;'T&gt; contents" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -75,7 +79,11 @@
       <MemberSignature Language="C#" Value="public override sealed int CompareTo (Microsoft.FSharp.Core.FSharpRef&lt;T&gt; obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 CompareTo(class Microsoft.FSharp.Core.FSharpRef`1&lt;!T&gt; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.CompareTo(Microsoft.FSharp.Core.FSharpRef{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CompareTo (obj As FSharpRef(Of T)) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -97,7 +105,11 @@
       <MemberSignature Language="C#" Value="public override sealed int CompareTo (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 CompareTo(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CompareTo (obj As Object) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -119,7 +131,11 @@
       <MemberSignature Language="C#" Value="public override sealed int CompareTo (object obj, System.Collections.IComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 CompareTo(object obj, class System.Collections.IComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CompareTo (obj As Object, comp As IComparer) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -143,6 +159,8 @@
       <MemberSignature Language="C#" Value="public T contents { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T contents" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.FSharpRef`1.contents" />
+      <MemberSignature Language="VB.NET" Value="Public Property contents As T" />
+      <MemberSignature Language="F#" Value="mutable contents : 'T" Usage="Microsoft.FSharp.Core.ref&lt;'T&gt;.contents" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -171,6 +189,8 @@
       <MemberSignature Language="C#" Value="public T contents@;" />
       <MemberSignature Language="ILAsm" Value=".field public !T contents@" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpRef`1.contents@" />
+      <MemberSignature Language="VB.NET" Value="Public contents@ As T " />
+      <MemberSignature Language="F#" Value="val mutable contents@ : 'T" Usage="Microsoft.FSharp.Core.ref&lt;'T&gt;.contents@" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -193,7 +213,11 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (Microsoft.FSharp.Core.FSharpRef&lt;T&gt; obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(class Microsoft.FSharp.Core.FSharpRef`1&lt;!T&gt; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.Equals(Microsoft.FSharp.Core.FSharpRef{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As FSharpRef(Of T)) As Boolean" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -215,6 +239,7 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -237,7 +262,11 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (object obj, System.Collections.IEqualityComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj, class System.Collections.IEqualityComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As Object, comp As IEqualityComparer) As Boolean" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -261,6 +290,7 @@
       <MemberSignature Language="C#" Value="public override sealed int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode () As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -280,7 +310,11 @@
       <MemberSignature Language="C#" Value="public override sealed int GetHashCode (System.Collections.IEqualityComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode(class System.Collections.IEqualityComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpRef`1.GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode (comp As IEqualityComparer) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -302,6 +336,8 @@
       <MemberSignature Language="C#" Value="public T Value { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Value" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.FSharpRef`1.Value" />
+      <MemberSignature Language="VB.NET" Value="Public Property Value As T" />
+      <MemberSignature Language="F#" Value="mutable Value : 'T" Usage="Microsoft.FSharp.Core.ref&lt;'T&gt;.Value" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

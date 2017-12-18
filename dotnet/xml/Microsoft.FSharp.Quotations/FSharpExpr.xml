@@ -1,7 +1,9 @@
-<Type Name="FSharpExpr" FullName="Microsoft.FSharp.Quotations.FSharpExpr">
+﻿<Type Name="FSharpExpr" FullName="Microsoft.FSharp.Quotations.FSharpExpr">
   <TypeSignature Language="C#" Value="public class FSharpExpr" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi FSharpExpr extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Quotations.FSharpExpr" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpExpr" />
+  <TypeSignature Language="F#" Value="type Expr = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr AddressOf (Microsoft.FSharp.Quotations.FSharpExpr target);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr AddressOf(class Microsoft.FSharp.Quotations.FSharpExpr target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.AddressOf(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddressOf (target As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member AddressOf : Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.AddressOf target" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr AddressSet (Microsoft.FSharp.Quotations.FSharpExpr target, Microsoft.FSharp.Quotations.FSharpExpr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr AddressSet(class Microsoft.FSharp.Quotations.FSharpExpr target, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.AddressSet(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddressSet (target As FSharpExpr, value As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member AddressSet : Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.AddressSet (target, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -76,6 +82,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Application (Microsoft.FSharp.Quotations.FSharpExpr functionExpr, Microsoft.FSharp.Quotations.FSharpExpr argument);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Application(class Microsoft.FSharp.Quotations.FSharpExpr functionExpr, class Microsoft.FSharp.Quotations.FSharpExpr argument) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Application(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Application (functionExpr As FSharpExpr, argument As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Application : Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Application (functionExpr, argument)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -100,6 +108,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Applications (Microsoft.FSharp.Quotations.FSharpExpr functionExpr, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Applications(class Microsoft.FSharp.Quotations.FSharpExpr functionExpr, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Applications(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Applications (functionExpr As FSharpExpr, arguments As FSharpList(Of FSharpList(Of FSharpExpr))) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Applications : Expr * List&lt;List&lt;Expr&gt;&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Applications (functionExpr, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -124,6 +134,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Call (System.Reflection.MethodInfo methodInfo, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Call(class System.Reflection.MethodInfo methodInfo, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Call(System.Reflection.MethodInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="F#" Value="static member Call : System.Reflection.MethodInfo * List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Call (methodInfo, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -148,6 +159,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Call (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.MethodInfo methodInfo, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Call(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.MethodInfo methodInfo, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Call(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.MethodInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="F#" Value="static member Call : Expr * System.Reflection.MethodInfo * List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Call (obj, methodInfo, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -174,6 +186,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; Cast&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr source);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; Cast&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Cast``1(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cast(Of T) (source As FSharpExpr) As FSharpExpr(Of T)" />
+      <MemberSignature Language="F#" Value="static member Cast : Expr -&gt; Expr&lt;'T&gt;" Usage="Microsoft.FSharp.Quotations.Expr.Cast source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -202,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Coerce (Microsoft.FSharp.Quotations.FSharpExpr source, Type target);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Coerce(class Microsoft.FSharp.Quotations.FSharpExpr source, class System.Type target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Coerce(Microsoft.FSharp.Quotations.FSharpExpr,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Coerce (source As FSharpExpr, target As Type) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Coerce : Expr * Type -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Coerce (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -226,6 +242,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; CustomAttributes { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; CustomAttributes" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Quotations.FSharpExpr.CustomAttributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property CustomAttributes As FSharpList(Of FSharpExpr)" />
+      <MemberSignature Language="F#" Value="member this.CustomAttributes : List&lt;Expr&gt;" Usage="Microsoft.FSharp.Quotations.Expr.CustomAttributes" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -244,6 +262,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr DefaultValue (Type expressionType);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr DefaultValue(class System.Type expressionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.DefaultValue(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultValue (expressionType As Type) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member DefaultValue : Type -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.DefaultValue expressionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -266,6 +286,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Deserialize (Type qualifyingType, Microsoft.FSharp.Collections.FSharpList&lt;Type&gt; spliceTypes, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; spliceExprs, byte[] bytes);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Deserialize(class System.Type qualifyingType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Type&gt; spliceTypes, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; spliceExprs, unsigned int8[] bytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Deserialize(System.Type,Microsoft.FSharp.Collections.FSharpList{System.Type},Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr},System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Deserialize (qualifyingType As Type, spliceTypes As FSharpList(Of Type), spliceExprs As FSharpList(Of FSharpExpr), bytes As Byte()) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Deserialize : Type * List&lt;Type&gt; * List&lt;Expr&gt; * byte[] -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Deserialize (qualifyingType, spliceTypes, spliceExprs, bytes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -295,6 +317,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Deserialize40 (Type qualifyingType, Type[] referencedTypes, Type[] spliceTypes, Microsoft.FSharp.Quotations.FSharpExpr[] spliceExprs, byte[] bytes);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Deserialize40(class System.Type qualifyingType, class System.Type[] referencedTypes, class System.Type[] spliceTypes, class Microsoft.FSharp.Quotations.FSharpExpr[] spliceExprs, unsigned int8[] bytes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Deserialize40(System.Type,System.Type[],System.Type[],Microsoft.FSharp.Quotations.FSharpExpr[],System.Byte[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Deserialize40 (qualifyingType As Type, referencedTypes As Type(), spliceTypes As Type(), spliceExprs As FSharpExpr(), bytes As Byte()) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Deserialize40 : Type * Type[] * Type[] * Expr[] * byte[] -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Deserialize40 (qualifyingType, referencedTypes, spliceTypes, spliceExprs, bytes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -326,6 +350,8 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="override this.Equals : obj -&gt; bool" Usage="expr.Equals obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -348,6 +374,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldGet (System.Reflection.FieldInfo fieldInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldGet(class System.Reflection.FieldInfo fieldInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldGet(System.Reflection.FieldInfo)" />
+      <MemberSignature Language="F#" Value="static member FieldGet : System.Reflection.FieldInfo -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.FieldGet fieldInfo" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -370,6 +397,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldGet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.FieldInfo fieldInfo);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldGet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.FieldInfo fieldInfo) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldGet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.FieldInfo)" />
+      <MemberSignature Language="F#" Value="static member FieldGet : Expr * System.Reflection.FieldInfo -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.FieldGet (obj, fieldInfo)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -394,6 +422,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldSet (System.Reflection.FieldInfo fieldInfo, Microsoft.FSharp.Quotations.FSharpExpr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldSet(class System.Reflection.FieldInfo fieldInfo, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldSet(System.Reflection.FieldInfo,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="F#" Value="static member FieldSet : System.Reflection.FieldInfo * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.FieldSet (fieldInfo, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -418,6 +447,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr FieldSet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.FieldInfo fieldInfo, Microsoft.FSharp.Quotations.FSharpExpr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr FieldSet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.FieldInfo fieldInfo, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.FieldSet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.FieldInfo,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="F#" Value="static member FieldSet : Expr * System.Reflection.FieldInfo * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.FieldSet (obj, fieldInfo, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -444,6 +474,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr ForIntegerRangeLoop (Microsoft.FSharp.Quotations.FSharpVar loopVariable, Microsoft.FSharp.Quotations.FSharpExpr start, Microsoft.FSharp.Quotations.FSharpExpr endExpr, Microsoft.FSharp.Quotations.FSharpExpr body);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr ForIntegerRangeLoop(class Microsoft.FSharp.Quotations.FSharpVar loopVariable, class Microsoft.FSharp.Quotations.FSharpExpr start, class Microsoft.FSharp.Quotations.FSharpExpr endExpr, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ForIntegerRangeLoop(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForIntegerRangeLoop (loopVariable As FSharpVar, start As FSharpExpr, endExpr As FSharpExpr, body As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member ForIntegerRangeLoop : Var * Expr * Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.ForIntegerRangeLoop (loopVariable, start, endExpr, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -472,6 +504,8 @@
       <MemberSignature Language="C#" Value="public System.Collections.Generic.IEnumerable&lt;Microsoft.FSharp.Quotations.FSharpVar&gt; GetFreeVars ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class System.Collections.Generic.IEnumerable`1&lt;class Microsoft.FSharp.Quotations.FSharpVar&gt; GetFreeVars() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.GetFreeVars" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetFreeVars () As IEnumerable(Of FSharpVar)" />
+      <MemberSignature Language="F#" Value="member this.GetFreeVars : unit -&gt; seq&lt;Var&gt;" Usage="expr.GetFreeVars " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -491,6 +525,8 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
+      <MemberSignature Language="F#" Value="override this.GetHashCode : unit -&gt; int" Usage="expr.GetHashCode " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -510,6 +546,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; GlobalVar&lt;T&gt; (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; GlobalVar&lt;T&gt;(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.GlobalVar``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GlobalVar(Of T) (name As String) As FSharpExpr(Of T)" />
+      <MemberSignature Language="F#" Value="static member GlobalVar : string -&gt; Expr&lt;'T&gt;" Usage="Microsoft.FSharp.Quotations.Expr.GlobalVar name" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -537,6 +575,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr IfThenElse (Microsoft.FSharp.Quotations.FSharpExpr guard, Microsoft.FSharp.Quotations.FSharpExpr thenExpr, Microsoft.FSharp.Quotations.FSharpExpr elseExpr);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr IfThenElse(class Microsoft.FSharp.Quotations.FSharpExpr guard, class Microsoft.FSharp.Quotations.FSharpExpr thenExpr, class Microsoft.FSharp.Quotations.FSharpExpr elseExpr) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.IfThenElse(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IfThenElse (guard As FSharpExpr, thenExpr As FSharpExpr, elseExpr As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member IfThenElse : Expr * Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.IfThenElse (guard, thenExpr, elseExpr)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -563,6 +603,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Lambda (Microsoft.FSharp.Quotations.FSharpVar parameter, Microsoft.FSharp.Quotations.FSharpExpr body);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Lambda(class Microsoft.FSharp.Quotations.FSharpVar parameter, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Lambda(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Lambda (parameter As FSharpVar, body As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Lambda : Var * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Lambda (parameter, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -587,6 +629,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Let (Microsoft.FSharp.Quotations.FSharpVar letVariable, Microsoft.FSharp.Quotations.FSharpExpr letExpr, Microsoft.FSharp.Quotations.FSharpExpr body);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Let(class Microsoft.FSharp.Quotations.FSharpVar letVariable, class Microsoft.FSharp.Quotations.FSharpExpr letExpr, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Let(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Let (letVariable As FSharpVar, letExpr As FSharpExpr, body As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Let : Var * Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Let (letVariable, letExpr, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -613,6 +657,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr LetRecursive (Microsoft.FSharp.Collections.FSharpList&lt;Tuple&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; bindings, Microsoft.FSharp.Quotations.FSharpExpr body);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr LetRecursive(class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Tuple`2&lt;class Microsoft.FSharp.Quotations.FSharpVar, class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; bindings, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.LetRecursive(Microsoft.FSharp.Collections.FSharpList{System.Tuple{Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr}},Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LetRecursive (bindings As FSharpList(Of Tuple(Of FSharpVar, FSharpExpr)), body As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member LetRecursive : List&lt;Var * Expr&gt; * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.LetRecursive (bindings, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -637,6 +683,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewArray (Type elementType, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewArray(class System.Type elementType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewArray(System.Type,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NewArray (elementType As Type, elements As FSharpList(Of FSharpExpr)) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member NewArray : Type * List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.NewArray (elementType, elements)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -661,6 +709,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewDelegate (Type delegateType, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpVar&gt; parameters, Microsoft.FSharp.Quotations.FSharpExpr body);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewDelegate(class System.Type delegateType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpVar&gt; parameters, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewDelegate(System.Type,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpVar},Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NewDelegate (delegateType As Type, parameters As FSharpList(Of FSharpVar), body As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member NewDelegate : Type * List&lt;Var&gt; * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.NewDelegate (delegateType, parameters, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -687,6 +737,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewObject (System.Reflection.ConstructorInfo constructorInfo, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewObject(class System.Reflection.ConstructorInfo constructorInfo, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewObject(System.Reflection.ConstructorInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="F#" Value="static member NewObject : System.Reflection.ConstructorInfo * List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.NewObject (constructorInfo, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -711,6 +762,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewRecord (Type recordType, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewRecord(class System.Type recordType, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewRecord(System.Type,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NewRecord (recordType As Type, elements As FSharpList(Of FSharpExpr)) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member NewRecord : Type * List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.NewRecord (recordType, elements)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -735,6 +788,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewTuple (Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewTuple(class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewTuple(Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NewTuple (elements As FSharpList(Of FSharpExpr)) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member NewTuple : List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.NewTuple elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -757,6 +812,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr NewUnionCase (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr NewUnionCase(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; arguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.NewUnionCase(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NewUnionCase (unionCase As UnionCaseInfo, arguments As FSharpList(Of FSharpExpr)) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member NewUnionCase : Microsoft.FSharp.Reflection.UnionCaseInfo * List&lt;Expr&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.NewUnionCase (unionCase, arguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -781,6 +838,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertyGet (System.Reflection.PropertyInfo property, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertyGet(class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertyGet(System.Reflection.PropertyInfo,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PropertyGet (property As PropertyInfo, indexerArgs As FSharpOption(Of FSharpList(Of FSharpExpr))) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member PropertyGet : System.Reflection.PropertyInfo * option&lt;List&lt;Expr&gt;&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.PropertyGet (property, indexerArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -811,6 +870,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertyGet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.PropertyInfo property, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertyGet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertyGet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.PropertyInfo,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PropertyGet (obj As FSharpExpr, property As PropertyInfo, indexerArgs As FSharpOption(Of FSharpList(Of FSharpExpr))) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member PropertyGet : Expr * System.Reflection.PropertyInfo * option&lt;List&lt;Expr&gt;&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.PropertyGet (obj, property, indexerArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -843,6 +904,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertySet (System.Reflection.PropertyInfo property, Microsoft.FSharp.Quotations.FSharpExpr value, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertySet(class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Quotations.FSharpExpr value, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertySet(System.Reflection.PropertyInfo,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PropertySet (property As PropertyInfo, value As FSharpExpr, indexerArgs As FSharpOption(Of FSharpList(Of FSharpExpr))) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member PropertySet : System.Reflection.PropertyInfo * Expr * option&lt;List&lt;Expr&gt;&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.PropertySet (property, value, indexerArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -875,6 +938,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr PropertySet (Microsoft.FSharp.Quotations.FSharpExpr obj, System.Reflection.PropertyInfo property, Microsoft.FSharp.Quotations.FSharpExpr value, Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Collections.FSharpList&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr PropertySet(class Microsoft.FSharp.Quotations.FSharpExpr obj, class System.Reflection.PropertyInfo property, class Microsoft.FSharp.Quotations.FSharpExpr value, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; indexerArgs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.PropertySet(Microsoft.FSharp.Quotations.FSharpExpr,System.Reflection.PropertyInfo,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Collections.FSharpList{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PropertySet (obj As FSharpExpr, property As PropertyInfo, value As FSharpExpr, indexerArgs As FSharpOption(Of FSharpList(Of FSharpExpr))) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member PropertySet : Expr * System.Reflection.PropertyInfo * Expr * option&lt;List&lt;Expr&gt;&gt; -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.PropertySet (obj, property, value, indexerArgs)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -909,6 +974,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Quote (Microsoft.FSharp.Quotations.FSharpExpr inner);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Quote(class Microsoft.FSharp.Quotations.FSharpExpr inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Quote(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Quote (inner As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Quote : Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Quote inner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -936,6 +1003,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr QuoteRaw (Microsoft.FSharp.Quotations.FSharpExpr inner);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr QuoteRaw(class Microsoft.FSharp.Quotations.FSharpExpr inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.QuoteRaw(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuoteRaw (inner As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member QuoteRaw : Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.QuoteRaw inner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -958,6 +1027,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr QuoteTyped (Microsoft.FSharp.Quotations.FSharpExpr inner);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr QuoteTyped(class Microsoft.FSharp.Quotations.FSharpExpr inner) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.QuoteTyped(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function QuoteTyped (inner As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member QuoteTyped : Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.QuoteTyped inner" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -980,6 +1051,7 @@
       <MemberSignature Language="C#" Value="public static void RegisterReflectedDefinitions (System.Reflection.Assembly assembly, string resource, byte[] serializedValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static void RegisterReflectedDefinitions(class System.Reflection.Assembly assembly, string resource, unsigned int8[] serializedValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.RegisterReflectedDefinitions(System.Reflection.Assembly,System.String,System.Byte[])" />
+      <MemberSignature Language="F#" Value="static member RegisterReflectedDefinitions : System.Reflection.Assembly * string * byte[] -&gt; unit" Usage="Microsoft.FSharp.Quotations.Expr.RegisterReflectedDefinitions (assembly, resource, serializedValue)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1007,6 +1079,7 @@
       <MemberSignature Language="C#" Value="public static void RegisterReflectedDefinitions (System.Reflection.Assembly assembly, string resource, byte[] serializedValue, Type[] referencedTypes);" />
       <MemberSignature Language="ILAsm" Value=".method public static void RegisterReflectedDefinitions(class System.Reflection.Assembly assembly, string resource, unsigned int8[] serializedValue, class System.Type[] referencedTypes) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.RegisterReflectedDefinitions(System.Reflection.Assembly,System.String,System.Byte[],System.Type[])" />
+      <MemberSignature Language="F#" Value="static member RegisterReflectedDefinitions : System.Reflection.Assembly * string * byte[] * Type[] -&gt; unit" Usage="Microsoft.FSharp.Quotations.Expr.RegisterReflectedDefinitions (assembly, resource, serializedValue, referencedTypes)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1036,6 +1109,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Sequential (Microsoft.FSharp.Quotations.FSharpExpr first, Microsoft.FSharp.Quotations.FSharpExpr second);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Sequential(class Microsoft.FSharp.Quotations.FSharpExpr first, class Microsoft.FSharp.Quotations.FSharpExpr second) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Sequential(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sequential (first As FSharpExpr, second As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Sequential : Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Sequential (first, second)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1060,6 +1135,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Quotations.FSharpExpr Substitute (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; substitution);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Quotations.FSharpExpr Substitute(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Quotations.FSharpVar, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt;&gt; substitution) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Substitute(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Quotations.FSharpExpr}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Substitute (substitution As FSharpFunc(Of FSharpVar, FSharpOption(Of FSharpExpr))) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="member this.Substitute : (Var -&gt; option&lt;Expr&gt;) -&gt; Expr" Usage="expr.Substitute substitution" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1085,6 +1162,8 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : unit -&gt; string" Usage="expr.ToString " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1104,6 +1183,8 @@
       <MemberSignature Language="C#" Value="public string ToString (bool full);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance string ToString(bool full) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ToString(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Function ToString (full As Boolean) As String" />
+      <MemberSignature Language="F#" Value="override this.ToString : bool -&gt; string" Usage="expr.ToString full" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1126,6 +1207,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TryFinally (Microsoft.FSharp.Quotations.FSharpExpr body, Microsoft.FSharp.Quotations.FSharpExpr compensation);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TryFinally(class Microsoft.FSharp.Quotations.FSharpExpr body, class Microsoft.FSharp.Quotations.FSharpExpr compensation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TryFinally(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFinally (body As FSharpExpr, compensation As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member TryFinally : Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.TryFinally (body, compensation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1150,6 +1233,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Quotations.FSharpExpr&gt; TryGetReflectedDefinition (System.Reflection.MethodBase methodBase);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Quotations.FSharpExpr&gt; TryGetReflectedDefinition(class System.Reflection.MethodBase methodBase) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TryGetReflectedDefinition(System.Reflection.MethodBase)" />
+      <MemberSignature Language="F#" Value="static member TryGetReflectedDefinition : System.Reflection.MethodBase -&gt; option&lt;Expr&gt;" Usage="Microsoft.FSharp.Quotations.Expr.TryGetReflectedDefinition methodBase" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1173,6 +1257,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TryWith (Microsoft.FSharp.Quotations.FSharpExpr body, Microsoft.FSharp.Quotations.FSharpVar filterVar, Microsoft.FSharp.Quotations.FSharpExpr filterBody, Microsoft.FSharp.Quotations.FSharpVar catchVar, Microsoft.FSharp.Quotations.FSharpExpr catchBody);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TryWith(class Microsoft.FSharp.Quotations.FSharpExpr body, class Microsoft.FSharp.Quotations.FSharpVar filterVar, class Microsoft.FSharp.Quotations.FSharpExpr filterBody, class Microsoft.FSharp.Quotations.FSharpVar catchVar, class Microsoft.FSharp.Quotations.FSharpExpr catchBody) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TryWith(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWith (body As FSharpExpr, filterVar As FSharpVar, filterBody As FSharpExpr, catchVar As FSharpVar, catchBody As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member TryWith : Expr * Var * Expr * Var * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.TryWith (body, filterVar, filterBody, catchVar, catchBody)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1190,10 +1276,8 @@
       </Parameters>
       <Docs>
         <param name="body">The body of the try expression.</param>
-        <param name="filterVar">
-        </param>
-        <param name="filterBody">
-        </param>
+        <param name="filterVar"></param>
+        <param name="filterBody"></param>
         <param name="catchVar">The variable to bind to a caught exception.</param>
         <param name="catchBody">The expression evaluated when an exception is caught.</param>
         <summary>Builds an expression that represents a try/with construct for exception filtering and catching.</summary>
@@ -1205,6 +1289,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TupleGet (Microsoft.FSharp.Quotations.FSharpExpr tuple, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TupleGet(class Microsoft.FSharp.Quotations.FSharpExpr tuple, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TupleGet(Microsoft.FSharp.Quotations.FSharpExpr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TupleGet (tuple As FSharpExpr, index As Integer) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member TupleGet : Expr * int -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.TupleGet (tuple, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1229,6 +1315,8 @@
       <MemberSignature Language="C#" Value="public Type Type { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type Type" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Quotations.FSharpExpr.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Type" />
+      <MemberSignature Language="F#" Value="member this.Type : Type" Usage="Microsoft.FSharp.Quotations.Expr.Type" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1247,6 +1335,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr TypeTest (Microsoft.FSharp.Quotations.FSharpExpr source, Type target);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr TypeTest(class Microsoft.FSharp.Quotations.FSharpExpr source, class System.Type target) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.TypeTest(Microsoft.FSharp.Quotations.FSharpExpr,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TypeTest (source As FSharpExpr, target As Type) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member TypeTest : Expr * Type -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.TypeTest (source, target)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1271,6 +1361,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr UnionCaseTest (Microsoft.FSharp.Quotations.FSharpExpr source, Microsoft.FSharp.Reflection.UnionCaseInfo unionCase);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr UnionCaseTest(class Microsoft.FSharp.Quotations.FSharpExpr source, class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.UnionCaseTest(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Reflection.UnionCaseInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnionCaseTest (source As FSharpExpr, unionCase As UnionCaseInfo) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member UnionCaseTest : Expr * Microsoft.FSharp.Reflection.UnionCaseInfo -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.UnionCaseTest (source, unionCase)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1295,6 +1387,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Value (object value, Type expressionType);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Value(object value, class System.Type expressionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Value(System.Object,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Value (value As Object, expressionType As Type) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Value : obj * Type -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Value (value, expressionType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1319,6 +1413,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Value&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Value&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Value``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Value(Of T) (value As T) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Value : 'T -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Value value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1345,6 +1441,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr ValueWithName (object value, Type expressionType, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr ValueWithName(object value, class System.Type expressionType, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ValueWithName(System.Object,System.Type,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ValueWithName (value As Object, expressionType As Type, name As String) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member ValueWithName : obj * Type * string -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.ValueWithName (value, expressionType, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1371,6 +1469,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr ValueWithName&lt;T&gt; (T value, string name);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr ValueWithName&lt;T&gt;(!!T value, string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.ValueWithName``1(``0,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ValueWithName(Of T) (value As T, name As String) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member ValueWithName : 'T * string -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.ValueWithName (value, name)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1399,6 +1499,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr Var (Microsoft.FSharp.Quotations.FSharpVar variable);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr Var(class Microsoft.FSharp.Quotations.FSharpVar variable) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.Var(Microsoft.FSharp.Quotations.FSharpVar)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Var (variable As FSharpVar) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member Var : Var -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.Var variable" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1421,6 +1523,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr VarSet (Microsoft.FSharp.Quotations.FSharpVar variable, Microsoft.FSharp.Quotations.FSharpExpr value);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr VarSet(class Microsoft.FSharp.Quotations.FSharpVar variable, class Microsoft.FSharp.Quotations.FSharpExpr value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.VarSet(Microsoft.FSharp.Quotations.FSharpVar,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function VarSet (variable As FSharpVar, value As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member VarSet : Var * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.VarSet (variable, value)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1445,6 +1549,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr WhileLoop (Microsoft.FSharp.Quotations.FSharpExpr guard, Microsoft.FSharp.Quotations.FSharpExpr body);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr WhileLoop(class Microsoft.FSharp.Quotations.FSharpExpr guard, class Microsoft.FSharp.Quotations.FSharpExpr body) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.WhileLoop(Microsoft.FSharp.Quotations.FSharpExpr,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WhileLoop (guard As FSharpExpr, body As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member WhileLoop : Expr * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.WhileLoop (guard, body)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1469,6 +1575,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr WithValue (object value, Type expressionType, Microsoft.FSharp.Quotations.FSharpExpr definition);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr WithValue(object value, class System.Type expressionType, class Microsoft.FSharp.Quotations.FSharpExpr definition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.WithValue(System.Object,System.Type,Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WithValue (value As Object, expressionType As Type, definition As FSharpExpr) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="static member WithValue : obj * Type * Expr -&gt; Expr" Usage="Microsoft.FSharp.Quotations.Expr.WithValue (value, expressionType, definition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1495,6 +1603,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; WithValue&lt;T&gt; (T value, Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; definition);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; WithValue&lt;T&gt;(!!T value, class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; definition) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Quotations.FSharpExpr.WithValue``1(``0,Microsoft.FSharp.Quotations.FSharpExpr{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function WithValue(Of T) (value As T, definition As FSharpExpr(Of T)) As FSharpExpr(Of T)" />
+      <MemberSignature Language="F#" Value="static member WithValue : 'T * Expr&lt;'T&gt; -&gt; Expr&lt;'T&gt;" Usage="Microsoft.FSharp.Quotations.Expr.WithValue (value, definition)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

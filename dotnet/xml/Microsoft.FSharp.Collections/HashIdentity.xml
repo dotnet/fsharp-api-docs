@@ -1,7 +1,9 @@
-<Type Name="HashIdentity" FullName="Microsoft.FSharp.Collections.HashIdentity">
+﻿<Type Name="HashIdentity" FullName="Microsoft.FSharp.Collections.HashIdentity">
   <TypeSignature Language="C#" Value="public static class HashIdentity" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed HashIdentity extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.HashIdentity" />
+  <TypeSignature Language="VB.NET" Value="Public Class HashIdentity" />
+  <TypeSignature Language="F#" Value="module HashIdentity" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; FromFunctions&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,int&gt; hasher, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; equality);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; FromFunctions&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, int32&gt; hasher, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; equality) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.FromFunctions``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Int32},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromFunctions(Of T) (hasher As FSharpFunc(Of T, Integer), equality As FSharpFunc(Of T, FSharpFunc(Of T, Boolean))) As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.HashIdentity.FromFunctions : ('T -&gt; int) -&gt; ('T -&gt; 'T -&gt; bool) -&gt; System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.HashIdentity.FromFunctions hasher equality" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -57,6 +61,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; LimitedStructural&lt;T&gt; (int limit);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; LimitedStructural&lt;T&gt;(int32 limit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.LimitedStructural``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LimitedStructural(Of T) (limit As Integer) As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.HashIdentity.LimitedStructural : int -&gt; System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.HashIdentity.LimitedStructural limit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; NonStructural&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; NonStructural&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.NonStructural``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NonStructural(Of T) () As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.HashIdentity.NonStructural : unit -&gt; System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.HashIdentity.NonStructural " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; Reference&lt;T&gt; () where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; Reference&lt;class T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.Reference``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reference(Of T As Class) () As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.HashIdentity.Reference : unit -&gt; System.Collections.Generic.IEqualityComparer&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="Microsoft.FSharp.Collections.HashIdentity.Reference " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -137,6 +147,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; Structural&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; Structural&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.HashIdentity.Structural``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Structural(Of T) () As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.HashIdentity.Structural : unit -&gt; System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.HashIdentity.Structural " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

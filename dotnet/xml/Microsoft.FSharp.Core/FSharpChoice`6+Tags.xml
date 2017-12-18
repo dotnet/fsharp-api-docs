@@ -1,7 +1,8 @@
-<Type Name="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Tags">
+﻿<Type Name="FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;+Tags">
   <TypeSignature Language="C#" Value="public static class FSharpChoice&lt;T1,T2,T3,T4,T5,T6&gt;.Tags" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed FSharpChoice`6/Tags&lt;T1, T2, T3, T4, T5, T6&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpChoice`6.Tags" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpChoice(Of T1, T2, T3, T4, T5, T6).Tags" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +28,8 @@
       <MemberSignature Language="C#" Value="public const int Choice1Of6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice1Of6" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`6.Tags.Choice1Of6" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice1Of6 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice1Of6 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt;.Choice.Choice1Of6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public const int Choice2Of6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice2Of6" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`6.Tags.Choice2Of6" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice2Of6 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice2Of6 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt;.Choice.Choice2Of6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -61,6 +66,8 @@
       <MemberSignature Language="C#" Value="public const int Choice3Of6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice3Of6" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`6.Tags.Choice3Of6" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice3Of6 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice3Of6 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt;.Choice.Choice3Of6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -78,6 +85,8 @@
       <MemberSignature Language="C#" Value="public const int Choice4Of6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice4Of6" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`6.Tags.Choice4Of6" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice4Of6 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice4Of6 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt;.Choice.Choice4Of6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -95,6 +104,8 @@
       <MemberSignature Language="C#" Value="public const int Choice5Of6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice5Of6" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`6.Tags.Choice5Of6" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice5Of6 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice5Of6 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt;.Choice.Choice5Of6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -112,6 +123,8 @@
       <MemberSignature Language="C#" Value="public const int Choice6Of6;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice6Of6" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`6.Tags.Choice6Of6" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice6Of6 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice6Of6 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6&gt;.Choice.Choice6Of6" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

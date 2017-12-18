@@ -1,7 +1,9 @@
-<Type Name="LanguagePrimitives+IntrinsicFunctions" FullName="Microsoft.FSharp.Core.LanguagePrimitives+IntrinsicFunctions">
+﻿<Type Name="LanguagePrimitives+IntrinsicFunctions" FullName="Microsoft.FSharp.Core.LanguagePrimitives+IntrinsicFunctions">
   <TypeSignature Language="C#" Value="public static class LanguagePrimitives.IntrinsicFunctions" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed LanguagePrimitives/IntrinsicFunctions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions" />
+  <TypeSignature Language="VB.NET" Value="Public Class LanguagePrimitives.IntrinsicFunctions" />
+  <TypeSignature Language="F#" Value="module LanguagePrimitives.IntrinsicFunctions" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public static T CheckThis&lt;T&gt; (T x) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T CheckThis&lt;class T&gt;(!!T x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.CheckThis``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckThis(Of T As Class) (x As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.CheckThis : 'T -&gt; 'T (requires 'T : null)" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.CheckThis x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -59,6 +63,8 @@
       <MemberSignature Language="C#" Value="public static T CreateInstance&lt;T&gt; () where T : new();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T CreateInstance&lt;.ctor T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.CreateInstance``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateInstance(Of T As New) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.CreateInstance : unit -&gt; 'T (requires 'T : (new : unit -&gt; 'T))" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.CreateInstance " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="public static void Dispose&lt;T&gt; (T resource) where T : IDisposable;" />
       <MemberSignature Language="ILAsm" Value=".method public static void Dispose&lt;(class System.IDisposable) T&gt;(!!T resource) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.Dispose``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Dispose(Of T As IDisposable) (resource As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.Dispose : 'T -&gt; unit (requires 'T :&gt; IDisposable)" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.Dispose resource" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -126,6 +134,8 @@
       <MemberSignature Language="C#" Value="public static void FailInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public static void FailInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.FailInit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FailInit ()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.FailInit : unit -&gt; unit" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.FailInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -149,6 +159,8 @@
       <MemberSignature Language="C#" Value="public static void FailStaticInit ();" />
       <MemberSignature Language="ILAsm" Value=".method public static void FailStaticInit() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.FailStaticInit" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub FailStaticInit ()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.FailStaticInit : unit -&gt; unit" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.FailStaticInit " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -172,6 +184,8 @@
       <MemberSignature Language="C#" Value="public static T GetArray&lt;T&gt; (T[] source, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GetArray&lt;T&gt;(!!T[] source, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray``1(``0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetArray(Of T) (source As T(), index As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray : 'T[] -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray source index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -205,6 +219,8 @@
       <MemberSignature Language="C#" Value="public static T GetArray2D&lt;T&gt; (T[,] source, int index1, int index2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GetArray2D&lt;T&gt;(!!T[,] source, int32 index1, int32 index2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray2D``1(``0[0:,0:],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetArray2D(Of T) (source As T(,), index1 As Integer, index2 As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray2D : 'T[,] -&gt; int -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray2D source index1 index2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -240,6 +256,8 @@
       <MemberSignature Language="C#" Value="public static T GetArray3D&lt;T&gt; (T[,,] source, int index1, int index2, int index3);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GetArray3D&lt;T&gt;(!!T[,,] source, int32 index1, int32 index2, int32 index3) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray3D``1(``0[0:,0:,0:],System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetArray3D(Of T) (source As T(,,), index1 As Integer, index2 As Integer, index3 As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray3D : 'T[,,] -&gt; int -&gt; int -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray3D source index1 index2 index3" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -277,6 +295,8 @@
       <MemberSignature Language="C#" Value="public static T GetArray4D&lt;T&gt; (T[,,,] source, int index1, int index2, int index3, int index4);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GetArray4D&lt;T&gt;(!!T[,,,] source, int32 index1, int32 index2, int32 index3, int32 index4) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray4D``1(``0[0:,0:,0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetArray4D(Of T) (source As T(,,,), index1 As Integer, index2 As Integer, index3 As Integer, index4 As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray4D : 'T[,,,] -&gt; int -&gt; int -&gt; int -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetArray4D source index1 index2 index3 index4" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -316,6 +336,8 @@
       <MemberSignature Language="C#" Value="public static char GetString (string source, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static char GetString(string source, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetString(System.String,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetString (source As String, index As Integer) As Char" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetString : string -&gt; int -&gt; char" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.GetString source index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -345,6 +367,8 @@
       <MemberSignature Language="C#" Value="public static decimal MakeDecimal (int low, int medium, int high, bool isNegative, byte scale);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal MakeDecimal(int32 low, int32 medium, int32 high, bool isNegative, unsigned int8 scale) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.MakeDecimal(System.Int32,System.Int32,System.Int32,System.Boolean,System.Byte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeDecimal (low As Integer, medium As Integer, high As Integer, isNegative As Boolean, scale As Byte) As Decimal" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.MakeDecimal : int -&gt; int -&gt; int -&gt; bool -&gt; byte -&gt; decimal" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.MakeDecimal low medium high isNegative scale" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -383,6 +407,8 @@
       <MemberSignature Language="C#" Value="public static void SetArray&lt;T&gt; (T[] target, int index, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SetArray&lt;T&gt;(!!T[] target, int32 index, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray``1(``0[],System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetArray(Of T) (target As T(), index As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray : 'T[] -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray target index value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -417,6 +443,8 @@
       <MemberSignature Language="C#" Value="public static void SetArray2D&lt;T&gt; (T[,] target, int index1, int index2, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SetArray2D&lt;T&gt;(!!T[,] target, int32 index1, int32 index2, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray2D``1(``0[0:,0:],System.Int32,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetArray2D(Of T) (target As T(,), index1 As Integer, index2 As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray2D : 'T[,] -&gt; int -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray2D target index1 index2 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -453,6 +481,8 @@
       <MemberSignature Language="C#" Value="public static void SetArray3D&lt;T&gt; (T[,,] target, int index1, int index2, int index3, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SetArray3D&lt;T&gt;(!!T[,,] target, int32 index1, int32 index2, int32 index3, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray3D``1(``0[0:,0:,0:],System.Int32,System.Int32,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetArray3D(Of T) (target As T(,,), index1 As Integer, index2 As Integer, index3 As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray3D : 'T[,,] -&gt; int -&gt; int -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray3D target index1 index2 index3 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -491,6 +521,8 @@
       <MemberSignature Language="C#" Value="public static void SetArray4D&lt;T&gt; (T[,,,] target, int index1, int index2, int index3, int index4, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SetArray4D&lt;T&gt;(!!T[,,,] target, int32 index1, int32 index2, int32 index3, int32 index4, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray4D``1(``0[0:,0:,0:,0:],System.Int32,System.Int32,System.Int32,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetArray4D(Of T) (target As T(,,,), index1 As Integer, index2 As Integer, index3 As Integer, index4 As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray4D : 'T[,,,] -&gt; int -&gt; int -&gt; int -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.SetArray4D target index1 index2 index3 index4 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -533,6 +565,8 @@
       <MemberSignature Language="C#" Value="public static bool TypeTestFast&lt;T&gt; (object source);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool TypeTestFast&lt;T&gt;(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.TypeTestFast``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TypeTestFast(Of T) (source As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.TypeTestFast : obj -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.TypeTestFast source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -564,6 +598,8 @@
       <MemberSignature Language="C#" Value="public static bool TypeTestGeneric&lt;T&gt; (object source);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool TypeTestGeneric&lt;T&gt;(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.TypeTestGeneric``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TypeTestGeneric(Of T) (source As Object) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.TypeTestGeneric : obj -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.TypeTestGeneric source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -595,6 +631,8 @@
       <MemberSignature Language="C#" Value="public static T UnboxFast&lt;T&gt; (object source);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T UnboxFast&lt;T&gt;(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.UnboxFast``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnboxFast(Of T) (source As Object) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.UnboxFast : obj -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.UnboxFast source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -626,6 +664,8 @@
       <MemberSignature Language="C#" Value="public static T UnboxGeneric&lt;T&gt; (object source);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T UnboxGeneric&lt;T&gt;(object source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.UnboxGeneric``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function UnboxGeneric(Of T) (source As Object) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.UnboxGeneric : obj -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicFunctions.UnboxGeneric source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="MapModule" FullName="Microsoft.FSharp.Collections.MapModule">
+﻿<Type Name="MapModule" FullName="Microsoft.FSharp.Collections.MapModule">
   <TypeSignature Language="C#" Value="public static class MapModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed MapModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.MapModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class MapModule" />
+  <TypeSignature Language="F#" Value="module Map" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Add&lt;TKey,T&gt; (TKey key, T value, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Add&lt;TKey, T&gt;(!!TKey key, !!T value, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Add``2(``0,``1,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Add(Of TKey, T) (key As TKey, value As T, table As FSharpMap(Of TKey, T)) As FSharpMap(Of TKey, T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.add : 'Key -&gt; 'T -&gt; Map&lt;'Key, 'T&gt; -&gt; Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.Add key value table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -71,6 +75,8 @@
       <MemberSignature Language="C#" Value="public static bool ContainsKey&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ContainsKey&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ContainsKey``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ContainsKey(Of TKey, T) (key As TKey, table As FSharpMap(Of TKey, T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.containsKey : 'Key -&gt; Map&lt;'Key, 'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Collections.MapModule.ContainsKey key table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -109,6 +115,8 @@
       <MemberSignature Language="C#" Value="public static int Count&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Count&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Count``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Count(Of TKey, T) (table As FSharpMap(Of TKey, T)) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.count : Map&lt;'Key, 'T&gt; -&gt; int" Usage="Microsoft.FSharp.Collections.MapModule.Count table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -142,6 +150,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Empty&lt;TKey,T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Empty&lt;TKey, T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Empty``2" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Empty(Of TKey, T) () As FSharpMap(Of TKey, T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.empty : unit -&gt; Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.Empty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -175,6 +185,8 @@
       <MemberSignature Language="C#" Value="public static bool Exists&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Exists&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Exists``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists(Of TKey, T) (predicate As FSharpFunc(Of TKey, FSharpFunc(Of T, Boolean)), table As FSharpMap(Of TKey, T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.exists : ('Key -&gt; 'T -&gt; bool) -&gt; Map&lt;'Key, 'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Collections.MapModule.Exists predicate table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -214,6 +226,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Filter&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Filter&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Filter``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Filter(Of TKey, T) (predicate As FSharpFunc(Of TKey, FSharpFunc(Of T, Boolean)), table As FSharpMap(Of TKey, T)) As FSharpMap(Of TKey, T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.filter : ('Key -&gt; 'T -&gt; bool) -&gt; Map&lt;'Key, 'T&gt; -&gt; Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.Filter predicate table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -252,6 +266,8 @@
       <MemberSignature Language="C#" Value="public static T Find&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Find&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Find``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Find(Of TKey, T) (key As TKey, table As FSharpMap(Of TKey, T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.find : 'Key -&gt; Map&lt;'Key, 'T&gt; -&gt; 'T" Usage="Microsoft.FSharp.Collections.MapModule.Find key table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -292,6 +308,8 @@
       <MemberSignature Language="C#" Value="public static TKey FindKey&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TKey FindKey&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.FindKey``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindKey(Of TKey, T) (predicate As FSharpFunc(Of TKey, FSharpFunc(Of T, Boolean)), table As FSharpMap(Of TKey, T)) As TKey" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.findKey : ('Key -&gt; 'T -&gt; bool) -&gt; Map&lt;'Key, 'T&gt; -&gt; 'Key" Usage="Microsoft.FSharp.Collections.MapModule.FindKey predicate table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -332,6 +350,8 @@
       <MemberSignature Language="C#" Value="public static TState Fold&lt;TKey,T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt;&gt; folder, TState state, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState Fold&lt;TKey, T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TState&gt;&gt;&gt; folder, !!TState state, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Fold``3(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}}},``2,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Fold(Of TKey, T, TState) (folder As FSharpFunc(Of TState, FSharpFunc(Of TKey, FSharpFunc(Of T, TState))), state As TState, table As FSharpMap(Of TKey, T)) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.fold : ('State -&gt; 'Key -&gt; 'T -&gt; 'State) -&gt; 'State -&gt; Map&lt;'Key, 'T&gt; -&gt; 'State" Usage="Microsoft.FSharp.Collections.MapModule.Fold folder state table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -374,6 +394,8 @@
       <MemberSignature Language="C#" Value="public static TState FoldBack&lt;TKey,T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt;&gt; folder, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table, TState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState FoldBack&lt;TKey, T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt;&gt; folder, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table, !!TState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.FoldBack``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``2}}},Microsoft.FSharp.Collections.FSharpMap{``0,``1},``2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FoldBack(Of TKey, T, TState) (folder As FSharpFunc(Of TKey, FSharpFunc(Of T, FSharpFunc(Of TState, TState))), table As FSharpMap(Of TKey, T), state As TState) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.foldBack : ('Key -&gt; 'T -&gt; 'State -&gt; 'State) -&gt; Map&lt;'Key, 'T&gt; -&gt; 'State -&gt; 'State" Usage="Microsoft.FSharp.Collections.MapModule.FoldBack folder table state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -416,6 +438,8 @@
       <MemberSignature Language="C#" Value="public static bool ForAll&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ForAll&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ForAll``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForAll(Of TKey, T) (predicate As FSharpFunc(Of TKey, FSharpFunc(Of T, Boolean)), table As FSharpMap(Of TKey, T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.forall : ('Key -&gt; 'T -&gt; bool) -&gt; Map&lt;'Key, 'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Collections.MapModule.ForAll predicate table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -455,6 +479,8 @@
       <MemberSignature Language="C#" Value="public static bool IsEmpty&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsEmpty&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.IsEmpty``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsEmpty(Of TKey, T) (table As FSharpMap(Of TKey, T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.isEmpty : Map&lt;'Key, 'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Collections.MapModule.IsEmpty table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -488,6 +514,8 @@
       <MemberSignature Language="C#" Value="public static void Iterate&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt; action, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt;&gt; action, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Iterate``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.Unit}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Iterate(Of TKey, T) (action As FSharpFunc(Of TKey, FSharpFunc(Of T, Unit)), table As FSharpMap(Of TKey, T))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.iter : ('Key -&gt; 'T -&gt; unit) -&gt; Map&lt;'Key, 'T&gt; -&gt; unit" Usage="Microsoft.FSharp.Collections.MapModule.Iterate action table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -525,6 +553,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,TResult&gt; Map&lt;TKey,T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt; mapping, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!TResult&gt; Map&lt;TKey, T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt;&gt; mapping, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Map``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map(Of TKey, T, TResult) (mapping As FSharpFunc(Of TKey, FSharpFunc(Of T, TResult)), table As FSharpMap(Of TKey, T)) As FSharpMap(Of TKey, TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.map : ('Key -&gt; 'T -&gt; 'Result) -&gt; Map&lt;'Key, 'T&gt; -&gt; Map&lt;'Key, 'Result&gt;" Usage="Microsoft.FSharp.Collections.MapModule.Map mapping table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -567,6 +597,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; OfArray&lt;TKey,T&gt; (Tuple&lt;TKey,T&gt;[] elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; OfArray&lt;TKey, T&gt;(class System.Tuple`2&lt;!!TKey, !!T&gt;[] elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.OfArray``2(System.Tuple{``0,``1}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfArray(Of TKey, T) (elements As Tuple(Of TKey, T)()) As FSharpMap(Of TKey, T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.ofArray : ('Key * 'T[]) -&gt; Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.OfArray elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -600,6 +632,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; OfList&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpList&lt;Tuple&lt;TKey,T&gt;&gt; elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; OfList&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.OfList``2(Microsoft.FSharp.Collections.FSharpList{System.Tuple{``0,``1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfList(Of TKey, T) (elements As FSharpList(Of Tuple(Of TKey, T))) As FSharpMap(Of TKey, T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.ofList : List&lt;'Key * 'T&gt; -&gt; Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.OfList elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -633,6 +667,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; OfSeq&lt;TKey,T&gt; (System.Collections.Generic.IEnumerable&lt;Tuple&lt;TKey,T&gt;&gt; elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; OfSeq&lt;TKey, T&gt;(class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.OfSeq``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfSeq(Of TKey, T) (elements As IEnumerable(Of Tuple(Of TKey, T))) As FSharpMap(Of TKey, T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.ofSeq : seq&lt;'Key * 'T&gt; -&gt; Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.OfSeq elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -666,6 +702,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;,Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt;&gt; Partition&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt;, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt;&gt; Partition&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Partition``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Partition(Of TKey, T) (predicate As FSharpFunc(Of TKey, FSharpFunc(Of T, Boolean)), table As FSharpMap(Of TKey, T)) As Tuple(Of FSharpMap(Of TKey, T), FSharpMap(Of TKey, T))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.partition : ('Key -&gt; 'T -&gt; bool) -&gt; Map&lt;'Key, 'T&gt; -&gt; Map&lt;'Key, 'T&gt; * Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.Partition predicate table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -706,6 +744,8 @@
       <MemberSignature Language="C#" Value="public static TResult Pick&lt;TKey,T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;&gt; chooser, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult Pick&lt;TKey, T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt;&gt; chooser, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Pick``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpOption{``2}}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Pick(Of TKey, T, TResult) (chooser As FSharpFunc(Of TKey, FSharpFunc(Of T, FSharpOption(Of TResult))), table As FSharpMap(Of TKey, T)) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.pick : ('Key -&gt; 'T -&gt; option&lt;'Result&gt;) -&gt; Map&lt;'Key, 'T&gt; -&gt; 'Result" Usage="Microsoft.FSharp.Collections.MapModule.Pick chooser table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -746,6 +786,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; Remove&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; Remove&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.Remove``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Remove(Of TKey, T) (key As TKey, table As FSharpMap(Of TKey, T)) As FSharpMap(Of TKey, T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.remove : 'Key -&gt; Map&lt;'Key, 'T&gt; -&gt; Map&lt;'Key, 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.Remove key table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -784,6 +826,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;TKey,T&gt;[] ToArray&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!TKey, !!T&gt;[] ToArray&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ToArray``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToArray(Of TKey, T) (table As FSharpMap(Of TKey, T)) As Tuple(Of TKey, T)()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.toArray : Map&lt;'Key, 'T&gt; -&gt; 'Key * 'T[]" Usage="Microsoft.FSharp.Collections.MapModule.ToArray table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -818,6 +862,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;Tuple&lt;TKey,T&gt;&gt; ToList&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpList`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; ToList&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ToList``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToList(Of TKey, T) (table As FSharpMap(Of TKey, T)) As FSharpList(Of Tuple(Of TKey, T))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.toList : Map&lt;'Key, 'T&gt; -&gt; List&lt;'Key * 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.ToList table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -852,6 +898,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;Tuple&lt;TKey,T&gt;&gt; ToSeq&lt;TKey,T&gt; (Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;!!TKey, !!T&gt;&gt; ToSeq&lt;TKey, T&gt;(class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.ToSeq``2(Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSeq(Of TKey, T) (table As FSharpMap(Of TKey, T)) As IEnumerable(Of Tuple(Of TKey, T))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.toSeq : Map&lt;'Key, 'T&gt; -&gt; seq&lt;'Key * 'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.ToSeq table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -886,6 +934,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryFind&lt;TKey,T&gt; (TKey key, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryFind&lt;TKey, T&gt;(!!TKey key, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.TryFind``2(``0,Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFind(Of TKey, T) (key As TKey, table As FSharpMap(Of TKey, T)) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.tryFind : 'Key -&gt; Map&lt;'Key, 'T&gt; -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.MapModule.TryFind key table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -925,6 +975,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TKey&gt; TryFindKey&lt;TKey,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt;&gt; predicate, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TKey&gt; TryFindKey&lt;TKey, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt;&gt; predicate, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.TryFindKey``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFindKey(Of TKey, T) (predicate As FSharpFunc(Of TKey, FSharpFunc(Of T, Boolean)), table As FSharpMap(Of TKey, T)) As FSharpOption(Of TKey)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.tryFindKey : ('Key -&gt; 'T -&gt; bool) -&gt; Map&lt;'Key, 'T&gt; -&gt; option&lt;'Key&gt;" Usage="Microsoft.FSharp.Collections.MapModule.TryFindKey predicate table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -964,6 +1016,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; TryPick&lt;TKey,T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TKey,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt;&gt; chooser, Microsoft.FSharp.Collections.FSharpMap&lt;TKey,T&gt; table);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; TryPick&lt;TKey, T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TKey, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt;&gt; chooser, class Microsoft.FSharp.Collections.FSharpMap`2&lt;!!TKey, !!T&gt; table) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.MapModule.TryPick``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpOption{``2}}},Microsoft.FSharp.Collections.FSharpMap{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryPick(Of TKey, T, TResult) (chooser As FSharpFunc(Of TKey, FSharpFunc(Of T, FSharpOption(Of TResult))), table As FSharpMap(Of TKey, T)) As FSharpOption(Of TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Map.tryPick : ('Key -&gt; 'T -&gt; option&lt;'Result&gt;) -&gt; Map&lt;'Key, 'T&gt; -&gt; option&lt;'Result&gt;" Usage="Microsoft.FSharp.Collections.MapModule.TryPick chooser table" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

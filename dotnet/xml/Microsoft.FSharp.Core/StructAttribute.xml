@@ -1,7 +1,9 @@
-<Type Name="StructAttribute" FullName="Microsoft.FSharp.Core.StructAttribute">
+﻿<Type Name="StructAttribute" FullName="Microsoft.FSharp.Core.StructAttribute">
   <TypeSignature Language="C#" Value="public sealed class StructAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed StructAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.StructAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class StructAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type StructAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public StructAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StructAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

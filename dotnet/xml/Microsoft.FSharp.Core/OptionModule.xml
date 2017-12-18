@@ -1,7 +1,9 @@
-<Type Name="OptionModule" FullName="Microsoft.FSharp.Core.OptionModule">
+﻿<Type Name="OptionModule" FullName="Microsoft.FSharp.Core.OptionModule">
   <TypeSignature Language="C#" Value="public static class OptionModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed OptionModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.OptionModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class OptionModule" />
+  <TypeSignature Language="F#" Value="module Option" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Bind&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; binder, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Bind&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; binder, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Bind``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Bind(Of T, TResult) (binder As FSharpFunc(Of T, FSharpOption(Of TResult)), option As FSharpOption(Of T)) As FSharpOption(Of TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.bind : ('T -&gt; option&lt;'Result&gt;) -&gt; option&lt;'T&gt; -&gt; option&lt;'Result&gt;" Usage="Microsoft.FSharp.Core.OptionModule.Bind binder option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public static bool Contains&lt;T&gt; (T value, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Contains&lt;T&gt;(!!T value, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Contains``1(``0,Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Contains(Of T) (value As T, option As FSharpOption(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.contains : 'T -&gt; option&lt;'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Core.OptionModule.Contains value option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public static int Count&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Count&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Count``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Count(Of T) (option As FSharpOption(Of T)) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.count : option&lt;'T&gt; -&gt; int" Usage="Microsoft.FSharp.Core.OptionModule.Count option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -135,6 +143,8 @@
       <MemberSignature Language="C#" Value="public static T DefaultValue&lt;T&gt; (T value, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T DefaultValue&lt;T&gt;(!!T value, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.DefaultValue``1(``0,Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultValue(Of T) (value As T, option As FSharpOption(Of T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.defaultValue : 'T -&gt; option&lt;'T&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.OptionModule.DefaultValue value option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -171,6 +181,8 @@
       <MemberSignature Language="C#" Value="public static T DefaultWith&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,T&gt; defThunk, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T DefaultWith&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, !!T&gt; defThunk, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.DefaultWith``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``0},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultWith(Of T) (defThunk As FSharpFunc(Of Unit, T), option As FSharpOption(Of T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.defaultWith : (unit -&gt; 'T) -&gt; option&lt;'T&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.OptionModule.DefaultWith defThunk option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -208,6 +220,8 @@
       <MemberSignature Language="C#" Value="public static bool Exists&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Exists&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Exists``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists(Of T) (predicate As FSharpFunc(Of T, Boolean), option As FSharpOption(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.exists : ('T -&gt; bool) -&gt; option&lt;'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Core.OptionModule.Exists predicate option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -246,6 +260,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; Filter&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; Filter&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Filter``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Filter(Of T) (predicate As FSharpFunc(Of T, Boolean), option As FSharpOption(Of T)) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.filter : ('T -&gt; bool) -&gt; option&lt;'T&gt; -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Core.OptionModule.Filter predicate option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -283,6 +299,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; Flatten&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; Flatten&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt;&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Flatten``1(Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Core.FSharpOption{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Flatten(Of T) (option As FSharpOption(Of FSharpOption(Of T))) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.flatten : option&lt;option&lt;'T&gt;&gt; -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Core.OptionModule.Flatten option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -316,6 +334,8 @@
       <MemberSignature Language="C#" Value="public static TState Fold&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt; folder, TState state, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState Fold&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TState&gt;&gt; folder, !!TState state, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Fold``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``1,Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Fold(Of T, TState) (folder As FSharpFunc(Of TState, FSharpFunc(Of T, TState)), state As TState, option As FSharpOption(Of T)) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.fold : ('State -&gt; 'T -&gt; 'State) -&gt; 'State -&gt; option&lt;'T&gt; -&gt; 'State" Usage="Microsoft.FSharp.Core.OptionModule.Fold folder state option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -358,6 +378,8 @@
       <MemberSignature Language="C#" Value="public static TState FoldBack&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt; folder, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option, TState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState FoldBack&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt; folder, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option, !!TState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.FoldBack``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``1}},Microsoft.FSharp.Core.FSharpOption{``0},``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FoldBack(Of T, TState) (folder As FSharpFunc(Of T, FSharpFunc(Of TState, TState)), option As FSharpOption(Of T), state As TState) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.foldBack : ('T -&gt; 'State -&gt; 'State) -&gt; option&lt;'T&gt; -&gt; 'State -&gt; 'State" Usage="Microsoft.FSharp.Core.OptionModule.FoldBack folder option state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -400,6 +422,8 @@
       <MemberSignature Language="C#" Value="public static bool ForAll&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ForAll&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ForAll``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForAll(Of T) (predicate As FSharpFunc(Of T, Boolean), option As FSharpOption(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.forall : ('T -&gt; bool) -&gt; option&lt;'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Core.OptionModule.ForAll predicate option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -438,6 +462,8 @@
       <MemberSignature Language="C#" Value="public static T GetValue&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GetValue&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.GetValue``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetValue(Of T) (option As FSharpOption(Of T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.get : option&lt;'T&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.OptionModule.GetValue option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -469,6 +495,8 @@
       <MemberSignature Language="C#" Value="public static bool IsNone&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsNone&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.IsNone``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNone(Of T) (option As FSharpOption(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.isNone : option&lt;'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Core.OptionModule.IsNone option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -500,6 +528,8 @@
       <MemberSignature Language="C#" Value="public static bool IsSome&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsSome&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.IsSome``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsSome(Of T) (option As FSharpOption(Of T)) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.isSome : option&lt;'T&gt; -&gt; bool" Usage="Microsoft.FSharp.Core.OptionModule.IsSome option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -531,6 +561,8 @@
       <MemberSignature Language="C#" Value="public static void Iterate&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; action, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; action, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Iterate``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Iterate(Of T) (action As FSharpFunc(Of T, Unit), option As FSharpOption(Of T))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.iter : ('T -&gt; unit) -&gt; option&lt;'T&gt; -&gt; unit" Usage="Microsoft.FSharp.Core.OptionModule.Iterate action option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -569,6 +601,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Map&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Map&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map(Of T, TResult) (mapping As FSharpFunc(Of T, TResult), option As FSharpOption(Of T)) As FSharpOption(Of TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.map : ('T -&gt; 'Result) -&gt; option&lt;'T&gt; -&gt; option&lt;'Result&gt;" Usage="Microsoft.FSharp.Core.OptionModule.Map mapping option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -608,6 +642,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Map2&lt;T1,T2,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt; mapping, Microsoft.FSharp.Core.FSharpOption&lt;T1&gt; option1, Microsoft.FSharp.Core.FSharpOption&lt;T2&gt; option2);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Map2&lt;T1, T2, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt; mapping, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T1&gt; option1, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T2&gt; option2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Map2``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map2(Of T1, T2, TResult) (mapping As FSharpFunc(Of T1, FSharpFunc(Of T2, TResult)), option1 As FSharpOption(Of T1), option2 As FSharpOption(Of T2)) As FSharpOption(Of TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.map2 : ('T1 -&gt; 'T2 -&gt; 'Result) -&gt; option&lt;'T1&gt; -&gt; option&lt;'T2&gt; -&gt; option&lt;'Result&gt;" Usage="Microsoft.FSharp.Core.OptionModule.Map2 mapping option1 option2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -651,6 +687,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; Map3&lt;T1,T2,T3,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt; mapping, Microsoft.FSharp.Core.FSharpOption&lt;T1&gt; option1, Microsoft.FSharp.Core.FSharpOption&lt;T2&gt; option2, Microsoft.FSharp.Core.FSharpOption&lt;T3&gt; option3);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; Map3&lt;T1, T2, T3, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, !!TResult&gt;&gt;&gt; mapping, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T1&gt; option1, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T2&gt; option2, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T3&gt; option3) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.Map3``4(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``3}}},Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{``1},Microsoft.FSharp.Core.FSharpOption{``2})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map3(Of T1, T2, T3, TResult) (mapping As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, TResult))), option1 As FSharpOption(Of T1), option2 As FSharpOption(Of T2), option3 As FSharpOption(Of T3)) As FSharpOption(Of TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.map3 : ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'Result) -&gt; option&lt;'T1&gt; -&gt; option&lt;'T2&gt; -&gt; option&lt;'T3&gt; -&gt; option&lt;'Result&gt;" Usage="Microsoft.FSharp.Core.OptionModule.Map3 mapping option1 option2 option3" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -698,6 +736,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OfNullable&lt;T&gt; (Nullable&lt;T&gt; value) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OfNullable&lt;struct .ctor (class System.ValueType) T&gt;(valuetype System.Nullable`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OfNullable``1(System.Nullable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfNullable(Of T As Structure) (value As Nullable(Of T)) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.ofNullable : Nullable&lt;'T (requires 'T : struct)&gt; -&gt; option&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Core.OptionModule.OfNullable value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -735,6 +775,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OfObj&lt;T&gt; (T value) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OfObj&lt;class T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OfObj``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfObj(Of T As Class) (value As T) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.ofObj : 'T -&gt; option&lt;'T (requires 'T : null)&gt; (requires 'T : null)" Usage="Microsoft.FSharp.Core.OptionModule.OfObj value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -770,6 +812,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OrElse&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; ifNone, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OrElse&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; ifNone, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OrElse``1(Microsoft.FSharp.Core.FSharpOption{``0},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OrElse(Of T) (ifNone As FSharpOption(Of T), option As FSharpOption(Of T)) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.orElse : option&lt;'T&gt; -&gt; option&lt;'T&gt; -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Core.OptionModule.OrElse ifNone option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -806,6 +850,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; OrElseWith&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.FSharpOption&lt;T&gt;&gt; ifNoneThunk, Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; OrElseWith&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt;&gt; ifNoneThunk, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.OrElseWith``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.FSharpOption{``0}},Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OrElseWith(Of T) (ifNoneThunk As FSharpFunc(Of Unit, FSharpOption(Of T)), option As FSharpOption(Of T)) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.orElseWith : (unit -&gt; option&lt;'T&gt;) -&gt; option&lt;'T&gt; -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Core.OptionModule.OrElseWith ifNoneThunk option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -843,6 +889,8 @@
       <MemberSignature Language="C#" Value="public static T[] ToArray&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] ToArray&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToArray``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToArray(Of T) (option As FSharpOption(Of T)) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.toArray : option&lt;'T&gt; -&gt; 'T[]" Usage="Microsoft.FSharp.Core.OptionModule.ToArray option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -874,6 +922,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;T&gt; ToList&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; ToList&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToList``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToList(Of T) (option As FSharpOption(Of T)) As FSharpList(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.toList : option&lt;'T&gt; -&gt; List&lt;'T&gt;" Usage="Microsoft.FSharp.Core.OptionModule.ToList option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -905,6 +955,8 @@
       <MemberSignature Language="C#" Value="public static Nullable&lt;T&gt; ToNullable&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; option) where T : struct;" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Nullable`1&lt;!!T&gt; ToNullable&lt;struct .ctor (class System.ValueType) T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; option) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToNullable``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToNullable(Of T As Structure) (option As FSharpOption(Of T)) As Nullable(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.toNullable : option&lt;'T (requires 'T : struct)&gt; -&gt; Nullable&lt;'T (requires 'T : struct)&gt; (requires 'T : struct)" Usage="Microsoft.FSharp.Core.OptionModule.ToNullable option" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -942,6 +994,8 @@
       <MemberSignature Language="C#" Value="public static T ToObj&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; value) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T ToObj&lt;class T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptionModule.ToObj``1(Microsoft.FSharp.Core.FSharpOption{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToObj(Of T As Class) (value As FSharpOption(Of T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Option.toObj : option&lt;'T (requires 'T : null)&gt; -&gt; 'T (requires 'T : null)" Usage="Microsoft.FSharp.Core.OptionModule.ToObj value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

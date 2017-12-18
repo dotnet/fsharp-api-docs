@@ -1,7 +1,9 @@
-<Type Name="NoEqualityAttribute" FullName="Microsoft.FSharp.Core.NoEqualityAttribute">
+﻿<Type Name="NoEqualityAttribute" FullName="Microsoft.FSharp.Core.NoEqualityAttribute">
   <TypeSignature Language="C#" Value="public sealed class NoEqualityAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NoEqualityAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.NoEqualityAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NoEqualityAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type NoEqualityAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public NoEqualityAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NoEqualityAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="StringModule" FullName="Microsoft.FSharp.Core.StringModule">
+﻿<Type Name="StringModule" FullName="Microsoft.FSharp.Core.StringModule">
   <TypeSignature Language="C#" Value="public static class StringModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed StringModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.StringModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class StringModule" />
+  <TypeSignature Language="F#" Value="module String" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public static string Collect (Microsoft.FSharp.Core.FSharpFunc&lt;char,string&gt; mapping, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Collect(class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, string&gt; mapping, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Collect(Microsoft.FSharp.Core.FSharpFunc{System.Char,System.String},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Collect (mapping As FSharpFunc(Of Char, String), str As String) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.collect : (char -&gt; string) -&gt; string -&gt; string" Usage="Microsoft.FSharp.Core.StringModule.Collect mapping str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -67,6 +71,8 @@
       <MemberSignature Language="C#" Value="public static string Concat (string sep, System.Collections.Generic.IEnumerable&lt;string&gt; strings);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Concat(string sep, class System.Collections.Generic.IEnumerable`1&lt;string&gt; strings) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Concat(System.String,System.Collections.Generic.IEnumerable{System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat (sep As String, strings As IEnumerable(Of String)) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.concat : string -&gt; seq&lt;string&gt; -&gt; string" Usage="Microsoft.FSharp.Core.StringModule.Concat sep strings" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -103,6 +109,8 @@
       <MemberSignature Language="C#" Value="public static bool Exists (Microsoft.FSharp.Core.FSharpFunc&lt;char,bool&gt; predicate, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Exists(class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, bool&gt; predicate, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Exists(Microsoft.FSharp.Core.FSharpFunc{System.Char,System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists (predicate As FSharpFunc(Of Char, Boolean), str As String) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.exists : (char -&gt; bool) -&gt; string -&gt; bool" Usage="Microsoft.FSharp.Core.StringModule.Exists predicate str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -135,6 +143,8 @@
       <MemberSignature Language="C#" Value="public static string Filter (Microsoft.FSharp.Core.FSharpFunc&lt;char,bool&gt; predicate, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Filter(class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, bool&gt; predicate, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Filter(Microsoft.FSharp.Core.FSharpFunc{System.Char,System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Filter (predicate As FSharpFunc(Of Char, Boolean), str As String) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.filter : (char -&gt; bool) -&gt; string -&gt; string" Usage="Microsoft.FSharp.Core.StringModule.Filter predicate str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -168,6 +178,8 @@
       <MemberSignature Language="C#" Value="public static bool ForAll (Microsoft.FSharp.Core.FSharpFunc&lt;char,bool&gt; predicate, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ForAll(class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, bool&gt; predicate, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.ForAll(Microsoft.FSharp.Core.FSharpFunc{System.Char,System.Boolean},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForAll (predicate As FSharpFunc(Of Char, Boolean), str As String) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.forall : (char -&gt; bool) -&gt; string -&gt; bool" Usage="Microsoft.FSharp.Core.StringModule.ForAll predicate str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -200,6 +212,8 @@
       <MemberSignature Language="C#" Value="public static string Initialize (int count, Microsoft.FSharp.Core.FSharpFunc&lt;int,string&gt; initializer);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Initialize(int32 count, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, string&gt; initializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Initialize(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Initialize (count As Integer, initializer As FSharpFunc(Of Integer, String)) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.init : int -&gt; (int -&gt; string) -&gt; string" Usage="Microsoft.FSharp.Core.StringModule.Initialize count initializer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -236,6 +250,8 @@
       <MemberSignature Language="C#" Value="public static void Iterate (Microsoft.FSharp.Core.FSharpFunc&lt;char,Microsoft.FSharp.Core.Unit&gt; action, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Iterate(class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, class Microsoft.FSharp.Core.Unit&gt; action, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Iterate(Microsoft.FSharp.Core.FSharpFunc{System.Char,Microsoft.FSharp.Core.Unit},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Iterate (action As FSharpFunc(Of Char, Unit), str As String)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.iter : (char -&gt; unit) -&gt; string -&gt; unit" Usage="Microsoft.FSharp.Core.StringModule.Iterate action str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -267,6 +283,8 @@
       <MemberSignature Language="C#" Value="public static void IterateIndexed (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;char,Microsoft.FSharp.Core.Unit&gt;&gt; action, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static void IterateIndexed(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, class Microsoft.FSharp.Core.Unit&gt;&gt; action, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.IterateIndexed(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Char,Microsoft.FSharp.Core.Unit}},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub IterateIndexed (action As FSharpFunc(Of Integer, FSharpFunc(Of Char, Unit)), str As String)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.iteri : (int -&gt; char -&gt; unit) -&gt; string -&gt; unit" Usage="Microsoft.FSharp.Core.StringModule.IterateIndexed action str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -299,6 +317,8 @@
       <MemberSignature Language="C#" Value="public static int Length (string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Length(string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Length(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Length (str As String) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.length : string -&gt; int" Usage="Microsoft.FSharp.Core.StringModule.Length str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -326,6 +346,8 @@
       <MemberSignature Language="C#" Value="public static string Map (Microsoft.FSharp.Core.FSharpFunc&lt;char,char&gt; mapping, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Map(class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, char&gt; mapping, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Map(Microsoft.FSharp.Core.FSharpFunc{System.Char,System.Char},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map (mapping As FSharpFunc(Of Char, Char), str As String) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.map : (char -&gt; char) -&gt; string -&gt; string" Usage="Microsoft.FSharp.Core.StringModule.Map mapping str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -359,6 +381,8 @@
       <MemberSignature Language="C#" Value="public static string MapIndexed (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;char,char&gt;&gt; mapping, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static string MapIndexed(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;char, char&gt;&gt; mapping, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.MapIndexed(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Char,System.Char}},System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapIndexed (mapping As FSharpFunc(Of Integer, FSharpFunc(Of Char, Char)), str As String) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.mapi : (int -&gt; char -&gt; char) -&gt; string -&gt; string" Usage="Microsoft.FSharp.Core.StringModule.MapIndexed mapping str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -392,6 +416,8 @@
       <MemberSignature Language="C#" Value="public static string Replicate (int count, string str);" />
       <MemberSignature Language="ILAsm" Value=".method public static string Replicate(int32 count, string str) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.StringModule.Replicate(System.Int32,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Replicate (count As Integer, str As String) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.String.replicate : int -&gt; string -&gt; string" Usage="Microsoft.FSharp.Core.StringModule.Replicate count str" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

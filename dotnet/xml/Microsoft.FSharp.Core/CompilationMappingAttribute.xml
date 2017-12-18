@@ -1,7 +1,9 @@
-<Type Name="CompilationMappingAttribute" FullName="Microsoft.FSharp.Core.CompilationMappingAttribute">
+﻿<Type Name="CompilationMappingAttribute" FullName="Microsoft.FSharp.Core.CompilationMappingAttribute">
   <TypeSignature Language="C#" Value="public sealed class CompilationMappingAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CompilationMappingAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilationMappingAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CompilationMappingAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type CompilationMappingAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public CompilationMappingAttribute (Microsoft.FSharp.Core.SourceConstructFlags sourceConstructFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype Microsoft.FSharp.Core.SourceConstructFlags sourceConstructFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilationMappingAttribute.#ctor(Microsoft.FSharp.Core.SourceConstructFlags)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CompilationMappingAttribute : Microsoft.FSharp.Core.SourceConstructFlags -&gt; Microsoft.FSharp.Core.CompilationMappingAttribute" Usage="new Microsoft.FSharp.Core.CompilationMappingAttribute sourceConstructFlags" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -53,6 +56,7 @@
       <MemberSignature Language="C#" Value="public CompilationMappingAttribute (Microsoft.FSharp.Core.SourceConstructFlags sourceConstructFlags, int sequenceNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype Microsoft.FSharp.Core.SourceConstructFlags sourceConstructFlags, int32 sequenceNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilationMappingAttribute.#ctor(Microsoft.FSharp.Core.SourceConstructFlags,System.Int32)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CompilationMappingAttribute : Microsoft.FSharp.Core.SourceConstructFlags * int -&gt; Microsoft.FSharp.Core.CompilationMappingAttribute" Usage="new Microsoft.FSharp.Core.CompilationMappingAttribute (sourceConstructFlags, sequenceNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -74,6 +78,8 @@
       <MemberSignature Language="C#" Value="public CompilationMappingAttribute (string resourceName, Type[] typeDefinitions);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string resourceName, class System.Type[] typeDefinitions) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilationMappingAttribute.#ctor(System.String,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (resourceName As String, typeDefinitions As Type())" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CompilationMappingAttribute : string * Type[] -&gt; Microsoft.FSharp.Core.CompilationMappingAttribute" Usage="new Microsoft.FSharp.Core.CompilationMappingAttribute (resourceName, typeDefinitions)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -95,6 +101,7 @@
       <MemberSignature Language="C#" Value="public CompilationMappingAttribute (Microsoft.FSharp.Core.SourceConstructFlags sourceConstructFlags, int variantNumber, int sequenceNumber);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(valuetype Microsoft.FSharp.Core.SourceConstructFlags sourceConstructFlags, int32 variantNumber, int32 sequenceNumber) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilationMappingAttribute.#ctor(Microsoft.FSharp.Core.SourceConstructFlags,System.Int32,System.Int32)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CompilationMappingAttribute : Microsoft.FSharp.Core.SourceConstructFlags * int * int -&gt; Microsoft.FSharp.Core.CompilationMappingAttribute" Usage="new Microsoft.FSharp.Core.CompilationMappingAttribute (sourceConstructFlags, variantNumber, sequenceNumber)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -118,6 +125,8 @@
       <MemberSignature Language="C#" Value="public string ResourceName { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string ResourceName" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilationMappingAttribute.ResourceName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ResourceName As String" />
+      <MemberSignature Language="F#" Value="member this.ResourceName : string" Usage="Microsoft.FSharp.Core.CompilationMappingAttribute.ResourceName" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -136,6 +145,8 @@
       <MemberSignature Language="C#" Value="public int SequenceNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 SequenceNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilationMappingAttribute.SequenceNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SequenceNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.SequenceNumber : int" Usage="Microsoft.FSharp.Core.CompilationMappingAttribute.SequenceNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -154,6 +165,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Core.SourceConstructFlags SourceConstructFlags { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.FSharp.Core.SourceConstructFlags SourceConstructFlags" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilationMappingAttribute.SourceConstructFlags" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property SourceConstructFlags As SourceConstructFlags" />
+      <MemberSignature Language="F#" Value="member this.SourceConstructFlags : Microsoft.FSharp.Core.SourceConstructFlags" Usage="Microsoft.FSharp.Core.CompilationMappingAttribute.SourceConstructFlags" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -172,6 +185,8 @@
       <MemberSignature Language="C#" Value="public Type[] TypeDefinitions { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class System.Type[] TypeDefinitions" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilationMappingAttribute.TypeDefinitions" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TypeDefinitions As Type()" />
+      <MemberSignature Language="F#" Value="member this.TypeDefinitions : Type[]" Usage="Microsoft.FSharp.Core.CompilationMappingAttribute.TypeDefinitions" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -190,6 +205,8 @@
       <MemberSignature Language="C#" Value="public int VariantNumber { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 VariantNumber" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilationMappingAttribute.VariantNumber" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property VariantNumber As Integer" />
+      <MemberSignature Language="F#" Value="member this.VariantNumber : int" Usage="Microsoft.FSharp.Core.CompilationMappingAttribute.VariantNumber" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

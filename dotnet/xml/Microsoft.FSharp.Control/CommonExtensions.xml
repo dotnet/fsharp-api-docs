@@ -1,7 +1,9 @@
-<Type Name="CommonExtensions" FullName="Microsoft.FSharp.Control.CommonExtensions">
+﻿<Type Name="CommonExtensions" FullName="Microsoft.FSharp.Control.CommonExtensions">
   <TypeSignature Language="C#" Value="public static class CommonExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed CommonExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.CommonExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Class CommonExtensions" />
+  <TypeSignature Language="F#" Value="module CommonExtensions" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static void AddToObservable&lt;T&gt; (IObservable&lt;T&gt; x, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method public static void AddToObservable&lt;T&gt;(class System.IObservable`1&lt;!!T&gt; x, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AddToObservable``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub AddToObservable(Of T) (x As IObservable(Of T), callback As FSharpFunc(Of T, Unit))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.CommonExtensions.Add : IObservable&lt;'T&gt; -&gt; ('T -&gt; unit) -&gt; unit" Usage="Microsoft.FSharp.Control.CommonExtensions.AddToObservable x callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -63,6 +67,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;int&gt; AsyncRead (System.IO.Stream stream, byte[] buffer, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; offset, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; count);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;int32&gt; AsyncRead(class System.IO.Stream stream, unsigned int8[] buffer, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; offset, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AsyncRead(System.IO.Stream,System.Byte[],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.CommonExtensions.AsyncRead : System.IO.Stream -&gt; byte[] * option&lt;int&gt; * option&lt;int&gt; -&gt; Async&lt;int&gt;" Usage="Microsoft.FSharp.Control.CommonExtensions.AsyncRead stream (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -114,6 +119,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;byte[]&gt; AsyncReadBytes (System.IO.Stream stream, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;unsigned int8[]&gt; AsyncReadBytes(class System.IO.Stream stream, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AsyncReadBytes(System.IO.Stream,System.Int32)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.CommonExtensions.AsyncRead : System.IO.Stream -&gt; int -&gt; Async&lt;byte[]&gt;" Usage="Microsoft.FSharp.Control.CommonExtensions.AsyncReadBytes stream count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -146,6 +152,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; AsyncWrite (System.IO.Stream stream, byte[] buffer, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; offset, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; count);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; AsyncWrite(class System.IO.Stream stream, unsigned int8[] buffer, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; offset, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.AsyncWrite(System.IO.Stream,System.Byte[],Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.CommonExtensions.AsyncWrite : System.IO.Stream -&gt; byte[] * option&lt;int&gt; * option&lt;int&gt; -&gt; Async&lt;unit&gt;" Usage="Microsoft.FSharp.Control.CommonExtensions.AsyncWrite stream (buffer, offset, count)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -197,6 +204,8 @@
       <MemberSignature Language="C#" Value="public static IDisposable SubscribeToObservable&lt;T&gt; (IObservable&lt;T&gt; x, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; callback);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.IDisposable SubscribeToObservable&lt;T&gt;(class System.IObservable`1&lt;!!T&gt; x, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; callback) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.CommonExtensions.SubscribeToObservable``1(System.IObservable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SubscribeToObservable(Of T) (x As IObservable(Of T), callback As FSharpFunc(Of T, Unit)) As IDisposable" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.CommonExtensions.Subscribe : IObservable&lt;'T&gt; -&gt; ('T -&gt; unit) -&gt; IDisposable" Usage="Microsoft.FSharp.Control.CommonExtensions.SubscribeToObservable x callback" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

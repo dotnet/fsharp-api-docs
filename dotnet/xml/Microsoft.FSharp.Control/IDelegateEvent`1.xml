@@ -1,7 +1,9 @@
-<Type Name="IDelegateEvent&lt;TDelegate&gt;" FullName="Microsoft.FSharp.Control.IDelegateEvent&lt;TDelegate&gt;">
+﻿<Type Name="IDelegateEvent&lt;TDelegate&gt;" FullName="Microsoft.FSharp.Control.IDelegateEvent&lt;TDelegate&gt;">
   <TypeSignature Language="C#" Value="public interface IDelegateEvent&lt;TDelegate&gt; where TDelegate : Delegate" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IDelegateEvent`1&lt;(class System.Delegate) TDelegate&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.IDelegateEvent`1" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IDelegateEvent(Of TDelegate)" />
+  <TypeSignature Language="F#" Value="type IDelegateEvent&lt;'Delegate (requires 'Delegate :&gt; Delegate)&gt; = interface" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public void AddHandler (TDelegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void AddHandler(!TDelegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.IDelegateEvent`1.AddHandler(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddHandler (handler As TDelegate)" />
+      <MemberSignature Language="F#" Value="abstract member AddHandler : 'Delegate -&gt; unit" Usage="iDelegateEvent.AddHandler handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public void RemoveHandler (TDelegate handler);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void RemoveHandler(!TDelegate handler) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.IDelegateEvent`1.RemoveHandler(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveHandler (handler As TDelegate)" />
+      <MemberSignature Language="F#" Value="abstract member RemoveHandler : 'Delegate -&gt; unit" Usage="iDelegateEvent.RemoveHandler handler" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

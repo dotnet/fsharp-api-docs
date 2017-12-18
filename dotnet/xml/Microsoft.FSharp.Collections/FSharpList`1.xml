@@ -1,7 +1,9 @@
-<Type Name="FSharpList&lt;T&gt;" FullName="Microsoft.FSharp.Collections.FSharpList&lt;T&gt;">
+﻿<Type Name="FSharpList&lt;T&gt;" FullName="Microsoft.FSharp.Collections.FSharpList&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class FSharpList&lt;T&gt; : IComparable, IComparable&lt;Microsoft.FSharp.Collections.FSharpList&lt;T&gt;&gt;, IEquatable&lt;Microsoft.FSharp.Collections.FSharpList&lt;T&gt;&gt;, System.Collections.Generic.IEnumerable&lt;T&gt;, System.Collections.Generic.IReadOnlyCollection&lt;T&gt;, System.Collections.IStructuralComparable, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto sealed beforefieldinit FSharpList`1&lt;T&gt; extends System.Object implements class System.Collections.Generic.IEnumerable`1&lt;!T&gt;, class System.Collections.Generic.IReadOnlyCollection`1&lt;!T&gt;, class System.Collections.IEnumerable, class System.Collections.IStructuralComparable, class System.Collections.IStructuralEquatable, class System.IComparable, class System.IComparable`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt;&gt;, class System.IEquatable`1&lt;class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.FSharpList`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FSharpList(Of T)&#xA;Implements IComparable, IComparable(Of FSharpList(Of T)), IEnumerable(Of T), IEquatable(Of FSharpList(Of T)), IReadOnlyCollection(Of T), IStructuralComparable, IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type List&lt;'T&gt; = " />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -70,6 +72,7 @@
       <MemberSignature Language="C#" Value="public FSharpList (T head, Microsoft.FSharp.Collections.FSharpList&lt;T&gt; tail);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(!T head, class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; tail) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.#ctor(`0,Microsoft.FSharp.Collections.FSharpList{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (head As T, tail As FSharpList(Of T))" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -95,7 +98,11 @@
       <MemberSignature Language="C#" Value="public override sealed int CompareTo (Microsoft.FSharp.Collections.FSharpList&lt;T&gt; obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 CompareTo(class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.CompareTo(Microsoft.FSharp.Collections.FSharpList{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CompareTo (obj As FSharpList(Of T)) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable`1.CompareTo(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -117,7 +124,11 @@
       <MemberSignature Language="C#" Value="public override sealed int CompareTo (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 CompareTo(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.CompareTo(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CompareTo (obj As Object) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IComparable.CompareTo(System.Object)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -139,7 +150,11 @@
       <MemberSignature Language="C#" Value="public override sealed int CompareTo (object obj, System.Collections.IComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 CompareTo(object obj, class System.Collections.IComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.CompareTo(System.Object,System.Collections.IComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function CompareTo (obj As Object, comp As IComparer) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralComparable.CompareTo(System.Object,System.Collections.IComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -163,6 +178,7 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;T&gt; Cons (T head, Microsoft.FSharp.Collections.FSharpList&lt;T&gt; tail);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; Cons(!T head, class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; tail) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.Cons(`0,Microsoft.FSharp.Collections.FSharpList{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cons (head As T, tail As FSharpList(Of T)) As FSharpList(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -192,6 +208,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;T&gt; Empty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; Empty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Empty As FSharpList(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Empty : List&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.List&lt;'T&gt;.Empty" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -221,7 +239,11 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (Microsoft.FSharp.Collections.FSharpList&lt;T&gt; obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.Equals(Microsoft.FSharp.Collections.FSharpList{`0})" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As FSharpList(Of T)) As Boolean" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.IEquatable`1.Equals(`0)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -243,6 +265,7 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -265,7 +288,11 @@
       <MemberSignature Language="C#" Value="public override sealed bool Equals (object obj, System.Collections.IEqualityComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj, class System.Collections.IEqualityComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function Equals (obj As Object, comp As IEqualityComparer) As Boolean" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -289,6 +316,7 @@
       <MemberSignature Language="C#" Value="public override sealed int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode () As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -308,7 +336,11 @@
       <MemberSignature Language="C#" Value="public override sealed int GetHashCode (System.Collections.IEqualityComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode(class System.Collections.IEqualityComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides NotOverridable Function GetHashCode (comp As IEqualityComparer) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -330,6 +362,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Collections.FSharpList&lt;T&gt; GetSlice (Microsoft.FSharp.Core.FSharpOption&lt;int&gt; startIndex, Microsoft.FSharp.Core.FSharpOption&lt;int&gt; endIndex);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; GetSlice(class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; startIndex, class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; endIndex) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.GetSlice(Microsoft.FSharp.Core.FSharpOption{System.Int32},Microsoft.FSharp.Core.FSharpOption{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetSlice (startIndex As FSharpOption(Of Integer), endIndex As FSharpOption(Of Integer)) As FSharpList(Of T)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -354,6 +387,7 @@
       <MemberSignature Language="C#" Value="public T Head { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Head" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.Head" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Head As T" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -372,6 +406,7 @@
       <MemberSignature Language="C#" Value="public T HeadOrDefault { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T HeadOrDefault" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.HeadOrDefault" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property HeadOrDefault As T" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -401,6 +436,7 @@
       <MemberSignature Language="C#" Value="public bool IsCons { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsCons" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.IsCons" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsCons As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -430,6 +466,7 @@
       <MemberSignature Language="C#" Value="public bool IsEmpty { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsEmpty" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.IsEmpty" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property IsEmpty As Boolean" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -459,6 +496,7 @@
       <MemberSignature Language="C#" Value="public T this[int index] { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T Item(int32)" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(index As Integer) As T" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -481,6 +519,7 @@
       <MemberSignature Language="C#" Value="public int Length { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Length" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.Length" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Length As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -504,6 +543,7 @@
       <MemberSignature Language="C#" Value="public int Tag { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Tag" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.Tag" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tag As Integer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -533,6 +573,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Collections.FSharpList&lt;T&gt; Tail { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; Tail" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.Tail" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Tail As FSharpList(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -551,6 +592,7 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Collections.FSharpList&lt;T&gt; TailOrNull { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.FSharp.Collections.FSharpList`1&lt;!T&gt; TailOrNull" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Collections.FSharpList`1.TailOrNull" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TailOrNull As FSharpList(Of T)" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -580,6 +622,7 @@
       <MemberSignature Language="C#" Value="public override string ToString ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance string ToString() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.FSharpList`1.ToString" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function ToString () As String" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

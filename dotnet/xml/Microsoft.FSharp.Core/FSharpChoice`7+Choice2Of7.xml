@@ -1,7 +1,9 @@
-<Type Name="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice2Of7" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice2Of7">
+﻿<Type Name="FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice2Of7" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;+Choice2Of7">
   <TypeSignature Language="C#" Value="public class FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;.Choice2Of7 : Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5,T6,T7&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi beforefieldinit FSharpChoice`7/Choice2Of7&lt;T1, T2, T3, T4, T5, T6, T7&gt; extends Microsoft.FSharp.Core.FSharpChoice`7&lt;!T1, !T2, !T3, !T4, !T5, !T6, !T7&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpChoice`7.Choice2Of7" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpChoice(Of T1, T2, T3, T4, T5, T6, T7).Choice2Of7&#xA;Inherits FSharpChoice(Of T1, T2, T3, T4, T5, T6, T7)" />
+  <TypeSignature Language="F#" Value="Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7&gt;.Choice : 'T2 -&gt; Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7&gt;" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -42,6 +44,8 @@
       <MemberSignature Language="C#" Value="public T2 Item { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T2 Item" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.FSharpChoice`7.Choice2Of7.Item" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item As T2" />
+      <MemberSignature Language="F#" Value="val Item : 'T2" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5, 'T6, 'T7&gt;.Choice.Item" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

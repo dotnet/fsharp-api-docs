@@ -1,7 +1,9 @@
-<Type Name="LowPriority" FullName="Microsoft.FSharp.Linq.QueryRunExtensions.LowPriority">
+﻿<Type Name="LowPriority" FullName="Microsoft.FSharp.Linq.QueryRunExtensions.LowPriority">
   <TypeSignature Language="C#" Value="public static class LowPriority" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed LowPriority extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Linq.QueryRunExtensions.LowPriority" />
+  <TypeSignature Language="VB.NET" Value="Public Class LowPriority" />
+  <TypeSignature Language="F#" Value="module LowPriority" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static T RunQueryAsValue&lt;T&gt; (Microsoft.FSharp.Linq.QueryBuilder this, Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; q);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T RunQueryAsValue&lt;T&gt;(class Microsoft.FSharp.Linq.QueryBuilder this, class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; q) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.QueryRunExtensions.LowPriority.RunQueryAsValue``1(Microsoft.FSharp.Linq.QueryBuilder,Microsoft.FSharp.Quotations.FSharpExpr{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function RunQueryAsValue(Of T) (this As QueryBuilder, q As FSharpExpr(Of T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Linq.QueryRunExtensions.LowPriority.Run : Expr&lt;'T&gt; -&gt; 'T" Usage="Microsoft.FSharp.Linq.QueryRunExtensions.LowPriority.RunQueryAsValue q" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

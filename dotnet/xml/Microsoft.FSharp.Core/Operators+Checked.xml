@@ -1,7 +1,9 @@
-<Type Name="Operators+Checked" FullName="Microsoft.FSharp.Core.Operators+Checked">
+﻿<Type Name="Operators+Checked" FullName="Microsoft.FSharp.Core.Operators+Checked">
   <TypeSignature Language="C#" Value="public static class Operators.Checked" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed Operators/Checked extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.Operators.Checked" />
+  <TypeSignature Language="VB.NET" Value="Public Class Operators.Checked" />
+  <TypeSignature Language="F#" Value="module Operators.Checked" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -21,9 +23,11 @@
   </Docs>
   <Members>
     <Member MemberName="op_Addition&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Addition&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator +&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Addition&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.op_Addition``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator +(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( + ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x + y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -58,9 +62,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Multiply&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator *&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Multiply&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.op_Multiply``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator *(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( * ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x * y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -98,9 +104,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Subtraction&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator -&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Subtraction&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.op_Subtraction``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator -(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( - ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x - y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -138,9 +146,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_UnaryNegation&lt;T&gt; (T value);" />
+      <MemberSignature Language="C#" Value="public static T operator -&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_UnaryNegation&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.op_UnaryNegation``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator -(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="( ~- ) : 'T -&gt; 'T" Usage="- value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -172,6 +182,8 @@
       <MemberSignature Language="C#" Value="public static byte ToByte&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int8 ToByte&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToByte``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte(Of T) (value As T) As Byte" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.byte : 'T -&gt; byte" Usage="Microsoft.FSharp.Core.Operators.Checked.ToByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -209,6 +221,8 @@
       <MemberSignature Language="C#" Value="public static char ToChar&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static char ToChar&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToChar``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar(Of T) (value As T) As Char" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.char : 'T -&gt; char" Usage="Microsoft.FSharp.Core.Operators.Checked.ToChar value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -246,6 +260,8 @@
       <MemberSignature Language="C#" Value="public static int ToInt&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 ToInt&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToInt``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt(Of T) (value As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.int : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.Checked.ToInt value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -283,6 +299,8 @@
       <MemberSignature Language="C#" Value="public static short ToInt16&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int16 ToInt16&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToInt16``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16(Of T) (value As T) As Short" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.int16 : 'T -&gt; int16" Usage="Microsoft.FSharp.Core.Operators.Checked.ToInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -320,6 +338,8 @@
       <MemberSignature Language="C#" Value="public static int ToInt32&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 ToInt32&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToInt32``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32(Of T) (value As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.int32 : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.Checked.ToInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -357,6 +377,8 @@
       <MemberSignature Language="C#" Value="public static long ToInt64&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 ToInt64&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToInt64``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64(Of T) (value As T) As Long" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.int64 : 'T -&gt; int64" Usage="Microsoft.FSharp.Core.Operators.Checked.ToInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -394,6 +416,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ToIntPtr&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static native int ToIntPtr&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToIntPtr``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIntPtr(Of T) (value As T) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.nativeint : 'T -&gt; nativeint" Usage="Microsoft.FSharp.Core.Operators.Checked.ToIntPtr value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -430,6 +454,8 @@
       <MemberSignature Language="C#" Value="public static sbyte ToSByte&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int8 ToSByte&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToSByte``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte(Of T) (value As T) As SByte" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.sbyte : 'T -&gt; sbyte" Usage="Microsoft.FSharp.Core.Operators.Checked.ToSByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -467,6 +493,8 @@
       <MemberSignature Language="C#" Value="public static ushort ToUInt16&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int16 ToUInt16&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToUInt16``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16(Of T) (value As T) As UShort" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.uint16 : 'T -&gt; uint16" Usage="Microsoft.FSharp.Core.Operators.Checked.ToUInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -504,6 +532,8 @@
       <MemberSignature Language="C#" Value="public static uint ToUInt32&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int32 ToUInt32&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToUInt32``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32(Of T) (value As T) As UInteger" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.uint32 : 'T -&gt; uint32" Usage="Microsoft.FSharp.Core.Operators.Checked.ToUInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -541,6 +571,8 @@
       <MemberSignature Language="C#" Value="public static ulong ToUInt64&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int64 ToUInt64&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToUInt64``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64(Of T) (value As T) As ULong" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.uint64 : 'T -&gt; uint64" Usage="Microsoft.FSharp.Core.Operators.Checked.ToUInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -578,6 +610,8 @@
       <MemberSignature Language="C#" Value="public static UIntPtr ToUIntPtr&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static native unsigned int ToUIntPtr&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Checked.ToUIntPtr``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUIntPtr(Of T) (value As T) As UIntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Checked.unativeint : 'T -&gt; unativeint" Usage="Microsoft.FSharp.Core.Operators.Checked.ToUIntPtr value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

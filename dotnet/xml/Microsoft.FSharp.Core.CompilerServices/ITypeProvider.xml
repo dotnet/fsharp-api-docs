@@ -1,7 +1,9 @@
-<Type Name="ITypeProvider" FullName="Microsoft.FSharp.Core.CompilerServices.ITypeProvider">
+﻿<Type Name="ITypeProvider" FullName="Microsoft.FSharp.Core.CompilerServices.ITypeProvider">
   <TypeSignature Language="C#" Value="public interface ITypeProvider : IDisposable" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeProvider implements class System.IDisposable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.ITypeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITypeProvider&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ITypeProvider = interface&#xA;    interface IDisposable" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public Type ApplyStaticArguments (Type typeWithoutArguments, string[] typePathWithArguments, object[] staticArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type ApplyStaticArguments(class System.Type typeWithoutArguments, string[] typePathWithArguments, object[] staticArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.ApplyStaticArguments(System.Type,System.String[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ApplyStaticArguments (typeWithoutArguments As Type, typePathWithArguments As String(), staticArguments As Object()) As Type" />
+      <MemberSignature Language="F#" Value="abstract member ApplyStaticArguments : Type * string[] * obj[] -&gt; Type" Usage="iTypeProvider.ApplyStaticArguments (typeWithoutArguments, typePathWithArguments, staticArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -55,6 +59,7 @@
       <MemberSignature Language="C#" Value="public byte[] GetGeneratedAssemblyContents (System.Reflection.Assembly assembly);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetGeneratedAssemblyContents(class System.Reflection.Assembly assembly) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetGeneratedAssemblyContents(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="abstract member GetGeneratedAssemblyContents : System.Reflection.Assembly -&gt; byte[]" Usage="iTypeProvider.GetGeneratedAssemblyContents assembly" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -79,6 +84,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Quotations.FSharpExpr GetInvokerExpression (System.Reflection.MethodBase syntheticMethodBase, Microsoft.FSharp.Quotations.FSharpExpr[] parameters);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.FSharp.Quotations.FSharpExpr GetInvokerExpression(class System.Reflection.MethodBase syntheticMethodBase, class Microsoft.FSharp.Quotations.FSharpExpr[] parameters) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetInvokerExpression(System.Reflection.MethodBase,Microsoft.FSharp.Quotations.FSharpExpr[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInvokerExpression (syntheticMethodBase As MethodBase, parameters As FSharpExpr()) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="abstract member GetInvokerExpression : System.Reflection.MethodBase * Expr[] -&gt; Expr" Usage="iTypeProvider.GetInvokerExpression (syntheticMethodBase, parameters)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -105,6 +112,8 @@
       <MemberSignature Language="C#" Value="public Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[] GetNamespaces ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[] GetNamespaces() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNamespaces () As IProvidedNamespace()" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespaces : unit -&gt; Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[]" Usage="iTypeProvider.GetNamespaces " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -126,6 +135,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ParameterInfo[] GetStaticParameters (Type typeWithoutArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.ParameterInfo[] GetStaticParameters(class System.Type typeWithoutArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetStaticParameters(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStaticParameters (typeWithoutArguments As Type) As ParameterInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetStaticParameters : Type -&gt; System.Reflection.ParameterInfo[]" Usage="iTypeProvider.GetStaticParameters typeWithoutArguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -147,9 +158,11 @@
       </Docs>
     </Member>
     <Member MemberName="Invalidate">
-      <MemberSignature Language="C#" Value="public event EventHandler Invalidate;" />
+      <MemberSignature Language="C#" Value="event EventHandler Invalidate;" />
       <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Invalidate" />
       <MemberSignature Language="DocId" Value="E:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Event Invalidate As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Invalidate : EventHandler " Usage="member this.Invalidate : System.EventHandler " />
       <MemberType>Event</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

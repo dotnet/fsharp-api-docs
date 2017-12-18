@@ -1,7 +1,9 @@
-<Type Name="LanguagePrimitives+IntrinsicOperators" FullName="Microsoft.FSharp.Core.LanguagePrimitives+IntrinsicOperators">
+﻿<Type Name="LanguagePrimitives+IntrinsicOperators" FullName="Microsoft.FSharp.Core.LanguagePrimitives+IntrinsicOperators">
   <TypeSignature Language="C#" Value="public static class LanguagePrimitives.IntrinsicOperators" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed LanguagePrimitives/IntrinsicOperators extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators" />
+  <TypeSignature Language="VB.NET" Value="Public Class LanguagePrimitives.IntrinsicOperators" />
+  <TypeSignature Language="F#" Value="module LanguagePrimitives.IntrinsicOperators" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public static T op_AddressOf&lt;T&gt; (T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_AddressOf&lt;T&gt;(!!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_AddressOf``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_AddressOf(Of T) (obj As T) As T" />
+      <MemberSignature Language="F#" Value="op_AddressOf : 'T -&gt; " Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_AddressOf obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -55,6 +59,8 @@
       <MemberSignature Language="C#" Value="public static bool op_Amp (bool e1, bool e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Amp(bool e1, bool e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_Amp(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Amp (e1 As Boolean, e2 As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="( &amp; ) : bool -&gt; bool -&gt; bool" Usage="e1 &amp; e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public static bool op_BooleanAnd (bool e1, bool e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_BooleanAnd(bool e1, bool e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_BooleanAnd(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_BooleanAnd (e1 As Boolean, e2 As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="op_BooleanAnd : bool -&gt; bool -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_BooleanAnd e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -116,6 +124,8 @@
       <MemberSignature Language="C#" Value="public static bool op_BooleanOr (bool e1, bool e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_BooleanOr(bool e1, bool e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_BooleanOr(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_BooleanOr (e1 As Boolean, e2 As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="op_BooleanOr : bool -&gt; bool -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_BooleanOr e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -145,6 +155,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr op_IntegerAddressOf&lt;T&gt; (T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname native int op_IntegerAddressOf&lt;T&gt;(!!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_IntegerAddressOf``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_IntegerAddressOf(Of T) (obj As T) As IntPtr" />
+      <MemberSignature Language="F#" Value="op_IntegerAddressOf : 'T -&gt; nativeint" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.op_IntegerAddressOf obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -176,6 +188,8 @@
       <MemberSignature Language="C#" Value="public static bool Or (bool e1, bool e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Or(bool e1, bool e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.Or(System.Boolean,System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Or (e1 As Boolean, e2 As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.or : bool -&gt; bool -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.IntrinsicOperators.Or e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="ClassAttribute" FullName="Microsoft.FSharp.Core.ClassAttribute">
+﻿<Type Name="ClassAttribute" FullName="Microsoft.FSharp.Core.ClassAttribute">
   <TypeSignature Language="C#" Value="public sealed class ClassAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed ClassAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.ClassAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class ClassAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type ClassAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public ClassAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ClassAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

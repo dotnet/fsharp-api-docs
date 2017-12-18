@@ -1,7 +1,9 @@
-<Type Name="Operators+Unchecked" FullName="Microsoft.FSharp.Core.Operators+Unchecked">
+﻿<Type Name="Operators+Unchecked" FullName="Microsoft.FSharp.Core.Operators+Unchecked">
   <TypeSignature Language="C#" Value="public static class Operators.Unchecked" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed Operators/Unchecked extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.Operators.Unchecked" />
+  <TypeSignature Language="VB.NET" Value="Public Class Operators.Unchecked" />
+  <TypeSignature Language="F#" Value="module Operators.Unchecked" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public static int Compare&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Compare&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Unchecked.Compare``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare(Of T) (x As T, y As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Unchecked.compare : 'T -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.Unchecked.Compare x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static T DefaultOf&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T DefaultOf&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Unchecked.DefaultOf``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultOf(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Unchecked.defaultof : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Unchecked.DefaultOf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -94,6 +100,8 @@
       <MemberSignature Language="C#" Value="public static bool Equals&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Equals&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Unchecked.Equals``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Equals(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Unchecked.equals : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.Operators.Unchecked.Equals x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -131,6 +139,8 @@
       <MemberSignature Language="C#" Value="public static int Hash&lt;T&gt; (T x);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Hash&lt;T&gt;(!!T x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Unchecked.Hash``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Hash(Of T) (x As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Unchecked.hash : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.Unchecked.Hash x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -163,6 +173,8 @@
       <MemberSignature Language="C#" Value="public static T Unbox&lt;T&gt; (object v);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Unbox&lt;T&gt;(object v) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Unchecked.Unbox``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Unbox(Of T) (v As Object) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Unchecked.unbox : obj -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Unchecked.Unbox v" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

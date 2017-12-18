@@ -1,7 +1,9 @@
-<Type Name="ExtraTopLevelOperators" FullName="Microsoft.FSharp.Core.ExtraTopLevelOperators">
+﻿<Type Name="ExtraTopLevelOperators" FullName="Microsoft.FSharp.Core.ExtraTopLevelOperators">
   <TypeSignature Language="C#" Value="public static class ExtraTopLevelOperators" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ExtraTopLevelOperators extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.ExtraTopLevelOperators" />
+  <TypeSignature Language="VB.NET" Value="Public Class ExtraTopLevelOperators" />
+  <TypeSignature Language="F#" Value="module ExtraTopLevelOperators" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static T[,] CreateArray2D&lt;?,T&gt; (System.Collections.Generic.IEnumerable&lt;?&gt; rows) where ? : System.Collections.Generic.IEnumerable&lt;T&gt;;" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[,] CreateArray2D&lt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt;) ?, T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!?&gt; rows) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateArray2D``2(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateArray2D(Of ? As IEnumerable(Of T), T As IEnumerable(Of T)) (rows As IEnumerable(Of ?)) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.array2D : seq&lt;#seq&lt;'T&gt;&gt; -&gt; 'T[,]" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateArray2D rows" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IDictionary&lt;TKey,TValue&gt; CreateDictionary&lt;TKey,TValue&gt; (System.Collections.Generic.IEnumerable&lt;Tuple&lt;TKey,TValue&gt;&gt; keyValuePairs);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IDictionary`2&lt;!!TKey, !!TValue&gt; CreateDictionary&lt;TKey, TValue&gt;(class System.Collections.Generic.IEnumerable`1&lt;class System.Tuple`2&lt;!!TKey, !!TValue&gt;&gt; keyValuePairs) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateDictionary``2(System.Collections.Generic.IEnumerable{System.Tuple{``0,``1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateDictionary(Of TKey, TValue) (keyValuePairs As IEnumerable(Of Tuple(Of TKey, TValue))) As IDictionary(Of TKey, TValue)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.dict : seq&lt;'Key * 'Value&gt; -&gt; System.Collections.Generic.IDictionary&lt;'Key, 'Value&gt;" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateDictionary keyValuePairs" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -97,6 +103,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpSet&lt;T&gt; CreateSet&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; elements);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpSet`1&lt;!!T&gt; CreateSet&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; elements) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateSet``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSet(Of T) (elements As IEnumerable(Of T)) As FSharpSet(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.set : seq&lt;'T&gt; -&gt; Set&lt;'T&gt;" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.CreateSet elements" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -128,6 +136,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsyncBuilder DefaultAsyncBuilder { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.FSharp.Control.FSharpAsyncBuilder DefaultAsyncBuilder" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.ExtraTopLevelOperators.DefaultAsyncBuilder" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property DefaultAsyncBuilder As FSharpAsyncBuilder" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.DefaultAsyncBuilder : AsyncBuilder" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.DefaultAsyncBuilder" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -154,6 +164,8 @@
       <MemberSignature Language="C#" Value="public static T LazyPattern&lt;T&gt; (Lazy&lt;T&gt; input);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T LazyPattern&lt;T&gt;(class System.Lazy`1&lt;!!T&gt; input) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.LazyPattern``1(System.Lazy{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function LazyPattern(Of T) (input As Lazy(Of T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.|Lazy| : Lazy&lt;'T&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.LazyPattern input" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -185,6 +197,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormat&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormat&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormat``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormat(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.printf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormat format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -216,6 +230,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatLine&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLine&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLine``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatLine(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.printfn : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLine format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -247,6 +263,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatLineToError&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLineToError&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLineToError``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatLineToError(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.eprintfn : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLineToError format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -278,6 +296,7 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatLineToTextWriter&lt;T&gt; (System.IO.TextWriter textWriter, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatLineToTextWriter&lt;T&gt;(class System.IO.TextWriter textWriter, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLineToTextWriter``1(System.IO.TextWriter,Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.fprintfn : System.IO.TextWriter -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatLineToTextWriter textWriter format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -314,6 +333,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToError&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToError&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToError``1(Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToError(Of T) (format As PrintfFormat(Of T, TextWriter, Unit, Unit)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.eprintf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToError format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -345,6 +366,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToString&lt;T&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,string&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToString&lt;T&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, string&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToString``1(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,System.String})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToString(Of T) (format As PrintfFormat(Of T, Unit, String, String)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.sprintf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, unit, string, string&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToString format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -376,6 +399,8 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToStringThenFail&lt;T,TResult&gt; (Microsoft.FSharp.Core.PrintfFormat&lt;T,Microsoft.FSharp.Core.Unit,string,TResult&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToStringThenFail&lt;T, TResult&gt;(class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class Microsoft.FSharp.Core.Unit, string, !!TResult&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToStringThenFail``2(Microsoft.FSharp.Core.PrintfFormat{``0,Microsoft.FSharp.Core.Unit,System.String,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PrintFormatToStringThenFail(Of T, TResult) (format As PrintfFormat(Of T, Unit, String, TResult)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.failwithf : Microsoft.FSharp.Core.PrintfFormat&lt;'T, unit, string, 'Result&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToStringThenFail format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -410,6 +435,7 @@
       <MemberSignature Language="C#" Value="public static T PrintFormatToTextWriter&lt;T&gt; (System.IO.TextWriter textWriter, Microsoft.FSharp.Core.PrintfFormat&lt;T,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; format);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PrintFormatToTextWriter&lt;T&gt;(class System.IO.TextWriter textWriter, class Microsoft.FSharp.Core.PrintfFormat`4&lt;!!T, class System.IO.TextWriter, class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; format) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToTextWriter``1(System.IO.TextWriter,Microsoft.FSharp.Core.PrintfFormat{``0,System.IO.TextWriter,Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.fprintf : System.IO.TextWriter -&gt; Microsoft.FSharp.Core.PrintfFormat&lt;'T, System.IO.TextWriter, unit, unit&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.PrintFormatToTextWriter textWriter format" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -446,6 +472,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Linq.QueryBuilder query { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class Microsoft.FSharp.Linq.QueryBuilder query" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.ExtraTopLevelOperators.query" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property query As QueryBuilder" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.query : Microsoft.FSharp.Linq.QueryBuilder" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.query" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -469,6 +497,8 @@
       <MemberSignature Language="C#" Value="public static T SpliceExpression&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr&lt;T&gt; expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T SpliceExpression&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr`1&lt;!!T&gt; expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.SpliceExpression``1(Microsoft.FSharp.Quotations.FSharpExpr{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SpliceExpression(Of T) (expression As FSharpExpr(Of T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.op_Splice : Expr&lt;'T&gt; -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.SpliceExpression expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -500,6 +530,8 @@
       <MemberSignature Language="C#" Value="public static T SpliceUntypedExpression&lt;T&gt; (Microsoft.FSharp.Quotations.FSharpExpr expression);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T SpliceUntypedExpression&lt;T&gt;(class Microsoft.FSharp.Quotations.FSharpExpr expression) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.SpliceUntypedExpression``1(Microsoft.FSharp.Quotations.FSharpExpr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SpliceUntypedExpression(Of T) (expression As FSharpExpr) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.op_SpliceUntyped : Expr -&gt; 'T" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.SpliceUntypedExpression expression" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -531,6 +563,8 @@
       <MemberSignature Language="C#" Value="public static byte ToByte&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int8 ToByte&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToByte``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte(Of T) (value As T) As Byte" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.uint8 : 'T -&gt; byte" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.ToByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -563,6 +597,8 @@
       <MemberSignature Language="C#" Value="public static double ToDouble&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 ToDouble&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToDouble``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble(Of T) (value As T) As Double" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.double : 'T -&gt; double" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.ToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -595,6 +631,8 @@
       <MemberSignature Language="C#" Value="public static sbyte ToSByte&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int8 ToSByte&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToSByte``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte(Of T) (value As T) As SByte" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.int8 : 'T -&gt; sbyte" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.ToSByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -628,6 +666,8 @@
       <MemberSignature Language="C#" Value="public static float ToSingle&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 ToSingle&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ExtraTopLevelOperators.ToSingle``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle(Of T) (value As T) As Single" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.ExtraTopLevelOperators.single : 'T -&gt; single" Usage="Microsoft.FSharp.Core.ExtraTopLevelOperators.ToSingle value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

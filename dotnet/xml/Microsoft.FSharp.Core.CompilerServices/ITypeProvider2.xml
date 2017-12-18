@@ -1,7 +1,9 @@
-<Type Name="ITypeProvider2" FullName="Microsoft.FSharp.Core.CompilerServices.ITypeProvider2">
+﻿<Type Name="ITypeProvider2" FullName="Microsoft.FSharp.Core.CompilerServices.ITypeProvider2">
   <TypeSignature Language="C#" Value="public interface ITypeProvider2" />
   <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ITypeProvider2" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.ITypeProvider2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITypeProvider2" />
+  <TypeSignature Language="F#" Value="type ITypeProvider2 = interface" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -23,6 +25,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.MethodBase ApplyStaticArgumentsForMethod (System.Reflection.MethodBase methodWithoutArguments, string methodNameWithArguments, object[] staticArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.MethodBase ApplyStaticArgumentsForMethod(class System.Reflection.MethodBase methodWithoutArguments, string methodNameWithArguments, object[] staticArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider2.ApplyStaticArgumentsForMethod(System.Reflection.MethodBase,System.String,System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ApplyStaticArgumentsForMethod (methodWithoutArguments As MethodBase, methodNameWithArguments As String, staticArguments As Object()) As MethodBase" />
+      <MemberSignature Language="F#" Value="abstract member ApplyStaticArgumentsForMethod : System.Reflection.MethodBase * string * obj[] -&gt; System.Reflection.MethodBase" Usage="iTypeProvider2.ApplyStaticArgumentsForMethod (methodWithoutArguments, methodNameWithArguments, staticArguments)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -51,6 +55,8 @@
       <MemberSignature Language="C#" Value="public System.Reflection.ParameterInfo[] GetStaticParametersForMethod (System.Reflection.MethodBase methodWithoutArguments);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.ParameterInfo[] GetStaticParametersForMethod(class System.Reflection.MethodBase methodWithoutArguments) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider2.GetStaticParametersForMethod(System.Reflection.MethodBase)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStaticParametersForMethod (methodWithoutArguments As MethodBase) As ParameterInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetStaticParametersForMethod : System.Reflection.MethodBase -&gt; System.Reflection.ParameterInfo[]" Usage="iTypeProvider2.GetStaticParametersForMethod methodWithoutArguments" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

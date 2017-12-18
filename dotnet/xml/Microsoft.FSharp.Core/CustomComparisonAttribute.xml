@@ -1,7 +1,9 @@
-<Type Name="CustomComparisonAttribute" FullName="Microsoft.FSharp.Core.CustomComparisonAttribute">
+﻿<Type Name="CustomComparisonAttribute" FullName="Microsoft.FSharp.Core.CustomComparisonAttribute">
   <TypeSignature Language="C#" Value="public sealed class CustomComparisonAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomComparisonAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CustomComparisonAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomComparisonAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type CustomComparisonAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,7 @@
       <MemberSignature Language="C#" Value="public CustomComparisonAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CustomComparisonAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

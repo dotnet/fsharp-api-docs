@@ -1,7 +1,9 @@
-<Type Name="NoComparisonAttribute" FullName="Microsoft.FSharp.Core.NoComparisonAttribute">
+﻿<Type Name="NoComparisonAttribute" FullName="Microsoft.FSharp.Core.NoComparisonAttribute">
   <TypeSignature Language="C#" Value="public sealed class NoComparisonAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NoComparisonAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.NoComparisonAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NoComparisonAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type NoComparisonAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public NoComparisonAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NoComparisonAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

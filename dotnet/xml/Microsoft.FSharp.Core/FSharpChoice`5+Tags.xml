@@ -1,7 +1,8 @@
-<Type Name="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Tags">
+﻿<Type Name="FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpChoice&lt;T1,T2,T3,T4,T5&gt;+Tags">
   <TypeSignature Language="C#" Value="public static class FSharpChoice&lt;T1,T2,T3,T4,T5&gt;.Tags" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed FSharpChoice`5/Tags&lt;T1, T2, T3, T4, T5&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpChoice`5.Tags" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpChoice(Of T1, T2, T3, T4, T5).Tags" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -26,6 +27,8 @@
       <MemberSignature Language="C#" Value="public const int Choice1Of5;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice1Of5" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`5.Tags.Choice1Of5" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice1Of5 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice1Of5 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5&gt;.Choice.Choice1Of5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public const int Choice2Of5;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice2Of5" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`5.Tags.Choice2Of5" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice2Of5 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice2Of5 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5&gt;.Choice.Choice2Of5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -60,6 +65,8 @@
       <MemberSignature Language="C#" Value="public const int Choice3Of5;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice3Of5" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`5.Tags.Choice3Of5" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice3Of5 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice3Of5 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5&gt;.Choice.Choice3Of5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -77,6 +84,8 @@
       <MemberSignature Language="C#" Value="public const int Choice4Of5;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice4Of5" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`5.Tags.Choice4Of5" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice4Of5 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice4Of5 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5&gt;.Choice.Choice4Of5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -94,6 +103,8 @@
       <MemberSignature Language="C#" Value="public const int Choice5Of5;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Choice5Of5" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpChoice`5.Tags.Choice5Of5" />
+      <MemberSignature Language="VB.NET" Value="Public Const Choice5Of5 As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Choice5Of5 : int" Usage="Microsoft.FSharp.Core.Choice&lt;'T1, 'T2, 'T3, 'T4, 'T5&gt;.Choice.Choice5Of5" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

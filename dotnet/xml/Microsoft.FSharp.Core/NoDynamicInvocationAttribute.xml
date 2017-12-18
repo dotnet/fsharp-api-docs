@@ -1,7 +1,9 @@
-<Type Name="NoDynamicInvocationAttribute" FullName="Microsoft.FSharp.Core.NoDynamicInvocationAttribute">
+﻿<Type Name="NoDynamicInvocationAttribute" FullName="Microsoft.FSharp.Core.NoDynamicInvocationAttribute">
   <TypeSignature Language="C#" Value="public sealed class NoDynamicInvocationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed NoDynamicInvocationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.NoDynamicInvocationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class NoDynamicInvocationAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type NoDynamicInvocationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -34,6 +36,7 @@
       <MemberSignature Language="C#" Value="public NoDynamicInvocationAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NoDynamicInvocationAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

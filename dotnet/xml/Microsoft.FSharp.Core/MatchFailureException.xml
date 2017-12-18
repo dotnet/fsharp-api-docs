@@ -1,7 +1,9 @@
-<Type Name="MatchFailureException" FullName="Microsoft.FSharp.Core.MatchFailureException">
+﻿<Type Name="MatchFailureException" FullName="Microsoft.FSharp.Core.MatchFailureException">
   <TypeSignature Language="C#" Value="public class MatchFailureException : Exception, System.Collections.IStructuralEquatable" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit MatchFailureException extends System.Exception implements class System.Collections.IStructuralEquatable" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.MatchFailureException" />
+  <TypeSignature Language="VB.NET" Value="Public Class MatchFailureException&#xA;Inherits Exception&#xA;Implements IStructuralEquatable" />
+  <TypeSignature Language="F#" Value="type MatchFailureException = class&#xA;    inherit Exception&#xA;    interface IStructuralEquatable" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="public MatchFailureException ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.MatchFailureException.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -43,6 +46,8 @@
       <MemberSignature Language="C#" Value="public MatchFailureException (string data0, int data1, int data2);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string data0, int32 data1, int32 data2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.MatchFailureException.#ctor(System.String,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (data0 As String, data1 As Integer, data2 As Integer)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.MatchFailureException : string * int * int -&gt; Microsoft.FSharp.Core.MatchFailureException" Usage="new Microsoft.FSharp.Core.MatchFailureException (data0, data1, data2)" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -65,6 +70,8 @@
       <MemberSignature Language="C#" Value="public string Data0 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Data0" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.MatchFailureException.Data0" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data0 As String" />
+      <MemberSignature Language="F#" Value="val Data0 : string" Usage="Microsoft.FSharp.Core.MatchFailureException.Data0" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -88,6 +95,8 @@
       <MemberSignature Language="C#" Value="public int Data1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Data1" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.MatchFailureException.Data1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data1 As Integer" />
+      <MemberSignature Language="F#" Value="val Data1 : int" Usage="Microsoft.FSharp.Core.MatchFailureException.Data1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -111,6 +120,8 @@
       <MemberSignature Language="C#" Value="public int Data2 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance int32 Data2" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.MatchFailureException.Data2" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Data2 As Integer" />
+      <MemberSignature Language="F#" Value="val Data2 : int" Usage="Microsoft.FSharp.Core.MatchFailureException.Data2" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -134,6 +145,7 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.MatchFailureException.Equals(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object) As Boolean" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -156,7 +168,11 @@
       <MemberSignature Language="C#" Value="public override bool Equals (object obj, System.Collections.IEqualityComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance bool Equals(object obj, class System.Collections.IEqualityComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.MatchFailureException.Equals(System.Object,System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Equals (obj As Object, comp As IEqualityComparer) As Boolean" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.Equals(System.Object,System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -180,6 +196,7 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.MatchFailureException.GetHashCode" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode () As Integer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -199,7 +216,11 @@
       <MemberSignature Language="C#" Value="public override int GetHashCode (System.Collections.IEqualityComparer comp);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance int32 GetHashCode(class System.Collections.IEqualityComparer comp) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.MatchFailureException.GetHashCode(System.Collections.IEqualityComparer)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function GetHashCode (comp As IEqualityComparer) As Integer" />
       <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IStructuralEquatable.GetHashCode(System.Collections.IEqualityComparer)</InterfaceMember>
+      </Implements>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
         <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -221,6 +242,8 @@
       <MemberSignature Language="C#" Value="public override string Message { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Message" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.MatchFailureException.Message" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides ReadOnly Property Message As String" />
+      <MemberSignature Language="F#" Value="member this.Message : string" Usage="Microsoft.FSharp.Core.MatchFailureException.Message" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,TResult&gt;" FullName="Microsoft.FSharp.Core.OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,TResult&gt;">
+﻿<Type Name="OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,TResult&gt;" FullName="Microsoft.FSharp.Core.OptimizedClosures+FSharpFunc&lt;T1,T2,T3,T4,TResult&gt;">
   <TypeSignature Language="C#" Value="public abstract class OptimizedClosures.FSharpFunc&lt;T1,T2,T3,T4,TResult&gt; : Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,TResult&gt;&gt;&gt;&gt;" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract beforefieldinit OptimizedClosures/FSharpFunc`5&lt;T1, T2, T3, T4, TResult&gt; extends Microsoft.FSharp.Core.FSharpFunc`2&lt;!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T4, !TResult&gt;&gt;&gt;&gt;" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`5" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class OptimizedClosures.FSharpFunc(Of T1, T2, T3, T4, TResult)&#xA;Inherits FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, FSharpFunc(Of T4, TResult))))" />
+  <TypeSignature Language="F#" Value="type OptimizedClosures.FSharpFunc&lt;'T1, 'T2, 'T3, 'T4, 'Result&gt; = class&#xA;    inherit 'T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'T4 -&gt; 'Result" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -45,6 +47,7 @@
       <MemberSignature Language="C#" Value="public FSharpFunc ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`5.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -62,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc&lt;T1,T2,T3,T4,TResult&gt; Adapt (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,TResult&gt;&gt;&gt;&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.OptimizedClosures/FSharpFunc`5&lt;!T1, !T2, !T3, !T4, !TResult&gt; Adapt(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T4, !TResult&gt;&gt;&gt;&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`5.Adapt(Microsoft.FSharp.Core.FSharpFunc{`0,Microsoft.FSharp.Core.FSharpFunc{`1,Microsoft.FSharp.Core.FSharpFunc{`2,Microsoft.FSharp.Core.FSharpFunc{`3,`4}}}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Adapt (func As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, FSharpFunc(Of T4, TResult))))) As OptimizedClosures.FSharpFunc(Of T1, T2, T3, T4, TResult)" />
+      <MemberSignature Language="F#" Value="static member Adapt : ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'T4 -&gt; 'Result) -&gt; Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc&lt;'T1, 'T2, 'T3, 'T4, 'Result&gt;" Usage="Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc&lt;'T1, 'T2, 'T3, 'T4, 'Result&gt;.Adapt func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -85,6 +90,8 @@
       <MemberSignature Language="C#" Value="public override Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,Microsoft.FSharp.Core.FSharpFunc&lt;T4,TResult&gt;&gt;&gt; Invoke (T1 t);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!T4, !TResult&gt;&gt;&gt; Invoke(!T1 t) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`5.Invoke(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Overrides Function Invoke (t As T1) As FSharpFunc(Of T2, FSharpFunc(Of T3, FSharpFunc(Of T4, TResult)))" />
+      <MemberSignature Language="F#" Value="override this.Invoke : 'T1 -&gt; ('T2 -&gt; 'T3 -&gt; 'T4 -&gt; 'Result)" Usage="fSharpFunc.Invoke t" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -107,6 +114,8 @@
       <MemberSignature Language="C#" Value="public abstract TResult Invoke (T1 arg1, T2 arg2, T3 arg3, T4 arg4);" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance !TResult Invoke(!T1 arg1, !T2 arg2, !T3 arg3, !T4 arg4) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.OptimizedClosures.FSharpFunc`5.Invoke(`0,`1,`2,`3)" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Invoke (arg1 As T1, arg2 As T2, arg3 As T3, arg4 As T4) As TResult" />
+      <MemberSignature Language="F#" Value="override this.Invoke : 'T1 * 'T2 * 'T3 * 'T4 -&gt; 'Result" Usage="fSharpFunc.Invoke (arg1, arg2, arg3, arg4)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

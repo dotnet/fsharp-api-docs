@@ -1,7 +1,9 @@
-<Type Name="kilogram" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.kilogram">
+﻿<Type Name="kilogram" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.kilogram">
   <TypeSignature Language="C#" Value="public class kilogram" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi kilogram extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.kilogram" />
+  <TypeSignature Language="VB.NET" Value="Public Class kilogram" />
+  <TypeSignature Language="F#" Value="type kilogram = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>

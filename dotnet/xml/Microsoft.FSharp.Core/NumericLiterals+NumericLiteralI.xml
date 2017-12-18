@@ -1,7 +1,9 @@
-<Type Name="NumericLiterals+NumericLiteralI" FullName="Microsoft.FSharp.Core.NumericLiterals+NumericLiteralI">
+﻿<Type Name="NumericLiterals+NumericLiteralI" FullName="Microsoft.FSharp.Core.NumericLiterals+NumericLiteralI">
   <TypeSignature Language="C#" Value="public static class NumericLiterals.NumericLiteralI" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed NumericLiterals/NumericLiteralI extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumericLiterals.NumericLiteralI" />
+  <TypeSignature Language="F#" Value="module NumericLiterals.NumericLiteralI" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -26,6 +28,8 @@
       <MemberSignature Language="C#" Value="public static T FromInt32&lt;T&gt; (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T FromInt32&lt;T&gt;(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt32``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromInt32(Of T) (value As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt32 : int -&gt; 'T" Usage="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -54,6 +58,8 @@
       <MemberSignature Language="C#" Value="public static T FromInt64&lt;T&gt; (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T FromInt64&lt;T&gt;(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt64``1(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromInt64(Of T) (value As Long) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt64 : int64 -&gt; 'T" Usage="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -82,6 +88,8 @@
       <MemberSignature Language="C#" Value="public static object FromInt64Dynamic (long value);" />
       <MemberSignature Language="ILAsm" Value=".method public static object FromInt64Dynamic(int64 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt64Dynamic(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromInt64Dynamic (value As Long) As Object" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt64Dynamic : int64 -&gt; obj" Usage="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromInt64Dynamic value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -106,6 +114,8 @@
       <MemberSignature Language="C#" Value="public static T FromOne&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T FromOne&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromOne``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromOne(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromOne : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromOne " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -131,6 +141,8 @@
       <MemberSignature Language="C#" Value="public static T FromString&lt;T&gt; (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T FromString&lt;T&gt;(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromString``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromString(Of T) (text As String) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromString : string -&gt; 'T" Usage="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromString text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -159,6 +171,8 @@
       <MemberSignature Language="C#" Value="public static object FromStringDynamic (string text);" />
       <MemberSignature Language="ILAsm" Value=".method public static object FromStringDynamic(string text) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromStringDynamic(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromStringDynamic (text As String) As Object" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromStringDynamic : string -&gt; obj" Usage="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromStringDynamic text" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -183,6 +197,8 @@
       <MemberSignature Language="C#" Value="public static T FromZero&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T FromZero&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromZero``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FromZero(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromZero : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.NumericLiterals.NumericLiteralI.FromZero " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

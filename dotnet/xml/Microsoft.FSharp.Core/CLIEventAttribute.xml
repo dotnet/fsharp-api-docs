@@ -1,7 +1,9 @@
-<Type Name="CLIEventAttribute" FullName="Microsoft.FSharp.Core.CLIEventAttribute">
+﻿<Type Name="CLIEventAttribute" FullName="Microsoft.FSharp.Core.CLIEventAttribute">
   <TypeSignature Language="C#" Value="public sealed class CLIEventAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CLIEventAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CLIEventAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CLIEventAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type CLIEventAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -32,6 +34,7 @@
       <MemberSignature Language="C#" Value="public CLIEventAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CLIEventAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

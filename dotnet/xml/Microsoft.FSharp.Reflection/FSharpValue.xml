@@ -1,7 +1,9 @@
-<Type Name="FSharpValue" FullName="Microsoft.FSharp.Reflection.FSharpValue">
+﻿<Type Name="FSharpValue" FullName="Microsoft.FSharp.Reflection.FSharpValue">
   <TypeSignature Language="C#" Value="public static class FSharpValue" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FSharpValue extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Reflection.FSharpValue" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpValue" />
+  <TypeSignature Language="F#" Value="type Value = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public static object[] GetExceptionFields (object exn, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static object[] GetExceptionFields(object exn, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetExceptionFields(System.Object,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExceptionFields (exn As Object, bindingFlags As FSharpOption(Of BindingFlags)) As Object()" />
+      <MemberSignature Language="F#" Value="static member GetExceptionFields : obj * option&lt;System.Reflection.BindingFlags&gt; -&gt; obj[]" Usage="Microsoft.FSharp.Reflection.Value.GetExceptionFields (exn, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -62,6 +66,8 @@
       <MemberSignature Language="C#" Value="public static object GetRecordField (object record, System.Reflection.PropertyInfo info);" />
       <MemberSignature Language="ILAsm" Value=".method public static object GetRecordField(object record, class System.Reflection.PropertyInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetRecordField(System.Object,System.Reflection.PropertyInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRecordField (record As Object, info As PropertyInfo) As Object" />
+      <MemberSignature Language="F#" Value="static member GetRecordField : obj * System.Reflection.PropertyInfo -&gt; obj" Usage="Microsoft.FSharp.Reflection.Value.GetRecordField (record, info)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -87,6 +93,8 @@
       <MemberSignature Language="C#" Value="public static object[] GetRecordFields (object record, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static object[] GetRecordFields(object record, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetRecordFields(System.Object,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRecordFields (record As Object, bindingFlags As FSharpOption(Of BindingFlags)) As Object()" />
+      <MemberSignature Language="F#" Value="static member GetRecordFields : obj * option&lt;System.Reflection.BindingFlags&gt; -&gt; obj[]" Usage="Microsoft.FSharp.Reflection.Value.GetRecordFields (record, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -118,6 +126,8 @@
       <MemberSignature Language="C#" Value="public static object GetTupleField (object tuple, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static object GetTupleField(object tuple, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetTupleField(System.Object,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTupleField (tuple As Object, index As Integer) As Object" />
+      <MemberSignature Language="F#" Value="static member GetTupleField : obj * int -&gt; obj" Usage="Microsoft.FSharp.Reflection.Value.GetTupleField (tuple, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -142,6 +152,8 @@
       <MemberSignature Language="C#" Value="public static object[] GetTupleFields (object tuple);" />
       <MemberSignature Language="ILAsm" Value=".method public static object[] GetTupleFields(object tuple) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetTupleFields(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTupleFields (tuple As Object) As Object()" />
+      <MemberSignature Language="F#" Value="static member GetTupleFields : obj -&gt; obj[]" Usage="Microsoft.FSharp.Reflection.Value.GetTupleFields tuple" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -165,6 +177,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;Microsoft.FSharp.Reflection.UnionCaseInfo,object[]&gt; GetUnionFields (object value, Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class Microsoft.FSharp.Reflection.UnionCaseInfo, object[]&gt; GetUnionFields(object value, class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.GetUnionFields(System.Object,System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnionFields (value As Object, unionType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As Tuple(Of UnionCaseInfo, Object())" />
+      <MemberSignature Language="F#" Value="static member GetUnionFields : obj * Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; Microsoft.FSharp.Reflection.UnionCaseInfo * obj[]" Usage="Microsoft.FSharp.Reflection.Value.GetUnionFields (value, unionType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -202,6 +216,8 @@
       <MemberSignature Language="C#" Value="public static object MakeFunction (Type functionType, Microsoft.FSharp.Core.FSharpFunc&lt;object,object&gt; implementation);" />
       <MemberSignature Language="ILAsm" Value=".method public static object MakeFunction(class System.Type functionType, class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object&gt; implementation) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeFunction(System.Type,Microsoft.FSharp.Core.FSharpFunc{System.Object,System.Object})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeFunction (functionType As Type, implementation As FSharpFunc(Of Object, Object)) As Object" />
+      <MemberSignature Language="F#" Value="static member MakeFunction : Type * (obj -&gt; obj) -&gt; obj" Usage="Microsoft.FSharp.Reflection.Value.MakeFunction (functionType, implementation)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -226,6 +242,8 @@
       <MemberSignature Language="C#" Value="public static object MakeRecord (Type recordType, object[] values, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static object MakeRecord(class System.Type recordType, object[] values, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeRecord(System.Type,System.Object[],Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeRecord (recordType As Type, values As Object(), bindingFlags As FSharpOption(Of BindingFlags)) As Object" />
+      <MemberSignature Language="F#" Value="static member MakeRecord : Type * obj[] * option&lt;System.Reflection.BindingFlags&gt; -&gt; obj" Usage="Microsoft.FSharp.Reflection.Value.MakeRecord (recordType, values, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -259,6 +277,8 @@
       <MemberSignature Language="C#" Value="public static object MakeTuple (object[] tupleElements, Type tupleType);" />
       <MemberSignature Language="ILAsm" Value=".method public static object MakeTuple(object[] tupleElements, class System.Type tupleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeTuple(System.Object[],System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeTuple (tupleElements As Object(), tupleType As Type) As Object" />
+      <MemberSignature Language="F#" Value="static member MakeTuple : obj[] * Type -&gt; obj" Usage="Microsoft.FSharp.Reflection.Value.MakeTuple (tupleElements, tupleType)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -284,6 +304,8 @@
       <MemberSignature Language="C#" Value="public static object MakeUnion (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, object[] args, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static object MakeUnion(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, object[] args, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.MakeUnion(Microsoft.FSharp.Reflection.UnionCaseInfo,System.Object[],Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeUnion (unionCase As UnionCaseInfo, args As Object(), bindingFlags As FSharpOption(Of BindingFlags)) As Object" />
+      <MemberSignature Language="F#" Value="static member MakeUnion : Microsoft.FSharp.Reflection.UnionCaseInfo * obj[] * option&lt;System.Reflection.BindingFlags&gt; -&gt; obj" Usage="Microsoft.FSharp.Reflection.Value.MakeUnion (unionCase, args, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -316,6 +338,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; PreComputeRecordConstructor (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; PreComputeRecordConstructor(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordConstructor(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeRecordConstructor (recordType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As FSharpFunc(Of Object(), Object)" />
+      <MemberSignature Language="F#" Value="static member PreComputeRecordConstructor : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; (obj[] -&gt; obj)" Usage="Microsoft.FSharp.Reflection.Value.PreComputeRecordConstructor (recordType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -348,6 +372,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.ConstructorInfo PreComputeRecordConstructorInfo (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.ConstructorInfo PreComputeRecordConstructorInfo(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordConstructorInfo(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeRecordConstructorInfo (recordType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As ConstructorInfo" />
+      <MemberSignature Language="F#" Value="static member PreComputeRecordConstructorInfo : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; System.Reflection.ConstructorInfo" Usage="Microsoft.FSharp.Reflection.Value.PreComputeRecordConstructorInfo (recordType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -378,6 +404,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object&gt; PreComputeRecordFieldReader (System.Reflection.PropertyInfo info);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object&gt; PreComputeRecordFieldReader(class System.Reflection.PropertyInfo info) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordFieldReader(System.Reflection.PropertyInfo)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeRecordFieldReader (info As PropertyInfo) As FSharpFunc(Of Object, Object)" />
+      <MemberSignature Language="F#" Value="static member PreComputeRecordFieldReader : System.Reflection.PropertyInfo -&gt; (obj -&gt; obj)" Usage="Microsoft.FSharp.Reflection.Value.PreComputeRecordFieldReader info" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -405,6 +433,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; PreComputeRecordReader (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; PreComputeRecordReader(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeRecordReader(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeRecordReader (recordType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As FSharpFunc(Of Object, Object())" />
+      <MemberSignature Language="F#" Value="static member PreComputeRecordReader : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; (obj -&gt; obj[])" Usage="Microsoft.FSharp.Reflection.Value.PreComputeRecordReader (recordType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -443,6 +473,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; PreComputeTupleConstructor (Type tupleType);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; PreComputeTupleConstructor(class System.Type tupleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTupleConstructor(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeTupleConstructor (tupleType As Type) As FSharpFunc(Of Object(), Object)" />
+      <MemberSignature Language="F#" Value="static member PreComputeTupleConstructor : Type -&gt; (obj[] -&gt; obj)" Usage="Microsoft.FSharp.Reflection.Value.PreComputeTupleConstructor tupleType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -467,6 +499,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;System.Reflection.ConstructorInfo,Microsoft.FSharp.Core.FSharpOption&lt;Type&gt;&gt; PreComputeTupleConstructorInfo (Type tupleType);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.Reflection.ConstructorInfo, class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Type&gt;&gt; PreComputeTupleConstructorInfo(class System.Type tupleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTupleConstructorInfo(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeTupleConstructorInfo (tupleType As Type) As Tuple(Of ConstructorInfo, FSharpOption(Of Type))" />
+      <MemberSignature Language="F#" Value="static member PreComputeTupleConstructorInfo : Type -&gt; System.Reflection.ConstructorInfo * option&lt;Type&gt;" Usage="Microsoft.FSharp.Reflection.Value.PreComputeTupleConstructorInfo tupleType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -496,6 +530,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;System.Reflection.PropertyInfo,Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;Type,int&gt;&gt;&gt; PreComputeTuplePropertyInfo (Type tupleType, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.Reflection.PropertyInfo, class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`2&lt;class System.Type, int32&gt;&gt;&gt; PreComputeTuplePropertyInfo(class System.Type tupleType, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTuplePropertyInfo(System.Type,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeTuplePropertyInfo (tupleType As Type, index As Integer) As Tuple(Of PropertyInfo, FSharpOption(Of Tuple(Of Type, Integer)))" />
+      <MemberSignature Language="F#" Value="static member PreComputeTuplePropertyInfo : Type * int -&gt; System.Reflection.PropertyInfo * option&lt;Type * int&gt;" Usage="Microsoft.FSharp.Reflection.Value.PreComputeTuplePropertyInfo (tupleType, index)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -520,6 +556,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; PreComputeTupleReader (Type tupleType);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; PreComputeTupleReader(class System.Type tupleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeTupleReader(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeTupleReader (tupleType As Type) As FSharpFunc(Of Object, Object())" />
+      <MemberSignature Language="F#" Value="static member PreComputeTupleReader : Type -&gt; (obj -&gt; obj[])" Usage="Microsoft.FSharp.Reflection.Value.PreComputeTupleReader tupleType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -544,6 +582,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object[],object&gt; PreComputeUnionConstructor (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object[], object&gt; PreComputeUnionConstructor(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionConstructor(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeUnionConstructor (unionCase As UnionCaseInfo, bindingFlags As FSharpOption(Of BindingFlags)) As FSharpFunc(Of Object(), Object)" />
+      <MemberSignature Language="F#" Value="static member PreComputeUnionConstructor : Microsoft.FSharp.Reflection.UnionCaseInfo * option&lt;System.Reflection.BindingFlags&gt; -&gt; (obj[] -&gt; obj)" Usage="Microsoft.FSharp.Reflection.Value.PreComputeUnionConstructor (unionCase, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -574,6 +614,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MethodInfo PreComputeUnionConstructorInfo (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.MethodInfo PreComputeUnionConstructorInfo(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionConstructorInfo(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeUnionConstructorInfo (unionCase As UnionCaseInfo, bindingFlags As FSharpOption(Of BindingFlags)) As MethodInfo" />
+      <MemberSignature Language="F#" Value="static member PreComputeUnionConstructorInfo : Microsoft.FSharp.Reflection.UnionCaseInfo * option&lt;System.Reflection.BindingFlags&gt; -&gt; System.Reflection.MethodInfo" Usage="Microsoft.FSharp.Reflection.Value.PreComputeUnionConstructorInfo (unionCase, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -604,6 +646,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,object[]&gt; PreComputeUnionReader (Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, object[]&gt; PreComputeUnionReader(class Microsoft.FSharp.Reflection.UnionCaseInfo unionCase, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionReader(Microsoft.FSharp.Reflection.UnionCaseInfo,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeUnionReader (unionCase As UnionCaseInfo, bindingFlags As FSharpOption(Of BindingFlags)) As FSharpFunc(Of Object, Object())" />
+      <MemberSignature Language="F#" Value="static member PreComputeUnionReader : Microsoft.FSharp.Reflection.UnionCaseInfo * option&lt;System.Reflection.BindingFlags&gt; -&gt; (obj -&gt; obj[])" Usage="Microsoft.FSharp.Reflection.Value.PreComputeUnionReader (unionCase, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -634,6 +678,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.MemberInfo PreComputeUnionTagMemberInfo (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.MemberInfo PreComputeUnionTagMemberInfo(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionTagMemberInfo(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeUnionTagMemberInfo (unionType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As MemberInfo" />
+      <MemberSignature Language="F#" Value="static member PreComputeUnionTagMemberInfo : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; System.Reflection.MemberInfo" Usage="Microsoft.FSharp.Reflection.Value.PreComputeUnionTagMemberInfo (unionType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -664,6 +710,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;object,int&gt; PreComputeUnionTagReader (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpFunc`2&lt;object, int32&gt; PreComputeUnionTagReader(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpValue.PreComputeUnionTagReader(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PreComputeUnionTagReader (unionType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As FSharpFunc(Of Object, Integer)" />
+      <MemberSignature Language="F#" Value="static member PreComputeUnionTagReader : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; (obj -&gt; int)" Usage="Microsoft.FSharp.Reflection.Value.PreComputeUnionTagReader (unionType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

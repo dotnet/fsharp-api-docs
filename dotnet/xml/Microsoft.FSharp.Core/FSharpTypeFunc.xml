@@ -1,7 +1,9 @@
-<Type Name="FSharpTypeFunc" FullName="Microsoft.FSharp.Core.FSharpTypeFunc">
+﻿<Type Name="FSharpTypeFunc" FullName="Microsoft.FSharp.Core.FSharpTypeFunc">
   <TypeSignature Language="C#" Value="public abstract class FSharpTypeFunc" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract FSharpTypeFunc extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpTypeFunc" />
+  <TypeSignature Language="VB.NET" Value="Public MustInherit Class FSharpTypeFunc" />
+  <TypeSignature Language="F#" Value="type TypeFunc = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -28,6 +30,7 @@
       <MemberSignature Language="C#" Value="public FSharpTypeFunc ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpTypeFunc.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -44,6 +47,8 @@
       <MemberSignature Language="C#" Value="public abstract object Specialize&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance object Specialize&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.FSharpTypeFunc.Specialize``1" />
+      <MemberSignature Language="VB.NET" Value="Public MustOverride Function Specialize(Of T) () As Object" />
+      <MemberSignature Language="F#" Value="abstract member Specialize : unit -&gt; obj" Usage="typeFunc.Specialize " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

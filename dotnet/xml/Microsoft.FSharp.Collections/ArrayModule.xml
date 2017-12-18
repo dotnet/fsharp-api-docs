@@ -1,7 +1,9 @@
-<Type Name="ArrayModule" FullName="Microsoft.FSharp.Collections.ArrayModule">
+﻿<Type Name="ArrayModule" FullName="Microsoft.FSharp.Collections.ArrayModule">
   <TypeSignature Language="C#" Value="public static class ArrayModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ArrayModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.ArrayModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class ArrayModule" />
+  <TypeSignature Language="F#" Value="module Array" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T1,T2&gt;[] AllPairs&lt;T1,T2&gt; (T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!T1, !!T2&gt;[] AllPairs&lt;T1, T2&gt;(!!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.AllPairs``2(``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AllPairs(Of T1, T2) (array1 As T1(), array2 As T2()) As Tuple(Of T1, T2)()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.allPairs : 'T1[] -&gt; 'T2[] -&gt; 'T1 * 'T2[]" Usage="Microsoft.FSharp.Collections.ArrayModule.AllPairs array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public static T[] Append&lt;T&gt; (T[] array1, T[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Append&lt;T&gt;(!!T[] array1, !!T[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Append``1(``0[],``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Append(Of T) (array1 As T(), array2 As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.append : 'T[] -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Append array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -106,6 +112,8 @@
       <MemberSignature Language="C#" Value="public static T Average&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Average&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Average``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Average(Of T) (array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.average : 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Average array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -139,6 +147,8 @@
       <MemberSignature Language="C#" Value="public static TResult AverageBy&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult AverageBy&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.AverageBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AverageBy(Of T, TResult) (projection As FSharpFunc(Of T, TResult), array As T()) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.averageBy : ('T -&gt; 'Result) -&gt; 'T[] -&gt; 'Result" Usage="Microsoft.FSharp.Collections.ArrayModule.AverageBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -179,6 +189,8 @@
       <MemberSignature Language="C#" Value="public static TResult[] Choose&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; chooser, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Choose&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; chooser, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Choose``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Choose(Of T, TResult) (chooser As FSharpFunc(Of T, FSharpOption(Of TResult)), array As T()) As TResult()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.choose : ('T -&gt; option&lt;'Result&gt;) -&gt; 'T[] -&gt; 'Result[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Choose chooser array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -220,6 +232,8 @@
       <MemberSignature Language="C#" Value="public static T[][] ChunkBySize&lt;T&gt; (int chunkSize, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[][] ChunkBySize&lt;T&gt;(int32 chunkSize, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ChunkBySize``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ChunkBySize(Of T) (chunkSize As Integer, array As T()) As T()()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.chunkBySize : int -&gt; 'T[] -&gt; 'T[][]" Usage="Microsoft.FSharp.Collections.ArrayModule.ChunkBySize chunkSize array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -258,6 +272,8 @@
       <MemberSignature Language="C#" Value="public static TResult[] Collect&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult[]&gt; mapping, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Collect&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult[]&gt; mapping, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Collect``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1[]},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Collect(Of T, TResult) (mapping As FSharpFunc(Of T, TResult()), array As T()) As TResult()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.collect : ('T -&gt; 'Result[]) -&gt; 'T[] -&gt; 'Result[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Collect mapping array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -297,6 +313,8 @@
       <MemberSignature Language="C#" Value="public static int CompareWith&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,int&gt;&gt; comparer, T[] array1, T[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 CompareWith&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, int32&gt;&gt; comparer, !!T[] array1, !!T[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.CompareWith``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Int32}},``0[],``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CompareWith(Of T) (comparer As FSharpFunc(Of T, FSharpFunc(Of T, Integer)), array1 As T(), array2 As T()) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.compareWith : ('T -&gt; 'T -&gt; int) -&gt; 'T[] -&gt; 'T[] -&gt; int" Usage="Microsoft.FSharp.Collections.ArrayModule.CompareWith comparer array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -342,6 +360,8 @@
       <MemberSignature Language="C#" Value="public static T[] Concat&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T[]&gt; arrays);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Concat&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T[]&gt; arrays) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Concat``1(System.Collections.Generic.IEnumerable{``0[]})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Concat(Of T) (arrays As IEnumerable(Of T())) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.concat : seq&lt;'T[]&gt; -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Concat arrays" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -374,6 +394,8 @@
       <MemberSignature Language="C#" Value="public static bool Contains&lt;T&gt; (T value, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Contains&lt;T&gt;(!!T value, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Contains``1(``0,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Contains(Of T) (value As T, array As T()) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.contains : 'T -&gt; 'T[] -&gt; bool" Usage="Microsoft.FSharp.Collections.ArrayModule.Contains value array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -411,6 +433,8 @@
       <MemberSignature Language="C#" Value="public static T[] Copy&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Copy&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Copy``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Copy(Of T) (array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.copy : 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Copy array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -443,6 +467,8 @@
       <MemberSignature Language="C#" Value="public static void CopyTo&lt;T&gt; (T[] source, int sourceIndex, T[] target, int targetIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static void CopyTo&lt;T&gt;(!!T[] source, int32 sourceIndex, !!T[] target, int32 targetIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.CopyTo``1(``0[],System.Int32,``0[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CopyTo(Of T) (source As T(), sourceIndex As Integer, target As T(), targetIndex As Integer, count As Integer)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.blit : 'T[] -&gt; int -&gt; 'T[] -&gt; int -&gt; int -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.CopyTo source sourceIndex target targetIndex count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -487,6 +513,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;TKey,int&gt;[] CountBy&lt;T,TKey&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!TKey, int32&gt;[] CountBy&lt;T, TKey&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.CountBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CountBy(Of T, TKey) (projection As FSharpFunc(Of T, TKey), array As T()) As Tuple(Of TKey, Integer)()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.countBy : ('T -&gt; 'Key) -&gt; 'T[] -&gt; 'Key * int[]" Usage="Microsoft.FSharp.Collections.ArrayModule.CountBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -528,6 +556,8 @@
       <MemberSignature Language="C#" Value="public static T[] Create&lt;T&gt; (int count, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Create&lt;T&gt;(int32 count, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Create``1(System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T) (count As Integer, value As T) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.create : int -&gt; 'T -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Create count value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -565,6 +595,8 @@
       <MemberSignature Language="C#" Value="public static T[] Distinct&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Distinct&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Distinct``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Distinct(Of T) (array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.distinct : 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Distinct array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -599,6 +631,8 @@
       <MemberSignature Language="C#" Value="public static T[] DistinctBy&lt;T,TKey&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] DistinctBy&lt;T, TKey&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.DistinctBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DistinctBy(Of T, TKey) (projection As FSharpFunc(Of T, TKey), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.distinctBy : ('T -&gt; 'Key) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.DistinctBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -640,6 +674,8 @@
       <MemberSignature Language="C#" Value="public static T[] Empty&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Empty&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Empty``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Empty(Of T) () As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.empty : unit -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Empty " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -671,6 +707,8 @@
       <MemberSignature Language="C#" Value="public static T ExactlyOne&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T ExactlyOne&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ExactlyOne``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ExactlyOne(Of T) (array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.exactlyOne : 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.ExactlyOne array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -704,6 +742,8 @@
       <MemberSignature Language="C#" Value="public static T[] Except&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; itemsToExclude, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Except&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; itemsToExclude, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Except``1(System.Collections.Generic.IEnumerable{``0},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Except(Of T) (itemsToExclude As IEnumerable(Of T), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.except : seq&lt;'T&gt; -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Except itemsToExclude array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -743,6 +783,8 @@
       <MemberSignature Language="C#" Value="public static bool Exists&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Exists&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Exists``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.exists : ('T -&gt; bool) -&gt; 'T[] -&gt; bool" Usage="Microsoft.FSharp.Collections.ArrayModule.Exists predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -782,6 +824,8 @@
       <MemberSignature Language="C#" Value="public static bool Exists2&lt;T1,T2&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,bool&gt;&gt; predicate, T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Exists2&lt;T1, T2&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, bool&gt;&gt; predicate, !!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Exists2``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exists2(Of T1, T2) (predicate As FSharpFunc(Of T1, FSharpFunc(Of T2, Boolean)), array1 As T1(), array2 As T2()) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.exists2 : ('T1 -&gt; 'T2 -&gt; bool) -&gt; 'T1[] -&gt; 'T2[] -&gt; bool" Usage="Microsoft.FSharp.Collections.ArrayModule.Exists2 predicate array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -828,6 +872,8 @@
       <MemberSignature Language="C#" Value="public static void Fill&lt;T&gt; (T[] target, int targetIndex, int count, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Fill&lt;T&gt;(!!T[] target, int32 targetIndex, int32 count, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Fill``1(``0[],System.Int32,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Fill(Of T) (target As T(), targetIndex As Integer, count As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.fill : 'T[] -&gt; int -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.Fill target targetIndex count value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -869,6 +915,8 @@
       <MemberSignature Language="C#" Value="public static T[] Filter&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Filter&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Filter``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Filter(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.filter : ('T -&gt; bool) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Filter predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -907,6 +955,8 @@
       <MemberSignature Language="C#" Value="public static T Find&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Find&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Find``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Find(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.find : ('T -&gt; bool) -&gt; 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Find predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -947,6 +997,8 @@
       <MemberSignature Language="C#" Value="public static T FindBack&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T FindBack&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.FindBack``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindBack(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.findBack : ('T -&gt; bool) -&gt; 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.FindBack predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -987,6 +1039,8 @@
       <MemberSignature Language="C#" Value="public static int FindIndex&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 FindIndex&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.FindIndex``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindIndex(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.findIndex : ('T -&gt; bool) -&gt; 'T[] -&gt; int" Usage="Microsoft.FSharp.Collections.ArrayModule.FindIndex predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1028,6 +1082,8 @@
       <MemberSignature Language="C#" Value="public static int FindIndexBack&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 FindIndexBack&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.FindIndexBack``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FindIndexBack(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.findIndexBack : ('T -&gt; bool) -&gt; 'T[] -&gt; int" Usage="Microsoft.FSharp.Collections.ArrayModule.FindIndexBack predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1069,6 +1125,8 @@
       <MemberSignature Language="C#" Value="public static TState Fold&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt; folder, TState state, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState Fold&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TState&gt;&gt; folder, !!TState state, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Fold``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``1,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Fold(Of T, TState) (folder As FSharpFunc(Of TState, FSharpFunc(Of T, TState)), state As TState, array As T()) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.fold : ('State -&gt; 'T -&gt; 'State) -&gt; 'State -&gt; 'T[] -&gt; 'State" Usage="Microsoft.FSharp.Collections.ArrayModule.Fold folder state array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1112,6 +1170,8 @@
       <MemberSignature Language="C#" Value="public static TState Fold2&lt;T1,T2,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TState&gt;&gt;&gt; folder, TState state, T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState Fold2&lt;T1, T2, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TState&gt;&gt;&gt; folder, !!TState state, !!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Fold2``3(Microsoft.FSharp.Core.FSharpFunc{``2,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}}},``2,``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Fold2(Of T1, T2, TState) (folder As FSharpFunc(Of TState, FSharpFunc(Of T1, FSharpFunc(Of T2, TState))), state As TState, array1 As T1(), array2 As T2()) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.fold2 : ('State -&gt; 'T1 -&gt; 'T2 -&gt; 'State) -&gt; 'State -&gt; 'T1[] -&gt; 'T2[] -&gt; 'State" Usage="Microsoft.FSharp.Collections.ArrayModule.Fold2 folder state array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1162,6 +1222,8 @@
       <MemberSignature Language="C#" Value="public static TState FoldBack&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt; folder, T[] array, TState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState FoldBack&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt; folder, !!T[] array, !!TState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.FoldBack``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``1}},``0[],``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FoldBack(Of T, TState) (folder As FSharpFunc(Of T, FSharpFunc(Of TState, TState)), array As T(), state As TState) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.foldBack : ('T -&gt; 'State -&gt; 'State) -&gt; 'T[] -&gt; 'State -&gt; 'State" Usage="Microsoft.FSharp.Collections.ArrayModule.FoldBack folder array state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1205,6 +1267,8 @@
       <MemberSignature Language="C#" Value="public static TState FoldBack2&lt;T1,T2,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt;&gt; folder, T1[] array1, T2[] array2, TState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState FoldBack2&lt;T1, T2, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt;&gt; folder, !!T1[] array1, !!T2[] array2, !!TState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.FoldBack2``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``2}}},``0[],``1[],``2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FoldBack2(Of T1, T2, TState) (folder As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of TState, TState))), array1 As T1(), array2 As T2(), state As TState) As TState" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.foldBack2 : ('T1 -&gt; 'T2 -&gt; 'State -&gt; 'State) -&gt; 'T1[] -&gt; 'T2[] -&gt; 'State -&gt; 'State" Usage="Microsoft.FSharp.Collections.ArrayModule.FoldBack2 folder array1 array2 state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1254,6 +1318,8 @@
       <MemberSignature Language="C#" Value="public static bool ForAll&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ForAll&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ForAll``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForAll(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.forall : ('T -&gt; bool) -&gt; 'T[] -&gt; bool" Usage="Microsoft.FSharp.Collections.ArrayModule.ForAll predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1293,6 +1359,8 @@
       <MemberSignature Language="C#" Value="public static bool ForAll2&lt;T1,T2&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,bool&gt;&gt; predicate, T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool ForAll2&lt;T1, T2&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, bool&gt;&gt; predicate, !!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ForAll2``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Boolean}},``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ForAll2(Of T1, T2) (predicate As FSharpFunc(Of T1, FSharpFunc(Of T2, Boolean)), array1 As T1(), array2 As T2()) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.forall2 : ('T1 -&gt; 'T2 -&gt; bool) -&gt; 'T1[] -&gt; 'T2[] -&gt; bool" Usage="Microsoft.FSharp.Collections.ArrayModule.ForAll2 predicate array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1339,6 +1407,8 @@
       <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (T[] array, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Get&lt;T&gt;(!!T[] array, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Get``1(``0[],System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get(Of T) (array As T(), index As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.get : 'T[] -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Get array index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1377,6 +1447,8 @@
       <MemberSignature Language="C#" Value="public static T[] GetSubArray&lt;T&gt; (T[] array, int startIndex, int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] GetSubArray&lt;T&gt;(!!T[] array, int32 startIndex, int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.GetSubArray``1(``0[],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetSubArray(Of T) (array As T(), startIndex As Integer, count As Integer) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sub : 'T[] -&gt; int -&gt; int -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.GetSubArray array startIndex count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1419,6 +1491,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;TKey,T[]&gt;[] GroupBy&lt;T,TKey&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!TKey, !!T[]&gt;[] GroupBy&lt;T, TKey&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.GroupBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GroupBy(Of T, TKey) (projection As FSharpFunc(Of T, TKey), array As T()) As Tuple(Of TKey, T())()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.groupBy : ('T -&gt; 'Key) -&gt; 'T[] -&gt; 'Key * 'T[][]" Usage="Microsoft.FSharp.Collections.ArrayModule.GroupBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1460,6 +1534,8 @@
       <MemberSignature Language="C#" Value="public static T Head&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Head&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Head``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Head(Of T) (array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.head : 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Head array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1493,6 +1569,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;int,T&gt;[] Indexed&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;int32, !!T&gt;[] Indexed&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Indexed``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Indexed(Of T) (array As T()) As Tuple(Of Integer, T)()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.indexed : 'T[] -&gt; int * 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Indexed array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1526,6 +1604,8 @@
       <MemberSignature Language="C#" Value="public static T[] Initialize&lt;T&gt; (int count, Microsoft.FSharp.Core.FSharpFunc&lt;int,T&gt; initializer);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Initialize&lt;T&gt;(int32 count, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, !!T&gt; initializer) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Initialize``1(System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Initialize(Of T) (count As Integer, initializer As FSharpFunc(Of Integer, T)) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.init : int -&gt; (int -&gt; 'T) -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Initialize count initializer" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1563,6 +1643,8 @@
       <MemberSignature Language="C#" Value="public static bool IsEmpty&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsEmpty&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.IsEmpty``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsEmpty(Of T) (array As T()) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.isEmpty : 'T[] -&gt; bool" Usage="Microsoft.FSharp.Collections.ArrayModule.IsEmpty array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1595,6 +1677,8 @@
       <MemberSignature Language="C#" Value="public static T Item&lt;T&gt; (int index, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Item&lt;T&gt;(int32 index, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Item``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Item(Of T) (index As Integer, array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.item : int -&gt; 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Item index array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1633,6 +1717,8 @@
       <MemberSignature Language="C#" Value="public static void Iterate&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; action, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; action, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Iterate``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Iterate(Of T) (action As FSharpFunc(Of T, Unit), array As T())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.iter : ('T -&gt; unit) -&gt; 'T[] -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.Iterate action array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1669,6 +1755,8 @@
       <MemberSignature Language="C#" Value="public static void Iterate2&lt;T1,T2&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.Unit&gt;&gt; action, T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Iterate2&lt;T1, T2&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.Unit&gt;&gt; action, !!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Iterate2``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.Unit}},``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Iterate2(Of T1, T2) (action As FSharpFunc(Of T1, FSharpFunc(Of T2, Unit)), array1 As T1(), array2 As T2())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.iter2 : ('T1 -&gt; 'T2 -&gt; unit) -&gt; 'T1[] -&gt; 'T2[] -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.Iterate2 action array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1712,6 +1800,8 @@
       <MemberSignature Language="C#" Value="public static void IterateIndexed&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt; action, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static void IterateIndexed&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt;&gt; action, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.IterateIndexed``1(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub IterateIndexed(Of T) (action As FSharpFunc(Of Integer, FSharpFunc(Of T, Unit)), array As T())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.iteri : (int -&gt; 'T -&gt; unit) -&gt; 'T[] -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.IterateIndexed action array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1749,6 +1839,8 @@
       <MemberSignature Language="C#" Value="public static void IterateIndexed2&lt;T1,T2&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.Unit&gt;&gt;&gt; action, T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static void IterateIndexed2&lt;T1, T2&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.Unit&gt;&gt;&gt; action, !!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.IterateIndexed2``2(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.Unit}}},``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub IterateIndexed2(Of T1, T2) (action As FSharpFunc(Of Integer, FSharpFunc(Of T1, FSharpFunc(Of T2, Unit))), array1 As T1(), array2 As T2())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.iteri2 : (int -&gt; 'T1 -&gt; 'T2 -&gt; unit) -&gt; 'T1[] -&gt; 'T2[] -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.IterateIndexed2 action array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1792,6 +1884,8 @@
       <MemberSignature Language="C#" Value="public static T Last&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Last&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Last``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Last(Of T) (array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.last : 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Last array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1825,6 +1919,8 @@
       <MemberSignature Language="C#" Value="public static int Length&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Length&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Length``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Length(Of T) (array As T()) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.length : 'T[] -&gt; int" Usage="Microsoft.FSharp.Collections.ArrayModule.Length array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1857,6 +1953,8 @@
       <MemberSignature Language="C#" Value="public static TResult[] Map&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Map&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map(Of T, TResult) (mapping As FSharpFunc(Of T, TResult), array As T()) As TResult()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.map : ('T -&gt; 'Result) -&gt; 'T[] -&gt; 'Result[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Map mapping array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1897,6 +1995,8 @@
       <MemberSignature Language="C#" Value="public static TResult[] Map2&lt;T1,T2,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt; mapping, T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Map2&lt;T1, T2, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt; mapping, !!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Map2``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}},``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map2(Of T1, T2, TResult) (mapping As FSharpFunc(Of T1, FSharpFunc(Of T2, TResult)), array1 As T1(), array2 As T2()) As TResult()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.map2 : ('T1 -&gt; 'T2 -&gt; 'Result) -&gt; 'T1[] -&gt; 'T2[] -&gt; 'Result[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Map2 mapping array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1944,6 +2044,8 @@
       <MemberSignature Language="C#" Value="public static TResult[] Map3&lt;T1,T2,T3,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt; mapping, T1[] array1, T2[] array2, T3[] array3);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] Map3&lt;T1, T2, T3, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, !!TResult&gt;&gt;&gt; mapping, !!T1[] array1, !!T2[] array2, !!T3[] array3) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Map3``4(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``3}}},``0[],``1[],``2[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map3(Of T1, T2, T3, TResult) (mapping As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, TResult))), array1 As T1(), array2 As T2(), array3 As T3()) As TResult()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.map3 : ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'Result) -&gt; 'T1[] -&gt; 'T2[] -&gt; 'T3[] -&gt; 'Result[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Map3 mapping array1 array2 array3" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1995,6 +2097,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;TResult[],TState&gt; MapFold&lt;T,TState,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,Tuple&lt;TResult,TState&gt;&gt;&gt; mapping, TState state, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!TResult[], !!TState&gt; MapFold&lt;T, TState, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class System.Tuple`2&lt;!!TResult, !!TState&gt;&gt;&gt; mapping, !!TState state, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.MapFold``3(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``0,System.Tuple{``2,``1}}},``1,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapFold(Of T, TState, TResult) (mapping As FSharpFunc(Of TState, FSharpFunc(Of T, Tuple(Of TResult, TState))), state As TState, array As T()) As Tuple(Of TResult(), TState)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.mapFold : ('State -&gt; 'T -&gt; 'Result * 'State) -&gt; 'State -&gt; 'T[] -&gt; 'Result[] * 'State" Usage="Microsoft.FSharp.Collections.ArrayModule.MapFold mapping state array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2039,6 +2143,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;TResult[],TState&gt; MapFoldBack&lt;T,TState,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,Tuple&lt;TResult,TState&gt;&gt;&gt; mapping, T[] array, TState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!TResult[], !!TState&gt; MapFoldBack&lt;T, TState, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class System.Tuple`2&lt;!!TResult, !!TState&gt;&gt;&gt; mapping, !!T[] array, !!TState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.MapFoldBack``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,System.Tuple{``2,``1}}},``0[],``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapFoldBack(Of T, TState, TResult) (mapping As FSharpFunc(Of T, FSharpFunc(Of TState, Tuple(Of TResult, TState))), array As T(), state As TState) As Tuple(Of TResult(), TState)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.mapFoldBack : ('T -&gt; 'State -&gt; 'Result * 'State) -&gt; 'T[] -&gt; 'State -&gt; 'Result[] * 'State" Usage="Microsoft.FSharp.Collections.ArrayModule.MapFoldBack mapping array state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2083,6 +2189,8 @@
       <MemberSignature Language="C#" Value="public static TResult[] MapIndexed&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt; mapping, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] MapIndexed&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt;&gt; mapping, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.MapIndexed``2(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapIndexed(Of T, TResult) (mapping As FSharpFunc(Of Integer, FSharpFunc(Of T, TResult)), array As T()) As TResult()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.mapi : (int -&gt; 'T -&gt; 'Result) -&gt; 'T[] -&gt; 'Result[]" Usage="Microsoft.FSharp.Collections.ArrayModule.MapIndexed mapping array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2124,6 +2232,8 @@
       <MemberSignature Language="C#" Value="public static TResult[] MapIndexed2&lt;T1,T2,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt;&gt; mapping, T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult[] MapIndexed2&lt;T1, T2, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt;&gt; mapping, !!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.MapIndexed2``3(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}}},``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapIndexed2(Of T1, T2, TResult) (mapping As FSharpFunc(Of Integer, FSharpFunc(Of T1, FSharpFunc(Of T2, TResult))), array1 As T1(), array2 As T2()) As TResult()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.mapi2 : (int -&gt; 'T1 -&gt; 'T2 -&gt; 'Result) -&gt; 'T1[] -&gt; 'T2[] -&gt; 'Result[]" Usage="Microsoft.FSharp.Collections.ArrayModule.MapIndexed2 mapping array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2171,6 +2281,8 @@
       <MemberSignature Language="C#" Value="public static T Max&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Max&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Max``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Max(Of T) (array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.max : 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Max array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2204,6 +2316,8 @@
       <MemberSignature Language="C#" Value="public static T MaxBy&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T MaxBy&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.MaxBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MaxBy(Of T, TResult) (projection As FSharpFunc(Of T, TResult), array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.maxBy : ('T -&gt; 'Result) -&gt; 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.MaxBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2244,6 +2358,8 @@
       <MemberSignature Language="C#" Value="public static T Min&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Min&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Min``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Min(Of T) (array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.min : 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Min array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2277,6 +2393,8 @@
       <MemberSignature Language="C#" Value="public static T MinBy&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T MinBy&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.MinBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MinBy(Of T, TResult) (projection As FSharpFunc(Of T, TResult), array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.minBy : ('T -&gt; 'Result) -&gt; 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.MinBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2317,6 +2435,8 @@
       <MemberSignature Language="C#" Value="public static T[] OfList&lt;T&gt; (Microsoft.FSharp.Collections.FSharpList&lt;T&gt; list);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] OfList&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; list) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.OfList``1(Microsoft.FSharp.Collections.FSharpList{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfList(Of T) (list As FSharpList(Of T)) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.ofList : List&lt;'T&gt; -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.OfList list" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2348,6 +2468,8 @@
       <MemberSignature Language="C#" Value="public static T[] OfSeq&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; source);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] OfSeq&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; source) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.OfSeq``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfSeq(Of T) (source As IEnumerable(Of T)) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.ofSeq : seq&lt;'T&gt; -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.OfSeq source" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2380,6 +2502,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T,T&gt;[] Pairwise&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!T, !!T&gt;[] Pairwise&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Pairwise``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Pairwise(Of T) (array As T()) As Tuple(Of T, T)()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.pairwise : 'T[] -&gt; 'T * 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Pairwise array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2413,6 +2537,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T[],T[]&gt; Partition&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!T[], !!T[]&gt; Partition&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Partition``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Partition(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As Tuple(Of T(), T())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.partition : ('T -&gt; bool) -&gt; 'T[] -&gt; 'T[] * 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Partition predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2453,6 +2579,8 @@
       <MemberSignature Language="C#" Value="public static T[] Permute&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,int&gt; indexMap, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Permute&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, int32&gt; indexMap, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Permute``1(Microsoft.FSharp.Core.FSharpFunc{System.Int32,System.Int32},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Permute(Of T) (indexMap As FSharpFunc(Of Integer, Integer), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.permute : (int -&gt; int) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Permute indexMap array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2492,6 +2620,8 @@
       <MemberSignature Language="C#" Value="public static TResult Pick&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; chooser, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult Pick&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; chooser, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Pick``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Pick(Of T, TResult) (chooser As FSharpFunc(Of T, FSharpOption(Of TResult)), array As T()) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.pick : ('T -&gt; option&lt;'Result&gt;) -&gt; 'T[] -&gt; 'Result" Usage="Microsoft.FSharp.Collections.ArrayModule.Pick chooser array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2535,6 +2665,8 @@
       <MemberSignature Language="C#" Value="public static T Reduce&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,T&gt;&gt; reduction, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Reduce&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!T&gt;&gt; reduction, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Reduce``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,``0}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reduce(Of T) (reduction As FSharpFunc(Of T, FSharpFunc(Of T, T)), array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.reduce : ('T -&gt; 'T -&gt; 'T) -&gt; 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Reduce reduction array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2576,6 +2708,8 @@
       <MemberSignature Language="C#" Value="public static T ReduceBack&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,T&gt;&gt; reduction, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T ReduceBack&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!T&gt;&gt; reduction, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ReduceBack``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,``0}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReduceBack(Of T) (reduction As FSharpFunc(Of T, FSharpFunc(Of T, T)), array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.reduceBack : ('T -&gt; 'T -&gt; 'T) -&gt; 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.ReduceBack reduction array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2617,6 +2751,8 @@
       <MemberSignature Language="C#" Value="public static T[] Replicate&lt;T&gt; (int count, T initial);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Replicate&lt;T&gt;(int32 count, !!T initial) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Replicate``1(System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Replicate(Of T) (count As Integer, initial As T) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.replicate : int -&gt; 'T -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Replicate count initial" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2654,6 +2790,8 @@
       <MemberSignature Language="C#" Value="public static T[] Reverse&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Reverse&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Reverse``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reverse(Of T) (array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.rev : 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Reverse array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2686,6 +2824,8 @@
       <MemberSignature Language="C#" Value="public static TState[] Scan&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpFunc&lt;T,TState&gt;&gt; folder, TState state, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState[] Scan&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TState&gt;&gt; folder, !!TState state, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Scan``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``0,``1}},``1,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Scan(Of T, TState) (folder As FSharpFunc(Of TState, FSharpFunc(Of T, TState)), state As TState, array As T()) As TState()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.scan : ('State -&gt; 'T -&gt; 'State) -&gt; 'State -&gt; 'T[] -&gt; 'State[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Scan folder state array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2727,6 +2867,8 @@
       <MemberSignature Language="C#" Value="public static TState[] ScanBack&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;TState,TState&gt;&gt; folder, T[] array, TState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TState[] ScanBack&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, !!TState&gt;&gt; folder, !!T[] array, !!TState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ScanBack``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``1}},``0[],``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ScanBack(Of T, TState) (folder As FSharpFunc(Of T, FSharpFunc(Of TState, TState)), array As T(), state As TState) As TState()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.scanBack : ('T -&gt; 'State -&gt; 'State) -&gt; 'T[] -&gt; 'State -&gt; 'State[]" Usage="Microsoft.FSharp.Collections.ArrayModule.ScanBack folder array state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2768,6 +2910,8 @@
       <MemberSignature Language="C#" Value="public static void Set&lt;T&gt; (T[] array, int index, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Set&lt;T&gt;(!!T[] array, int32 index, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Set``1(``0[],System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set(Of T) (array As T(), index As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.set : 'T[] -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.Set array index value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2807,6 +2951,8 @@
       <MemberSignature Language="C#" Value="public static T[] Singleton&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Singleton&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Singleton``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Singleton(Of T) (value As T) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.singleton : 'T -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Singleton value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2838,6 +2984,8 @@
       <MemberSignature Language="C#" Value="public static T[] Skip&lt;T&gt; (int count, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Skip&lt;T&gt;(int32 count, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Skip``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Skip(Of T) (count As Integer, array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.skip : int -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Skip count array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2877,6 +3025,8 @@
       <MemberSignature Language="C#" Value="public static T[] SkipWhile&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] SkipWhile&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SkipWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SkipWhile(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.skipWhile : ('T -&gt; bool) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.SkipWhile predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2915,6 +3065,8 @@
       <MemberSignature Language="C#" Value="public static T[] Sort&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Sort&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Sort``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sort(Of T) (array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sort : 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Sort array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2948,6 +3100,8 @@
       <MemberSignature Language="C#" Value="public static T[] SortBy&lt;T,TKey&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] SortBy&lt;T, TKey&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SortBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SortBy(Of T, TKey) (projection As FSharpFunc(Of T, TKey), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sortBy : ('T -&gt; 'Key) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.SortBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2989,6 +3143,8 @@
       <MemberSignature Language="C#" Value="public static T[] SortByDescending&lt;T,TKey&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] SortByDescending&lt;T, TKey&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SortByDescending``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SortByDescending(Of T, TKey) (projection As FSharpFunc(Of T, TKey), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sortByDescending : ('T -&gt; 'Key) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.SortByDescending projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3029,6 +3185,8 @@
       <MemberSignature Language="C#" Value="public static T[] SortDescending&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] SortDescending&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SortDescending``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SortDescending(Of T) (array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sortDescending : 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.SortDescending array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3061,6 +3219,8 @@
       <MemberSignature Language="C#" Value="public static void SortInPlace&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SortInPlace&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SortInPlace``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SortInPlace(Of T) (array As T())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sortInPlace : 'T[] -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.SortInPlace array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3093,6 +3253,8 @@
       <MemberSignature Language="C#" Value="public static void SortInPlaceBy&lt;T,TKey&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TKey&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SortInPlaceBy&lt;T, TKey&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TKey&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SortInPlaceBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SortInPlaceBy(Of T, TKey) (projection As FSharpFunc(Of T, TKey), array As T())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sortInPlaceBy : ('T -&gt; 'Key) -&gt; 'T[] -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.SortInPlaceBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3133,6 +3295,8 @@
       <MemberSignature Language="C#" Value="public static void SortInPlaceWith&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,int&gt;&gt; comparer, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SortInPlaceWith&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, int32&gt;&gt; comparer, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SortInPlaceWith``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Int32}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SortInPlaceWith(Of T) (comparer As FSharpFunc(Of T, FSharpFunc(Of T, Integer)), array As T())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sortInPlaceWith : ('T -&gt; 'T -&gt; int) -&gt; 'T[] -&gt; unit" Usage="Microsoft.FSharp.Collections.ArrayModule.SortInPlaceWith comparer array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3169,6 +3333,8 @@
       <MemberSignature Language="C#" Value="public static T[] SortWith&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpFunc&lt;T,int&gt;&gt; comparer, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] SortWith&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, int32&gt;&gt; comparer, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SortWith``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``0,System.Int32}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SortWith(Of T) (comparer As FSharpFunc(Of T, FSharpFunc(Of T, Integer)), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sortWith : ('T -&gt; 'T -&gt; int) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.SortWith comparer array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3207,6 +3373,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T[],T[]&gt; SplitAt&lt;T&gt; (int index, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!T[], !!T[]&gt; SplitAt&lt;T&gt;(int32 index, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SplitAt``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SplitAt(Of T) (index As Integer, array As T()) As Tuple(Of T(), T())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.splitAt : int -&gt; 'T[] -&gt; 'T[] * 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.SplitAt index array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3246,6 +3414,8 @@
       <MemberSignature Language="C#" Value="public static T[][] SplitInto&lt;T&gt; (int count, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[][] SplitInto&lt;T&gt;(int32 count, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SplitInto``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SplitInto(Of T) (count As Integer, array As T()) As T()()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.splitInto : int -&gt; 'T[] -&gt; 'T[][]" Usage="Microsoft.FSharp.Collections.ArrayModule.SplitInto count array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3284,6 +3454,8 @@
       <MemberSignature Language="C#" Value="public static T Sum&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Sum&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Sum``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sum(Of T) (array As T()) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sum : 'T[] -&gt; 'T" Usage="Microsoft.FSharp.Collections.ArrayModule.Sum array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3316,6 +3488,8 @@
       <MemberSignature Language="C#" Value="public static TResult SumBy&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; projection, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult SumBy&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; projection, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.SumBy``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SumBy(Of T, TResult) (projection As FSharpFunc(Of T, TResult), array As T()) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.sumBy : ('T -&gt; 'Result) -&gt; 'T[] -&gt; 'Result" Usage="Microsoft.FSharp.Collections.ArrayModule.SumBy projection array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3355,6 +3529,8 @@
       <MemberSignature Language="C#" Value="public static T[] Tail&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Tail&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Tail``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Tail(Of T) (array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tail : 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Tail array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3388,6 +3564,8 @@
       <MemberSignature Language="C#" Value="public static T[] Take&lt;T&gt; (int count, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Take&lt;T&gt;(int32 count, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Take``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Take(Of T) (count As Integer, array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.take : int -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Take count array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3430,6 +3608,8 @@
       <MemberSignature Language="C#" Value="public static T[] TakeWhile&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] TakeWhile&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TakeWhile``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TakeWhile(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.takeWhile : ('T -&gt; bool) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.TakeWhile predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3468,6 +3648,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;T&gt; ToList&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; ToList&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ToList``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToList(Of T) (array As T()) As FSharpList(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.toList : 'T[] -&gt; List&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.ToList array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3500,6 +3682,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; ToSeq&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; ToSeq&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ToSeq``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSeq(Of T) (array As T()) As IEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.toSeq : 'T[] -&gt; seq&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.ToSeq array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3532,6 +3716,8 @@
       <MemberSignature Language="C#" Value="public static T[] Truncate&lt;T&gt; (int count, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Truncate&lt;T&gt;(int32 count, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Truncate``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate(Of T) (count As Integer, array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.truncate : int -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Truncate count array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3569,6 +3755,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryFind&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryFind&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryFind``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFind(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryFind : ('T -&gt; bool) -&gt; 'T[] -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryFind predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3607,6 +3795,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryFindBack&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryFindBack&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryFindBack``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFindBack(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryFindBack : ('T -&gt; bool) -&gt; 'T[] -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryFindBack predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3645,6 +3835,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;int&gt; TryFindIndex&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; TryFindIndex&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryFindIndex``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFindIndex(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As FSharpOption(Of Integer)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryFindIndex : ('T -&gt; bool) -&gt; 'T[] -&gt; option&lt;int&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryFindIndex predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3683,6 +3875,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;int&gt; TryFindIndexBack&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;int32&gt; TryFindIndexBack&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryFindIndexBack``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFindIndexBack(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As FSharpOption(Of Integer)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryFindIndexBack : ('T -&gt; bool) -&gt; 'T[] -&gt; option&lt;int&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryFindIndexBack predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3721,6 +3915,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryHead&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryHead&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryHead``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryHead(Of T) (array As T()) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryHead : 'T[] -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryHead array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3754,6 +3950,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryItem&lt;T&gt; (int index, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryItem&lt;T&gt;(int32 index, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryItem``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryItem(Of T) (index As Integer, array As T()) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryItem : int -&gt; 'T[] -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryItem index array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3792,6 +3990,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryLast&lt;T&gt; (T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryLast&lt;T&gt;(!!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryLast``1(``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryLast(Of T) (array As T()) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryLast : 'T[] -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryLast array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3825,6 +4025,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt; TryPick&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpOption&lt;TResult&gt;&gt; chooser, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt; TryPick&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.FSharpOption`1&lt;!!TResult&gt;&gt; chooser, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.TryPick``2(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpOption{``1}},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryPick(Of T, TResult) (chooser As FSharpFunc(Of T, FSharpOption(Of TResult)), array As T()) As FSharpOption(Of TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.tryPick : ('T -&gt; option&lt;'Result&gt;) -&gt; 'T[] -&gt; option&lt;'Result&gt;" Usage="Microsoft.FSharp.Collections.ArrayModule.TryPick chooser array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3866,6 +4068,8 @@
       <MemberSignature Language="C#" Value="public static T[] Unfold&lt;T,TState&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TState,Microsoft.FSharp.Core.FSharpOption&lt;Tuple&lt;T,TState&gt;&gt;&gt; generator, TState state);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Unfold&lt;T, TState&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TState, class Microsoft.FSharp.Core.FSharpOption`1&lt;class System.Tuple`2&lt;!!T, !!TState&gt;&gt;&gt; generator, !!TState state) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Unfold``2(Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpOption{System.Tuple{``0,``1}}},``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Unfold(Of T, TState) (generator As FSharpFunc(Of TState, FSharpOption(Of Tuple(Of T, TState))), state As TState) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.unfold : ('State -&gt; option&lt;'T * 'State&gt;) -&gt; 'State -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Unfold generator state" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3906,6 +4110,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T1[],T2[]&gt; Unzip&lt;T1,T2&gt; (Tuple&lt;T1,T2&gt;[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!T1[], !!T2[]&gt; Unzip&lt;T1, T2&gt;(class System.Tuple`2&lt;!!T1, !!T2&gt;[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Unzip``2(System.Tuple{``0,``1}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Unzip(Of T1, T2) (array As Tuple(Of T1, T2)()) As Tuple(Of T1(), T2())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.unzip : ('T1 * 'T2[]) -&gt; 'T1[] * 'T2[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Unzip array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3940,6 +4146,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T1[],T2[],T3[]&gt; Unzip3&lt;T1,T2,T3&gt; (Tuple&lt;T1,T2,T3&gt;[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`3&lt;!!T1[], !!T2[], !!T3[]&gt; Unzip3&lt;T1, T2, T3&gt;(class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt;[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Unzip3``3(System.Tuple{``0,``1,``2}[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Unzip3(Of T1, T2, T3) (array As Tuple(Of T1, T2, T3)()) As Tuple(Of T1(), T2(), T3())" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.unzip3 : ('T1 * 'T2 * 'T3[]) -&gt; 'T1[] * 'T2[] * 'T3[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Unzip3 array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3976,6 +4184,8 @@
       <MemberSignature Language="C#" Value="public static T[] Where&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,bool&gt; predicate, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] Where&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, bool&gt; predicate, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Where``1(Microsoft.FSharp.Core.FSharpFunc{``0,System.Boolean},``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Where(Of T) (predicate As FSharpFunc(Of T, Boolean), array As T()) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.where : ('T -&gt; bool) -&gt; 'T[] -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Where predicate array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -4014,6 +4224,8 @@
       <MemberSignature Language="C#" Value="public static T[][] Windowed&lt;T&gt; (int windowSize, T[] array);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[][] Windowed&lt;T&gt;(int32 windowSize, !!T[] array) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Windowed``1(System.Int32,``0[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Windowed(Of T) (windowSize As Integer, array As T()) As T()()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.windowed : int -&gt; 'T[] -&gt; 'T[][]" Usage="Microsoft.FSharp.Collections.ArrayModule.Windowed windowSize array" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -4053,6 +4265,8 @@
       <MemberSignature Language="C#" Value="public static T[] ZeroCreate&lt;T&gt; (int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T[] ZeroCreate&lt;T&gt;(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.ZeroCreate``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ZeroCreate(Of T) (count As Integer) As T()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.zeroCreate : int -&gt; 'T[]" Usage="Microsoft.FSharp.Collections.ArrayModule.ZeroCreate count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -4085,6 +4299,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T1,T2&gt;[] Zip&lt;T1,T2&gt; (T1[] array1, T2[] array2);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!T1, !!T2&gt;[] Zip&lt;T1, T2&gt;(!!T1[] array1, !!T2[] array2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Zip``2(``0[],``1[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Zip(Of T1, T2) (array1 As T1(), array2 As T2()) As Tuple(Of T1, T2)()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.zip : 'T1[] -&gt; 'T2[] -&gt; 'T1 * 'T2[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Zip array1 array2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -4126,6 +4342,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;T1,T2,T3&gt;[] Zip3&lt;T1,T2,T3&gt; (T1[] array1, T2[] array2, T3[] array3);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`3&lt;!!T1, !!T2, !!T3&gt;[] Zip3&lt;T1, T2, T3&gt;(!!T1[] array1, !!T2[] array2, !!T3[] array3) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.ArrayModule.Zip3``3(``0[],``1[],``2[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Zip3(Of T1, T2, T3) (array1 As T1(), array2 As T2(), array3 As T3()) As Tuple(Of T1, T2, T3)()" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array.zip3 : 'T1[] -&gt; 'T2[] -&gt; 'T3[] -&gt; 'T1 * 'T2 * 'T3[]" Usage="Microsoft.FSharp.Collections.ArrayModule.Zip3 array1 array2 array3" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

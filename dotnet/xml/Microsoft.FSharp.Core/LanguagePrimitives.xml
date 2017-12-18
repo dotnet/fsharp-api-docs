@@ -1,7 +1,9 @@
-<Type Name="LanguagePrimitives" FullName="Microsoft.FSharp.Core.LanguagePrimitives">
+﻿<Type Name="LanguagePrimitives" FullName="Microsoft.FSharp.Core.LanguagePrimitives">
   <TypeSignature Language="C#" Value="public static class LanguagePrimitives" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed LanguagePrimitives extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.LanguagePrimitives" />
+  <TypeSignature Language="VB.NET" Value="Public Class LanguagePrimitives" />
+  <TypeSignature Language="F#" Value="module LanguagePrimitives" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -24,6 +26,8 @@
       <MemberSignature Language="C#" Value="public static TResult AdditionDynamic&lt;T1,T2,TResult&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult AdditionDynamic&lt;T1, T2, TResult&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.AdditionDynamic``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AdditionDynamic(Of T1, T2, TResult) (x As T1, y As T2) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.AdditionDynamic : 'T1 -&gt; 'T2 -&gt; 'Result" Usage="Microsoft.FSharp.Core.LanguagePrimitives.AdditionDynamic x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -64,6 +68,8 @@
       <MemberSignature Language="C#" Value="public static TResult CheckedAdditionDynamic&lt;T1,T2,TResult&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult CheckedAdditionDynamic&lt;T1, T2, TResult&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.CheckedAdditionDynamic``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckedAdditionDynamic(Of T1, T2, TResult) (x As T1, y As T2) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.CheckedAdditionDynamic : 'T1 -&gt; 'T2 -&gt; 'Result" Usage="Microsoft.FSharp.Core.LanguagePrimitives.CheckedAdditionDynamic x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -104,6 +110,8 @@
       <MemberSignature Language="C#" Value="public static TResult CheckedMultiplyDynamic&lt;T1,T2,TResult&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult CheckedMultiplyDynamic&lt;T1, T2, TResult&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.CheckedMultiplyDynamic``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CheckedMultiplyDynamic(Of T1, T2, TResult) (x As T1, y As T2) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.CheckedMultiplyDynamic : 'T1 -&gt; 'T2 -&gt; 'Result" Usage="Microsoft.FSharp.Core.LanguagePrimitives.CheckedMultiplyDynamic x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -144,6 +152,8 @@
       <MemberSignature Language="C#" Value="public static decimal DecimalWithMeasure (decimal f);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal DecimalWithMeasure(valuetype System.Decimal f) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.DecimalWithMeasure(System.Decimal)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DecimalWithMeasure (f As Decimal) As Decimal" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.DecimalWithMeasure : decimal -&gt; decimal" Usage="Microsoft.FSharp.Core.LanguagePrimitives.DecimalWithMeasure f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -166,6 +176,8 @@
       <MemberSignature Language="C#" Value="public static T DivideByInt&lt;T&gt; (T x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T DivideByInt&lt;T&gt;(!!T x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.DivideByInt``1(``0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DivideByInt(Of T) (x As T, y As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.DivideByInt : 'T -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.DivideByInt x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -199,6 +211,8 @@
       <MemberSignature Language="C#" Value="public static T DivideByIntDynamic&lt;T&gt; (T x, int y);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T DivideByIntDynamic&lt;T&gt;(!!T x, int32 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.DivideByIntDynamic``1(``0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DivideByIntDynamic(Of T) (x As T, y As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.DivideByIntDynamic : 'T -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.DivideByIntDynamic x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -235,6 +249,8 @@
       <MemberSignature Language="C#" Value="public static TEnum EnumOfValue&lt;T,TEnum&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TEnum EnumOfValue&lt;T, TEnum&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.EnumOfValue``2(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnumOfValue(Of T, TEnum) (value As T) As TEnum" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.EnumOfValue : 'T -&gt; 'Enum" Usage="Microsoft.FSharp.Core.LanguagePrimitives.EnumOfValue value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -263,6 +279,8 @@
       <MemberSignature Language="C#" Value="public static T EnumToValue&lt;TEnum,T&gt; (TEnum enum);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T EnumToValue&lt;TEnum, T&gt;(!!TEnum enum) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.EnumToValue``2(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function EnumToValue(Of TEnum, T) (enum As TEnum) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.EnumToValue : 'Enum -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.EnumToValue enum" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -291,6 +309,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IComparer&lt;T&gt; FastGenericComparer&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IComparer`1&lt;!!T&gt; FastGenericComparer&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.FastGenericComparer``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FastGenericComparer(Of T) () As IComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericComparer : unit -&gt; System.Collections.Generic.IComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericComparer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -314,6 +334,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IComparer&lt;T&gt; FastGenericComparerFromTable&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IComparer`1&lt;!!T&gt; FastGenericComparerFromTable&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.FastGenericComparerFromTable``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FastGenericComparerFromTable(Of T) () As IComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericComparerFromTable : unit -&gt; System.Collections.Generic.IComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericComparerFromTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -342,6 +364,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; FastGenericEqualityComparer&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; FastGenericEqualityComparer&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.FastGenericEqualityComparer``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FastGenericEqualityComparer(Of T) () As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericEqualityComparer : unit -&gt; System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericEqualityComparer " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -365,6 +389,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; FastGenericEqualityComparerFromTable&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; FastGenericEqualityComparerFromTable&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.FastGenericEqualityComparerFromTable``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FastGenericEqualityComparerFromTable(Of T) () As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericEqualityComparerFromTable : unit -&gt; System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Core.LanguagePrimitives.FastGenericEqualityComparerFromTable " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -393,6 +419,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEqualityComparer&lt;T&gt; FastLimitedGenericEqualityComparer&lt;T&gt; (int limit);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEqualityComparer`1&lt;!!T&gt; FastLimitedGenericEqualityComparer&lt;T&gt;(int32 limit) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.FastLimitedGenericEqualityComparer``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FastLimitedGenericEqualityComparer(Of T) (limit As Integer) As IEqualityComparer(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.FastLimitedGenericEqualityComparer : int -&gt; System.Collections.Generic.IEqualityComparer&lt;'T&gt;" Usage="Microsoft.FSharp.Core.LanguagePrimitives.FastLimitedGenericEqualityComparer limit" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -420,6 +448,8 @@
       <MemberSignature Language="C#" Value="public static float Float32WithMeasure (float f);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 Float32WithMeasure(float32 f) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.Float32WithMeasure(System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Float32WithMeasure (f As Single) As Single" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.Float32WithMeasure : single -&gt; single" Usage="Microsoft.FSharp.Core.LanguagePrimitives.Float32WithMeasure f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -442,6 +472,8 @@
       <MemberSignature Language="C#" Value="public static double FloatWithMeasure (double f);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 FloatWithMeasure(float64 f) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.FloatWithMeasure(System.Double)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FloatWithMeasure (f As Double) As Double" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.FloatWithMeasure : double -&gt; double" Usage="Microsoft.FSharp.Core.LanguagePrimitives.FloatWithMeasure f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -464,6 +496,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IComparer GenericComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.IComparer GenericComparer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.GenericComparer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GenericComparer As IComparer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericComparer : System.Collections.IComparer" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -487,6 +521,8 @@
       <MemberSignature Language="C#" Value="public static int GenericComparison&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 GenericComparison&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericComparison``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericComparison(Of T) (e1 As T, e2 As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericComparison : 'T -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericComparison e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -520,6 +556,8 @@
       <MemberSignature Language="C#" Value="public static int GenericComparisonWithComparer&lt;T&gt; (System.Collections.IComparer comp, T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 GenericComparisonWithComparer&lt;T&gt;(class System.Collections.IComparer comp, !!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericComparisonWithComparer``1(System.Collections.IComparer,``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericComparisonWithComparer(Of T) (comp As IComparer, e1 As T, e2 As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericComparisonWithComparer : System.Collections.IComparer -&gt; 'T -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericComparisonWithComparer comp e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -556,6 +594,8 @@
       <MemberSignature Language="C#" Value="public static bool GenericEquality&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool GenericEquality&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericEquality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericEquality(Of T) (e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericEquality : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericEquality e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -589,6 +629,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEqualityComparer GenericEqualityComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.IEqualityComparer GenericEqualityComparer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityComparer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GenericEqualityComparer As IEqualityComparer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityComparer : System.Collections.IEqualityComparer" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -614,6 +656,8 @@
       <MemberSignature Language="C#" Value="public static bool GenericEqualityER&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool GenericEqualityER&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityER``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericEqualityER(Of T) (e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityER : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityER e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -647,6 +691,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.IEqualityComparer GenericEqualityERComparer { get; }" />
       <MemberSignature Language="ILAsm" Value=".property class System.Collections.IEqualityComparer GenericEqualityERComparer" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityERComparer" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property GenericEqualityERComparer As IEqualityComparer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityERComparer : System.Collections.IEqualityComparer" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityERComparer" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -673,6 +719,8 @@
       <MemberSignature Language="C#" Value="public static bool GenericEqualityWithComparer&lt;T&gt; (System.Collections.IEqualityComparer comp, T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool GenericEqualityWithComparer&lt;T&gt;(class System.Collections.IEqualityComparer comp, !!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityWithComparer``1(System.Collections.IEqualityComparer,``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericEqualityWithComparer(Of T) (comp As IEqualityComparer, e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityWithComparer : System.Collections.IEqualityComparer -&gt; 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericEqualityWithComparer comp e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -696,8 +744,7 @@
       </Parameters>
       <Docs>
         <typeparam name="T">To be added.</typeparam>
-        <param name="comp">
-        </param>
+        <param name="comp"></param>
         <param name="e1">The first value.</param>
         <param name="e2">The second value.</param>
         <summary>Compare two values for equality</summary>
@@ -709,6 +756,8 @@
       <MemberSignature Language="C#" Value="public static bool GenericGreaterOrEqual&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool GenericGreaterOrEqual&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericGreaterOrEqual``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericGreaterOrEqual(Of T) (e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericGreaterOrEqual : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericGreaterOrEqual e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -742,6 +791,8 @@
       <MemberSignature Language="C#" Value="public static bool GenericGreaterThan&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool GenericGreaterThan&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericGreaterThan``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericGreaterThan(Of T) (e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericGreaterThan : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericGreaterThan e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -775,6 +826,8 @@
       <MemberSignature Language="C#" Value="public static int GenericHash&lt;T&gt; (T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 GenericHash&lt;T&gt;(!!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericHash``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericHash(Of T) (obj As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericHash : 'T -&gt; int" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericHash obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -802,6 +855,8 @@
       <MemberSignature Language="C#" Value="public static int GenericHashWithComparer&lt;T&gt; (System.Collections.IEqualityComparer comparer, T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 GenericHashWithComparer&lt;T&gt;(class System.Collections.IEqualityComparer comparer, !!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericHashWithComparer``1(System.Collections.IEqualityComparer,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericHashWithComparer(Of T) (comparer As IEqualityComparer, obj As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericHashWithComparer : System.Collections.IEqualityComparer -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericHashWithComparer comparer obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -835,6 +890,8 @@
       <MemberSignature Language="C#" Value="public static bool GenericLessOrEqual&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool GenericLessOrEqual&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericLessOrEqual``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericLessOrEqual(Of T) (e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericLessOrEqual : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericLessOrEqual e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -868,6 +925,8 @@
       <MemberSignature Language="C#" Value="public static bool GenericLessThan&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool GenericLessThan&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericLessThan``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericLessThan(Of T) (e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericLessThan : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericLessThan e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -901,6 +960,8 @@
       <MemberSignature Language="C#" Value="public static int GenericLimitedHash&lt;T&gt; (int limit, T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 GenericLimitedHash&lt;T&gt;(int32 limit, !!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericLimitedHash``1(System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericLimitedHash(Of T) (limit As Integer, obj As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericLimitedHash : int -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericLimitedHash limit obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -935,6 +996,8 @@
       <MemberSignature Language="C#" Value="public static T GenericMaximum&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GenericMaximum&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericMaximum``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericMaximum(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericMaximum : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericMaximum e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -968,6 +1031,8 @@
       <MemberSignature Language="C#" Value="public static T GenericMinimum&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GenericMinimum&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericMinimum``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericMinimum(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericMinimum : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericMinimum e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1001,6 +1066,8 @@
       <MemberSignature Language="C#" Value="public static T GenericOne&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GenericOne&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericOne``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericOne(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericOne : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericOne " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1024,6 +1091,8 @@
       <MemberSignature Language="C#" Value="public static T GenericOneDynamic&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GenericOneDynamic&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericOneDynamic``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericOneDynamic(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericOneDynamic : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericOneDynamic " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1052,6 +1121,8 @@
       <MemberSignature Language="C#" Value="public static T GenericZero&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GenericZero&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericZero``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericZero(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericZero : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericZero " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1075,6 +1146,8 @@
       <MemberSignature Language="C#" Value="public static T GenericZeroDynamic&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GenericZeroDynamic&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.GenericZeroDynamic``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GenericZeroDynamic(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.GenericZeroDynamic : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.LanguagePrimitives.GenericZeroDynamic " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1103,6 +1176,8 @@
       <MemberSignature Language="C#" Value="public static short Int16WithMeasure (short f);" />
       <MemberSignature Language="ILAsm" Value=".method public static int16 Int16WithMeasure(int16 f) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.Int16WithMeasure(System.Int16)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Int16WithMeasure (f As Short) As Short" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.Int16WithMeasure : int16 -&gt; int16" Usage="Microsoft.FSharp.Core.LanguagePrimitives.Int16WithMeasure f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1125,6 +1200,8 @@
       <MemberSignature Language="C#" Value="public static int Int32WithMeasure (int f);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Int32WithMeasure(int32 f) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.Int32WithMeasure(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Int32WithMeasure (f As Integer) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.Int32WithMeasure : int -&gt; int" Usage="Microsoft.FSharp.Core.LanguagePrimitives.Int32WithMeasure f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1147,6 +1224,8 @@
       <MemberSignature Language="C#" Value="public static long Int64WithMeasure (long f);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 Int64WithMeasure(int64 f) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.Int64WithMeasure(System.Int64)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Int64WithMeasure (f As Long) As Long" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.Int64WithMeasure : int64 -&gt; int64" Usage="Microsoft.FSharp.Core.LanguagePrimitives.Int64WithMeasure f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1169,6 +1248,8 @@
       <MemberSignature Language="C#" Value="public static TResult MultiplyDynamic&lt;T1,T2,TResult&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult MultiplyDynamic&lt;T1, T2, TResult&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.MultiplyDynamic``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MultiplyDynamic(Of T1, T2, TResult) (x As T1, y As T2) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.MultiplyDynamic : 'T1 -&gt; 'T2 -&gt; 'Result" Usage="Microsoft.FSharp.Core.LanguagePrimitives.MultiplyDynamic x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1209,6 +1290,8 @@
       <MemberSignature Language="C#" Value="public static int ParseInt32 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 ParseInt32(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.ParseInt32(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseInt32 (s As String) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.ParseInt32 : string -&gt; int" Usage="Microsoft.FSharp.Core.LanguagePrimitives.ParseInt32 s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1231,6 +1314,8 @@
       <MemberSignature Language="C#" Value="public static long ParseInt64 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 ParseInt64(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.ParseInt64(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseInt64 (s As String) As Long" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.ParseInt64 : string -&gt; int64" Usage="Microsoft.FSharp.Core.LanguagePrimitives.ParseInt64 s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1253,6 +1338,8 @@
       <MemberSignature Language="C#" Value="public static uint ParseUInt32 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int32 ParseUInt32(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.ParseUInt32(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseUInt32 (s As String) As UInteger" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.ParseUInt32 : string -&gt; uint32" Usage="Microsoft.FSharp.Core.LanguagePrimitives.ParseUInt32 s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1275,6 +1362,8 @@
       <MemberSignature Language="C#" Value="public static ulong ParseUInt64 (string s);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int64 ParseUInt64(string s) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.ParseUInt64(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ParseUInt64 (s As String) As ULong" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.ParseUInt64 : string -&gt; uint64" Usage="Microsoft.FSharp.Core.LanguagePrimitives.ParseUInt64 s" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1297,6 +1386,8 @@
       <MemberSignature Language="C#" Value="public static bool PhysicalEquality&lt;T&gt; (T e1, T e2) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static bool PhysicalEquality&lt;class T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.PhysicalEquality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PhysicalEquality(Of T As Class) (e1 As T, e2 As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.PhysicalEquality : 'T -&gt; 'T -&gt; bool (requires 'T : null)" Usage="Microsoft.FSharp.Core.LanguagePrimitives.PhysicalEquality e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1335,6 +1426,8 @@
       <MemberSignature Language="C#" Value="public static int PhysicalHash&lt;T&gt; (T obj) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 PhysicalHash&lt;class T&gt;(!!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.PhysicalHash``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PhysicalHash(Of T As Class) (obj As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.PhysicalHash : 'T -&gt; int (requires 'T : null)" Usage="Microsoft.FSharp.Core.LanguagePrimitives.PhysicalHash obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1366,6 +1459,8 @@
       <MemberSignature Language="C#" Value="public static sbyte SByteWithMeasure (sbyte f);" />
       <MemberSignature Language="ILAsm" Value=".method public static int8 SByteWithMeasure(int8 f) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.LanguagePrimitives.SByteWithMeasure(System.SByte)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SByteWithMeasure (f As SByte) As SByte" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.LanguagePrimitives.SByteWithMeasure : sbyte -&gt; sbyte" Usage="Microsoft.FSharp.Core.LanguagePrimitives.SByteWithMeasure f" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

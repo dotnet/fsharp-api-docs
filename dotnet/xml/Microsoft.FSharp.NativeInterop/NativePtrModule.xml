@@ -1,7 +1,9 @@
-<Type Name="NativePtrModule" FullName="Microsoft.FSharp.NativeInterop.NativePtrModule">
+﻿<Type Name="NativePtrModule" FullName="Microsoft.FSharp.NativeInterop.NativePtrModule">
   <TypeSignature Language="C#" Value="public static class NativePtrModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed NativePtrModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.NativeInterop.NativePtrModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class NativePtrModule" />
+  <TypeSignature Language="F#" Value="module NativePtr" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -31,6 +33,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr AddPointerInlined&lt;T&gt; (IntPtr address, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static native int AddPointerInlined&lt;T&gt;(native int address, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.AddPointerInlined``1(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddPointerInlined(Of T) (address As IntPtr, index As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.add : nativeint -&gt; int -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.AddPointerInlined address index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -73,6 +77,8 @@
       <MemberSignature Language="C#" Value="public static T GetPointerInlined&lt;T&gt; (IntPtr address, int index);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T GetPointerInlined&lt;T&gt;(native int address, int32 index) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.GetPointerInlined``1(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPointerInlined(Of T) (address As IntPtr, index As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.get : nativeint -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.GetPointerInlined address index" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -115,6 +121,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr OfNativeIntInlined&lt;T&gt; (IntPtr address);" />
       <MemberSignature Language="ILAsm" Value=".method public static native int OfNativeIntInlined&lt;T&gt;(native int address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.OfNativeIntInlined``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfNativeIntInlined(Of T) (address As IntPtr) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.ofNativeInt : nativeint -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.OfNativeIntInlined address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -152,6 +160,8 @@
       <MemberSignature Language="C#" Value="public static T ReadPointerInlined&lt;T&gt; (IntPtr address);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T ReadPointerInlined&lt;T&gt;(native int address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.ReadPointerInlined``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadPointerInlined(Of T) (address As IntPtr) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.read : nativeint -&gt; 'T" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.ReadPointerInlined address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -189,6 +199,8 @@
       <MemberSignature Language="C#" Value="public static void SetPointerInlined&lt;T&gt; (IntPtr address, int index, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void SetPointerInlined&lt;T&gt;(native int address, int32 index, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.SetPointerInlined``1(System.IntPtr,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPointerInlined(Of T) (address As IntPtr, index As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.set : nativeint -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.SetPointerInlined address index value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -232,6 +244,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr StackAllocate&lt;T&gt; (int count);" />
       <MemberSignature Language="ILAsm" Value=".method public static native int StackAllocate&lt;T&gt;(int32 count) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.StackAllocate``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StackAllocate(Of T) (count As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.stackalloc : int -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.StackAllocate count" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -269,6 +283,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ToNativeIntInlined&lt;T&gt; (IntPtr address);" />
       <MemberSignature Language="ILAsm" Value=".method public static native int ToNativeIntInlined&lt;T&gt;(native int address) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.ToNativeIntInlined``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToNativeIntInlined(Of T) (address As IntPtr) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.toNativeInt : nativeint -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.ToNativeIntInlined address" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -306,6 +322,8 @@
       <MemberSignature Language="C#" Value="public static void WritePointerInlined&lt;T&gt; (IntPtr address, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void WritePointerInlined&lt;T&gt;(native int address, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.WritePointerInlined``1(System.IntPtr,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WritePointerInlined(Of T) (address As IntPtr, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.write : nativeint -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.WritePointerInlined address value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

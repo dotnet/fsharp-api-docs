@@ -1,7 +1,9 @@
-<Type Name="WebExtensions" FullName="Microsoft.FSharp.Control.WebExtensions">
+﻿<Type Name="WebExtensions" FullName="Microsoft.FSharp.Control.WebExtensions">
   <TypeSignature Language="C#" Value="public static class WebExtensions" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed WebExtensions extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.WebExtensions" />
+  <TypeSignature Language="VB.NET" Value="Public Class WebExtensions" />
+  <TypeSignature Language="F#" Value="module WebExtensions" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;System.Net.WebResponse&gt; AsyncGetResponse (System.Net.WebRequest );" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;class System.Net.WebResponse&gt; AsyncGetResponse(class System.Net.WebRequest ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.WebExtensions.AsyncGetResponse(System.Net.WebRequest)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AsyncGetResponse ( As WebRequest) As FSharpAsync(Of WebResponse)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.WebExtensions.AsyncGetResponse : System.Net.WebRequest -&gt; Async&lt;System.Net.WebResponse&gt;" Usage="Microsoft.FSharp.Control.WebExtensions.AsyncGetResponse " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

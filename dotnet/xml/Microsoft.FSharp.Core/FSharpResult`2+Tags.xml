@@ -1,7 +1,8 @@
-<Type Name="FSharpResult&lt;T,TError&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt;+Tags">
+﻿<Type Name="FSharpResult&lt;T,TError&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt;+Tags">
   <TypeSignature Language="C#" Value="public static class FSharpResult&lt;T,TError&gt;.Tags" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed FSharpResult`2/Tags&lt;T, TError&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpResult`2.Tags" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpResult(Of T, TError).Tags" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -23,6 +24,8 @@
       <MemberSignature Language="C#" Value="public const int Error;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Error" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpResult`2.Tags.Error" />
+      <MemberSignature Language="VB.NET" Value="Public Const Error As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Error : int" Usage="Microsoft.FSharp.Core.Result&lt;'T, 'Error&gt;.Result.Error" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -40,6 +43,8 @@
       <MemberSignature Language="C#" Value="public const int Ok;" />
       <MemberSignature Language="ILAsm" Value=".field public static literal int32 Ok" />
       <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpResult`2.Tags.Ok" />
+      <MemberSignature Language="VB.NET" Value="Public Const Ok As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Ok : int" Usage="Microsoft.FSharp.Core.Result&lt;'T, 'Error&gt;.Result.Ok" />
       <MemberType>Field</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

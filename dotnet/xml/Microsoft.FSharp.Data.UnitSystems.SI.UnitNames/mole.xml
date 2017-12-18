@@ -1,7 +1,9 @@
-<Type Name="mole" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.mole">
+﻿<Type Name="mole" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.mole">
   <TypeSignature Language="C#" Value="public class mole" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi mole extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.mole" />
+  <TypeSignature Language="VB.NET" Value="Public Class mole" />
+  <TypeSignature Language="F#" Value="type mole = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>

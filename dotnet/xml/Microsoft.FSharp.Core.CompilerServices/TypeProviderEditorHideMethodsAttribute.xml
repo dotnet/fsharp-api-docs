@@ -1,7 +1,9 @@
-<Type Name="TypeProviderEditorHideMethodsAttribute" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderEditorHideMethodsAttribute">
+﻿<Type Name="TypeProviderEditorHideMethodsAttribute" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderEditorHideMethodsAttribute">
   <TypeSignature Language="C#" Value="public class TypeProviderEditorHideMethodsAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi TypeProviderEditorHideMethodsAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.TypeProviderEditorHideMethodsAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeProviderEditorHideMethodsAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type TypeProviderEditorHideMethodsAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,7 @@
       <MemberSignature Language="C#" Value="public TypeProviderEditorHideMethodsAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderEditorHideMethodsAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

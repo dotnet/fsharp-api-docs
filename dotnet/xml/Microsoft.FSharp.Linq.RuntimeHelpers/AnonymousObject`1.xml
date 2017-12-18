@@ -1,7 +1,9 @@
-<Type Name="AnonymousObject&lt;T1&gt;" FullName="Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject&lt;T1&gt;">
+﻿<Type Name="AnonymousObject&lt;T1&gt;" FullName="Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject&lt;T1&gt;">
   <TypeSignature Language="C#" Value="public class AnonymousObject&lt;T1&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi beforefieldinit AnonymousObject`1&lt;T1&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`1" />
+  <TypeSignature Language="VB.NET" Value="Public Class AnonymousObject(Of T1)" />
+  <TypeSignature Language="F#" Value="type AnonymousObject&lt;'T1&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public AnonymousObject (T1 Item1);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(!T1 Item1) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`1.#ctor(`0)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (Item1 As T1)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject&lt;'T1&gt; : 'T1 -&gt; Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject&lt;'T1&gt;" Usage="new Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject&lt;'T1&gt; Item1" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -48,6 +52,8 @@
       <MemberSignature Language="C#" Value="public T1 Item1 { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance !T1 Item1" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject`1.Item1" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Item1 As T1" />
+      <MemberSignature Language="F#" Value="member this.Item1 : 'T1" Usage="Microsoft.FSharp.Linq.RuntimeHelpers.AnonymousObject&lt;'T1&gt;.Item1" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

@@ -1,7 +1,9 @@
-<Type Name="Operators" FullName="Microsoft.FSharp.Core.Operators">
+﻿<Type Name="Operators" FullName="Microsoft.FSharp.Core.Operators">
   <TypeSignature Language="C#" Value="public static class Operators" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Operators extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.Operators" />
+  <TypeSignature Language="VB.NET" Value="Public Class Operators" />
+  <TypeSignature Language="F#" Value="module Operators" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static T Abs&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Abs&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Abs``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Abs(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.abs : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Abs value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -58,6 +62,8 @@
       <MemberSignature Language="C#" Value="public static T Acos&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Acos&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Acos``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Acos(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.acos : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Acos value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -89,6 +95,8 @@
       <MemberSignature Language="C#" Value="public static T Asin&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Asin&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Asin``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Asin(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.asin : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Asin value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -120,6 +128,8 @@
       <MemberSignature Language="C#" Value="public static T Atan&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Atan&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Atan``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Atan(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.atan : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Atan value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -151,6 +161,8 @@
       <MemberSignature Language="C#" Value="public static T2 Atan2&lt;T1,T2&gt; (T1 y, T1 x);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T2 Atan2&lt;T1, T2&gt;(!!T1 y, !!T1 x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Atan2``2(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Atan2(Of T1, T2) (y As T1, x As T1) As T2" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.atan2 : 'T1 -&gt; 'T1 -&gt; 'T2" Usage="Microsoft.FSharp.Core.Operators.Atan2 y x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -189,6 +201,8 @@
       <MemberSignature Language="C#" Value="public static object Box&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static object Box&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Box``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Box(Of T) (value As T) As Object" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.box : 'T -&gt; obj" Usage="Microsoft.FSharp.Core.Operators.Box value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -220,6 +234,8 @@
       <MemberSignature Language="C#" Value="public static T Ceiling&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Ceiling&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Ceiling``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Ceiling(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.ceil : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Ceiling value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -251,6 +267,8 @@
       <MemberSignature Language="C#" Value="public static int Compare&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Compare&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Compare``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare(Of T) (e1 As T, e2 As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.compare : 'T -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.Compare e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -287,6 +305,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.TextWriter ConsoleError&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.IO.TextWriter ConsoleError&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ConsoleError``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConsoleError(Of T) () As TextWriter" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.stderr : unit -&gt; System.IO.TextWriter" Usage="Microsoft.FSharp.Core.Operators.ConsoleError " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -315,6 +335,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.TextReader ConsoleIn&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.IO.TextReader ConsoleIn&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ConsoleIn``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConsoleIn(Of T) () As TextReader" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.stdin : unit -&gt; System.IO.TextReader" Usage="Microsoft.FSharp.Core.Operators.ConsoleIn " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -343,6 +365,8 @@
       <MemberSignature Language="C#" Value="public static System.IO.TextWriter ConsoleOut&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.IO.TextWriter ConsoleOut&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ConsoleOut``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ConsoleOut(Of T) () As TextWriter" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.stdout : unit -&gt; System.IO.TextWriter" Usage="Microsoft.FSharp.Core.Operators.ConsoleOut " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -371,6 +395,8 @@
       <MemberSignature Language="C#" Value="public static T Cos&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Cos&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Cos``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cos(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.cos : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Cos value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -402,6 +428,8 @@
       <MemberSignature Language="C#" Value="public static T Cosh&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Cosh&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Cosh``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Cosh(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.cosh : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Cosh value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -433,6 +461,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; CreateSequence&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; sequence);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; CreateSequence&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; sequence) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.CreateSequence``1(System.Collections.Generic.IEnumerable{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateSequence(Of T) (sequence As IEnumerable(Of T)) As IEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.seq : seq&lt;'T&gt; -&gt; seq&lt;'T&gt;" Usage="Microsoft.FSharp.Core.Operators.CreateSequence sequence" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -464,6 +494,8 @@
       <MemberSignature Language="C#" Value="public static void Decrement (Microsoft.FSharp.Core.FSharpRef&lt;int&gt; cell);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Decrement(class Microsoft.FSharp.Core.FSharpRef`1&lt;int32&gt; cell) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Decrement(Microsoft.FSharp.Core.FSharpRef{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Decrement (cell As FSharpRef(Of Integer))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.decr : ref&lt;int&gt; -&gt; unit" Usage="Microsoft.FSharp.Core.Operators.Decrement cell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -490,6 +522,8 @@
       <MemberSignature Language="C#" Value="public static T DefaultArg&lt;T&gt; (Microsoft.FSharp.Core.FSharpOption&lt;T&gt; arg, T defaultValue);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T DefaultArg&lt;T&gt;(class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; arg, !!T defaultValue) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.DefaultArg``1(Microsoft.FSharp.Core.FSharpOption{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function DefaultArg(Of T) (arg As FSharpOption(Of T), defaultValue As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.defaultArg : option&lt;'T&gt; -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.DefaultArg arg defaultValue" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -526,6 +560,8 @@
       <MemberSignature Language="C#" Value="public static T Exit&lt;T&gt; (int exitcode);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Exit&lt;T&gt;(int32 exitcode) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Exit``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exit(Of T) (exitcode As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.exit : int -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Exit exitcode" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -558,6 +594,8 @@
       <MemberSignature Language="C#" Value="public static T Exp&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Exp&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Exp``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Exp(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.exp : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Exp value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -589,6 +627,8 @@
       <MemberSignature Language="C#" Value="public static Exception Failure (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Exception Failure(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Failure(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Failure (message As String) As Exception" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Failure : string -&gt; Exception" Usage="Microsoft.FSharp.Core.Operators.Failure message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -611,6 +651,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;string&gt; FailurePattern (Exception error);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;string&gt; FailurePattern(class System.Exception error) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.FailurePattern(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FailurePattern (error As Exception) As FSharpOption(Of String)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.|Failure|_| : Exception -&gt; option&lt;string&gt;" Usage="Microsoft.FSharp.Core.Operators.FailurePattern error" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -638,6 +680,8 @@
       <MemberSignature Language="C#" Value="public static T FailWith&lt;T&gt; (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T FailWith&lt;T&gt;(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.FailWith``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function FailWith(Of T) (message As String) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.failwith : string -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.FailWith message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -669,6 +713,8 @@
       <MemberSignature Language="C#" Value="public static T Floor&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Floor&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Floor``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Floor(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.floor : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Floor value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -700,6 +746,8 @@
       <MemberSignature Language="C#" Value="public static T1 Fst&lt;T1,T2&gt; (Tuple&lt;T1,T2&gt; tuple);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T1 Fst&lt;T1, T2&gt;(class System.Tuple`2&lt;!!T1, !!T2&gt; tuple) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Fst``2(System.Tuple{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Fst(Of T1, T2) (tuple As Tuple(Of T1, T2)) As T1" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.fst : ('T1 * 'T2) -&gt; 'T1" Usage="Microsoft.FSharp.Core.Operators.Fst tuple" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -733,6 +781,8 @@
       <MemberSignature Language="C#" Value="public static int Hash&lt;T&gt; (T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Hash&lt;T&gt;(!!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Hash``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Hash(Of T) (obj As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.hash : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.Hash obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -768,6 +818,8 @@
       <MemberSignature Language="C#" Value="public static T Identity&lt;T&gt; (T x);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Identity&lt;T&gt;(!!T x) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Identity``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Identity(Of T) (x As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.id : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Identity x" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -799,6 +851,8 @@
       <MemberSignature Language="C#" Value="public static void Ignore&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Ignore&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Ignore``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Ignore(Of T) (value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.ignore : 'T -&gt; unit" Usage="Microsoft.FSharp.Core.Operators.Ignore value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -829,6 +883,8 @@
       <MemberSignature Language="C#" Value="public static void Increment (Microsoft.FSharp.Core.FSharpRef&lt;int&gt; cell);" />
       <MemberSignature Language="ILAsm" Value=".method public static void Increment(class Microsoft.FSharp.Core.FSharpRef`1&lt;int32&gt; cell) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Increment(Microsoft.FSharp.Core.FSharpRef{System.Int32})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Increment (cell As FSharpRef(Of Integer))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.incr : ref&lt;int&gt; -&gt; unit" Usage="Microsoft.FSharp.Core.Operators.Increment cell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -855,6 +911,8 @@
       <MemberSignature Language="C#" Value="public static double Infinity { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 Infinity" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.Operators.Infinity" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property Infinity As Double" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.Infinity : double" Usage="Microsoft.FSharp.Core.Operators.Infinity" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -881,6 +939,8 @@
       <MemberSignature Language="C#" Value="public static float InfinitySingle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float32 InfinitySingle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.Operators.InfinitySingle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property InfinitySingle As Single" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.InfinitySingle : single" Usage="Microsoft.FSharp.Core.Operators.InfinitySingle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -907,6 +967,8 @@
       <MemberSignature Language="C#" Value="public static T InvalidArg&lt;T&gt; (string argumentName, string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T InvalidArg&lt;T&gt;(string argumentName, string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.InvalidArg``1(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InvalidArg(Of T) (argumentName As String, message As String) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.invalidArg : string -&gt; string -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.InvalidArg argumentName message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -944,6 +1006,8 @@
       <MemberSignature Language="C#" Value="public static T InvalidOp&lt;T&gt; (string message);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T InvalidOp&lt;T&gt;(string message) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.InvalidOp``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InvalidOp(Of T) (message As String) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.invalidOp : string -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.InvalidOp message" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -975,6 +1039,8 @@
       <MemberSignature Language="C#" Value="public static bool IsNull&lt;T&gt; (T value) where T : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsNull&lt;class T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.IsNull``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsNull(Of T As Class) (value As T) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.isNull : 'T -&gt; bool (requires 'T : null)" Usage="Microsoft.FSharp.Core.Operators.IsNull value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1010,6 +1076,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;TKey,TValue&gt; KeyValuePattern&lt;TKey,TValue&gt; (System.Collections.Generic.KeyValuePair&lt;TKey,TValue&gt; keyValuePair);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;!!TKey, !!TValue&gt; KeyValuePattern&lt;TKey, TValue&gt;(valuetype System.Collections.Generic.KeyValuePair`2&lt;!!TKey, !!TValue&gt; keyValuePair) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.KeyValuePattern``2(System.Collections.Generic.KeyValuePair{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function KeyValuePattern(Of TKey, TValue) (keyValuePair As KeyValuePair(Of TKey, TValue)) As Tuple(Of TKey, TValue)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.|KeyValue| : System.Collections.Generic.KeyValuePair&lt;'Key, 'Value&gt; -&gt; 'Key * 'Value" Usage="Microsoft.FSharp.Core.Operators.KeyValuePattern keyValuePair" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1043,6 +1111,8 @@
       <MemberSignature Language="C#" Value="public static int limitedHash&lt;T&gt; (int limit, T obj);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 limitedHash&lt;T&gt;(int32 limit, !!T obj) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.limitedHash``1(System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function limitedHash(Of T) (limit As Integer, obj As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.limitedHash : int -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.limitedHash limit obj" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1080,6 +1150,8 @@
       <MemberSignature Language="C#" Value="public static T Lock&lt;TLock,T&gt; (TLock lockObject, Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,T&gt; action) where TLock : class;" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Lock&lt;class TLock, T&gt;(!!TLock lockObject, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, !!T&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Lock``2(``0,Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Lock(Of TLock As Class, T As Class) (lockObject As TLock, action As FSharpFunc(Of Unit, T)) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.lock : 'Lock -&gt; (unit -&gt; 'T) -&gt; 'T (requires 'Lock : null)" Usage="Microsoft.FSharp.Core.Operators.Lock lockObject action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1122,6 +1194,8 @@
       <MemberSignature Language="C#" Value="public static T Log&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Log&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Log``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Log(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.log : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Log value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1153,6 +1227,8 @@
       <MemberSignature Language="C#" Value="public static T Log10&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Log10&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Log10``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Log10(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.log10 : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Log10 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1184,6 +1260,8 @@
       <MemberSignature Language="C#" Value="public static T Max&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Max&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Max``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Max(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.max : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Max e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1220,6 +1298,8 @@
       <MemberSignature Language="C#" Value="public static T Min&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Min&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Min``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Min(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.min : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Min e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1256,6 +1336,8 @@
       <MemberSignature Language="C#" Value="public static double NaN { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float64 NaN" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.Operators.NaN" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NaN As Double" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NaN : double" Usage="Microsoft.FSharp.Core.Operators.NaN" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1282,6 +1364,8 @@
       <MemberSignature Language="C#" Value="public static float NaNSingle { get; }" />
       <MemberSignature Language="ILAsm" Value=".property float32 NaNSingle" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.Operators.NaNSingle" />
+      <MemberSignature Language="VB.NET" Value="Public Shared ReadOnly Property NaNSingle As Single" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NaNSingle : single" Usage="Microsoft.FSharp.Core.Operators.NaNSingle" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1308,6 +1392,8 @@
       <MemberSignature Language="C#" Value="public static bool Not (bool value);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool Not(bool value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Not(System.Boolean)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Not (value As Boolean) As Boolean" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.not : bool -&gt; bool" Usage="Microsoft.FSharp.Core.Operators.Not value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1335,6 +1421,8 @@
       <MemberSignature Language="C#" Value="public static T NullArg&lt;T&gt; (string argumentName);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T NullArg&lt;T&gt;(string argumentName) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NullArg``1(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function NullArg(Of T) (argumentName As String) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.nullArg : string -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.NullArg argumentName" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1363,9 +1451,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Addition&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Addition&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator +&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Addition&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Addition``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator +(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( + ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x + y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1403,6 +1493,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Collections.FSharpList&lt;T&gt; op_Append&lt;T&gt; (Microsoft.FSharp.Collections.FSharpList&lt;T&gt; list1, Microsoft.FSharp.Collections.FSharpList&lt;T&gt; list2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; op_Append&lt;T&gt;(class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; list1, class Microsoft.FSharp.Collections.FSharpList`1&lt;!!T&gt; list2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Append``1(Microsoft.FSharp.Collections.FSharpList{``0},Microsoft.FSharp.Collections.FSharpList{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Append(Of T) (list1 As FSharpList(Of T), list2 As FSharpList(Of T)) As FSharpList(Of T)" />
+      <MemberSignature Language="F#" Value="( @ ) : List&lt;'T&gt; -&gt; List&lt;'T&gt; -&gt; List&lt;'T&gt;" Usage="list1 @ list2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1433,9 +1525,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseAnd&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_BitwiseAnd&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static T operator &amp;&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_BitwiseAnd&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_BitwiseAnd``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator And(Of T) (x As T, y As T) As T" />
+      <MemberSignature Language="F#" Value="( &amp;&amp;&amp; ) : 'T -&gt; 'T -&gt; 'T" Usage="x &amp;&amp;&amp; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1469,9 +1563,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_BitwiseOr&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_BitwiseOr&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static T operator |&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_BitwiseOr&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_BitwiseOr``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Or(Of T) (x As T, y As T) As T" />
+      <MemberSignature Language="F#" Value="( ||| ) : 'T -&gt; 'T -&gt; 'T" Usage="x ||| y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1508,6 +1604,8 @@
       <MemberSignature Language="C#" Value="public static void op_ColonEquals&lt;T&gt; (Microsoft.FSharp.Core.FSharpRef&lt;T&gt; cell, T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname void op_ColonEquals&lt;T&gt;(class Microsoft.FSharp.Core.FSharpRef`1&lt;!!T&gt; cell, !!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_ColonEquals``1(Microsoft.FSharp.Core.FSharpRef{``0},``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_ColonEquals(Of T) (cell As FSharpRef(Of T), value As T)" />
+      <MemberSignature Language="F#" Value="( := ) : ref&lt;'T&gt; -&gt; 'T -&gt; unit" Usage="cell := value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1540,6 +1638,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,T3&gt; op_ComposeLeft&lt;T2,T3,T1&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T2,T3&gt; func2, Microsoft.FSharp.Core.FSharpFunc&lt;T1,T2&gt; func1);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, !!T3&gt; op_ComposeLeft&lt;T2, T3, T1&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!T3&gt; func2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, !!T2&gt; func1) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_ComposeLeft``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``2,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_ComposeLeft(Of T2, T3, T1) (func2 As FSharpFunc(Of T2, T3), func1 As FSharpFunc(Of T1, T2)) As FSharpFunc(Of T1, T3)" />
+      <MemberSignature Language="F#" Value="( &lt;&lt; ) : ('T2 -&gt; 'T3) -&gt; ('T1 -&gt; 'T2) -&gt; ('T1 -&gt; 'T3)" Usage="func2 &lt;&lt; func1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1577,6 +1677,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpFunc&lt;T1,T3&gt; op_ComposeRight&lt;T1,T2,T3&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,T2&gt; func1, Microsoft.FSharp.Core.FSharpFunc&lt;T2,T3&gt; func2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, !!T3&gt; op_ComposeRight&lt;T1, T2, T3&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, !!T2&gt; func1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!T3&gt; func2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_ComposeRight``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpFunc{``1,``2})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_ComposeRight(Of T1, T2, T3) (func1 As FSharpFunc(Of T1, T2), func2 As FSharpFunc(Of T2, T3)) As FSharpFunc(Of T1, T3)" />
+      <MemberSignature Language="F#" Value="( &gt;&gt; ) : ('T1 -&gt; 'T2) -&gt; ('T2 -&gt; 'T3) -&gt; ('T1 -&gt; 'T3)" Usage="func1 &gt;&gt; func2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1614,6 +1716,8 @@
       <MemberSignature Language="C#" Value="public static string op_Concatenate (string s1, string s2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname string op_Concatenate(string s1, string s2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Concatenate(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Concatenate (s1 As String, s2 As String) As String" />
+      <MemberSignature Language="F#" Value="( ^ ) : string -&gt; string -&gt; string" Usage="s1 ^ s2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1646,6 +1750,8 @@
       <MemberSignature Language="C#" Value="public static T op_Dereference&lt;T&gt; (Microsoft.FSharp.Core.FSharpRef&lt;T&gt; cell);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_Dereference&lt;T&gt;(class Microsoft.FSharp.Core.FSharpRef`1&lt;!!T&gt; cell) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Dereference``1(Microsoft.FSharp.Core.FSharpRef{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Dereference(Of T) (cell As FSharpRef(Of T)) As T" />
+      <MemberSignature Language="F#" Value="( ! ) : ref&lt;'T&gt; -&gt; 'T" Usage="! cell" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1669,9 +1775,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Division&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Division&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator /&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Division&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Division``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator /(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( / ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x / y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1709,9 +1817,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Equality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator ==&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Equality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Equality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator ==(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="( = ) : 'T -&gt; 'T -&gt; bool" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1742,9 +1852,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_ExclusiveOr&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_ExclusiveOr&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static T operator ^&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_ExclusiveOr&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_ExclusiveOr``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Xor(Of T) (x As T, y As T) As T" />
+      <MemberSignature Language="F#" Value="( ^^^ ) : 'T -&gt; 'T -&gt; 'T" Usage="x ^^^ y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1781,6 +1893,8 @@
       <MemberSignature Language="C#" Value="public static T op_Exponentiation&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_Exponentiation&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Exponentiation``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Exponentiation(Of T, TResult) (x As T, y As TResult) As T" />
+      <MemberSignature Language="F#" Value="op_Exponentiation : 'T -&gt; 'Result -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.op_Exponentiation x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1813,9 +1927,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThan&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_GreaterThan``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="( &gt; ) : 'T -&gt; 'T -&gt; bool" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1846,9 +1962,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThanOrEqual&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_GreaterThanOrEqual``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;=(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="( &gt;= ) : 'T -&gt; 'T -&gt; bool" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1879,9 +1997,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator !=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Inequality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Inequality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator !=(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="op_Inequality : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.Operators.op_Inequality x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1912,9 +2032,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_LeftShift&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_LeftShift&lt;T&gt; (T value, int shift);" />
+      <MemberSignature Language="C#" Value="public static T operator &lt;&lt;&lt;T&gt; (T value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_LeftShift&lt;T&gt;(!!T value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LeftShift``1(``0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;&lt;(Of T) (value As T, shift As Integer) As T" />
+      <MemberSignature Language="F#" Value="( &lt;&lt;&lt; ) : 'T -&gt; int -&gt; 'T" Usage="value &lt;&lt;&lt; shift" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1948,9 +2070,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThan&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LessThan``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="( &lt; ) : 'T -&gt; 'T -&gt; bool" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -1981,9 +2105,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThanOrEqual&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LessThanOrEqual``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;=(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="( &lt;= ) : 'T -&gt; 'T -&gt; bool" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2014,9 +2140,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_LogicalNot&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_LogicalNot&lt;T&gt; (T value);" />
+      <MemberSignature Language="C#" Value="public static T operator !&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_LogicalNot&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_LogicalNot``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Not(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="( ~~~ ) : 'T -&gt; 'T" Usage="~~~ value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2045,9 +2173,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Modulus&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Modulus&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator %&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Modulus&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Modulus``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator Mod(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( % ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x % y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2085,9 +2215,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Multiply&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Multiply&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator *&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Multiply&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Multiply``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator *(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( * ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x * y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2125,6 +2257,8 @@
       <MemberSignature Language="C#" Value="public static TResult op_PipeLeft&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; func, T arg1);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!TResult op_PipeLeft&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; func, !!T arg1) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_PipeLeft``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PipeLeft(Of T, TResult) (func As FSharpFunc(Of T, TResult), arg1 As T) As TResult" />
+      <MemberSignature Language="F#" Value="( &lt;| ) : ('T -&gt; 'Result) -&gt; 'T -&gt; 'Result" Usage="func &lt;| arg1" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2160,6 +2294,8 @@
       <MemberSignature Language="C#" Value="public static TResult op_PipeLeft2&lt;T1,T2,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt; func, T1 arg1, T2 arg2);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!TResult op_PipeLeft2&lt;T1, T2, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt; func, !!T1 arg1, !!T2 arg2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_PipeLeft2``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}},``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PipeLeft2(Of T1, T2, TResult) (func As FSharpFunc(Of T1, FSharpFunc(Of T2, TResult)), arg1 As T1, arg2 As T2) As TResult" />
+      <MemberSignature Language="F#" Value="( &lt;|| ) : ('T1 -&gt; 'T2 -&gt; 'Result) -&gt; 'T1 * 'T2 -&gt; 'Result" Usage="func &lt;|| (arg1, arg2)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2199,6 +2335,8 @@
       <MemberSignature Language="C#" Value="public static TResult op_PipeLeft3&lt;T1,T2,T3,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt; func, T1 arg1, T2 arg2, T3 arg3);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!TResult op_PipeLeft3&lt;T1, T2, T3, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, !!TResult&gt;&gt;&gt; func, !!T1 arg1, !!T2 arg2, !!T3 arg3) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_PipeLeft3``4(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``3}}},``0,``1,``2)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PipeLeft3(Of T1, T2, T3, TResult) (func As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, TResult))), arg1 As T1, arg2 As T2, arg3 As T3) As TResult" />
+      <MemberSignature Language="F#" Value="( &lt;||| ) : ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'Result) -&gt; 'T1 * 'T2 * 'T3 -&gt; 'Result" Usage="func &lt;||| (arg1, arg2, arg3)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2242,6 +2380,8 @@
       <MemberSignature Language="C#" Value="public static TResult op_PipeRight&lt;T1,TResult&gt; (T1 arg, Microsoft.FSharp.Core.FSharpFunc&lt;T1,TResult&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!TResult op_PipeRight&lt;T1, TResult&gt;(!!T1 arg, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, !!TResult&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_PipeRight``2(``0,Microsoft.FSharp.Core.FSharpFunc{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PipeRight(Of T1, TResult) (arg As T1, func As FSharpFunc(Of T1, TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="( |&gt; ) : 'T1 -&gt; ('T1 -&gt; 'Result) -&gt; 'Result" Usage="arg |&gt; func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2277,6 +2417,8 @@
       <MemberSignature Language="C#" Value="public static TResult op_PipeRight2&lt;T1,T2,TResult&gt; (T1 arg1, T2 arg2, Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,TResult&gt;&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!TResult op_PipeRight2&lt;T1, T2, TResult&gt;(!!T1 arg1, !!T2 arg2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, !!TResult&gt;&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_PipeRight2``3(``0,``1,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,``2}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PipeRight2(Of T1, T2, TResult) (arg1 As T1, arg2 As T2, func As FSharpFunc(Of T1, FSharpFunc(Of T2, TResult))) As TResult" />
+      <MemberSignature Language="F#" Value="( ||&gt; ) : 'T1 * 'T2 -&gt; ('T1 -&gt; 'T2 -&gt; 'Result) -&gt; 'Result" Usage="(arg1, arg2) ||&gt; func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2316,6 +2458,8 @@
       <MemberSignature Language="C#" Value="public static TResult op_PipeRight3&lt;T1,T2,T3,TResult&gt; (T1 arg1, T2 arg2, T3 arg3, Microsoft.FSharp.Core.FSharpFunc&lt;T1,Microsoft.FSharp.Core.FSharpFunc&lt;T2,Microsoft.FSharp.Core.FSharpFunc&lt;T3,TResult&gt;&gt;&gt; func);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!TResult op_PipeRight3&lt;T1, T2, T3, TResult&gt;(!!T1 arg1, !!T2 arg2, !!T3 arg3, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T3, !!TResult&gt;&gt;&gt; func) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_PipeRight3``4(``0,``1,``2,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Core.FSharpFunc{``2,``3}}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_PipeRight3(Of T1, T2, T3, TResult) (arg1 As T1, arg2 As T2, arg3 As T3, func As FSharpFunc(Of T1, FSharpFunc(Of T2, FSharpFunc(Of T3, TResult)))) As TResult" />
+      <MemberSignature Language="F#" Value="( |||&gt; ) : 'T1 * 'T2 * 'T3 -&gt; ('T1 -&gt; 'T2 -&gt; 'T3 -&gt; 'Result) -&gt; 'Result" Usage="(arg1, arg2, arg3) |||&gt; func" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2359,6 +2503,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; op_Range&lt;T&gt; (T start, T finish);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; op_Range&lt;T&gt;(!!T start, !!T finish) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Range``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_Range(Of T) (start As T, finish As T) As IEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="( .. ) : 'T -&gt; 'T -&gt; seq&lt;'T&gt;" Usage="start .. finish" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2392,6 +2538,8 @@
       <MemberSignature Language="C#" Value="public static System.Collections.Generic.IEnumerable&lt;T&gt; op_RangeStep&lt;T,TStep&gt; (T start, TStep step, T finish);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; op_RangeStep&lt;T, TStep&gt;(!!T start, !!TStep step, !!T finish) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_RangeStep``2(``0,``1,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared op_RangeStep(Of T, TStep) (start As T, step As TStep, finish As T) As IEnumerable(Of T)" />
+      <MemberSignature Language="F#" Value="( .. .. ) : 'T -&gt; 'Step -&gt; 'T -&gt; seq&lt;'T&gt;" Usage="start .. step .. finish" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2426,9 +2574,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_RightShift&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_RightShift&lt;T&gt; (T value, int shift);" />
+      <MemberSignature Language="C#" Value="public static T operator &gt;&gt;&lt;T&gt; (T value, int shift);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_RightShift&lt;T&gt;(!!T value, int32 shift) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_RightShift``1(``0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;&gt;(Of T) (value As T, shift As Integer) As T" />
+      <MemberSignature Language="F#" Value="( &gt;&gt;&gt; ) : 'T -&gt; int -&gt; 'T" Usage="value &gt;&gt;&gt; shift" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2462,9 +2612,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Subtraction&lt;T1,T2,T3&gt;">
-      <MemberSignature Language="C#" Value="public static T3 op_Subtraction&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
+      <MemberSignature Language="C#" Value="public static T3 operator -&lt;T1,T2,T3&gt; (T1 x, T2 y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T3 op_Subtraction&lt;T1, T2, T3&gt;(!!T1 x, !!T2 y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_Subtraction``3(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator -(Of T1, T2, T3) (x As T1, y As T2) As T3" />
+      <MemberSignature Language="F#" Value="( - ) : 'T1 -&gt; 'T2 -&gt; 'T3" Usage="x - y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2502,9 +2654,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryNegation&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_UnaryNegation&lt;T&gt; (T n);" />
+      <MemberSignature Language="C#" Value="public static T operator -&lt;T&gt; (T n);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_UnaryNegation&lt;T&gt;(!!T n) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_UnaryNegation``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator -(Of T) (n As T) As T" />
+      <MemberSignature Language="F#" Value="( ~- ) : 'T -&gt; 'T" Usage="- n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2533,9 +2687,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_UnaryPlus&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static T op_UnaryPlus&lt;T&gt; (T value);" />
+      <MemberSignature Language="C#" Value="public static T operator +&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname !!T op_UnaryPlus&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.op_UnaryPlus``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator +(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="( ~+ ) : 'T -&gt; 'T" Usage="+ value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2567,6 +2723,8 @@
       <MemberSignature Language="C#" Value="public static T PowInteger&lt;T&gt; (T x, int n);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T PowInteger&lt;T&gt;(!!T x, int32 n) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.PowInteger``1(``0,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function PowInteger(Of T) (x As T, n As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.pown : 'T -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.PowInteger x n" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2603,6 +2761,8 @@
       <MemberSignature Language="C#" Value="public static T Raise&lt;T&gt; (Exception exn);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Raise&lt;T&gt;(class System.Exception exn) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Raise``1(System.Exception)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Raise(Of T) (exn As Exception) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.raise : Exception -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Raise exn" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2634,6 +2794,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpRef&lt;T&gt; Ref&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpRef`1&lt;!!T&gt; Ref&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Ref``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Ref(Of T) (value As T) As FSharpRef(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.ref : 'T -&gt; ref&lt;'T&gt;" Usage="Microsoft.FSharp.Core.Operators.Ref value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2665,6 +2827,8 @@
       <MemberSignature Language="C#" Value="public static T Reraise&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Reraise&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Reraise``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Reraise(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.reraise : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Reraise " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2696,6 +2860,8 @@
       <MemberSignature Language="C#" Value="public static T Rethrow&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Rethrow&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Rethrow``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Rethrow(Of T) () As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.rethrow : unit -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Rethrow " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2730,6 +2896,8 @@
       <MemberSignature Language="C#" Value="public static T Round&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Round&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Round``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Round(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.round : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Round value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2761,6 +2929,8 @@
       <MemberSignature Language="C#" Value="public static int Sign&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Sign&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Sign``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sign(Of T) (value As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.sign : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.Sign value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2792,6 +2962,8 @@
       <MemberSignature Language="C#" Value="public static T Sin&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Sin&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Sin``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sin(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.sin : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Sin value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2823,6 +2995,8 @@
       <MemberSignature Language="C#" Value="public static T Sinh&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Sinh&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Sinh``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sinh(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.sinh : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Sinh value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2854,6 +3028,8 @@
       <MemberSignature Language="C#" Value="public static int SizeOf&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 SizeOf&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.SizeOf``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function SizeOf(Of T) () As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.sizeof : unit -&gt; int" Usage="Microsoft.FSharp.Core.Operators.SizeOf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2885,6 +3061,8 @@
       <MemberSignature Language="C#" Value="public static T2 Snd&lt;T1,T2&gt; (Tuple&lt;T1,T2&gt; tuple);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T2 Snd&lt;T1, T2&gt;(class System.Tuple`2&lt;!!T1, !!T2&gt; tuple) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Snd``2(System.Tuple{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Snd(Of T1, T2) (tuple As Tuple(Of T1, T2)) As T2" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.snd : ('T1 * 'T2) -&gt; 'T2" Usage="Microsoft.FSharp.Core.Operators.Snd tuple" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2918,6 +3096,8 @@
       <MemberSignature Language="C#" Value="public static TResult Sqrt&lt;T,TResult&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult Sqrt&lt;T, TResult&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Sqrt``2(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Sqrt(Of T, TResult) (value As T) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.sqrt : 'T -&gt; 'Result" Usage="Microsoft.FSharp.Core.Operators.Sqrt value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2951,6 +3131,8 @@
       <MemberSignature Language="C#" Value="public static T Tan&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Tan&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Tan``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Tan(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.tan : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Tan value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -2982,6 +3164,8 @@
       <MemberSignature Language="C#" Value="public static T Tanh&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Tanh&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Tanh``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Tanh(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.tanh : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Tanh value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3013,6 +3197,8 @@
       <MemberSignature Language="C#" Value="public static byte ToByte&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int8 ToByte&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToByte``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToByte(Of T) (value As T) As Byte" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.byte : 'T -&gt; byte" Usage="Microsoft.FSharp.Core.Operators.ToByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3050,6 +3236,8 @@
       <MemberSignature Language="C#" Value="public static char ToChar&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static char ToChar&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToChar``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToChar(Of T) (value As T) As Char" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.char : 'T -&gt; char" Usage="Microsoft.FSharp.Core.Operators.ToChar value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3086,6 +3274,8 @@
       <MemberSignature Language="C#" Value="public static decimal ToDecimal&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype System.Decimal ToDecimal&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToDecimal``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDecimal(Of T) (value As T) As Decimal" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.decimal : 'T -&gt; decimal" Usage="Microsoft.FSharp.Core.Operators.ToDecimal value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3123,6 +3313,8 @@
       <MemberSignature Language="C#" Value="public static double ToDouble&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float64 ToDouble&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToDouble``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToDouble(Of T) (value As T) As Double" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.float : 'T -&gt; double" Usage="Microsoft.FSharp.Core.Operators.ToDouble value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3160,6 +3352,8 @@
       <MemberSignature Language="C#" Value="public static TResult ToEnum&lt;TResult&gt; (int value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult ToEnum&lt;TResult&gt;(int32 value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToEnum``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToEnum(Of TResult) (value As Integer) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.enum : int -&gt; 'Result" Usage="Microsoft.FSharp.Core.Operators.ToEnum value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3191,6 +3385,8 @@
       <MemberSignature Language="C#" Value="public static int ToInt&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 ToInt&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToInt``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt(Of T) (value As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.int : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.ToInt value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3225,6 +3421,8 @@
       <MemberSignature Language="C#" Value="public static short ToInt16&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int16 ToInt16&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToInt16``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt16(Of T) (value As T) As Short" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.int16 : 'T -&gt; int16" Usage="Microsoft.FSharp.Core.Operators.ToInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3262,6 +3460,8 @@
       <MemberSignature Language="C#" Value="public static int ToInt32&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 ToInt32&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToInt32``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt32(Of T) (value As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.int32 : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.ToInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3299,6 +3499,8 @@
       <MemberSignature Language="C#" Value="public static long ToInt64&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int64 ToInt64&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToInt64``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToInt64(Of T) (value As T) As Long" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.int64 : 'T -&gt; int64" Usage="Microsoft.FSharp.Core.Operators.ToInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3336,6 +3538,8 @@
       <MemberSignature Language="C#" Value="public static IntPtr ToIntPtr&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static native int ToIntPtr&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToIntPtr``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToIntPtr(Of T) (value As T) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.nativeint : 'T -&gt; nativeint" Usage="Microsoft.FSharp.Core.Operators.ToIntPtr value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3372,6 +3576,8 @@
       <MemberSignature Language="C#" Value="public static sbyte ToSByte&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int8 ToSByte&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToSByte``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSByte(Of T) (value As T) As SByte" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.sbyte : 'T -&gt; sbyte" Usage="Microsoft.FSharp.Core.Operators.ToSByte value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3409,6 +3615,8 @@
       <MemberSignature Language="C#" Value="public static float ToSingle&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static float32 ToSingle&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToSingle``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToSingle(Of T) (value As T) As Single" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.float32 : 'T -&gt; single" Usage="Microsoft.FSharp.Core.Operators.ToSingle value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3446,6 +3654,8 @@
       <MemberSignature Language="C#" Value="public static string ToString&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static string ToString&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToString``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToString(Of T) (value As T) As String" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.string : 'T -&gt; string" Usage="Microsoft.FSharp.Core.Operators.ToString value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3478,6 +3688,8 @@
       <MemberSignature Language="C#" Value="public static ushort ToUInt16&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int16 ToUInt16&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToUInt16``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt16(Of T) (value As T) As UShort" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.uint16 : 'T -&gt; uint16" Usage="Microsoft.FSharp.Core.Operators.ToUInt16 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3515,6 +3727,8 @@
       <MemberSignature Language="C#" Value="public static uint ToUInt32&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int32 ToUInt32&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToUInt32``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt32(Of T) (value As T) As UInteger" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.uint32 : 'T -&gt; uint32" Usage="Microsoft.FSharp.Core.Operators.ToUInt32 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3552,6 +3766,8 @@
       <MemberSignature Language="C#" Value="public static ulong ToUInt64&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static unsigned int64 ToUInt64&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToUInt64``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUInt64(Of T) (value As T) As ULong" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.uint64 : 'T -&gt; uint64" Usage="Microsoft.FSharp.Core.Operators.ToUInt64 value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3589,6 +3805,8 @@
       <MemberSignature Language="C#" Value="public static UIntPtr ToUIntPtr&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static native unsigned int ToUIntPtr&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.ToUIntPtr``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToUIntPtr(Of T) (value As T) As UIntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.unativeint : 'T -&gt; unativeint" Usage="Microsoft.FSharp.Core.Operators.ToUIntPtr value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3625,6 +3843,8 @@
       <MemberSignature Language="C#" Value="public static T Truncate&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Truncate&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Truncate``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Truncate(Of T) (value As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.truncate : 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Truncate value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3656,6 +3876,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpOption&lt;T&gt; TryUnbox&lt;T&gt; (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Core.FSharpOption`1&lt;!!T&gt; TryUnbox&lt;T&gt;(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.TryUnbox``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryUnbox(Of T) (value As Object) As FSharpOption(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.tryUnbox : obj -&gt; option&lt;'T&gt;" Usage="Microsoft.FSharp.Core.Operators.TryUnbox value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3687,6 +3909,8 @@
       <MemberSignature Language="C#" Value="public static Type TypeDefOf&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Type TypeDefOf&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.TypeDefOf``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TypeDefOf(Of T) () As Type" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.typedefof : unit -&gt; Type" Usage="Microsoft.FSharp.Core.Operators.TypeDefOf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3720,6 +3944,8 @@
       <MemberSignature Language="C#" Value="public static Type TypeOf&lt;T&gt; ();" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Type TypeOf&lt;T&gt;() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.TypeOf``1" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TypeOf(Of T) () As Type" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.typeof : unit -&gt; Type" Usage="Microsoft.FSharp.Core.Operators.TypeOf " />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3751,6 +3977,8 @@
       <MemberSignature Language="C#" Value="public static T Unbox&lt;T&gt; (object value);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Unbox&lt;T&gt;(object value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Unbox``1(System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Unbox(Of T) (value As Object) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.unbox : obj -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.Unbox value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -3782,6 +4010,8 @@
       <MemberSignature Language="C#" Value="public static TResult Using&lt;T,TResult&gt; (T resource, Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; action) where T : IDisposable;" />
       <MemberSignature Language="ILAsm" Value=".method public static !!TResult Using&lt;(class System.IDisposable) T, TResult&gt;(!!T resource, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; action) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.Using``2(``0,Microsoft.FSharp.Core.FSharpFunc{``0,``1})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Using(Of T As IDisposable, TResult As IDisposable) (resource As T, action As FSharpFunc(Of T, TResult)) As TResult" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.using : 'T -&gt; ('T -&gt; 'Result (requires 'T :&gt; IDisposable)) -&gt; 'Result (requires 'T :&gt; IDisposable)" Usage="Microsoft.FSharp.Core.Operators.Using resource action" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

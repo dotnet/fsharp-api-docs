@@ -1,7 +1,9 @@
-<Type Name="FSharpAsync&lt;T&gt;" FullName="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;">
+﻿<Type Name="FSharpAsync&lt;T&gt;" FullName="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;">
   <TypeSignature Language="C#" Value="public sealed class FSharpAsync&lt;T&gt;" />
   <TypeSignature Language="ILAsm" Value=".class public auto sealed beforefieldinit FSharpAsync`1&lt;T&gt; extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.FSharpAsync`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FSharpAsync(Of T)" />
+  <TypeSignature Language="F#" Value="type Async&lt;'T&gt; = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>

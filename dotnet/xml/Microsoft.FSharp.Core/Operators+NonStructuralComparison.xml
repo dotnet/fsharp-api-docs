@@ -1,7 +1,9 @@
-<Type Name="Operators+NonStructuralComparison" FullName="Microsoft.FSharp.Core.Operators+NonStructuralComparison">
+﻿<Type Name="Operators+NonStructuralComparison" FullName="Microsoft.FSharp.Core.Operators+NonStructuralComparison">
   <TypeSignature Language="C#" Value="public static class Operators.NonStructuralComparison" />
   <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed Operators/NonStructuralComparison extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.Operators.NonStructuralComparison" />
+  <TypeSignature Language="VB.NET" Value="Public Class Operators.NonStructuralComparison" />
+  <TypeSignature Language="F#" Value="module Operators.NonStructuralComparison" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -25,6 +27,8 @@
       <MemberSignature Language="C#" Value="public static int Compare&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Compare&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Compare``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare(Of T) (e1 As T, e2 As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.compare : 'T -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Compare e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static int Hash&lt;T&gt; (T value);" />
       <MemberSignature Language="ILAsm" Value=".method public static int32 Hash&lt;T&gt;(!!T value) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Hash``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Hash(Of T) (value As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.hash : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Hash value" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -92,6 +98,8 @@
       <MemberSignature Language="C#" Value="public static T Max&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Max&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Max``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Max(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.max : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Max e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -128,6 +136,8 @@
       <MemberSignature Language="C#" Value="public static T Min&lt;T&gt; (T e1, T e2);" />
       <MemberSignature Language="ILAsm" Value=".method public static !!T Min&lt;T&gt;(!!T e1, !!T e2) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Min``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Min(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.min : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Min e1 e2" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -161,9 +171,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Equality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Equality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator ==&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Equality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Equality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator ==(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="( = ) : 'T -&gt; 'T -&gt; bool" Usage="x = y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -194,9 +206,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThan&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThan&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThan&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_GreaterThan``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &gt; ) : 'T -&gt; 'Result -&gt; bool" Usage="x &gt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -229,9 +243,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_GreaterThanOrEqual&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_GreaterThanOrEqual&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &gt;=&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThanOrEqual&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_GreaterThanOrEqual``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;=(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &gt;= ) : 'T -&gt; 'Result -&gt; bool" Usage="x &gt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -264,9 +280,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_Inequality&lt;T&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_Inequality&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="C#" Value="public static bool operator !=&lt;T&gt; (T x, T y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Inequality&lt;T&gt;(!!T x, !!T y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Inequality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator !=(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="op_Inequality : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Inequality x y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -297,9 +315,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThan&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThan&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThan&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_LessThan``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &lt; ) : 'T -&gt; 'Result -&gt; bool" Usage="x &lt; y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -332,9 +352,11 @@
       </Docs>
     </Member>
     <Member MemberName="op_LessThanOrEqual&lt;T,TResult&gt;">
-      <MemberSignature Language="C#" Value="public static bool op_LessThanOrEqual&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="C#" Value="public static bool operator &lt;=&lt;T,TResult&gt; (T x, TResult y);" />
       <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThanOrEqual&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_LessThanOrEqual``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;=(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &lt;= ) : 'T -&gt; 'Result -&gt; bool" Usage="x &lt;= y" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

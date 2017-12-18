@@ -1,7 +1,9 @@
-<Type Name="AbstractClassAttribute" FullName="Microsoft.FSharp.Core.AbstractClassAttribute">
+﻿<Type Name="AbstractClassAttribute" FullName="Microsoft.FSharp.Core.AbstractClassAttribute">
   <TypeSignature Language="C#" Value="public sealed class AbstractClassAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed AbstractClassAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.AbstractClassAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class AbstractClassAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type AbstractClassAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -31,6 +33,7 @@
       <MemberSignature Language="C#" Value="public AbstractClassAttribute ();" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.AbstractClassAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

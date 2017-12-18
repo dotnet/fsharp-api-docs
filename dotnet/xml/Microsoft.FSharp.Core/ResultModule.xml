@@ -1,7 +1,9 @@
-<Type Name="ResultModule" FullName="Microsoft.FSharp.Core.ResultModule">
+﻿<Type Name="ResultModule" FullName="Microsoft.FSharp.Core.ResultModule">
   <TypeSignature Language="C#" Value="public static class ResultModule" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ResultModule extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.ResultModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResultModule" />
+  <TypeSignature Language="F#" Value="module Result" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -27,6 +29,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt; Bind&lt;T,TResult,TError&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt;&gt; binder, Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt; result);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!TResult, !!TError&gt; Bind&lt;T, TResult, TError&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!TResult, !!TError&gt;&gt; binder, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TError&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ResultModule.Bind``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpResult{``1,``2}},Microsoft.FSharp.Core.FSharpResult{``0,``2})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Bind(Of T, TResult, TError) (binder As FSharpFunc(Of T, FSharpResult(Of TResult, TError)), result As FSharpResult(Of T, TError)) As FSharpResult(Of TResult, TError)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Result.bind : ('T -&gt; Result&lt;'Result, 'Error&gt;) -&gt; Result&lt;'T, 'Error&gt; -&gt; Result&lt;'Result, 'Error&gt;" Usage="Microsoft.FSharp.Core.ResultModule.Bind binder result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -69,6 +73,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt; Map&lt;T,TResult,TError&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt; result);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!TResult, !!TError&gt; Map&lt;T, TResult, TError&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TError&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ResultModule.Map``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpResult{``0,``2})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map(Of T, TResult, TError) (mapping As FSharpFunc(Of T, TResult), result As FSharpResult(Of T, TError)) As FSharpResult(Of TResult, TError)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Result.map : ('T -&gt; 'Result) -&gt; Result&lt;'T, 'Error&gt; -&gt; Result&lt;'Result, 'Error&gt;" Usage="Microsoft.FSharp.Core.ResultModule.Map mapping result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -110,6 +116,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpResult&lt;T,TResult&gt; MapError&lt;TError,TResult,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TError,TResult&gt; mapping, Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt; result);" />
       <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TResult&gt; MapError&lt;TError, TResult, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TError, !!TResult&gt; mapping, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TError&gt; result) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ResultModule.MapError``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpResult{``2,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapError(Of TError, TResult, T) (mapping As FSharpFunc(Of TError, TResult), result As FSharpResult(Of T, TError)) As FSharpResult(Of T, TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Result.mapError : ('Error -&gt; 'Result) -&gt; Result&lt;'T, 'Error&gt; -&gt; Result&lt;'T, 'Result&gt;" Usage="Microsoft.FSharp.Core.ResultModule.MapError mapping result" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

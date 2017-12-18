@@ -1,7 +1,9 @@
-<Type Name="metre" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.metre">
+﻿<Type Name="metre" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.metre">
   <TypeSignature Language="C#" Value="public class metre" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi metre extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.metre" />
+  <TypeSignature Language="VB.NET" Value="Public Class metre" />
+  <TypeSignature Language="F#" Value="type metre = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>

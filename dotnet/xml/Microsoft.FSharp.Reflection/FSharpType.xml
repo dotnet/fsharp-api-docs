@@ -1,7 +1,9 @@
-<Type Name="FSharpType" FullName="Microsoft.FSharp.Reflection.FSharpType">
+﻿<Type Name="FSharpType" FullName="Microsoft.FSharp.Reflection.FSharpType">
   <TypeSignature Language="C#" Value="public static class FSharpType" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed FSharpType extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Reflection.FSharpType" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpType" />
+  <TypeSignature Language="F#" Value="type Type = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -30,6 +32,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] GetExceptionFields (Type exceptionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.PropertyInfo[] GetExceptionFields(class System.Type exceptionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetExceptionFields(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetExceptionFields (exceptionType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As PropertyInfo()" />
+      <MemberSignature Language="F#" Value="static member GetExceptionFields : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; System.Reflection.PropertyInfo[]" Usage="Microsoft.FSharp.Reflection.Type.GetExceptionFields (exceptionType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -61,6 +65,8 @@
       <MemberSignature Language="C#" Value="public static Tuple&lt;Type,Type&gt; GetFunctionElements (Type functionType);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Tuple`2&lt;class System.Type, class System.Type&gt; GetFunctionElements(class System.Type functionType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetFunctionElements(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetFunctionElements (functionType As Type) As Tuple(Of Type, Type)" />
+      <MemberSignature Language="F#" Value="static member GetFunctionElements : Type -&gt; Type * Type" Usage="Microsoft.FSharp.Reflection.Type.GetFunctionElements functionType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -83,6 +89,8 @@
       <MemberSignature Language="C#" Value="public static System.Reflection.PropertyInfo[] GetRecordFields (Type recordType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Reflection.PropertyInfo[] GetRecordFields(class System.Type recordType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetRecordFields(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetRecordFields (recordType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As PropertyInfo()" />
+      <MemberSignature Language="F#" Value="static member GetRecordFields : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; System.Reflection.PropertyInfo[]" Usage="Microsoft.FSharp.Reflection.Type.GetRecordFields (recordType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -113,6 +121,8 @@
       <MemberSignature Language="C#" Value="public static Type[] GetTupleElements (Type tupleType);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Type[] GetTupleElements(class System.Type tupleType) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetTupleElements(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetTupleElements (tupleType As Type) As Type()" />
+      <MemberSignature Language="F#" Value="static member GetTupleElements : Type -&gt; Type[]" Usage="Microsoft.FSharp.Reflection.Type.GetTupleElements tupleType" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -135,6 +145,8 @@
       <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Reflection.UnionCaseInfo[] GetUnionCases (Type unionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Reflection.UnionCaseInfo[] GetUnionCases(class System.Type unionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.GetUnionCases(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetUnionCases (unionType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As UnionCaseInfo()" />
+      <MemberSignature Language="F#" Value="static member GetUnionCases : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; Microsoft.FSharp.Reflection.UnionCaseInfo[]" Usage="Microsoft.FSharp.Reflection.Type.GetUnionCases (unionType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -166,6 +178,8 @@
       <MemberSignature Language="C#" Value="public static bool IsExceptionRepresentation (Type exceptionType, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsExceptionRepresentation(class System.Type exceptionType, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsExceptionRepresentation(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsExceptionRepresentation (exceptionType As Type, bindingFlags As FSharpOption(Of BindingFlags)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsExceptionRepresentation : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; bool" Usage="Microsoft.FSharp.Reflection.Type.IsExceptionRepresentation (exceptionType, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -196,6 +210,8 @@
       <MemberSignature Language="C#" Value="public static bool IsFunction (Type typ);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsFunction(class System.Type typ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsFunction(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsFunction (typ As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsFunction : Type -&gt; bool" Usage="Microsoft.FSharp.Reflection.Type.IsFunction typ" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -218,6 +234,8 @@
       <MemberSignature Language="C#" Value="public static bool IsModule (Type typ);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsModule(class System.Type typ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsModule(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsModule (typ As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsModule : Type -&gt; bool" Usage="Microsoft.FSharp.Reflection.Type.IsModule typ" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -240,6 +258,8 @@
       <MemberSignature Language="C#" Value="public static bool IsRecord (Type typ, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsRecord(class System.Type typ, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsRecord(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsRecord (typ As Type, bindingFlags As FSharpOption(Of BindingFlags)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsRecord : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; bool" Usage="Microsoft.FSharp.Reflection.Type.IsRecord (typ, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -270,6 +290,8 @@
       <MemberSignature Language="C#" Value="public static bool IsTuple (Type typ);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsTuple(class System.Type typ) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsTuple(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsTuple (typ As Type) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsTuple : Type -&gt; bool" Usage="Microsoft.FSharp.Reflection.Type.IsTuple typ" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -292,6 +314,8 @@
       <MemberSignature Language="C#" Value="public static bool IsUnion (Type typ, Microsoft.FSharp.Core.FSharpOption&lt;System.Reflection.BindingFlags&gt; bindingFlags);" />
       <MemberSignature Language="ILAsm" Value=".method public static bool IsUnion(class System.Type typ, class Microsoft.FSharp.Core.FSharpOption`1&lt;valuetype System.Reflection.BindingFlags&gt; bindingFlags) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.IsUnion(System.Type,Microsoft.FSharp.Core.FSharpOption{System.Reflection.BindingFlags})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function IsUnion (typ As Type, bindingFlags As FSharpOption(Of BindingFlags)) As Boolean" />
+      <MemberSignature Language="F#" Value="static member IsUnion : Type * option&lt;System.Reflection.BindingFlags&gt; -&gt; bool" Usage="Microsoft.FSharp.Reflection.Type.IsUnion (typ, bindingFlags)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -322,6 +346,8 @@
       <MemberSignature Language="C#" Value="public static Type MakeFunctionType (Type domain, Type range);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Type MakeFunctionType(class System.Type domain, class System.Type range) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.MakeFunctionType(System.Type,System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeFunctionType (domain As Type, range As Type) As Type" />
+      <MemberSignature Language="F#" Value="static member MakeFunctionType : Type * Type -&gt; Type" Usage="Microsoft.FSharp.Reflection.Type.MakeFunctionType (domain, range)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -346,6 +372,8 @@
       <MemberSignature Language="C#" Value="public static Type MakeStructTupleType (System.Reflection.Assembly asm, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Type MakeStructTupleType(class System.Reflection.Assembly asm, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.MakeStructTupleType(System.Reflection.Assembly,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeStructTupleType (asm As Assembly, types As Type()) As Type" />
+      <MemberSignature Language="F#" Value="static member MakeStructTupleType : System.Reflection.Assembly * Type[] -&gt; Type" Usage="Microsoft.FSharp.Reflection.Type.MakeStructTupleType (asm, types)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -370,6 +398,8 @@
       <MemberSignature Language="C#" Value="public static Type MakeTupleType (Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Type MakeTupleType(class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.MakeTupleType(System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeTupleType (types As Type()) As Type" />
+      <MemberSignature Language="F#" Value="static member MakeTupleType : Type[] -&gt; Type" Usage="Microsoft.FSharp.Reflection.Type.MakeTupleType types" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -392,6 +422,8 @@
       <MemberSignature Language="C#" Value="public static Type MakeTupleType (System.Reflection.Assembly asm, Type[] types);" />
       <MemberSignature Language="ILAsm" Value=".method public static class System.Type MakeTupleType(class System.Reflection.Assembly asm, class System.Type[] types) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Reflection.FSharpType.MakeTupleType(System.Reflection.Assembly,System.Type[])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeTupleType (asm As Assembly, types As Type()) As Type" />
+      <MemberSignature Language="F#" Value="static member MakeTupleType : System.Reflection.Assembly * Type[] -&gt; Type" Usage="Microsoft.FSharp.Reflection.Type.MakeTupleType (asm, types)" />
       <MemberType>Method</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

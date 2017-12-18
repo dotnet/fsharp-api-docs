@@ -1,7 +1,9 @@
-<Type Name="CustomOperationAttribute" FullName="Microsoft.FSharp.Core.CustomOperationAttribute">
+﻿<Type Name="CustomOperationAttribute" FullName="Microsoft.FSharp.Core.CustomOperationAttribute">
   <TypeSignature Language="C#" Value="public sealed class CustomOperationAttribute : Attribute" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed CustomOperationAttribute extends System.Attribute" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CustomOperationAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class CustomOperationAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type CustomOperationAttribute = class&#xA;    inherit Attribute" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>
@@ -33,6 +35,8 @@
       <MemberSignature Language="C#" Value="public CustomOperationAttribute (string name);" />
       <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(string name) cil managed" />
       <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CustomOperationAttribute.#ctor(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (name As String)" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CustomOperationAttribute : string -&gt; Microsoft.FSharp.Core.CustomOperationAttribute" Usage="new Microsoft.FSharp.Core.CustomOperationAttribute name" />
       <MemberType>Constructor</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -52,6 +56,8 @@
       <MemberSignature Language="C#" Value="public bool AllowIntoPattern { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool AllowIntoPattern" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.AllowIntoPattern" />
+      <MemberSignature Language="VB.NET" Value="Public Property AllowIntoPattern As Boolean" />
+      <MemberSignature Language="F#" Value="member this.AllowIntoPattern : bool with get, set" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.AllowIntoPattern" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -70,6 +76,8 @@
       <MemberSignature Language="C#" Value="public bool IsLikeGroupJoin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLikeGroupJoin" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.IsLikeGroupJoin" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLikeGroupJoin As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLikeGroupJoin : bool with get, set" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.IsLikeGroupJoin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -88,6 +96,8 @@
       <MemberSignature Language="C#" Value="public bool IsLikeJoin { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLikeJoin" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.IsLikeJoin" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLikeJoin As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLikeJoin : bool with get, set" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.IsLikeJoin" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -106,6 +116,8 @@
       <MemberSignature Language="C#" Value="public bool IsLikeZip { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool IsLikeZip" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.IsLikeZip" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsLikeZip As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsLikeZip : bool with get, set" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.IsLikeZip" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -124,6 +136,8 @@
       <MemberSignature Language="C#" Value="public string JoinConditionWord { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string JoinConditionWord" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.JoinConditionWord" />
+      <MemberSignature Language="VB.NET" Value="Public Property JoinConditionWord As String" />
+      <MemberSignature Language="F#" Value="member this.JoinConditionWord : string with get, set" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.JoinConditionWord" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -142,6 +156,8 @@
       <MemberSignature Language="C#" Value="public bool MaintainsVariableSpace { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MaintainsVariableSpace" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.MaintainsVariableSpace" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintainsVariableSpace As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MaintainsVariableSpace : bool with get, set" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.MaintainsVariableSpace" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -160,6 +176,8 @@
       <MemberSignature Language="C#" Value="public bool MaintainsVariableSpaceUsingBind { get; set; }" />
       <MemberSignature Language="ILAsm" Value=".property instance bool MaintainsVariableSpaceUsingBind" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.MaintainsVariableSpaceUsingBind" />
+      <MemberSignature Language="VB.NET" Value="Public Property MaintainsVariableSpaceUsingBind As Boolean" />
+      <MemberSignature Language="F#" Value="member this.MaintainsVariableSpaceUsingBind : bool with get, set" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.MaintainsVariableSpaceUsingBind" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>
@@ -178,6 +196,8 @@
       <MemberSignature Language="C#" Value="public string Name { get; }" />
       <MemberSignature Language="ILAsm" Value=".property instance string Name" />
       <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CustomOperationAttribute.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="F#" Value="member this.Name : string" Usage="Microsoft.FSharp.Core.CustomOperationAttribute.Name" />
       <MemberType>Property</MemberType>
       <AssemblyInfo>
         <AssemblyName>FSharp.Core</AssemblyName>

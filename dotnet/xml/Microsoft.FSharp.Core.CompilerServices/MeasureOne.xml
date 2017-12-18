@@ -1,7 +1,9 @@
-<Type Name="MeasureOne" FullName="Microsoft.FSharp.Core.CompilerServices.MeasureOne">
+﻿<Type Name="MeasureOne" FullName="Microsoft.FSharp.Core.CompilerServices.MeasureOne">
   <TypeSignature Language="C#" Value="public sealed class MeasureOne" />
   <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MeasureOne extends System.Object" />
   <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.MeasureOne" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class MeasureOne" />
+  <TypeSignature Language="F#" Value="type MeasureOne = class" />
   <AssemblyInfo>
     <AssemblyName>FSharp.Core</AssemblyName>
     <AssemblyVersion>4.4.1.0</AssemblyVersion>

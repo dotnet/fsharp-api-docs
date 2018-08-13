@@ -1,0 +1,30 @@
+﻿<Type Name="NumericLiterals" FullName="Microsoft.FSharp.Core.NumericLiterals">
+  <TypeSignature Language="C#" Value="public static class NumericLiterals" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed NumericLiterals extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.NumericLiterals" />
+  <TypeSignature Language="VB.NET" Value="Public Class NumericLiterals" />
+  <TypeSignature Language="F#" Value="module NumericLiterals" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.AutoOpen</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+ Provides a default implementations of F# numeric literal syntax  for literals of the form 'dddI' 
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

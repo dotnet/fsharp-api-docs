@@ -1,0 +1,63 @@
+﻿<Type Name="TypeProviderTypeAttributes" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes">
+  <TypeSignature Language="C#" Value="public enum TypeProviderTypeAttributes" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed TypeProviderTypeAttributes extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes" />
+  <TypeSignature Language="VB.NET" Value="Public Enum TypeProviderTypeAttributes" />
+  <TypeSignature Language="F#" Value="type TypeProviderTypeAttributes = " />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Additional type attribute flags related to provided types</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="IsErased">
+      <MemberSignature Language="C#" Value="IsErased" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes IsErased = int32(1073741824)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes.IsErased" />
+      <MemberSignature Language="VB.NET" Value="IsErased" />
+      <MemberSignature Language="F#" Value="IsErased = 1073741824" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes.IsErased" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes</ReturnType>
+      </ReturnValue>
+      <MemberValue>1073741824</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="SuppressRelocate">
+      <MemberSignature Language="C#" Value="SuppressRelocate" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes SuppressRelocate = int32(-2147483648)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes.SuppressRelocate" />
+      <MemberSignature Language="VB.NET" Value="SuppressRelocate" />
+      <MemberSignature Language="F#" Value="SuppressRelocate = -2147483648" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes.SuppressRelocate" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilerServices.TypeProviderTypeAttributes</ReturnType>
+      </ReturnValue>
+      <MemberValue>-2147483648</MemberValue>
+      <Docs>
+        <summary>To be added.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

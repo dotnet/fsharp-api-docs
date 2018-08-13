@@ -1,0 +1,229 @@
+﻿<Type Name="TypeProviderConfig" FullName="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig">
+  <TypeSignature Language="C#" Value="public class TypeProviderConfig" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable TypeProviderConfig extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig" />
+  <TypeSignature Language="VB.NET" Value="Public Class TypeProviderConfig" />
+  <TypeSignature Language="F#" Value="type TypeProviderConfig = class" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+ If the class that implements ITypeProvider has a constructor that accepts TypeProviderConfig
+ then it will be constructed with an instance of TypeProviderConfig.
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public TypeProviderConfig (Microsoft.FSharp.Core.FSharpFunc&lt;string,bool&gt; systemRuntimeContainsType);" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor(class Microsoft.FSharp.Core.FSharpFunc`2&lt;string, bool&gt; systemRuntimeContainsType) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.#ctor(Microsoft.FSharp.Core.FSharpFunc{System.String,System.Boolean})" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New (systemRuntimeContainsType As FSharpFunc(Of String, Boolean))" />
+      <MemberSignature Language="F#" Value="new Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig : (string -&gt; bool) -&gt; Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig" Usage="new Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig systemRuntimeContainsType" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters>
+        <Parameter Name="systemRuntimeContainsType" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.String,System.Boolean&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="systemRuntimeContainsType">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsHostedExecution">
+      <MemberSignature Language="C#" Value="public bool IsHostedExecution { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsHostedExecution" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsHostedExecution" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsHostedExecution As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsHostedExecution : bool with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsHostedExecution" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+ Indicates if the type provider instance is used in an environment which executes provided code such as F# Interactive.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IsInvalidationSupported">
+      <MemberSignature Language="C#" Value="public bool IsInvalidationSupported { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool IsInvalidationSupported" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsInvalidationSupported" />
+      <MemberSignature Language="VB.NET" Value="Public Property IsInvalidationSupported As Boolean" />
+      <MemberSignature Language="F#" Value="member this.IsInvalidationSupported : bool with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.IsInvalidationSupported" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+ Indicates if the type provider host responds to invalidation events for type provider instances. 
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReferencedAssemblies">
+      <MemberSignature Language="C#" Value="public string[] ReferencedAssemblies { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string[] ReferencedAssemblies" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ReferencedAssemblies" />
+      <MemberSignature Language="VB.NET" Value="Public Property ReferencedAssemblies As String()" />
+      <MemberSignature Language="F#" Value="member this.ReferencedAssemblies : string[] with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ReferencedAssemblies" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String[]</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+ Get the referenced assemblies for the type provider instance.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolutionFolder">
+      <MemberSignature Language="C#" Value="public string ResolutionFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string ResolutionFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ResolutionFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property ResolutionFolder As String" />
+      <MemberSignature Language="F#" Value="member this.ResolutionFolder : string with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.ResolutionFolder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+ Get the full path to use to resolve relative paths in any file name arguments given to the type provider instance.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RuntimeAssembly">
+      <MemberSignature Language="C#" Value="public string RuntimeAssembly { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string RuntimeAssembly" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.RuntimeAssembly" />
+      <MemberSignature Language="VB.NET" Value="Public Property RuntimeAssembly As String" />
+      <MemberSignature Language="F#" Value="member this.RuntimeAssembly : string with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.RuntimeAssembly" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+ Get the full path to referenced assembly that caused this type provider instance to be created.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemRuntimeAssemblyVersion">
+      <MemberSignature Language="C#" Value="public Version SystemRuntimeAssemblyVersion { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class System.Version SystemRuntimeAssemblyVersion" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.SystemRuntimeAssemblyVersion" />
+      <MemberSignature Language="VB.NET" Value="Public Property SystemRuntimeAssemblyVersion As Version" />
+      <MemberSignature Language="F#" Value="member this.SystemRuntimeAssemblyVersion : Version with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.SystemRuntimeAssemblyVersion" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Version</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+ version of referenced system runtime assembly
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SystemRuntimeContainsType">
+      <MemberSignature Language="C#" Value="public bool SystemRuntimeContainsType (string typeName);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance bool SystemRuntimeContainsType(string typeName) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.SystemRuntimeContainsType(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SystemRuntimeContainsType (typeName As String) As Boolean" />
+      <MemberSignature Language="F#" Value="member this.SystemRuntimeContainsType : string -&gt; bool" Usage="typeProviderConfig.SystemRuntimeContainsType typeName" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeName" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="typeName">To be added.</param>
+        <summary>
+ Checks if given type exists in target system runtime library
+</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TemporaryFolder">
+      <MemberSignature Language="C#" Value="public string TemporaryFolder { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TemporaryFolder" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.TemporaryFolder" />
+      <MemberSignature Language="VB.NET" Value="Public Property TemporaryFolder As String" />
+      <MemberSignature Language="F#" Value="member this.TemporaryFolder : string with get, set" Usage="Microsoft.FSharp.Core.CompilerServices.TypeProviderConfig.TemporaryFolder" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+ Get the full path to use for temporary files for the type provider instance.
+</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

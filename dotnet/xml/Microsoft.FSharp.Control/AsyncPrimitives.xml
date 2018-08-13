@@ -1,0 +1,244 @@
+﻿<Type Name="AsyncPrimitives" FullName="Microsoft.FSharp.Control.AsyncPrimitives">
+  <TypeSignature Language="C#" Value="public static class AsyncPrimitives" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed AsyncPrimitives extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.AsyncPrimitives" />
+  <TypeSignature Language="VB.NET" Value="Public Class AsyncPrimitives" />
+  <TypeSignature Language="F#" Value="module AsyncPrimitives" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Entry points for generated code</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bind&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.AsyncReturn Bind&lt;T,TResult&gt; (Microsoft.FSharp.Control.AsyncActivation&lt;T&gt; ctxt, Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt; part1, Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; part2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.AsyncReturn Bind&lt;T, TResult&gt;(valuetype Microsoft.FSharp.Control.AsyncActivation`1&lt;!!T&gt; ctxt, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt; part1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TResult, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; part2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.AsyncPrimitives.Bind``2(Microsoft.FSharp.Control.AsyncActivation{``0},Microsoft.FSharp.Control.FSharpAsync{``1},Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Control.FSharpAsync{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Bind(Of T, TResult) (ctxt As AsyncActivation(Of T), part1 As FSharpAsync(Of TResult), part2 As FSharpFunc(Of TResult, FSharpAsync(Of T))) As AsyncReturn" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.AsyncPrimitives.Bind : Microsoft.FSharp.Control.AsyncActivation&lt;'T&gt; -&gt; Async&lt;'Result&gt; -&gt; ('Result -&gt; Async&lt;'T&gt;) -&gt; Microsoft.FSharp.Control.AsyncReturn" Usage="Microsoft.FSharp.Control.AsyncPrimitives.Bind ctxt part1 part2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.AsyncReturn</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ctxt" Type="Microsoft.FSharp.Control.AsyncActivation&lt;T&gt;" />
+        <Parameter Name="part1" Type="Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;" />
+        <Parameter Name="part2" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="ctxt">The async activation.</param>
+        <param name="part1">To be added.</param>
+        <param name="part2">A function returning the second part of the computation.</param>
+        <summary>The F# compiler emits calls to this function to implement the <c>let!</c> construct for F# async expressions.</summary>
+        <returns>An async activation suitable for running part1 of the asynchronous execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CallThenInvoke&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.AsyncReturn CallThenInvoke&lt;T,TResult&gt; (Microsoft.FSharp.Control.AsyncActivation&lt;T&gt; ctxt, TResult result1, Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; part2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.AsyncReturn CallThenInvoke&lt;T, TResult&gt;(valuetype Microsoft.FSharp.Control.AsyncActivation`1&lt;!!T&gt; ctxt, !!TResult result1, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TResult, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; part2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.AsyncPrimitives.CallThenInvoke``2(Microsoft.FSharp.Control.AsyncActivation{``0},``1,Microsoft.FSharp.Core.FSharpFunc{``1,Microsoft.FSharp.Control.FSharpAsync{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CallThenInvoke(Of T, TResult) (ctxt As AsyncActivation(Of T), result1 As TResult, part2 As FSharpFunc(Of TResult, FSharpAsync(Of T))) As AsyncReturn" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.AsyncPrimitives.CallThenInvoke : Microsoft.FSharp.Control.AsyncActivation&lt;'T&gt; -&gt; 'Result -&gt; ('Result -&gt; Async&lt;'T&gt;) -&gt; Microsoft.FSharp.Control.AsyncReturn" Usage="Microsoft.FSharp.Control.AsyncPrimitives.CallThenInvoke ctxt result1 part2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.AsyncReturn</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ctxt" Type="Microsoft.FSharp.Control.AsyncActivation&lt;T&gt;" />
+        <Parameter Name="result1" Type="TResult" />
+        <Parameter Name="part2" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TResult,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="ctxt">The async activation.</param>
+        <param name="result1">To be added.</param>
+        <param name="part2">A function returning the second part of the computation.</param>
+        <summary>The F# compiler emits calls to this function to implement constructs for F# async expressions.</summary>
+        <returns>A value indicating asynchronous execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invoke&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.AsyncReturn Invoke&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Control.AsyncActivation&lt;T&gt; ctxt);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.AsyncReturn Invoke&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, valuetype Microsoft.FSharp.Control.AsyncActivation`1&lt;!!T&gt; ctxt) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.AsyncPrimitives.Invoke``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Control.AsyncActivation{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Invoke(Of T) (computation As FSharpAsync(Of T), ctxt As AsyncActivation(Of T)) As AsyncReturn" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.AsyncPrimitives.Invoke : Async&lt;'T&gt; -&gt; Microsoft.FSharp.Control.AsyncActivation&lt;'T&gt; -&gt; Microsoft.FSharp.Control.AsyncReturn" Usage="Microsoft.FSharp.Control.AsyncPrimitives.Invoke computation ctxt" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.AsyncReturn</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="ctxt" Type="Microsoft.FSharp.Control.AsyncActivation&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">The async computation.</param>
+        <param name="ctxt">The async activation.</param>
+        <summary>The F# compiler emits calls to this function to implement constructs for F# async expressions.</summary>
+        <returns>A value indicating asynchronous execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MakeAsync&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; MakeAsync&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.AsyncActivation&lt;T&gt;,Microsoft.FSharp.Control.AsyncReturn&gt; body);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; MakeAsync&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;valuetype Microsoft.FSharp.Control.AsyncActivation`1&lt;!!T&gt;, class Microsoft.FSharp.Control.AsyncReturn&gt; body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.AsyncPrimitives.MakeAsync``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Control.AsyncActivation{``0},Microsoft.FSharp.Control.AsyncReturn})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MakeAsync(Of T) (body As FSharpFunc(Of AsyncActivation(Of T), AsyncReturn)) As FSharpAsync(Of T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.AsyncPrimitives.MakeAsync : (Microsoft.FSharp.Control.AsyncActivation&lt;'T&gt; -&gt; Microsoft.FSharp.Control.AsyncReturn) -&gt; Async&lt;'T&gt;" Usage="Microsoft.FSharp.Control.AsyncPrimitives.MakeAsync body" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="body" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Control.AsyncActivation&lt;T&gt;,Microsoft.FSharp.Control.AsyncReturn&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="body">The body of the async computation.</param>
+        <summary>The F# compiler emits calls to this function to implement F# async expressions.</summary>
+        <returns>The async computation.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFinally&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.AsyncReturn TryFinally&lt;T&gt; (Microsoft.FSharp.Control.AsyncActivation&lt;T&gt; ctxt, Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; finallyFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.AsyncReturn TryFinally&lt;T&gt;(valuetype Microsoft.FSharp.Control.AsyncActivation`1&lt;!!T&gt; ctxt, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; finallyFunction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.AsyncPrimitives.TryFinally``1(Microsoft.FSharp.Control.AsyncActivation{``0},Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryFinally(Of T) (ctxt As AsyncActivation(Of T), computation As FSharpAsync(Of T), finallyFunction As FSharpFunc(Of Unit, Unit)) As AsyncReturn" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.AsyncPrimitives.TryFinally : Microsoft.FSharp.Control.AsyncActivation&lt;'T&gt; -&gt; Async&lt;'T&gt; -&gt; (unit -&gt; unit) -&gt; Microsoft.FSharp.Control.AsyncReturn" Usage="Microsoft.FSharp.Control.AsyncPrimitives.TryFinally ctxt computation finallyFunction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.AsyncReturn</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ctxt" Type="Microsoft.FSharp.Control.AsyncActivation&lt;T&gt;" />
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="finallyFunction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="ctxt">The async activation.</param>
+        <param name="computation">The computation to protect.</param>
+        <param name="finallyFunction">The finally code.</param>
+        <summary>The F# compiler emits calls to this function to implement the <c>try/finally</c> construct for F# async expressions.</summary>
+        <returns>A value indicating asynchronous execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryWith&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Control.AsyncReturn TryWith&lt;T&gt; (Microsoft.FSharp.Control.AsyncActivation&lt;T&gt; ctxt, Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;Exception,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;&gt; catchFunction);" />
+      <MemberSignature Language="ILAsm" Value=".method public static class Microsoft.FSharp.Control.AsyncReturn TryWith&lt;T&gt;(valuetype Microsoft.FSharp.Control.AsyncActivation`1&lt;!!T&gt; ctxt, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Exception, class Microsoft.FSharp.Core.FSharpOption`1&lt;class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt;&gt; catchFunction) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.AsyncPrimitives.TryWith``1(Microsoft.FSharp.Control.AsyncActivation{``0},Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{System.Exception,Microsoft.FSharp.Core.FSharpOption{Microsoft.FSharp.Control.FSharpAsync{``0}}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function TryWith(Of T) (ctxt As AsyncActivation(Of T), computation As FSharpAsync(Of T), catchFunction As FSharpFunc(Of Exception, FSharpOption(Of FSharpAsync(Of T)))) As AsyncReturn" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Control.AsyncPrimitives.TryWith : Microsoft.FSharp.Control.AsyncActivation&lt;'T&gt; -&gt; Async&lt;'T&gt; -&gt; (Exception -&gt; option&lt;Async&lt;'T&gt;&gt;) -&gt; Microsoft.FSharp.Control.AsyncReturn" Usage="Microsoft.FSharp.Control.AsyncPrimitives.TryWith ctxt computation catchFunction" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.AsyncReturn</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="ctxt" Type="Microsoft.FSharp.Control.AsyncActivation&lt;T&gt;" />
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="catchFunction" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Exception,Microsoft.FSharp.Core.FSharpOption&lt;Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="ctxt">The async activation.</param>
+        <param name="computation">The computation to protect.</param>
+        <param name="catchFunction">The exception filter.</param>
+        <summary>The F# compiler emits calls to this function to implement the <c>try/with</c> construct for F# async expressions.</summary>
+        <returns>A value indicating asynchronous execution.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

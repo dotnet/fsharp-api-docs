@@ -1,0 +1,392 @@
+﻿<Type Name="Operators+NonStructuralComparison" FullName="Microsoft.FSharp.Core.Operators+NonStructuralComparison">
+  <TypeSignature Language="C#" Value="public static class Operators.NonStructuralComparison" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed Operators/NonStructuralComparison extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.Operators.NonStructuralComparison" />
+  <TypeSignature Language="VB.NET" Value="Public Class Operators.NonStructuralComparison" />
+  <TypeSignature Language="F#" Value="module Operators.NonStructuralComparison" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>A module of comparison and equality operators that are statically resolved, but which are not fully generic and do not make structural comparison. Opening this
+ module may make code that relies on structural or generic comparison no longer compile.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Compare&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Compare&lt;T&gt; (T e1, T e2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Compare&lt;T&gt;(!!T e1, !!T e2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Compare``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Compare(Of T) (e1 As T, e2 As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.compare : 'T -&gt; 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Compare e1 e2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("compare")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="e1" Type="T" />
+        <Parameter Name="e2" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="e1">The first value.</param>
+        <param name="e2">The second value.</param>
+        <summary>Compares the two values</summary>
+        <returns>The result of the comparison.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Hash&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Hash&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Hash&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Hash``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Hash(Of T) (value As T) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.hash : 'T -&gt; int" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Hash value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("hash")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">To be added.</param>
+        <summary>Calls GetHashCode() on the value</summary>
+        <returns>The hash code.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Max&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Max&lt;T&gt; (T e1, T e2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T Max&lt;T&gt;(!!T e1, !!T e2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Max``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Max(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.max : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Max e1 e2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("max")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="e1" Type="T" />
+        <Parameter Name="e2" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="e1">The first value.</param>
+        <param name="e2">The second value.</param>
+        <summary>Maximum of the two values</summary>
+        <returns>The maximum value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Min&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Min&lt;T&gt; (T e1, T e2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T Min&lt;T&gt;(!!T e1, !!T e2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.Min``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Min(Of T) (e1 As T, e2 As T) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Operators.NonStructuralComparison.min : 'T -&gt; 'T -&gt; 'T" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.Min e1 e2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("min")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="e1" Type="T" />
+        <Parameter Name="e2" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="e1">The first value.</param>
+        <param name="e2">The second value.</param>
+        <summary>Minimum of the two values</summary>
+        <returns>The minimum value.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Equality&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool operator ==&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Equality&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Equality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator ==(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="( = ) : 'T -&gt; 'T -&gt; bool" Usage="x = y" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">The first parameter.</param>
+        <param name="y">The second parameter.</param>
+        <summary>Compares the two values for equality</summary>
+        <returns>The result of the comparison.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThan&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static bool operator &gt;&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThan&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_GreaterThan``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &gt; ) : 'T -&gt; 'Result -&gt; bool" Usage="x &gt; y" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="x">The first parameter.</param>
+        <param name="y">The second parameter.</param>
+        <summary>Compares the two values for greater-than</summary>
+        <returns>The result of the comparison.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_GreaterThanOrEqual&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static bool operator &gt;=&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_GreaterThanOrEqual&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_GreaterThanOrEqual``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &gt;=(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &gt;= ) : 'T -&gt; 'Result -&gt; bool" Usage="x &gt;= y" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="x">The first parameter.</param>
+        <param name="y">The second parameter.</param>
+        <summary>Compares the two values for greater-than-or-equal</summary>
+        <returns>The result of the comparison.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_Inequality&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static bool operator !=&lt;T&gt; (T x, T y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_Inequality&lt;T&gt;(!!T x, !!T y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Inequality``1(``0,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator !=(Of T) (x As T, y As T) As Boolean" />
+      <MemberSignature Language="F#" Value="op_Inequality : 'T -&gt; 'T -&gt; bool" Usage="Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_Inequality x y" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="x">The first parameter.</param>
+        <param name="y">The second parameter.</param>
+        <summary>Compares the two values for inequality</summary>
+        <returns>The result of the comparison.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThan&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static bool operator &lt;&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThan&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_LessThan``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &lt; ) : 'T -&gt; 'Result -&gt; bool" Usage="x &lt; y" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="x">The first parameter.</param>
+        <param name="y">The second parameter.</param>
+        <summary>Compares the two values for less-than</summary>
+        <returns>The result of the comparison.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="op_LessThanOrEqual&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static bool operator &lt;=&lt;T,TResult&gt; (T x, TResult y);" />
+      <MemberSignature Language="ILAsm" Value=".method public static specialname bool op_LessThanOrEqual&lt;T, TResult&gt;(!!T x, !!TResult y) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.Operators.NonStructuralComparison.op_LessThanOrEqual``2(``0,``1)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Operator &lt;=(Of T, TResult) (x As T, y As TResult) As Boolean" />
+      <MemberSignature Language="F#" Value="( &lt;= ) : 'T -&gt; 'Result -&gt; bool" Usage="x &lt;= y" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="x" Type="T" />
+        <Parameter Name="y" Type="TResult" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="x">The first parameter.</param>
+        <param name="y">The second parameter.</param>
+        <summary>Compares the two values for less-than-or-equal</summary>
+        <returns>The result of the comparison.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

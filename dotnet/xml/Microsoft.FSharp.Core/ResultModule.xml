@@ -1,0 +1,159 @@
+﻿<Type Name="ResultModule" FullName="Microsoft.FSharp.Core.ResultModule">
+  <TypeSignature Language="C#" Value="public static class ResultModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ResultModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.ResultModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class ResultModule" />
+  <TypeSignature Language="F#" Value="module Result" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bind&lt;T,TResult,TError&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt; Bind&lt;T,TResult,TError&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt;&gt; binder, Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt; result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!TResult, !!TError&gt; Bind&lt;T, TResult, TError&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!TResult, !!TError&gt;&gt; binder, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TError&gt; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ResultModule.Bind``3(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.FSharpResult{``1,``2}},Microsoft.FSharp.Core.FSharpResult{``0,``2})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Bind(Of T, TResult, TError) (binder As FSharpFunc(Of T, FSharpResult(Of TResult, TError)), result As FSharpResult(Of T, TError)) As FSharpResult(Of TResult, TError)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Result.bind : ('T -&gt; Result&lt;'Result, 'Error&gt;) -&gt; Result&lt;'T, 'Error&gt; -&gt; Result&lt;'Result, 'Error&gt;" Usage="Microsoft.FSharp.Core.ResultModule.Bind binder result" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("bind")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="TError" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="binder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt;&gt;" />
+        <Parameter Name="result" Type="Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="TError">To be added.</typeparam>
+        <param name="binder">A function that takes the value of type T from a result and transforms it into
+ a result containing a value of type U.</param>
+        <param name="result">The input result.</param>
+        <summary>
+          <c>bind f inp</c> evaluates to <c>match inp with Error e -&gt; Error e | Ok x -&gt; f x</c></summary>
+        <returns>A result of the output type of the binder.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;T,TResult,TError&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt; Map&lt;T,TResult,TError&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt; result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!TResult, !!TError&gt; Map&lt;T, TResult, TError&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TError&gt; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ResultModule.Map``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpResult{``0,``2})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map(Of T, TResult, TError) (mapping As FSharpFunc(Of T, TResult), result As FSharpResult(Of T, TError)) As FSharpResult(Of TResult, TError)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Result.map : ('T -&gt; 'Result) -&gt; Result&lt;'T, 'Error&gt; -&gt; Result&lt;'Result, 'Error&gt;" Usage="Microsoft.FSharp.Core.ResultModule.Map mapping result" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpResult&lt;TResult,TError&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="TError" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+        <Parameter Name="result" Type="Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="TError">To be added.</typeparam>
+        <param name="mapping">A function to apply to the OK result value.</param>
+        <param name="result">The input result.</param>
+        <summary>
+          <c>map f inp</c> evaluates to <c>match inp with Error e -&gt; Error e | Ok x -&gt; Ok (f x)</c>.</summary>
+        <returns>A result of the input value after applying the mapping function, or Error if the input is Error.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapError&lt;TError,TResult,T&gt;">
+      <MemberSignature Language="C#" Value="public static Microsoft.FSharp.Core.FSharpResult&lt;T,TResult&gt; MapError&lt;TError,TResult,T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;TError,TResult&gt; mapping, Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt; result);" />
+      <MemberSignature Language="ILAsm" Value=".method public static valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TResult&gt; MapError&lt;TError, TResult, T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!TError, !!TResult&gt; mapping, valuetype Microsoft.FSharp.Core.FSharpResult`2&lt;!!T, !!TError&gt; result) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.ResultModule.MapError``3(Microsoft.FSharp.Core.FSharpFunc{``0,``1},Microsoft.FSharp.Core.FSharpResult{``2,``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapError(Of TError, TResult, T) (mapping As FSharpFunc(Of TError, TResult), result As FSharpResult(Of T, TError)) As FSharpResult(Of T, TResult)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Core.Result.mapError : ('Error -&gt; 'Result) -&gt; Result&lt;'T, 'Error&gt; -&gt; Result&lt;'T, 'Result&gt;" Usage="Microsoft.FSharp.Core.ResultModule.MapError mapping result" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("mapError")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.FSharpResult&lt;T,TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="TError" />
+        <TypeParameter Name="TResult" />
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;TError,TResult&gt;" />
+        <Parameter Name="result" Type="Microsoft.FSharp.Core.FSharpResult&lt;T,TError&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="TError">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="mapping">A function to apply to the Error result value.</param>
+        <param name="result">The input result.</param>
+        <summary>
+          <c>map f inp</c> evaluates to <c>match inp with Error x -&gt; Error (f x) | Ok v -&gt; Ok v</c>.</summary>
+        <returns>A result of the error value after applying the mapping function, or Ok if the input is Ok.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

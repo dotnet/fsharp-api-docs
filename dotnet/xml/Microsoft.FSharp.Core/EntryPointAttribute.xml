@@ -1,0 +1,51 @@
+﻿<Type Name="EntryPointAttribute" FullName="Microsoft.FSharp.Core.EntryPointAttribute">
+  <TypeSignature Language="C#" Value="public sealed class EntryPointAttribute : Attribute" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed EntryPointAttribute extends System.Attribute" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.EntryPointAttribute" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class EntryPointAttribute&#xA;Inherits Attribute" />
+  <TypeSignature Language="F#" Value="type EntryPointAttribute = class&#xA;    inherit Attribute" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Attribute</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.AttributeUsage(System.AttributeTargets.Method, AllowMultiple=false)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Adding this attribute to a function indicates it is the entrypoint for an application.
+ If this attribute is not specified for an EXE then the initialization implicit in the
+ module bindings in the last file in the compilation sequence are used as the entrypoint.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName=".ctor">
+      <MemberSignature Language="C#" Value="public EntryPointAttribute ();" />
+      <MemberSignature Language="ILAsm" Value=".method public specialname rtspecialname instance void .ctor() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.EntryPointAttribute.#ctor" />
+      <MemberSignature Language="VB.NET" Value="Public Sub New ()" />
+      <MemberType>Constructor</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Parameters />
+      <Docs>
+        <summary>Creates an instance of the attribute</summary>
+        <returns>EntryPointAttribute</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

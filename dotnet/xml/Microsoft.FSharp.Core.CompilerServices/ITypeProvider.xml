@@ -1,0 +1,251 @@
+﻿<Type Name="ITypeProvider" FullName="Microsoft.FSharp.Core.CompilerServices.ITypeProvider">
+  <TypeSignature Language="C#" Value="public interface ITypeProvider : IDisposable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract serializable ITypeProvider implements class System.IDisposable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.CompilerServices.ITypeProvider" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ITypeProvider&#xA;Implements IDisposable" />
+  <TypeSignature Language="F#" Value="type ITypeProvider = interface&#xA;    interface IDisposable" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>System.IDisposable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+ Represents an instantiation of a type provider component.
+ </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="add_Invalidate">
+      <MemberSignature Language="C#" Value="public void add_Invalidate (EventHandler );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void add_Invalidate(class System.EventHandler ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.add_Invalidate(System.EventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub add_Invalidate ( As EventHandler)" />
+      <MemberSignature Language="F#" Value="abstract member add_Invalidate : EventHandler -&gt; unit" Usage="iTypeProvider.add_Invalidate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.EventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>
+ Triggered when an assumption changes that invalidates the resolutions so far reported by the provider
+ </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ApplyStaticArguments">
+      <MemberSignature Language="C#" Value="public Type ApplyStaticArguments (Type typeWithoutArguments, string[] typePathWithArguments, object[] staticArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Type ApplyStaticArguments(class System.Type typeWithoutArguments, string[] typePathWithArguments, object[] staticArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.ApplyStaticArguments(System.Type,System.String[],System.Object[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function ApplyStaticArguments (typeWithoutArguments As Type, typePathWithArguments As String(), staticArguments As Object()) As Type" />
+      <MemberSignature Language="F#" Value="abstract member ApplyStaticArguments : Type * string[] * obj[] -&gt; Type" Usage="iTypeProvider.ApplyStaticArguments (typeWithoutArguments, typePathWithArguments, staticArguments)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Type</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeWithoutArguments" Type="System.Type" />
+        <Parameter Name="typePathWithArguments" Type="System.String[]" />
+        <Parameter Name="staticArguments" Type="System.Object[]" />
+      </Parameters>
+      <Docs>
+        <param name="typeWithoutArguments">the provided type definition which has static parameters</param>
+        <param name="typePathWithArguments">the full path of the type, including encoded representations of static parameters</param>
+        <param name="staticArguments">the static parameters, indexed by name</param>
+        <summary>
+ Apply static arguments to a provided type that accepts static arguments. 
+ </summary>
+        <returns />
+        <remarks>The provider must return a type with the given mangled name.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetGeneratedAssemblyContents">
+      <MemberSignature Language="C#" Value="public byte[] GetGeneratedAssemblyContents (System.Reflection.Assembly assembly);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance unsigned int8[] GetGeneratedAssemblyContents(class System.Reflection.Assembly assembly) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetGeneratedAssemblyContents(System.Reflection.Assembly)" />
+      <MemberSignature Language="F#" Value="abstract member GetGeneratedAssemblyContents : System.Reflection.Assembly -&gt; byte[]" Usage="iTypeProvider.GetGeneratedAssemblyContents assembly" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Byte[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="assembly" Type="System.Reflection.Assembly" />
+      </Parameters>
+      <Docs>
+        <param name="assembly">To be added.</param>
+        <summary>
+ Get the physical contents of the given logical provided assembly.
+ </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetInvokerExpression">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Quotations.FSharpExpr GetInvokerExpression (System.Reflection.MethodBase syntheticMethodBase, Microsoft.FSharp.Quotations.FSharpExpr[] parameters);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.FSharp.Quotations.FSharpExpr GetInvokerExpression(class System.Reflection.MethodBase syntheticMethodBase, class Microsoft.FSharp.Quotations.FSharpExpr[] parameters) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetInvokerExpression(System.Reflection.MethodBase,Microsoft.FSharp.Quotations.FSharpExpr[])" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetInvokerExpression (syntheticMethodBase As MethodBase, parameters As FSharpExpr()) As FSharpExpr" />
+      <MemberSignature Language="F#" Value="abstract member GetInvokerExpression : System.Reflection.MethodBase * Expr[] -&gt; Expr" Usage="iTypeProvider.GetInvokerExpression (syntheticMethodBase, parameters)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Quotations.FSharpExpr</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="syntheticMethodBase" Type="System.Reflection.MethodBase" />
+        <Parameter Name="parameters" Type="Microsoft.FSharp.Quotations.FSharpExpr[]" />
+      </Parameters>
+      <Docs>
+        <param name="syntheticMethodBase">MethodBase that was given to the compiler by a type returned by a GetType(s) call.</param>
+        <param name="parameters">Expressions that represent the parameters to this call.</param>
+        <summary>
+ Called by the compiler to ask for an Expression tree to replace the given MethodBase with.
+ </summary>
+        <returns>An expression that the compiler will use in place of the given method base.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetNamespaces">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[] GetNamespaces ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[] GetNamespaces() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetNamespaces" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetNamespaces () As IProvidedNamespace()" />
+      <MemberSignature Language="F#" Value="abstract member GetNamespaces : unit -&gt; Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[]" Usage="iTypeProvider.GetNamespaces " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Core.CompilerServices.IProvidedNamespace[]</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+ Namespace name the this TypeProvider injects types into.
+ </summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetStaticParameters">
+      <MemberSignature Language="C#" Value="public System.Reflection.ParameterInfo[] GetStaticParameters (Type typeWithoutArguments);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance class System.Reflection.ParameterInfo[] GetStaticParameters(class System.Type typeWithoutArguments) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.GetStaticParameters(System.Type)" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetStaticParameters (typeWithoutArguments As Type) As ParameterInfo()" />
+      <MemberSignature Language="F#" Value="abstract member GetStaticParameters : Type -&gt; System.Reflection.ParameterInfo[]" Usage="iTypeProvider.GetStaticParameters typeWithoutArguments" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Reflection.ParameterInfo[]</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="typeWithoutArguments" Type="System.Type" />
+      </Parameters>
+      <Docs>
+        <param name="typeWithoutArguments">A type returned by GetTypes or ResolveTypeName</param>
+        <summary>
+ Get the static parameters for a provided type. 
+ </summary>
+        <returns />
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="event EventHandler Invalidate;" />
+      <MemberSignature Language="ILAsm" Value=".event class System.EventHandler Invalidate" />
+      <MemberSignature Language="DocId" Value="E:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Event Invalidate As EventHandler " />
+      <MemberSignature Language="F#" Value="member this.Invalidate : EventHandler " Usage="member this.Invalidate : System.EventHandler " />
+      <MemberType>Event</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>add: Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>remove: Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.EventHandler</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="remove_Invalidate">
+      <MemberSignature Language="C#" Value="public void remove_Invalidate (EventHandler );" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig virtual instance void remove_Invalidate(class System.EventHandler ) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Core.CompilerServices.ITypeProvider.remove_Invalidate(System.EventHandler)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub remove_Invalidate ( As EventHandler)" />
+      <MemberSignature Language="F#" Value="abstract member remove_Invalidate : EventHandler -&gt; unit" Usage="iTypeProvider.remove_Invalidate " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CLIEvent</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="" Type="System.EventHandler" />
+      </Parameters>
+      <Docs>
+        <param name="">To be added.</param>
+        <summary>
+ Triggered when an assumption changes that invalidates the resolutions so far reported by the provider
+ </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,51 @@
+﻿<Type Name="FSharpAsync&lt;T&gt;" FullName="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;">
+  <TypeSignature Language="C#" Value="public sealed class FSharpAsync&lt;T&gt;" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed beforefieldinit FSharpAsync`1&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.FSharpAsync`1" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FSharpAsync(Of T)" />
+  <TypeSignature Language="F#" Value="type Async&lt;'T&gt; = class" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping((Microsoft.FSharp.Core.SourceConstructFlags) 34)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompiledName("FSharpAsync`1")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.NoComparison</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.NoEquality</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <typeparam name="T">To be added.</typeparam>
+    <summary>A compositional asynchronous computation, which, when run, will eventually produce a value 
+ of type T, or else raises an exception.</summary>
+    <remarks>Asynchronous computations are normally specified using an F# computation expression.
+
+ When run, asynchronous computations have two modes: as a work item (executing synchronous 
+ code), or as a wait item (waiting for an event or I/O completion). 
+
+ When run, asynchronous computations can be governed by CancellationToken. This can usually 
+ be specified when the async computation is started. The associated CancellationTokenSource 
+ may be used to cancel the asynchronous computation. Asynchronous computations built using 
+ computation expressions can check the cancellation condition regularly. Synchronous 
+ computations within an asynchronous computation do not automatically check this condition.</remarks>
+  </Docs>
+  <Members />
+</Type>

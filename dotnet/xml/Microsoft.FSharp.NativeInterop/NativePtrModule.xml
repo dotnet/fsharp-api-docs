@@ -1,0 +1,480 @@
+﻿<Type Name="NativePtrModule" FullName="Microsoft.FSharp.NativeInterop.NativePtrModule">
+  <TypeSignature Language="C#" Value="public static class NativePtrModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed NativePtrModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.NativeInterop.NativePtrModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class NativePtrModule" />
+  <TypeSignature Language="F#" Value="module NativePtr" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Contains operations on native pointers. Use of these operators may
+ result in the generation of unverifiable code.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddPointerInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IntPtr AddPointerInlined&lt;T&gt; (IntPtr address, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static native int AddPointerInlined&lt;T&gt;(native int address, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.AddPointerInlined``1(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function AddPointerInlined(Of T) (address As IntPtr, index As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.add : nativeint -&gt; int -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.AddPointerInlined address index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("add")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetPointerInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T GetPointerInlined&lt;T&gt; (IntPtr address, int index);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T GetPointerInlined&lt;T&gt;(native int address, int32 index) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.GetPointerInlined``1(System.IntPtr,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function GetPointerInlined(Of T) (address As IntPtr, index As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.get : nativeint -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.GetPointerInlined address index" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("get")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+        <Parameter Name="index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <param name="index">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfNativeIntInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IntPtr OfNativeIntInlined&lt;T&gt; (IntPtr address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static native int OfNativeIntInlined&lt;T&gt;(native int address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.OfNativeIntInlined``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function OfNativeIntInlined(Of T) (address As IntPtr) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.ofNativeInt : nativeint -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.OfNativeIntInlined address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofNativeInt")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">The pointer address.</param>
+        <summary>Returns a typed native pointer for a given machine address.</summary>
+        <returns>A typed pointer.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OfVoidPtrInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IntPtr OfVoidPtrInlined&lt;T&gt; (void* address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static native int OfVoidPtrInlined&lt;T&gt;(void* address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.OfVoidPtrInlined``1(System.Void*)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.ofVoidPtr : nativeptr&lt;unit&gt; -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.OfVoidPtrInlined address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("ofVoidPtr")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.Void*" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReadPointerInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ReadPointerInlined&lt;T&gt; (IntPtr address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T ReadPointerInlined&lt;T&gt;(native int address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.ReadPointerInlined``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ReadPointerInlined(Of T) (address As IntPtr) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.read : nativeint -&gt; 'T" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.ReadPointerInlined address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("read")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetPointerInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void SetPointerInlined&lt;T&gt; (IntPtr address, int index, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void SetPointerInlined&lt;T&gt;(native int address, int32 index, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.SetPointerInlined``1(System.IntPtr,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub SetPointerInlined(Of T) (address As IntPtr, index As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.set : nativeint -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.SetPointerInlined address index value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("set")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+        <Parameter Name="index" Type="System.Int32" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <param name="index">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="StackAllocate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IntPtr StackAllocate&lt;T&gt; (int count);" />
+      <MemberSignature Language="ILAsm" Value=".method public static native int StackAllocate&lt;T&gt;(int32 count) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.StackAllocate``1(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function StackAllocate(Of T) (count As Integer) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.stackalloc : int -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.StackAllocate count" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("stackalloc")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="count" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="count">The number of objects of type T to allocate.</param>
+        <summary>Allocates a region of memory on the stack.</summary>
+        <returns>A typed pointer to the allocated memory.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToByRefInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T ToByRefInlined&lt;T&gt; (IntPtr address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T ToByRefInlined&lt;T&gt;(native int address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.ToByRefInlined``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToByRefInlined(Of T) (address As IntPtr) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.toByRef : nativeint -&gt; " Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.ToByRefInlined address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toByRef")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue RefType="Ref">
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToNativeIntInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static IntPtr ToNativeIntInlined&lt;T&gt; (IntPtr address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static native int ToNativeIntInlined&lt;T&gt;(native int address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.ToNativeIntInlined``1(System.IntPtr)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ToNativeIntInlined(Of T) (address As IntPtr) As IntPtr" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.toNativeInt : nativeint -&gt; nativeint" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.ToNativeIntInlined address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toNativeInt")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.IntPtr</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ToVoidPtrInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void* ToVoidPtrInlined&lt;T&gt; (IntPtr address);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void* ToVoidPtrInlined&lt;T&gt;(native int address) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.ToVoidPtrInlined``1(System.IntPtr)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.toVoidPtr : nativeint -&gt; nativeptr&lt;unit&gt;" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.ToVoidPtrInlined address" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("toVoidPtr")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void*</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WritePointerInlined&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void WritePointerInlined&lt;T&gt; (IntPtr address, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void WritePointerInlined&lt;T&gt;(native int address, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.NativeInterop.NativePtrModule.WritePointerInlined``1(System.IntPtr,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub WritePointerInlined(Of T) (address As IntPtr, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.NativeInterop.NativePtr.write : nativeint -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.NativeInterop.NativePtrModule.WritePointerInlined address value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("write")</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.NoDynamicInvocation</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.Unverifiable</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="address" Type="System.IntPtr" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="address">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

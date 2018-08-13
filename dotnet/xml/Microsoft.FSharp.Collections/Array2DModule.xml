@@ -1,0 +1,776 @@
+﻿<Type Name="Array2DModule" FullName="Microsoft.FSharp.Collections.Array2DModule">
+  <TypeSignature Language="C#" Value="public static class Array2DModule" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed Array2DModule extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.Array2DModule" />
+  <TypeSignature Language="VB.NET" Value="Public Class Array2DModule" />
+  <TypeSignature Language="F#" Value="module Array2D" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationRepresentation(Microsoft.FSharp.Core.CompilationRepresentationFlags.ModuleSuffix)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.RequireQualifiedAccess</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Basic operations on 2-dimensional arrays.</summary>
+    <remarks>F# and CLI multi-dimensional arrays are typically zero-based. 
+ However, CLI multi-dimensional arrays used in conjunction with external
+ libraries (e.g. libraries associated with Visual Basic) be 
+ non-zero based, using a potentially different base for each dimension.
+ The operations in this module will accept such arrays, and
+ the basing on an input array will be propagated to a matching output
+ array on the <c>Array2D.map</c> and <c>Array2D.mapi</c> operations.
+ Non-zero-based arrays can also be created using <c>Array2D.zeroCreateBased</c>, 
+ <c>Array2D.createBased</c> and <c>Array2D.initBased</c>.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Base1&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Base1&lt;T&gt; (T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Base1&lt;T&gt;(!!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Base1``1(``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Base1(Of T) (array As T(,)) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.base1 : 'T[,] -&gt; int" Usage="Microsoft.FSharp.Collections.Array2DModule.Base1 array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("base1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Base2&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Base2&lt;T&gt; (T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Base2&lt;T&gt;(!!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Base2``1(``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Base2(Of T) (array As T(,)) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.base2 : 'T[,] -&gt; int" Usage="Microsoft.FSharp.Collections.Array2DModule.Base2 array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("base2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Copy&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] Copy&lt;T&gt; (T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] Copy&lt;T&gt;(!!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Copy``1(``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Copy(Of T) (array As T(,)) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.copy : 'T[,] -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.Copy array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("copy")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="CopyTo&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void CopyTo&lt;T&gt; (T[,] source, int sourceIndex1, int sourceIndex2, T[,] target, int targetIndex1, int targetIndex2, int length1, int length2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void CopyTo&lt;T&gt;(!!T[,] source, int32 sourceIndex1, int32 sourceIndex2, !!T[,] target, int32 targetIndex1, int32 targetIndex2, int32 length1, int32 length2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.CopyTo``1(``0[0:,0:],System.Int32,System.Int32,``0[0:,0:],System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub CopyTo(Of T) (source As T(,), sourceIndex1 As Integer, sourceIndex2 As Integer, target As T(,), targetIndex1 As Integer, targetIndex2 As Integer, length1 As Integer, length2 As Integer)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.blit : 'T[,] -&gt; int -&gt; int -&gt; 'T[,] -&gt; int -&gt; int -&gt; int -&gt; int -&gt; unit" Usage="Microsoft.FSharp.Collections.Array2DModule.CopyTo source sourceIndex1 sourceIndex2 target targetIndex1 targetIndex2 length1 length2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("blit")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="source" Type="T[,]" />
+        <Parameter Name="sourceIndex1" Type="System.Int32" />
+        <Parameter Name="sourceIndex2" Type="System.Int32" />
+        <Parameter Name="target" Type="T[,]" />
+        <Parameter Name="targetIndex1" Type="System.Int32" />
+        <Parameter Name="targetIndex2" Type="System.Int32" />
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="source">To be added.</param>
+        <param name="sourceIndex1">To be added.</param>
+        <param name="sourceIndex2">To be added.</param>
+        <param name="target">To be added.</param>
+        <param name="targetIndex1">To be added.</param>
+        <param name="targetIndex2">To be added.</param>
+        <param name="length1">To be added.</param>
+        <param name="length2">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Create&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] Create&lt;T&gt; (int length1, int length2, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] Create&lt;T&gt;(int32 length1, int32 length2, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Create``1(System.Int32,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Create(Of T) (length1 As Integer, length2 As Integer, value As T) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.create : int -&gt; int -&gt; 'T -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.Create length1 length2 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("create")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="length1">The length of the first dimension of the array.</param>
+        <param name="length2">The length of the second dimension of the array.</param>
+        <param name="value">The value to populate the new array.</param>
+        <summary>Creates an array whose elements are all initially the given value.</summary>
+        <returns>The created array.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="System.ArgumentException">Thrown when length1 or length2 is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="CreateBased&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] CreateBased&lt;T&gt; (int base1, int base2, int length1, int length2, T initial);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] CreateBased&lt;T&gt;(int32 base1, int32 base2, int32 length1, int32 length2, !!T initial) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.CreateBased``1(System.Int32,System.Int32,System.Int32,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function CreateBased(Of T) (base1 As Integer, base2 As Integer, length1 As Integer, length2 As Integer, initial As T) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.createBased : int -&gt; int -&gt; int -&gt; int -&gt; 'T -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.CreateBased base1 base2 length1 length2 initial" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("createBased")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="base1" Type="System.Int32" />
+        <Parameter Name="base2" Type="System.Int32" />
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+        <Parameter Name="initial" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="base1">The base for the first dimension of the array.</param>
+        <param name="base2">The base for the second dimension of the array.</param>
+        <param name="length1">The length of the first dimension of the array.</param>
+        <param name="length2">The length of the second dimension of the array.</param>
+        <param name="initial">The value to populate the new array.</param>
+        <summary>Creates a based array whose elements are all initially the given value.</summary>
+        <returns>The created array.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="System.ArgumentException">Thrown when base1, base2, length1, or length2 is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Get&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T Get&lt;T&gt; (T[,] array, int index1, int index2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T Get&lt;T&gt;(!!T[,] array, int32 index1, int32 index2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Get``1(``0[0:,0:],System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Get(Of T) (array As T(,), index1 As Integer, index2 As Integer) As T" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.get : 'T[,] -&gt; int -&gt; int -&gt; 'T" Usage="Microsoft.FSharp.Collections.Array2DModule.Get array index1 index2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("get")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+        <Parameter Name="index1" Type="System.Int32" />
+        <Parameter Name="index2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="index1">To be added.</param>
+        <param name="index2">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Initialize&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] Initialize&lt;T&gt; (int length1, int length2, Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;int,T&gt;&gt; initializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] Initialize&lt;T&gt;(int32 length1, int32 length2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, !!T&gt;&gt; initializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Initialize``1(System.Int32,System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Initialize(Of T) (length1 As Integer, length2 As Integer, initializer As FSharpFunc(Of Integer, FSharpFunc(Of Integer, T))) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.init : int -&gt; int -&gt; (int -&gt; int -&gt; 'T) -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.Initialize length1 length2 initializer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("init")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+        <Parameter Name="initializer" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="length1">The length of the first dimension of the array.</param>
+        <param name="length2">The length of the second dimension of the array.</param>
+        <param name="initializer">A function to produce elements of the array given the two indices.</param>
+        <summary>Creates an array given the dimensions and a generator function to compute the elements.</summary>
+        <returns>The generated array.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="System.ArgumentException">Thrown when either of the lengths is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="InitializeBased&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] InitializeBased&lt;T&gt; (int base1, int base2, int length1, int length2, Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;int,T&gt;&gt; initializer);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] InitializeBased&lt;T&gt;(int32 base1, int32 base2, int32 length1, int32 length2, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, !!T&gt;&gt; initializer) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.InitializeBased``1(System.Int32,System.Int32,System.Int32,System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function InitializeBased(Of T) (base1 As Integer, base2 As Integer, length1 As Integer, length2 As Integer, initializer As FSharpFunc(Of Integer, FSharpFunc(Of Integer, T))) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.initBased : int -&gt; int -&gt; int -&gt; int -&gt; (int -&gt; int -&gt; 'T) -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.InitializeBased base1 base2 length1 length2 initializer" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("initBased")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="base1" Type="System.Int32" />
+        <Parameter Name="base2" Type="System.Int32" />
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+        <Parameter Name="initializer" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="base1">The base for the first dimension of the array.</param>
+        <param name="base2">The base for the second dimension of the array.</param>
+        <param name="length1">The length of the first dimension of the array.</param>
+        <param name="length2">The length of the second dimension of the array.</param>
+        <param name="initializer">A function to produce elements of the array given the two indices.</param>
+        <summary>Creates a based array given the dimensions and a generator function to compute the elements.</summary>
+        <returns>The created array.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="System.ArgumentException">Thrown when base1, base2, length1, or length2 is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="Iterate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Iterate&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt; action, T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Iterate&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt; action, !!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Iterate``1(Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit},``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Iterate(Of T) (action As FSharpFunc(Of T, Unit), array As T(,))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.iter : ('T -&gt; unit) -&gt; 'T[,] -&gt; unit" Usage="Microsoft.FSharp.Collections.Array2DModule.Iterate action array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("iter")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="IterateIndexed&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void IterateIndexed&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt;&gt; action, T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void IterateIndexed&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Core.Unit&gt;&gt;&gt; action, !!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.IterateIndexed``1(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Core.Unit}}},``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub IterateIndexed(Of T) (action As FSharpFunc(Of Integer, FSharpFunc(Of Integer, FSharpFunc(Of T, Unit))), array As T(,))" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.iteri : (int -&gt; int -&gt; 'T -&gt; unit) -&gt; 'T[,] -&gt; unit" Usage="Microsoft.FSharp.Collections.Array2DModule.IterateIndexed action array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("iteri")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="action" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Core.Unit&gt;&gt;&gt;" />
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="action">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length1&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Length1&lt;T&gt; (T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Length1&lt;T&gt;(!!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Length1``1(``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Length1(Of T) (array As T(,)) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.length1 : 'T[,] -&gt; int" Usage="Microsoft.FSharp.Collections.Array2DModule.Length1 array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("length1")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Length2&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static int Length2&lt;T&gt; (T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static int32 Length2&lt;T&gt;(!!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Length2``1(``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Length2(Of T) (array As T(,)) As Integer" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.length2 : 'T[,] -&gt; int" Usage="Microsoft.FSharp.Collections.Array2DModule.Length2 array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("length2")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Map&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static TResult[,] Map&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt; mapping, T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TResult[,] Map&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt; mapping, !!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Map``2(Microsoft.FSharp.Core.FSharpFunc{``0,``1},``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Map(Of T, TResult) (mapping As FSharpFunc(Of T, TResult), array As T(,)) As TResult(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.map : ('T -&gt; 'Result) -&gt; 'T[,] -&gt; 'Result[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.Map mapping array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("map")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TResult[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;" />
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="MapIndexed&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public static TResult[,] MapIndexed&lt;T,TResult&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;int,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt;&gt; mapping, T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!TResult[,] MapIndexed&lt;T, TResult&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;int32, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, !!TResult&gt;&gt;&gt; mapping, !!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.MapIndexed``2(Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{System.Int32,Microsoft.FSharp.Core.FSharpFunc{``0,``1}}},``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function MapIndexed(Of T, TResult) (mapping As FSharpFunc(Of Integer, FSharpFunc(Of Integer, FSharpFunc(Of T, TResult))), array As T(,)) As TResult(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.mapi : (int -&gt; int -&gt; 'T -&gt; 'Result) -&gt; 'T[,] -&gt; 'Result[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.MapIndexed mapping array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("mapi")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>TResult[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="mapping" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;System.Int32,Microsoft.FSharp.Core.FSharpFunc&lt;T,TResult&gt;&gt;&gt;" />
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="mapping">To be added.</param>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Rebase&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] Rebase&lt;T&gt; (T[,] array);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] Rebase&lt;T&gt;(!!T[,] array) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Rebase``1(``0[0:,0:])" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function Rebase(Of T) (array As T(,)) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.rebase : 'T[,] -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.Rebase array" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("rebase")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Set&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static void Set&lt;T&gt; (T[,] array, int index1, int index2, T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public static void Set&lt;T&gt;(!!T[,] array, int32 index1, int32 index2, !!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.Set``1(``0[0:,0:],System.Int32,System.Int32,``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Sub Set(Of T) (array As T(,), index1 As Integer, index2 As Integer, value As T)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.set : 'T[,] -&gt; int -&gt; int -&gt; 'T -&gt; unit" Usage="Microsoft.FSharp.Collections.Array2DModule.Set array index1 index2 value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("set")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="array" Type="T[,]" />
+        <Parameter Name="index1" Type="System.Int32" />
+        <Parameter Name="index2" Type="System.Int32" />
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="array">To be added.</param>
+        <param name="index1">To be added.</param>
+        <param name="index2">To be added.</param>
+        <param name="value">To be added.</param>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ZeroCreate&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] ZeroCreate&lt;T&gt; (int length1, int length2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] ZeroCreate&lt;T&gt;(int32 length1, int32 length2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.ZeroCreate``1(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ZeroCreate(Of T) (length1 As Integer, length2 As Integer) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.zeroCreate : int -&gt; int -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.ZeroCreate length1 length2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("zeroCreate")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="length1">The length of the first dimension of the array.</param>
+        <param name="length2">The length of the second dimension of the array.</param>
+        <summary>Creates an array where the entries are initially Unchecked.defaultof&lt;'T&gt;.</summary>
+        <returns>The created array.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="System.ArgumentException">Thrown when length1 or length2 is negative.</exception>
+      </Docs>
+    </Member>
+    <Member MemberName="ZeroCreateBased&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public static T[,] ZeroCreateBased&lt;T&gt; (int base1, int base2, int length1, int length2);" />
+      <MemberSignature Language="ILAsm" Value=".method public static !!T[,] ZeroCreateBased&lt;T&gt;(int32 base1, int32 base2, int32 length1, int32 length2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Collections.Array2DModule.ZeroCreateBased``1(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Shared Function ZeroCreateBased(Of T) (base1 As Integer, base2 As Integer, length1 As Integer, length2 As Integer) As T(,)" />
+      <MemberSignature Language="F#" Value="Microsoft.FSharp.Collections.Array2D.zeroCreateBased : int -&gt; int -&gt; int -&gt; int -&gt; 'T[,]" Usage="Microsoft.FSharp.Collections.Array2DModule.ZeroCreateBased base1 base2 length1 length2" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationArgumentCounts(Mono.Cecil.CustomAttributeArgument[])</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>Microsoft.FSharp.Core.CompilationSourceName("zeroCreateBased")</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>T[,]</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="base1" Type="System.Int32" />
+        <Parameter Name="base2" Type="System.Int32" />
+        <Parameter Name="length1" Type="System.Int32" />
+        <Parameter Name="length2" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="base1">The base for the first dimension of the array.</param>
+        <param name="base2">The base for the second dimension of the array.</param>
+        <param name="length1">The length of the first dimension of the array.</param>
+        <param name="length2">The length of the second dimension of the array.</param>
+        <summary>Creates a based array where the entries are initially Unchecked.defaultof&lt;'T&gt;.</summary>
+        <returns>The created array.</returns>
+        <remarks>To be added.</remarks>
+        <exception cref="System.ArgumentException">Thrown when base1, base2, length1, or length2 is negative.</exception>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

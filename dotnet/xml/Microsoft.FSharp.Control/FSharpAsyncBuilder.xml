@@ -1,0 +1,396 @@
+﻿<Type Name="FSharpAsyncBuilder" FullName="Microsoft.FSharp.Control.FSharpAsyncBuilder">
+  <TypeSignature Language="C#" Value="public sealed class FSharpAsyncBuilder" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable sealed FSharpAsyncBuilder extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Control.FSharpAsyncBuilder" />
+  <TypeSignature Language="VB.NET" Value="Public NotInheritable Class FSharpAsyncBuilder" />
+  <TypeSignature Language="F#" Value="type AsyncBuilder = class" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompiledName("FSharpAsyncBuilder")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Sealed</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>The type of the <c>async</c> operator, used to build workflows for asynchronous computations.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Bind&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt; Bind&lt;T,TResult&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt; binder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt; Bind&lt;T, TResult&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt;&gt; binder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Bind``2(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{``1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Bind(Of T, TResult) (computation As FSharpAsync(Of T), binder As FSharpFunc(Of T, FSharpAsync(Of TResult))) As FSharpAsync(Of TResult)" />
+      <MemberSignature Language="F#" Value="member this.Bind : Async&lt;'T&gt; * ('T -&gt; Async&lt;'Result&gt;) -&gt; Async&lt;'Result&gt;" Usage="asyncBuilder.Bind (computation, binder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="binder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="computation">The computation to provide an unbound result.</param>
+        <param name="binder">The function to bind the result of <c>computation</c>.</param>
+        <summary>Creates an asynchronous computation that runs <c>computation</c>, and when 
+ <c>computation</c> generates a result <c>T</c>, runs <c>binder res</c>.</summary>
+        <returns>An asynchronous computation that performs a monadic bind on the result
+ of <c>computation</c>.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.
+
+ The existence of this method permits the use of <c>let!</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Combine&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; Combine&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; computation1, Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation2);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; Combine&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; computation1, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation2) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Combine``1(Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit},Microsoft.FSharp.Control.FSharpAsync{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Combine(Of T) (computation1 As FSharpAsync(Of Unit), computation2 As FSharpAsync(Of T)) As FSharpAsync(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Combine : Async&lt;unit&gt; * Async&lt;'T&gt; -&gt; Async&lt;'T&gt;" Usage="asyncBuilder.Combine (computation1, computation2)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation1" Type="Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;" />
+        <Parameter Name="computation2" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation1">The first part of the sequenced computation.</param>
+        <param name="computation2">The second part of the sequenced computation.</param>
+        <summary>Creates an asynchronous computation that first runs <c>computation1</c>
+ and then runs <c>computation2</c>, returning the result of <c>computation2</c>.</summary>
+        <returns>An asynchronous computation that runs both of the computations sequentially.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.
+
+ The existence of this method permits the use of expression sequencing in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delay&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; Delay&lt;T&gt; (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; generator);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; Delay&lt;T&gt;(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; generator) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Delay``1(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Control.FSharpAsync{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Delay(Of T) (generator As FSharpFunc(Of Unit, FSharpAsync(Of T))) As FSharpAsync(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Delay : (unit -&gt; Async&lt;'T&gt;) -&gt; Async&lt;'T&gt;" Usage="asyncBuilder.Delay generator" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="generator" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="generator">The function to run.</param>
+        <summary>Creates an asynchronous computation that runs <c>generator</c>.</summary>
+        <returns>An asynchronous computation that runs <c>generator</c>.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="For&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; For&lt;T&gt; (System.Collections.Generic.IEnumerable&lt;T&gt; sequence, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt; body);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; For&lt;T&gt;(class System.Collections.Generic.IEnumerable`1&lt;!!T&gt; sequence, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt;&gt; body) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.For``1(System.Collections.Generic.IEnumerable{``0},Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function For(Of T) (sequence As IEnumerable(Of T), body As FSharpFunc(Of T, FSharpAsync(Of Unit))) As FSharpAsync(Of Unit)" />
+      <MemberSignature Language="F#" Value="member this.For : seq&lt;'T&gt; * ('T -&gt; Async&lt;unit&gt;) -&gt; Async&lt;unit&gt;" Usage="asyncBuilder.For (sequence, body)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="sequence" Type="System.Collections.Generic.IEnumerable&lt;T&gt;" />
+        <Parameter Name="body" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="sequence">The sequence to enumerate.</param>
+        <param name="body">A function to take an item from the sequence and create
+ an asynchronous computation.  Can be seen as the body of the <c>for</c> expression.</param>
+        <summary>Creates an asynchronous computation that enumerates the sequence <c>seq</c>
+ on demand and runs <c>body</c> for each element.</summary>
+        <returns>An asynchronous computation that will enumerate the sequence and run <c>body</c>
+ for each element.</returns>
+        <remarks>A cancellation check is performed on each iteration of the loop.
+
+ The existence of this method permits the use of <c>for</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Return&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; Return&lt;T&gt; (T value);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; Return&lt;T&gt;(!!T value) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Return``1(``0)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Return(Of T) (value As T) As FSharpAsync(Of T)" />
+      <MemberSignature Language="F#" Value="member this.Return : 'T -&gt; Async&lt;'T&gt;" Usage="asyncBuilder.Return value" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="value" Type="T" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="value">The value to return from the computation.</param>
+        <summary>Creates an asynchronous computation that returns the result <c>v</c>.</summary>
+        <returns>An asynchronous computation that returns <c>value</c> when executed.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.
+
+ The existence of this method permits the use of <c>return</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReturnFrom&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; ReturnFrom&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; ReturnFrom&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.ReturnFrom``1(Microsoft.FSharp.Control.FSharpAsync{``0})" />
+      <MemberSignature Language="VB.NET" Value="Public Function ReturnFrom(Of T) (computation As FSharpAsync(Of T)) As FSharpAsync(Of T)" />
+      <MemberSignature Language="F#" Value="member this.ReturnFrom : Async&lt;'T&gt; -&gt; Async&lt;'T&gt;" Usage="asyncBuilder.ReturnFrom computation" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">The input computation.</param>
+        <summary>Delegates to the input computation.</summary>
+        <returns>The input computation.</returns>
+        <remarks>The existence of this method permits the use of <c>return!</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryFinally&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; TryFinally&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt; compensation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; TryFinally&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, class Microsoft.FSharp.Core.Unit&gt; compensation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.TryFinally``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryFinally(Of T) (computation As FSharpAsync(Of T), compensation As FSharpFunc(Of Unit, Unit)) As FSharpAsync(Of T)" />
+      <MemberSignature Language="F#" Value="member this.TryFinally : Async&lt;'T&gt; * (unit -&gt; unit) -&gt; Async&lt;'T&gt;" Usage="asyncBuilder.TryFinally (computation, compensation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="compensation" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">The input computation.</param>
+        <param name="compensation">The action to be run after <c>computation</c> completes or raises an
+ exception (including cancellation).</param>
+        <summary>Creates an asynchronous computation that runs <c>computation</c>. The action <c>compensation</c> is executed 
+ after <c>computation</c> completes, whether <c>computation</c> exits normally or by an exception. If <c>compensation</c> raises an exception itself
+ the original exception is discarded and the new exception becomes the overall result of the computation.</summary>
+        <returns>An asynchronous computation that executes computation and compensation afterwards or
+ when an exception is raised.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.
+
+ The existence of this method permits the use of <c>try/finally</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TryWith&lt;T&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; TryWith&lt;T&gt; (Microsoft.FSharp.Control.FSharpAsync&lt;T&gt; computation, Microsoft.FSharp.Core.FSharpFunc&lt;Exception,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt; catchHandler);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; TryWith&lt;T&gt;(class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt; computation, class Microsoft.FSharp.Core.FSharpFunc`2&lt;class System.Exception, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!T&gt;&gt; catchHandler) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.TryWith``1(Microsoft.FSharp.Control.FSharpAsync{``0},Microsoft.FSharp.Core.FSharpFunc{System.Exception,Microsoft.FSharp.Control.FSharpAsync{``0}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function TryWith(Of T) (computation As FSharpAsync(Of T), catchHandler As FSharpFunc(Of Exception, FSharpAsync(Of T))) As FSharpAsync(Of T)" />
+      <MemberSignature Language="F#" Value="member this.TryWith : Async&lt;'T&gt; * (Exception -&gt; Async&lt;'T&gt;) -&gt; Async&lt;'T&gt;" Usage="asyncBuilder.TryWith (computation, catchHandler)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;" />
+        <Parameter Name="catchHandler" Type="Microsoft.FSharp.Core.FSharpFunc&lt;System.Exception,Microsoft.FSharp.Control.FSharpAsync&lt;T&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <param name="computation">The input computation.</param>
+        <param name="catchHandler">The function to run when <c>computation</c> throws an exception.</param>
+        <summary>Creates an asynchronous computation that runs <c>computation</c> and returns its result.
+ If an exception happens then <c>catchHandler(exn)</c> is called and the resulting computation executed instead.</summary>
+        <returns>An asynchronous computation that executes <c>computation</c> and calls <c>catchHandler</c> if an
+ exception is thrown.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.
+
+ The existence of this method permits the use of <c>try/with</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Using&lt;T,TResult&gt;">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt; Using&lt;T,TResult&gt; (T resource, Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt; binder) where T : IDisposable;" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt; Using&lt;(class System.IDisposable) T, TResult&gt;(!!T resource, class Microsoft.FSharp.Core.FSharpFunc`2&lt;!!T, class Microsoft.FSharp.Control.FSharpAsync`1&lt;!!TResult&gt;&gt; binder) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Using``2(``0,Microsoft.FSharp.Core.FSharpFunc{``0,Microsoft.FSharp.Control.FSharpAsync{``1}})" />
+      <MemberSignature Language="VB.NET" Value="Public Function Using(Of T As IDisposable, TResult As IDisposable) (resource As T, binder As FSharpFunc(Of T, FSharpAsync(Of TResult))) As FSharpAsync(Of TResult)" />
+      <MemberSignature Language="F#" Value="member this.Using : 'T * ('T -&gt; Async&lt;'Result&gt; (requires 'T :&gt; IDisposable)) -&gt; Async&lt;'Result&gt; (requires 'T :&gt; IDisposable)" Usage="asyncBuilder.Using (resource, binder)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;</ReturnType>
+      </ReturnValue>
+      <TypeParameters>
+        <TypeParameter Name="T">
+          <Constraints>
+            <InterfaceName>System.IDisposable</InterfaceName>
+          </Constraints>
+        </TypeParameter>
+        <TypeParameter Name="TResult" />
+      </TypeParameters>
+      <Parameters>
+        <Parameter Name="resource" Type="T" />
+        <Parameter Name="binder" Type="Microsoft.FSharp.Core.FSharpFunc&lt;T,Microsoft.FSharp.Control.FSharpAsync&lt;TResult&gt;&gt;" />
+      </Parameters>
+      <Docs>
+        <typeparam name="T">To be added.</typeparam>
+        <typeparam name="TResult">To be added.</typeparam>
+        <param name="resource">The resource to be used and disposed.</param>
+        <param name="binder">The function that takes the resource and returns an asynchronous
+ computation.</param>
+        <summary>Creates an asynchronous computation that runs <c>binder(resource)</c>. 
+ The action <c>resource.Dispose()</c> is executed as this computation yields its result
+ or if the asynchronous computation exits by an exception or by cancellation.</summary>
+        <returns>An asynchronous computation that binds and eventually disposes <c>resource</c>.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.
+
+ The existence of this method permits the use of <c>use</c> and <c>use!</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="While">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; While (Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,bool&gt; guard, Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; computation);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; While(class Microsoft.FSharp.Core.FSharpFunc`2&lt;class Microsoft.FSharp.Core.Unit, bool&gt; guard, class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; computation) cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.While(Microsoft.FSharp.Core.FSharpFunc{Microsoft.FSharp.Core.Unit,System.Boolean},Microsoft.FSharp.Control.FSharpAsync{Microsoft.FSharp.Core.Unit})" />
+      <MemberSignature Language="VB.NET" Value="Public Function While (guard As FSharpFunc(Of Unit, Boolean), computation As FSharpAsync(Of Unit)) As FSharpAsync(Of Unit)" />
+      <MemberSignature Language="F#" Value="member this.While : (unit -&gt; bool) * Async&lt;unit&gt; -&gt; Async&lt;unit&gt;" Usage="asyncBuilder.While (guard, computation)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="guard" Type="Microsoft.FSharp.Core.FSharpFunc&lt;Microsoft.FSharp.Core.Unit,System.Boolean&gt;" />
+        <Parameter Name="computation" Type="Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;" />
+      </Parameters>
+      <Docs>
+        <param name="guard">The function to determine when to stop executing <c>computation</c>.</param>
+        <param name="computation">The function to be executed.  Equivalent to the body
+ of a <c>while</c> expression.</param>
+        <summary>Creates an asynchronous computation that runs <c>computation</c> repeatedly 
+ until <c>guard()</c> becomes false.</summary>
+        <returns>An asynchronous computation that behaves similarly to a while loop when run.</returns>
+        <remarks>A cancellation check is performed whenever the computation is executed.
+
+ The existence of this method permits the use of <c>while</c> in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Zero">
+      <MemberSignature Language="C#" Value="public Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt; Zero ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig instance class Microsoft.FSharp.Control.FSharpAsync`1&lt;class Microsoft.FSharp.Core.Unit&gt; Zero() cil managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.FSharp.Control.FSharpAsyncBuilder.Zero" />
+      <MemberSignature Language="VB.NET" Value="Public Function Zero () As FSharpAsync(Of Unit)" />
+      <MemberSignature Language="F#" Value="member this.Zero : unit -&gt; Async&lt;unit&gt;" Usage="asyncBuilder.Zero " />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.FSharp.Control.FSharpAsync&lt;Microsoft.FSharp.Core.Unit&gt;</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Creates an asynchronous computation that just returns <c>()</c>.</summary>
+        <returns>An asynchronous computation that returns <c>()</c>.</returns>
+        <remarks>A cancellation check is performed when the computation is executed.
+
+ The existence of this method permits the use of empty <c>else</c> branches in the 
+ <c>async { ... }</c> computation expression syntax.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

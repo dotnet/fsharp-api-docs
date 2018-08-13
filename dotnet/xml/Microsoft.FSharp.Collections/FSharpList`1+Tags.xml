@@ -1,0 +1,61 @@
+﻿<Type Name="FSharpList&lt;T&gt;+Tags" FullName="Microsoft.FSharp.Collections.FSharpList&lt;T&gt;+Tags">
+  <TypeSignature Language="C#" Value="public static class FSharpList&lt;T&gt;.Tags" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed FSharpList`1/Tags&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Collections.FSharpList`1.Tags" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpList(Of T).Tags" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Cons">
+      <MemberSignature Language="C#" Value="public const int Cons;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Cons" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Collections.FSharpList`1.Tags.Cons" />
+      <MemberSignature Language="VB.NET" Value="Public Const Cons As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Cons : int" Usage="Microsoft.FSharp.Collections.List&lt;'T&gt;.List.Cons" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Empty">
+      <MemberSignature Language="C#" Value="public const int Empty;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 Empty" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Collections.FSharpList`1.Tags.Empty" />
+      <MemberSignature Language="VB.NET" Value="Public Const Empty As Integer " />
+      <MemberSignature Language="F#" Value="val mutable Empty : int" Usage="Microsoft.FSharp.Collections.List&lt;'T&gt;.List.Empty" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

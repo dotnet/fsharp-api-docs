@@ -1,0 +1,61 @@
+﻿<Type Name="FSharpValueOption&lt;T&gt;+Tags" FullName="Microsoft.FSharp.Core.FSharpValueOption&lt;T&gt;+Tags">
+  <TypeSignature Language="C#" Value="public static class FSharpValueOption&lt;T&gt;.Tags" />
+  <TypeSignature Language="ILAsm" Value=".class nested public auto ansi abstract sealed FSharpValueOption`1/Tags&lt;T&gt; extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.FSharpValueOption`1.Tags" />
+  <TypeSignature Language="VB.NET" Value="Public Class FSharpValueOption(Of T).Tags" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <TypeParameters>
+    <TypeParameter Name="T" />
+  </TypeParameters>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Docs>
+    <summary>To be added.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ValueNone">
+      <MemberSignature Language="C#" Value="public const int ValueNone;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ValueNone" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpValueOption`1.Tags.ValueNone" />
+      <MemberSignature Language="VB.NET" Value="Public Const ValueNone As Integer " />
+      <MemberSignature Language="F#" Value="val mutable ValueNone : int" Usage="Microsoft.FSharp.Core.ValueOption&lt;'T&gt;.ValueOption.ValueNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ValueSome">
+      <MemberSignature Language="C#" Value="public const int ValueSome;" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal int32 ValueSome" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.FSharp.Core.FSharpValueOption`1.Tags.ValueSome" />
+      <MemberSignature Language="VB.NET" Value="Public Const ValueSome As Integer " />
+      <MemberSignature Language="F#" Value="val mutable ValueSome : int" Usage="Microsoft.FSharp.Core.ValueOption&lt;'T&gt;.ValueOption.ValueSome" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>FSharp.Core</AssemblyName>
+        <AssemblyVersion>4.5.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>To be added.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,30 @@
+﻿<Type Name="kelvin" FullName="Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.kelvin">
+  <TypeSignature Language="C#" Value="public class kelvin" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi serializable kelvin extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Data.UnitSystems.SI.UnitNames.kelvin" />
+  <TypeSignature Language="VB.NET" Value="Public Class kelvin" />
+  <TypeSignature Language="F#" Value="type kelvin = class" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.ObjectType)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.Measure</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+ The SI unit of thermodynamic temperature
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

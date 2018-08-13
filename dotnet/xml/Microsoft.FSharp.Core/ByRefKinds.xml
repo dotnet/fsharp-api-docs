@@ -1,0 +1,30 @@
+﻿<Type Name="ByRefKinds" FullName="Microsoft.FSharp.Core.ByRefKinds">
+  <TypeSignature Language="C#" Value="public static class ByRefKinds" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi abstract sealed ByRefKinds extends System.Object" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.FSharp.Core.ByRefKinds" />
+  <TypeSignature Language="VB.NET" Value="Public Class ByRefKinds" />
+  <TypeSignature Language="F#" Value="module ByRefKinds" />
+  <AssemblyInfo>
+    <AssemblyName>FSharp.Core</AssemblyName>
+    <AssemblyVersion>4.5.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Object</BaseTypeName>
+  </Base>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilationMapping(Microsoft.FSharp.Core.SourceConstructFlags.Module)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>Microsoft.FSharp.Core.CompilerMessage("This construct is for use in the FSharp.Core library and should not be used directly", 1204, IsError=true, IsHidden=true)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+ Represents the types of byrefs in F# 4.5+
+</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members />
+</Type>

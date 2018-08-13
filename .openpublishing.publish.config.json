@@ -23,10 +23,6 @@
       "build_source_folder": "dotnet",
       "build_output_subfolder": "fsharp-dotnet-api",
       "locale": "en-us",
-
-      "monikers": [
-        "fsharpcore-4.2.1"
-      ],
       "monikers": [],
       "moniker_groups": [],
       "open_to_public_contributors": true,
@@ -96,5 +92,5 @@
   "DiffFolder": [
     "dotnet/api"
   ],
-  "toc_path_need_to_split": "dotnet/api/toc.yml"
+  "SplitTOC": "dotnet/api/toc.yml"
 }
